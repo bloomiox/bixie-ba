@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "crm": "CRM",
+    "ai": "AI Agenti",
+    "digital": "Digitalna Transformacija",
+    "rpa": "RPA",
+    "blog": "Blog",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "CRM, AI Agenti & Digitalna Transformacija",
+    "subtitle": "Implementiramo napredna tehnološka rješenja koja pokreću rast vašeg biznisa.",
+    "cta": "Zakažite konsultacije",
+    "partners": "HubSpot, Salesforce, Zoho, Pipedrive i Bitrix24 partner"
+  },
+  "services": {
+    "title": "Naše usluge",
+    "crm": {
+      "title": "CRM Implementacija",
+      "desc": "Bitrix24, HubSpot, Salesforce, Zoho, Pipedrive — implementacija, migracija, integracija i prilagođavanje."
+    },
+    "ai": {
+      "title": "AI Agenti",
+      "desc": "Custom AI agenti za customer support, lead generation, marketing automatizaciju i upravljanje znanjem."
+    },
+    "digital": {
+      "title": "Digitalna Transformacija",
+      "desc": "Optimizacija poslovnih procesa kroz digitalna rješenja, automatizaciju i modernu tehnologiju."
+    },
+    "rpa": {
+      "title": "RPA Automatizacija",
+      "desc": "Robotska automatizacija procesa za eliminaciju ručnih, ponavljajućih zadataka."
+    }
+  },
+  "footer": {
+    "rights": "Sva prava zadržana."
+  }
+}

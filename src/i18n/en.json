@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "crm": "CRM",
+    "ai": "AI Agents",
+    "digital": "Digital Transformation",
+    "rpa": "RPA",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "CRM, AI Agents & Digital Transformation",
+    "subtitle": "Implementing advanced technology solutions that drive your business growth.",
+    "cta": "Book a consultation",
+    "partners": "HubSpot, Salesforce, Zoho, Pipedrive & Bitrix24 Partner"
+  },
+  "services": {
+    "title": "Our Services",
+    "crm": {
+      "title": "CRM Implementation",
+      "desc": "Bitrix24, HubSpot, Salesforce, Zoho, Pipedrive — implementation, migration, integration & customization."
+    },
+    "ai": {
+      "title": "AI Agents",
+      "desc": "Custom AI agents for customer support, lead generation, marketing automation & knowledge management."
+    },
+    "digital": {
+      "title": "Digital Transformation",
+      "desc": "Business process optimization through digital solutions, automation and modern technology."
+    },
+    "rpa": {
+      "title": "RPA Automation",
+      "desc": "Robotic process automation to eliminate manual, repetitive tasks."
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

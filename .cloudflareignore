@@ -1,0 +1,3 @@
+# Exclude .git directory - security critical
+.git/
+.git/**
