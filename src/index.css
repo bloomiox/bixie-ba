@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-root: #0a0f1c;
+  --bg-surface: #0f1629;
+  --bg-card: #1a1f2e;
+  --bg-elevated: #1e293b;
+  --border-default: #1e293b;
+  --border-light: #2a3a60;
+  --text-primary: #e8edf5;
+  --text-secondary: #94a3c8;
+  --text-muted: #5b6f99;
+  --accent: #00736a;
+  --accent-hover: #008a7f;
+  --accent-glow: rgba(0,115,106,0.15);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+body {
+  background: var(--bg-root);
+  color: var(--text-secondary);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent-glow);
+  color: #fff;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #00736a, #00a396);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fadeIn 0.6s ease-out both;
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }

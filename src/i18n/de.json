@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "crm": "CRM",
+    "ai": "KI-Agenten",
+    "digital": "Digitale Transformation",
+    "rpa": "RPA",
+    "blog": "Blog",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "CRM, KI-Agenten & Digitale Transformation",
+    "subtitle": "Wir implementieren fortschrittliche Technologielösungen, die Ihr Unternehmen wachsen lassen.",
+    "cta": "Beratung buchen",
+    "partners": "HubSpot, Salesforce, Zoho, Pipedrive & Bitrix24 Partner"
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "crm": {
+      "title": "CRM-Implementierung",
+      "desc": "Bitrix24, HubSpot, Salesforce, Zoho, Pipedrive — Implementierung, Migration, Integration & Anpassung."
+    },
+    "ai": {
+      "title": "KI-Agenten",
+      "desc": "Massgeschneiderte KI-Agenten für Kundensupport, Lead-Generierung, Marketing-Automation & Wissensmanagement."
+    },
+    "digital": {
+      "title": "Digitale Transformation",
+      "desc": "Optimierung von Geschäftsprozessen durch digitale Lösungen, Automatisierung und moderne Technologie."
+    },
+    "rpa": {
+      "title": "RPA-Automatisierung",
+      "desc": "Robotergesteuerte Prozessautomatisierung zur Eliminierung manueller, sich wiederholender Aufgaben."
+    }
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
+  }
+}
