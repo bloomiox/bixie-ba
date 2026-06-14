@@ -53,3 +53,26 @@ body {
 .delay-2 { animation-delay: 0.2s; }
 .delay-3 { animation-delay: 0.3s; }
 .delay-4 { animation-delay: 0.4s; }
+
+/* Old site content — migrated pages styling */
+.old-site-content h1 { font-size: 2.25rem; font-weight: 700; color: #e8edf5; margin-bottom: 1rem; }
+.old-site-content h2 { font-size: 1.5rem; font-weight: 600; color: #e8edf5; margin-top: 2.5rem; margin-bottom: 1rem; }
+.old-site-content h3 { font-size: 1.25rem; font-weight: 500; color: #e8edf5; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+.old-site-content p { color: #94a3c8; margin-bottom: 1rem; line-height: 1.7; }
+.old-site-content ul, .old-site-content ol { color: #94a3c8; margin-bottom: 1.5rem; padding-left: 1.5rem; }
+.old-site-content ul { list-style-type: disc; }
+.old-site-content ol { list-style-type: decimal; }
+.old-site-content li { margin-bottom: 0.5rem; line-height: 1.6; }
+.old-site-content a { color: #00736a; }
+.old-site-content a:hover { text-decoration: underline; }
+.old-site-content strong { color: #e8edf5; }
+.old-site-content .card { background: #0f1629; border: 1px solid #1e293b; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1.5rem; }
+.old-site-content .tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #00736a; background: rgba(0,115,106,0.1); padding: 0.25rem 0.5rem; border-radius: 0.25rem; display: inline-block; margin-bottom: 1rem; }
+.old-site-content .tag-teal { color: #00736a; background: rgba(0,115,106,0.1); }
+.old-site-content .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.old-site-content .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+.old-site-content .btn-primary { display: inline-block; background: #00736a; color: #fff; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 500; transition: all 0.2s; }
+.old-site-content .btn-primary:hover { background: #005c54; }
+.old-site-content table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
+.old-site-content th, .old-site-content td { padding: 0.75rem; text-align: left; border-bottom: 1px solid #1e293b; color: #94a3c8; }
+.old-site-content th { color: #e8edf5; font-weight: 600; }
