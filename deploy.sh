@@ -1,5 +1,5 @@
 #!/bin/bash
-# Deploy bixie.ba (Vite/React) to Cloudflare Pages
+# Deploy bixie.ba (Vite/React) to Cloudflare Workers
 set -e
 
 SITE_DIR="/root/bixie-site-vite"
@@ -12,12 +12,12 @@ cd "$SITE_DIR"
 echo "📦 Building..."
 npx vite build
 
-# Copy _redirects for SPA routing
-cp public/_redirects dist/_redirects 2>/dev/null || true
+# The _worker.js in public/ is copied to dist/ by Vite automatically
+# It handles SPA routing (replaces _redirects)
 
-# Deploy
-echo "☁️ Deploying to Cloudflare Pages..."
-npx wrangler pages deploy dist --project-name=bixie-ba --branch=main
+# Deploy as Worker (not Pages — Workers supports _worker.js entry)
+echo "☁️ Deploying to Cloudflare Workers..."
+npx wrangler deploy --assets dist
 
 echo ""
 echo "✅ Deployment complete!"
