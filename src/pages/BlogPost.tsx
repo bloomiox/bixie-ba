@@ -33,10 +33,14 @@ export default function BlogPost() {
         <h1 className="text-3xl md:text-4xl font-bold text-white mb-8 leading-tight">{post.title}</h1>
         <p className="text-lg text-muted mb-10 leading-relaxed">{post.excerpt}</p>
 
-        <div className="prose prose-invert max-w-none text-muted text-sm leading-relaxed space-y-4 border-t border-gray-800/50 pt-10">
-          <p>Content coming soon — ovaj članak je u pripremi za novu React platformu. Prenosimo sav sadržaj sa stare stranice.</p>
-          <p>U međuvremenu, <Link to={l('/contact')} className="text-[#00736a] hover:underline">kontaktirajte nas</Link> za više informacija o temi.</p>
-        </div>
+        {post.content ? (
+          <div className="prose prose-invert max-w-none old-site-content text-sm leading-relaxed border-t border-gray-800/50 pt-10"
+            dangerouslySetInnerHTML={{ __html: post.content }} />
+        ) : (
+          <div className="text-center py-12 border-t border-gray-800/50">
+            <p className="text-muted">Članak je u pripremi.</p>
+          </div>
+        )}
       </article>
     </div>
   )
