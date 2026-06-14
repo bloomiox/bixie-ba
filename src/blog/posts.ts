@@ -608,7 +608,7 @@ const blogPosts: Record<string, BlogPost> = {
   },
   'ai-licence-obrazovne-ustanove': {
     slug: 'ai-licence-obrazovne-ustanove',
-    title: 'AI licence za obrazovne ustanove u bosni i hercegovini',
+    title: 'AI licence za obrazovne ustanove u Bosni i Hercegovini',
     excerpt: 'kompletan vodič za nabavku AI licenci za univerzitete, fakultete i škole u BiH. ChatGPT Edu, Google Workspace for Education, Microsoft 365 Education — cijene i popusti.',
     category: 'AI Licence',
     date: '2026-06-03',
