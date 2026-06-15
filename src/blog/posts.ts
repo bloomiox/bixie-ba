@@ -748,6 +748,1290 @@ const blogPosts: Record<string, BlogPost> = {
 <h2>Zaključak</h2>
 <p>Zoho CRM je najbolji izbor za firme koje traže moćan CRM po pristupačnoj cijeni, sa naprednim AI funkcionalnostima. BIXIE nudi besplatne konsultacije, demonstraciju i 14-dnevni probni period.</p>`,
   },
+
+  'ai-agenti-analiza-podataka': {
+    slug: 'ai-agenti-analiza-podataka',
+    title: 'AI agenti za analizu podataka: Od podataka do odluka',
+    excerpt: 'Kako AI agenti transformišu analizu podataka — automatsko prikupljanje, čišćenje, vizualizacija i izvještavanje.',
+    category: 'AI Agenti',
+    date: '2026-06-14',
+    readTime: '3 min',
+    content: `
+<p># AI agenti za analizu podataka: Od podataka do odluka</p>
+<p>Kako AI agenti transformišu analizu podataka — automatsko prikupljanje, čišćenje, vizualizacija i izvještavanje.</p>
+<h2>Podaci su nova nafta</h2>
+<p>Firme u BiH sjede na ogromnim količinama podataka — prodajni podaci, finansije, marketing metrike, podaci o kupcima. Problem je što većina firmi nema kapaciteta da te podatke analizira i pretvori u korisne uvide.</p>
+<h2>AI agent za analizu podataka</h2>
+<h3>Automatsko prikupljanje</h3>
+<p>Agent se povezuje sa svim izvorima podataka — baze podataka, Excel tabele, Google Analytics, CRM, ERP — i centralizira ih na jednom mjestu.</p>
+<h3>Čišćenje podataka</h3>
+<p>Duplikati, nepotpuni podaci, nekonzistentni formati — AI agent automatski čisti i standardizira podatke.</p>
+<h3>Vizualizacija</h3>
+<p>Na osnovu vaših pitanja, agent kreira dashboardove i grafikone koji najbolje prikazuju odgovore.</p>
+<h3>Prediktivna analiza</h3>
+<p>"Kolika će nam biti prodaja sljedeći mjesec?" — Agent analizira trendove i daje projekcije sa 85-95% tačnosti.</p>
+<h2>Primjer</h2>
+<p>BIXIE je implementirao AI agenta za analizu prodaje koji je firminom menadžmentu smanjio vrijeme pripreme sedmičnih izvještaja sa 6 sati na 10 minuta.</p>`,
+  },
+  'ai-agenti-content-marketing': {
+    slug: 'ai-agenti-content-marketing',
+    title: 'AI agenti za content marketing: Kreiranje i distribucija sadržaja',
+    excerpt: 'Kako AI agenti mogu pomoći u kreiranju, optimizaciji i distribuciji marketinškog sadržaja za BiH firme.',
+    category: 'Marketing',
+    date: '2026-07-04',
+    readTime: '3 min',
+    content: `
+<p># AI agenti za content marketing: Kreiranje i distribucija sadržaja</p>
+<p>Kako AI agenti mogu pomoći u kreiranju, optimizaciji i distribuciji marketinškog sadržaja za BiH firme.</p>
+<h2>Content marketing i AI</h2>
+<p>Content marketing je jedan od najefikasnijih načina za privlačenje klijenata, ali zahtijeva puno vremena i resursa. AI agenti mogu značajno ubrzati i unaprijediti proces.</p>
+<h2>Planiranje sadržaja</h2>
+<p>AI agent analizira ciljnu grupu, konkurenciju i trendove u industriji, te predlaže teme koje će najbolje rezonirati sa vašom publikom.</p>
+<h2>Kreiranje sadržaja</h2>
+<p>Od blog postova do objava na društvenim mrežama — AI agent kreira kvalitetan sadržaj koji educira, informiše i angažuje publiku.</p>
+<h2>Distribucija</h2>
+<p>Agent automatski objavljuje sadržaj na odabranim kanalima (blog, LinkedIn, Facebook, newsletter) u optimalno vrijeme.</p>
+<h2>Analiza performansi</h2>
+<p>Nakon objave, agent prati angažman, dijeljenja i konverzije, te uči šta najbolje funkcioniše za vašu publiku.</p>
+<h2>Rezultati</h2>
+<p>Firme koje koriste AI za content marketing bilježe 3x više sadržaja uz isto vrijeme i 40% veći angažman.</p>`,
+  },
+  'ai-agenti-customer-support-24-7': {
+    slug: 'ai-agenti-customer-support-24-7',
+    title: 'AI agenti za customer support 24/7: Potpuni vodič',
+    excerpt: 'Kako implementirati AI agente za korisničku podršku koja radi 24/7 — smanjenje troškova, povećanje zadovoljstva i integr',
+    category: 'Customer Support',
+    date: '2026-08-01',
+    readTime: '3 min',
+    content: `
+<p># AI agenti za customer support 24/7: Potpuni vodič</p>
+<p>Kako implementirati AI agente za korisničku podršku koja radi 24/7 — smanjenje troškova, povećanje zadovoljstva i integracija sa CRM-om.</p>
+<h2>Customer support u BiH</h2>
+<p>Korisnička podrška je lice svake firme. U BiH, gdje su očekivanja kupaca sve veća, a konkurencija sve jača, kvalitetna podrška može biti ključna konkurentska prednost. AI agenti omogućavaju podršku svjetskog nivoa po lokalnim cijenama.</p>
+<h2>Šta AI agenti mogu u customer supportu?</h2>
+<h3>Automatski odgovori na uobičajena pitanja</h3>
+<p>AI agent može odgovoriti na do 80% upita bez ljudske intervencije — informacije o proizvodima, status narudžbe, politika povrata, radno vrijeme.</p>
+<h3>Eskaalacija kompleksnih slučajeva</h3>
+<p>Kada agent prepozna da je upit previše složen ili osjetljiv, automatski ga prosljeđuje ljudskom operateru sa kompletnom istorijom komunikacije.</p>
+<h3>Multi-channel podrška</h3>
+<p>Jedan AI agent pokriva sve kanale — chat na web sajtu, Facebook Messenger, Instagram DM, WhatsApp, email. Dosljedan odgovor na svakom kanalu.</p>
+<h3>Analiza sentimenta</h3>
+<p>Agent prepoznaje frustraciju ili nezadovoljstvo u poruci i odmah eskalira ili prilagođava ton odgovora.</p>
+<h2>Rezultati</h2>
+<p>| Metrika | Prije AI | Poslije AI |</p>
+<p>|</p>`,
+  },
+  'ai-agenti-e-trgovina-bih': {
+    slug: 'ai-agenti-e-trgovina-bih',
+    title: 'AI agenti za e-trgovinu u BiH: Povećajte prodaju uz automatizaciju',
+    excerpt: 'AI agenti za online prodavnice — personalizacija, preporuke, customer support i optimizacija cijena za BiH e-commerce.',
+    category: 'AI Agenti',
+    date: '2026-06-20',
+    readTime: '3 min',
+    content: `
+<p># AI agenti za e-trgovinu u BiH: Povećajte prodaju uz automatizaciju</p>
+<p>AI agenti za online prodavnice — personalizacija, preporuke, customer support i optimizacija cijena za BiH e-commerce.</p>
+<h2>E-trgovina u BiH</h2>
+<p>Online prodaja u Bosni i Hercegovini raste iz godine u godinu. Međutim, konkurencija je sve veća, a kupci očekuju personalizirano iskustvo, brzu podršku i relevantne preporuke. AI agenti su ključ za ispunjenje ovih očekivanja.</p>
+<h2>Personalizacija iskustva kupovine</h2>
+<p>AI agent analizira ponašanje posjetitelja — pregledane proizvode, vrijeme na sajtu, demografske podatke — i prilagođava prikaz proizvoda svakom korisniku pojedinačno.</p>
+<h2>AI preporuke proizvoda</h2>
+<p>Sistem preporuka na bazi AI analize: "Kupci koji su gledali ovo, kupili su i..." Povećava prosječnu vrijednost narudžbe za 15-30%.</p>
+<h2>Customer support</h2>
+<p>AI agent odgovara na najčešća pitanja: status narudžbe, politika povrata, dostupnost proizvoda. Na bosanskom jeziku, 24/7.</p>
+<h2>Dinamičke cijene</h2>
+<p>AI agent prati cijene konkurenata, potražnju i zalihe, te automatski optimizira cijene za maksimalnu prodaju i profit.</p>`,
+  },
+  'ai-agenti-lanac-snabdijevanja': {
+    slug: 'ai-agenti-lanac-snabdijevanja',
+    title: 'AI agenti za upravljanje lancem snabdijevanja u BiH',
+    excerpt: 'Optimizacija lanca snabdijevanja pomoću AI agenata — predikcija potražnje, optimizacija zaliha i logistika.',
+    category: 'AI Agenti',
+    date: '2026-06-11',
+    readTime: '3 min',
+    content: `
+<p># AI agenti za upravljanje lancem snabdijevanja u BiH</p>
+<p>Optimizacija lanca snabdijevanja pomoću AI agenata — predikcija potražnje, optimizacija zaliha i logistika.</p>
+<h2>Lanac snabdijevanja u BiH</h2>
+<p>Firme u BiH se suočavaju sa specifičnim izazovima u lancu snabdijevanja — uvozna zavisnost, kašnjenja na granicama, fluktuirajuće cijene. AI agenti mogu pomoći u optimizaciji svakog segmenta.</p>
+<h2>Predikcija potražnje</h2>
+<p>AI agent analizira istorijske podatke, sezone, trendove i eksterne faktore (vrijeme, praznici, ekonomski pokazatelji) kako bi predvidio potražnju sa visokom tačnošću.</p>
+<h2>Optimizacija zaliha</h2>
+<p>Na osnovu predikcije potražnje, agent predlaže optimalne nivoe zaliha — dovoljno da se izbjegne nestašica, ali ne previše da se ne veže kapital.</p>
+<h2>Logistika</h2>
+<p>AI agent optimizira rute dostave, kombinuje pošiljke i predlaže najbolje vrijeme za transport, uzimajući u obzir gužve na granicama i vremenske uslove.</p>
+<h2>Implementacija</h2>
+<p>BIXIE implementira AI agente za lanac snabdijevanja sa integracijom na ERP sisteme koji se koriste u BiH.</p>`,
+  },
+  'ai-agenti-pravni-sektor-bih': {
+    slug: 'ai-agenti-pravni-sektor-bih',
+    title: 'AI agenti za pravni sektor u BiH: Automatizacija i efikasnost',
+    excerpt: 'Primjena AI agenata u advokatskim kancelarijama i pravnim odjelima BiH — analiza dokumenata, istraživanje i automatizaci',
+    category: 'AI Agenti',
+    date: '2026-06-22',
+    readTime: '3 min',
+    content: `
+<p># AI agenti za pravni sektor u BiH: Automatizacija i efikasnost</p>
+<p>Primjena AI agenata u advokatskim kancelarijama i pravnim odjelima BiH — analiza dokumenata, istraživanje i automatizacija.</p>
+<h2>Pravni sektor i AI</h2>
+<p>Pravni sektor u BiH, kao i drugdje u svijetu, polako ali sigurno prihvata AI alate. Iako postoji određena doza opreza, AI agenti mogu značajno unaprijediti efikasnost pravnih timova.</p>
+<h2>Analiza ugovora</h2>
+<p>AI agent može pregledati stotine stranica ugovora za nekoliko minuta, identificirajući rizične klauzule, neusklađenosti sa zakonima BiH i potencijalne pravne probleme.</p>
+<h2>Pravno istraživanje</h2>
+<p>Umjesto sati pretraživanja zakona i sudske prakse, AI agent za nekoliko sekundi pronalazi relevantne propise, presude i tumačenja.</p>
+<h2>Automatizacija dokumenata</h2>
+<p>Generisanje nacrta ugovora, tužbi, zahtjeva i drugih pravnih dokumenata na osnovu unaprijed definiranih šablona.</p>
+<h2>Due Diligence</h2>
+<p>AI agenti mogu automatizirati proces due diligence-a — pregled hiljada dokumenata u roku nekoliko dana umjesto sedmica.</p>`,
+  },
+  'ai-agenti-proizvodnja-bih': {
+    slug: 'ai-agenti-proizvodnja-bih',
+    title: 'AI agenti u proizvodnji: Pametna fabrika za BiH firme',
+    excerpt: 'Kako AI agenti transformišu proizvodne procese — prediktivno održavanje, kontrola kvaliteta i optimizacija proizvodnje.',
+    category: 'AI Agenti',
+    date: '2026-06-08',
+    readTime: '3 min',
+    content: `
+<p># AI agenti u proizvodnji: Pametna fabrika za BiH firme</p>
+<p>Kako AI agenti transformišu proizvodne procese — prediktivno održavanje, kontrola kvaliteta i optimizacija proizvodnje.</p>
+<h2>Industrija 4.0 u BiH</h2>
+<p>Proizvodni sektor u Bosni i Hercegovini prolazi kroz digitalnu transformaciju. AI agenti su ključna komponenta Industrije 4.0, donoseći pametnu automatizaciju u proizvodne pogone.</p>
+<h2>Prediktivno održavanje</h2>
+<p>AI agent analizira podatke sa senzora na mašinama i predviđa kada će doći do kvara. Ovo omogućava planiranje održavanja prije nego što mašina stane, smanjujući zastoje za 30-50%.</p>
+<h2>Kontrola kvaliteta</h2>
+<p>Korištenjem kamera i AI vizije, agent automatski pregleda proizvode i detektuje nedostatke koje ljudsko oko ne može vidjeti.</p>
+<h2>Optimizacija proizvodnje</h2>
+<p>Agent analizira proizvodne parametre i predlaže optimizacije — brzina rada, temperatura, pritisak — za maksimalnu efikasnost i minimalan otpad.</p>
+<h2>Rezultati u BiH</h2>
+<p>BIXIE je implementirao AI rješenje u proizvodnoj firmi koje je smanjilo otpad za 25% i povećalo kapacitet proizvodnje za 15% bez dodatnih ulaganja.</p>`,
+  },
+  'ai-agenti-racunovodstvo-bih': {
+    slug: 'ai-agenti-racunovodstvo-bih',
+    title: 'Kako AI agenti mogu pomoći u računovodstvu: Praktični vodič',
+    excerpt: 'Automatizacija računovodstvenih procesa pomoću AI agenata — knjiženje, fakture, izvještaji i usaglašavanje. Primjeri za ',
+    category: 'AI Agenti',
+    date: '2026-06-28',
+    readTime: '3 min',
+    content: `
+<p># Kako AI agenti mogu pomoći u računovodstvu: Praktični vodič</p>
+<p>Automatizacija računovodstvenih procesa pomoću AI agenata — knjiženje, fakture, izvještaji i usaglašavanje. Primjeri za BiH firme.</p>
+<h2>Računovodstvo i AI</h2>
+<p>Računovodstvo je jedan od najperspektivnijih sektora za primjenu AI agenata u BiH. Ponavljajući zadaci, obrada dokumenata i striktni rokovi čine ga idealnim za automatizaciju.</p>
+<h2>Šta AI agenti mogu u računovodstvu?</h2>
+<h3>Automatska kategorizacija transakcija</h3>
+<p>AI agent analizira bankovne izvode, prepoznaje tipove transakcija (prihod, trošak, porez) i automatski knjiži na odgovarajuće konto pozicije.</p>
+<h3>Obrada faktura</h3>
+<p>Agent skenira ulazne fakture (PDF, email), izvlači podatke (iznos, datum, PDV), provjerava ispravnost i unosi u knjigovodstveni sistem.</p>
+<h3>Mjesečni izvještaji</h3>
+<p>Generisanje bilansa uspjeha, bilansa stanja i PDV prijava iz podataka u sistemu — za nekoliko minuta.</p>
+<h3>Usaglašavanje</h3>
+<p>Agent poredi bankovne izvode sa knjiženjima, označava nepodudaranja i predlaže korekcije.</p>
+<h2>Implementacija</h2>
+<p>BIXIE implementira AI agente za računovodstvo u roku 3-4 sedmice, uz podršku za domaće knjigovodstvene standarde.</p>`,
+  },
+  'ai-agenti-upravljanje-projektima': {
+    slug: 'ai-agenti-upravljanje-projektima',
+    title: 'AI agenti za upravljanje projektima: Revolucija u planiranju',
+    excerpt: 'Kako AI agenti transformišu upravljanje projektima — automatsko planiranje, praćenje rizika, alokacija resursa i izvješt',
+    category: 'AI Agenti',
+    date: '2026-06-25',
+    readTime: '3 min',
+    content: `
+<p># AI agenti za upravljanje projektima: Revolucija u planiranju</p>
+<p>Kako AI agenti transformišu upravljanje projektima — automatsko planiranje, praćenje rizika, alokacija resursa i izvještavanje.</p>
+<h2>Projekt menadžment u eri AI</h2>
+<p>Upravljanje projektima je oduvijek zahtijevalo pažljivo planiranje, konstantno praćenje i brzo prilagođavanje promjenama. AI agenti donose novi nivo efikasnosti u sve ove aspekte.</p>
+<h2>Automatsko planiranje</h2>
+<p>AI agent analizira zahtjeve projekta, istorijske podatke i dostupne resurse, pa automatski generiše plan projekta sa zadacima, zavisnostima i rokovima.</p>
+<h2>Praćenje rizika</h2>
+<p>Agent kontinuirano prati napredak projekta i detektuje potencijalne probleme — kašnjenja, prekoračenje budžeta, nedostatak resursa — prije nego što postanu kritični.</p>
+<h2>Alokacija resursa</h2>
+<p>Na osnovu vještina, opterećenja i dostupnosti članova tima, AI agent predlaže optimalnu raspodjelu zadataka.</p>
+<h2>Preporuka</h2>
+<p>Za timove koji koriste Jira, Linear ili Notion, BIXIE preporučuje integraciju AI agenata direktno u postojeće alate kako bi se maksimizirala efikasnost bez uvođenja novih sistema.</p>`,
+  },
+  'ai-nevladine-organizacije-bih': {
+    slug: 'ai-nevladine-organizacije-bih',
+    title: 'AI za nevladine organizacije u BiH: Više uticaja uz manje resursa',
+    excerpt: 'Kako AI alati mogu pomoći nevladinim organizacijama u BiH da povećaju svoj uticaj — fundraising, komunikacija i analiza ',
+    category: 'AI Tehnologija',
+    date: '2026-07-21',
+    readTime: '3 min',
+    content: `
+<p># AI za nevladine organizacije u BiH: Više uticaja uz manje resursa</p>
+<p>Kako AI alati mogu pomoći nevladinim organizacijama u BiH da povećaju svoj uticaj — fundraising, komunikacija i analiza podataka.</p>
+<h2>NVO sektor u BiH</h2>
+<p>Nevladine organizacije u Bosni i Hercegovini igraju važnu ulogu u društvu, ali se često suočavaju sa ograničenim resursima, malim timovima i nedostatkom tehnoloških znanja. AI može pomoći da se uz iste resurse postigne veći uticaj.</p>
+<h2>Fundraising</h2>
+<p>AI agent analizira donatorsku bazu i identificira najbolje prilike za fundraising. Automatski kreira personalizovane apele za svakog donatora na osnovu njihovih interesovanja i istorije donacija.</p>
+<h2>Komunikacija</h2>
+<p>Automatsko kreiranje newslettera, izvještaja i objava na društvenim mrežama. AI prilagođava ton i sadržaj različitim ciljnim grupama — donatori, volonteri, korisnici, mediji.</p>
+<h2>Analiza uticaja</h2>
+<p>NVO često moraju dokazati uticaj svog rada donatorima. AI agent automatski prikuplja podatke, analizira ih i generiše izvještaje o uticaju sa konkretnim brojkama.</p>
+<h2>Upravljanje volonterima</h2>
+<p>AI optimizira raspored volonterskih aktivnosti, prati angažman i automatski komunicira sa volonterima.</p>
+<h2>Besplatni alati za NVO</h2>
+<p>Mnogi AI alati nude besplatne ili snižene planove za nevladine organizacije. BIXIE pomaže NVO-ima da identificiraju i implementiraju najbolja rješenja.</p>`,
+  },
+  'ai-poljoprivreda-bih': {
+    slug: 'ai-poljoprivreda-bih',
+    title: 'AI za poljoprivredu u Bosni i Hercegovini: Precizna poljoprivreda',
+    excerpt: 'Kako AI i IoT senzori transformišu poljoprivredu u BiH — precizna poljoprivreda, predikcija prinosa i optimizacija resur',
+    category: 'AI Tehnologija',
+    date: '2026-07-27',
+    readTime: '3 min',
+    content: `
+<p># AI za poljoprivredu u Bosni i Hercegovini: Precizna poljoprivreda</p>
+<p>Kako AI i IoT senzori transformišu poljoprivredu u BiH — precizna poljoprivreda, predikcija prinosa i optimizacija resursa.</p>
+<h2>Poljoprivreda u BiH</h2>
+<p>Poljoprivreda je jedan od strateški najvažnijih sektora u BiH, ali se suočava sa brojnim izazovima — starenje populacije, klimatske promjene, fragmentacija posjeda i nedostatak radne snage. AI može pomoći u prevazilaženju mnogih od ovih izazova.</p>
+<h2>Precizna poljoprivreda</h2>
+<p>IoT senzori u polju prikupljaju podatke o vlažnosti, temperaturi, sastavu tla i zdravlju biljaka. AI agent analizira ove podatke i daje preporuke: kada zalijevati, đubriti, prskati.</p>
+<h2>Predikcija prinosa</h2>
+<p>Na osnovu istorijskih podataka, vremenskih prognoza i trenutnog stanja usjeva, AI predviđa prinos sa 90% tačnosti. Ovo pomaže poljoprivrednicima u planiranju prodaje i logistike.</p>
+<h2>Dronovi i AI vizija</h2>
+<p>Dronovi sa kamerama pregledaju polja i AI detektuje bolesti, štetočine ili nedostatak hranljivih materija prije nego što postanu vidljivi golim okom.</p>
+<h2>Optimizacija navodnjavanja</h2>
+<p>AI analizira vremensku prognozu, vlažnost tla i potrebe biljaka, te optimizira navodnjavanje — do 30% uštede vode uz isti ili bolji prinos.</p>
+<h2>BIXIE rješenje</h2>
+<p>BIXIE razvija AI rješenja za poljoprivredu prilagođena bh. uslovima i malim posjedima.</p>`,
+  },
+  'ai-trendovi-2027-sta-donosi-buducnost': {
+    slug: 'ai-trendovi-2027-sta-donosi-buducnost',
+    title: 'AI trendovi za 2027: Šta donosi budućnost vještačke inteligencije',
+    excerpt: 'Pregled najvažnijih AI trendova za 2027. godinu — agentic AI, voice AI, AI regulativa, edge AI i uticaj na BiH.',
+    category: 'Trendovi',
+    date: '2026-07-25',
+    readTime: '3 min',
+    content: `
+<p># AI trendovi za 2027: Šta donosi budućnost vještačke inteligencije</p>
+<p>Pregled najvažnijih AI trendova za 2027. godinu — agentic AI, voice AI, AI regulativa, edge AI i uticaj na BiH.</p>
+<h2>AI se ubrzano razvija</h2>
+<p>Razvoj vještačke inteligencije ne pokazuje znakove usporavanja. Svake godine donosi nove mogućnosti, ali i nove izazove. Evo šta donosi 2027. godina.</p>
+<h2>1. Agentic AI postaje mainstream</h2>
+<p>AI agenti koji samostalno planiraju, odlučuju i izvršavaju zadatke prelaze iz eksperimentalne faze u produkciju. Do kraja 2027, većina većih firmi će koristiti multi-agent sisteme.</p>
+<h2>2. Voice AI</h2>
+<p>Voice AI agenti postaju nerazlučivi od ljudi u telefonskoj komunikaciji. Call centri u BiH će masovno prelaziti na voice AI.</p>
+<h2>3. AI regulativa</h2>
+<p>EU AI Act stupa na snagu u fazama tokom 2027. BiH firme koje posluju sa EU morat će se uskladiti sa novim pravilima.</p>
+<h2>4. Edge AI</h2>
+<p>AI se seli na uređaje — telefone, senzore, kamere — bez potrebe za cloudom. Brže, jeftinije, privatnije.</p>
+<h2>5. AI za male firme</h2>
+<p>Cijene AI alata padaju. Do kraja 2027, AI će biti dostupan svakoj firmi, bez obzira na veličinu.</p>
+<h2>Šta to znači za BiH?</h2>
+<p>Firme koje rano usvoje AI tehnologije imaće značajnu konkurentsku prednost. BIXIE prati sve trendove i prilagođava ih bh. tržištu.</p>`,
+  },
+  'ai-za-seo-optimizacija-sajta': {
+    slug: 'ai-za-seo-optimizacija-sajta',
+    title: 'AI za SEO: Kako optimizirati sajt uz pomoć AI',
+    excerpt: 'Kompletan vodič za SEO optimizaciju uz pomoć AI alata — istraživanje ključnih riječi, optimizacija sadržaja i praćenje p',
+    category: 'Marketing',
+    date: '2026-07-07',
+    readTime: '3 min',
+    content: `
+<p># AI za SEO: Kako optimizirati sajt uz pomoć AI</p>
+<p>Kompletan vodič za SEO optimizaciju uz pomoć AI alata — istraživanje ključnih riječi, optimizacija sadržaja i praćenje pozicija.</p>
+<h2>SEO u eri AI</h2>
+<p>Search Engine Optimization (SEO) je evoluirao od jednostavnog ubacivanja ključnih riječi u složenu disciplinu koja zahtijeva analizu, strategiju i konstantno prilagođavanje. AI alati donose novi nivo mogućnosti.</p>
+<h2>Istraživanje ključnih riječi</h2>
+<p>AI analizira milione pretraživanja i identificira najbolje prilike za vaš sajt — ključne riječi sa visokim volumenom pretrage i niskom konkurencijom u BiH i regionu.</p>
+<h2>Optimizacija sadržaja</h2>
+<p>AI agent analizira vaš sadržaj i predlaže optimizacije — naslove, meta opise, strukturu, interni linking — sve po najnovijim Google standardima.</p>
+<h2>Tehnički SEO</h2>
+<p>Automatsko skeniranje sajta, identifikacija problema (broken linkovi, spore stranice, dupli sadržaj) i prijedlozi za popravku.</p>
+<h2>Praćenje pozicija</h2>
+<p>Svakodnevno praćenje pozicija za ciljane ključne riječi, sa analizom trendova i konkurencije.</p>
+<h2>BIXIE SEO usluga</h2>
+<p>BIXIE nudi SEO usluge uz pomoć AI alata, prilagođene BiH tržištu i bh. pretraživačkim navikama.</p>`,
+  },
+  'ai-za-turizam-bih': {
+    slug: 'ai-za-turizam-bih',
+    title: 'AI za turizam u Bosni i Hercegovini: Revolucija u gostoprimstvu',
+    excerpt: 'Kako AI transformiše turistički sektor u BiH — personalizacija, pametne rezervacije, AI vodiči i analiza sentimenta.',
+    category: 'AI Tehnologija',
+    date: '2026-07-30',
+    readTime: '3 min',
+    content: `
+<p># AI za turizam u Bosni i Hercegovini: Revolucija u gostoprimstvu</p>
+<p>Kako AI transformiše turistički sektor u BiH — personalizacija, pametne rezervacije, AI vodiči i analiza sentimenta.</p>
+<h2>Turizam u BiH</h2>
+<p>Turizam je jedna od najperspektivnijih industrija u Bosni i Hercegovini. Sa rastućim brojem posjetilaca iz cijelog svijeta, hoteli, restorani i turističke agencije traže načine da se istaknu i pruže vrhunsko iskustvo.</p>
+<h2>Personalizacija iskustva</h2>
+<p>AI agent analizira preferencije gostiju — prethodne posjete, recenzije, demografske podatke — i prilagođava ponudu svakom gostu pojedinačno: preporuka aktivnosti, restorana, tura.</p>
+<h2>Pametne rezervacije</h2>
+<p>AI optimizira cijene smještaja u realnom vremenu na osnovu potražnje, sezone, konkurencije i vremenskih prilika. Više prihoda za hotele, bolje cijene za goste.</p>
+<h2>AI turistički vodiči</h2>
+<p>Virtuelni AI vodiči koji kroz chat ili voice vode turiste kroz Baščaršiju, Mostar, Jahorinu — pričaju priče, odgovaraju na pitanja, preporučuju gdje jesti.</p>
+<h2>Analiza sentimenta</h2>
+<p>AI prati recenzije na Booking.com, TripAdvisoru i Google Maps, analizira šta gosti hvale, a šta kritikuju, i predlaže konkretna poboljšanja.</p>
+<h2>BIXIE za turizam</h2>
+<p>BIXIE nudi specijalizirana AI rješenja za turistički sektor BiH, prilagođena potrebama hotela, restorana i turističkih agencija.</p>`,
+  },
+  'automatizacija-fakturisanja-od-izdavanja-do-naplate': {
+    slug: 'automatizacija-fakturisanja-od-izdavanja-do-naplate',
+    title: 'Automatizacija fakturisanja: Od izdavanja do naplate',
+    excerpt: 'Kompletan vodič kroz automatizaciju procesa fakturisanja — kreiranje, slanje, praćenje i naplata faktura uz pomoć AI age',
+    category: 'Automatizacija',
+    date: '2026-06-25',
+    readTime: '3 min',
+    content: `
+<p># Automatizacija fakturisanja: Od izdavanja do naplate</p>
+<p>Kompletan vodič kroz automatizaciju procesa fakturisanja — kreiranje, slanje, praćenje i naplata faktura uz pomoć AI agenata i RPA.</p>
+<h2>Proces fakturisanja</h2>
+<p>Fakturisanje je jedan od najvažnijih procesa u svakoj firmi, ali često i najglomazniji. Od kreiranja fakture do konačne naplate, postoji mnogo koraka koji se mogu automatizirati.</p>
+<h2>Automatsko kreiranje faktura</h2>
+<p>Na osnovu ugovora, ponude ili odrađenog posla, AI agent automatski kreira fakturu sa svim potrebnim informacijama — stavke, iznosi, PDV, rok plaćanja.</p>
+<h2>Slanje i praćenje</h2>
+<p>Faktura se automatski šalje klijentu putem emaila, a bot prati da li je faktura otvorena i kada ističe rok plaćanja.</p>
+<h2>Automatski podsjetnici</h2>
+<p>Tri dana prije roka — podsjetnik. Na dan dospijeća — obavještenje. Tri dana nakon roka — prva opomena. Sve automatski.</p>
+<h2>Integracija sa bankom</h2>
+<p>Kada klijent plati, bot automatski usaglašava uplatu sa faktuurom i ažurira status u ERP sistemu.</p>
+<h2>BIXIE rješenje</h2>
+<p>BIXIE nudi kompletnu automatizaciju fakturisanja sa integracijom na domaće ERP sisteme i banke.</p>`,
+  },
+  'automatizacija-izvjestavanja-menadzment': {
+    slug: 'automatizacija-izvjestavanja-menadzment',
+    title: 'Automatizacija izvještavanja za menadžment: Real-time dashboardi',
+    excerpt: 'Kako automatizirati pripremu menadžment izvještaja — automatsko prikupljanje podataka, vizualizacija i distribucija izvj',
+    category: 'Automatizacija',
+    date: '2026-06-19',
+    readTime: '3 min',
+    content: `
+<p># Automatizacija izvještavanja za menadžment: Real-time dashboardi</p>
+<p>Kako automatizirati pripremu menadžment izvještaja — automatsko prikupljanje podataka, vizualizacija i distribucija izvještaja.</p>
+<h2>Problem: Ručni izvještaji</h2>
+<p>Menadžment izvještaji su kritični za donošenje odluka, ali njihova priprema često oduzima dragocjeno vrijeme. U tipičnoj BiH firmi, priprema mjesečnog izvještaja traje 3-5 dana.</p>
+<h2>Automatska prikupljanja podataka</h2>
+<p>AI agent se povezuje sa svim izvorima — CRM, ERP, Google Analytics, bankovni sistem — i automatski prikuplja podatke potrebne za izvještaj.</p>
+<h2>Real-time dashboardi</h2>
+<p>Umjesto statičnih PDF izvještaja, menadžment dobija live dashboard sa ključnim metrikama: prodaja, troškovi, profitabilnost, zadovoljstvo kupaca.</p>
+<h2>Automatska distribucija</h2>
+<p>Izvještaji se automatski šalju putem emaila ili Slacka svakog ponedjeljka u 8:00, bez ikakve ljudske intervencije.</p>
+<h2>Prilagođeni izvještaji</h2>
+<p>Svaki član menadžmenta dobija izvještaj prilagođen svojoj ulozi — direktor prodaje vidi pipeline i forecast, finansijski direktor vidi cash flow i troškove.</p>
+<h2>Ušteda</h2>
+<p>BIXIE je jednoj firmi smanjio vrijeme pripreme mjesečnog izvještaja sa 4 dana na 15 minuta.</p>`,
+  },
+  'automatizacija-prodajnog-pipelina': {
+    slug: 'automatizacija-prodajnog-pipelina',
+    title: 'Automatizacija prodajnog pipelina: Od leada do zatvaranja',
+    excerpt: 'Kako automatizirati svaki korak prodajnog procesa — od kvalifikacije leadova do zatvaranja posla i post-prodaje.',
+    category: 'Prodaja',
+    date: '2026-07-01',
+    readTime: '3 min',
+    content: `
+<p># Automatizacija prodajnog pipelina: Od leada do zatvaranja</p>
+<p>Kako automatizirati svaki korak prodajnog procesa — od kvalifikacije leadova do zatvaranja posla i post-prodaje.</p>
+<h2>Prodajni pipeline</h2>
+<p>Prodajni pipeline je kičma svake uspješne prodajne organizacije. Međutim, ručno upravljanje pipeline-om dovodi do propuštenih prilika, neblagovremenih follow-upa i netačnih forecasta.</p>
+<h2>Automatska kvalifikacija leadova</h2>
+<p>AI agent automatski kvalificira svaki lead na osnovu BANT kriterija (Budget, Authority, Need, Timeline) i dodjeljuje prioritet.</p>
+<h2>Automatski follow-up</h2>
+<p>Nakon inicijalnog kontakta, agent planira i izvršava follow-up sekvencu — email, poziv, LinkedIn poruka — u optimalnim intervalima.</p>
+<h2>Predviđanje zatvaranja</h2>
+<p>AI agent analizira istorijske podatke i aktivnosti na pipeline-u kako bi predvidio vjerovatnoću zatvaranja svakog posla.</p>
+<h2>Automatsko ažuriranje faza</h2>
+<p>Kada lead preduzme određenu radnju (otvori ponudu, zakaže demo), agent automatski pomjera posao u sljedeću fazu.</p>
+<h2>BIXIE rješenje</h2>
+<p>BIXIE implementira automatizaciju prodajnog pipelina u Zoho CRM i Bitrix24, prilagođenu specifičnostima BiH tržišta.</p>`,
+  },
+  'bitrix24-vs-zoho-crm-poredjenje': {
+    slug: 'bitrix24-vs-zoho-crm-poredjenje',
+    title: 'Bitrix24 vs Zoho CRM: Detaljno poređenje za 2026. godinu',
+    excerpt: 'Bitrix24 i Zoho CRM — dva najpopularnija CRM sistema u BiH. Detaljno poređenje cijena, funkcionalnosti, integracija i po',
+    category: 'CRM',
+    date: '2026-06-20',
+    readTime: '3 min',
+    content: `
+<p># Bitrix24 vs Zoho CRM: Detaljno poređenje za 2026. godinu</p>
+<p>Bitrix24 i Zoho CRM — dva najpopularnija CRM sistema u BiH. Detaljno poređenje cijena, funkcionalnosti, integracija i podrške.</p>
+<h2>Uvod</h2>
+<p>Bitrix24 i Zoho CRM su dva najzastupljenija CRM sistema na tržištu Bosne i Hercegovine. Oba nude širok spektar funkcionalnosti, ali se značajno razlikuju u pristupu, cijenama i korisničkom iskustvu. U ovom članku poredimo ova dva sistema kako bismo vam pomogli da odaberete pravo rješenje za vašu firmu.</p>
+<h2>Cijene</h2>
+<p>Zoho CRM startuje od 45 KM/mj po korisniku, dok Bitrix24 nudi besplatan plan za do 12 korisnika (sa ograničenjima). Plaćeni Bitrix24 planovi počinju od 55 KM/mj.</p>
+<h2>Funkcionalnosti</h2>
+<p><strong>Zoho CRM</strong> se ističe AI asistentom Zia, naprednom automatizacijom i intuitivnim interfejsom. <strong>Bitrix24</strong> nudi ugrađene alate za komunikaciju (chat, video pozivi), upravljanje projektima i CRM u jednom paketu.</p>
+<h2>Integracije</h2>
+<p>Oba sistema podržavaju stotine integracija. Zoho ima prednost sa Zoho Marketplace-om (500+ appova), dok Bitrix24 nudi besplatan REST API.</p>
+<h2>Podrška</h2>
+<p>Bitrix24 ima jaku lokalnu podršku u BiH preko partnera. Zoho se oslanja na online podršku i partnere.</p>
+<h2>Preporuka</h2>
+<p>Ako vam treba sve-u-jednom rješenje (CRM + komunikacija + projekti) → <strong>Bitrix24</strong>. Ako tražite čist, moćan CRM sa AI funkcionalnostima → <strong>Zoho CRM</strong>.</p>`,
+  },
+  'buducnost-rada-remote-timovi-ai': {
+    slug: 'buducnost-rada-remote-timovi-ai',
+    title: 'Budućnost rada: Remote timovi i AI saradnja',
+    excerpt: 'Kako remote rad i AI agenti mijenjaju način na koji radimo — nove uloge, izazovi i prilike za BiH firme.',
+    category: 'Trendovi',
+    date: '2026-07-19',
+    readTime: '3 min',
+    content: `
+<p># Budućnost rada: Remote timovi i AI saradnja</p>
+<p>Kako remote rad i AI agenti mijenjaju način na koji radimo — nove uloge, izazovi i prilike za BiH firme.</p>
+<h2>Nova era rada</h2>
+<p>Kombinacija remote rada i AI agenata stvara potpuno novu paradigmu rada koja će definisati narednu deceniju. Firme koje se prilagode imaće prednost u privlačenju talenata i efikasnosti.</p>
+<h2>Remote rad u BiH</h2>
+<p>Remote rad je u BiH doživio eksploziju nakon pandemije. Sve više bh. firmi zapošljava radnike iz cijele zemlje, ali i iz regiona. Istovremeno, bh. radnici su sve traženiji na međunarodnom tržištu.</p>
+<h2>AI agenti kao kolege</h2>
+<p>AI agenti više nisu samo alati — oni postaju virtuelni članovi tima. Planiraju sastanke, pišu izvještaje, analiziraju podatke i komuniciraju sa klijentima.</p>
+<h2>Nove uloge</h2>
+<ul>
+<li><strong>AI Operations Manager</strong> — koordinira rad AI agenata</li>
+<li><strong>Prompt Engineer</strong> — dizajnira instrukcije za AI</li>
+<li><strong>AI Ethics Officer</strong> — osigurava etičnu upotrebu AI</li>
+<li><strong>Remote Team Facilitator</strong> — održava koheziju remote tima</li>
+</ul>
+<h2>Izazovi</h2>
+<ul>
+<li>Balans između AI automatizacije i ljudskog kontakta</li>
+<li>Privatnost i sigurnost podataka u remote okruženju</li>
+<li>Održavanje kulture firme u hibridnom okruženju</li>
+</ul>
+<h2>BIXIE savjet</h2>
+<p>BIXIE preporučuje firmama da postepeno uvode AI agente u remote timove, počevši od administrativnih zadataka.</p>`,
+  },
+  'case-study-advokatska-kancelarija-automatizacija': {
+    slug: 'case-study-advokatska-kancelarija-automatizacija',
+    title: 'Case Study: Advokatska kancelarija automatizirala obradu dokumenata',
+    excerpt: 'Kako je advokatska kancelarija iz Sarajeva automatizirala obradu ugovora i smanjila vrijeme pripreme dokumenata za 70%.',
+    category: 'Case Study',
+    date: '2026-07-12',
+    readTime: '3 min',
+    content: `
+<p># Case Study: Advokatska kancelarija automatizirala obradu dokumenata</p>
+<p>Kako je advokatska kancelarija iz Sarajeva automatizirala obradu ugovora i smanjila vrijeme pripreme dokumenata za 70%.</p>
+<h2>O klijentu</h2>
+<p>Advokatska kancelarija iz Sarajeva sa 15 advokata i 10 pripravnika. Specijalizirani za korporativno pravo, ugovore i zastupanje. Mjesečno obrađuju preko 200 ugovora i pravnih dokumenata.</p>
+<h2>Izazov</h2>
+<p>Svaki ugovor je zahtijevao ručnu izradu od strane advokata ili pripravnika. Pregled i korekcije su oduzimali dodatno vrijeme. Greške u formatiranju, reference na pogrešne zakone i propušteni rokovi bili su učestali.</p>
+<h2>Rješenje</h2>
+<ol>
+<li><strong>AI agent za izradu nacrta ugovora</strong> — na osnovu šablona i unosa, agent kreira nacrt za nekoliko sekundi</li>
+<li><strong>AI za pregled usklađenosti</strong> — provjera sa zakonima BiH i sudskom praksom</li>
+<li><strong>RPA za upravljanje rokovima</strong> — automatsko praćenje rokova i podsjetnici</li>
+</ol>
+<h2>Rezultati</h2>
+<ul>
+<li>Vrijeme izrade nacrta ugovora: sa 2 sata na 5 minuta</li>
+<li>Greške u dokumentima: smanjene za 90%</li>
+<li>Rokovi: 0 propuštenih rokova u 6 mjeseci</li>
+<li>Zadovoljstvo klijenata: povećano za 40%</li>
+</ul>
+<h2>Zašto BIXIE?</h2>
+<p>Advokatska kancelarija je odabrala BIXIE zbog poznavanja domaćeg pravnog sistema i mogućnosti prilagođenja rješenja specifičnim zahtjevima advokature.</p>`,
+  },
+  'case-study-bolnica-ai-trijaza-pacijenata': {
+    slug: 'case-study-bolnica-ai-trijaza-pacijenata',
+    title: 'Case Study: Bolnica implementirala AI za trijažu pacijenata',
+    excerpt: 'Kako je klinički centar u BiH implementirao AI sistem za trijažu pacijenata i smanjio vrijeme čekanja u hitnoj pomoći za',
+    category: 'Case Study',
+    date: '2026-07-09',
+    readTime: '3 min',
+    content: `
+<p># Case Study: Bolnica implementirala AI za trijažu pacijenata</p>
+<p>Kako je klinički centar u BiH implementirao AI sistem za trijažu pacijenata i smanjio vrijeme čekanja u hitnoj pomoći za 60%.</p>
+<h2>O klijentu</h2>
+<p>Klinički centar u BiH sa preko 500 kreveta i 30.000 hitnih prijema godišnje. Hitna služba je bila konstantno preopterećena, sa prosječnim vremenom čekanja od 4 sata.</p>
+<h2>Izazov</h2>
+<ul>
+<li>Hitna prima 80-100 pacijenata dnevno</li>
+<li>Trijaža se obavljala ručno, sa čestim greškama u prioritizaciji</li>
+<li>Pacijenti sa hitnim stanjima čekali su predugo</li>
+<li>Administrativni rad je oduzimao vrijeme medicinskom osoblju</li>
+</ul>
+<h2>Rješenje</h2>
+<ol>
+<li><strong>AI agent za trijažu</strong> — na osnovu simptoma i vitalnih znakova, agent dodjeljuje prioritet</li>
+<li><strong>RPA za administrativne procese</strong> — automatska registracija i upućivanje</li>
+<li><strong>AI za predikciju opterećenja</strong> — prognoza broja pacijenata po smjenama</li>
+</ol>
+<h2>Rezultati</h2>
+<ul>
+<li>Vrijeme čekanja u hitnoj: sa 4h na 1.5h</li>
+<li>Tačnost trijaže: povećana sa 70% na 95%</li>
+<li>Administrativno opterećenje medicinskog osoblja: smanjeno 40%</li>
+<li>Zadovoljstvo pacijenata: povećano za 55%</li>
+</ul>
+<h2>Napomena</h2>
+<p>AI sistem ne zamjenjuje ljekare, već im pomaže da brže i tačnije donose odluke.</p>`,
+  },
+  'case-study-logisticka-firma-skladiste': {
+    slug: 'case-study-logisticka-firma-skladiste',
+    title: 'Case Study: Logistička firma automatizirala upravljanje skladištem',
+    excerpt: 'Kako je logistička firma iz BiH implementirala RPA i AI za upravljanje skladištem i smanjila greške u otpremi za 95%.',
+    category: 'Case Study',
+    date: '2026-07-06',
+    readTime: '3 min',
+    content: `
+<p># Case Study: Logistička firma automatizirala upravljanje skladištem</p>
+<p>Kako je logistička firma iz BiH implementirala RPA i AI za upravljanje skladištem i smanjila greške u otpremi za 95%.</p>
+<h2>O klijentu</h2>
+<p>Logistička firma iz Tuzle sa 200 zaposlenih, koja upravlja sa 15.000 m² skladišnog prostora. Dnevno obrađuju 500+ narudžbi za klijente iz BiH, Hrvatske i Njemačke.</p>
+<h2>Izazov</h2>
+<ul>
+<li>Ručno vođenje zaliha dovodilo je do nestašica i viškova</li>
+<li>Greške u otpremi (pogrešan proizvod, adresa) — 8% narudžbi</li>
+<li>Sporo popunjavanje narudžbi — prosječno 45 minuta po narudžbi</li>
+<li>Visoki troškovi rada u skladištu</li>
+</ul>
+<h2>Rješenje</h2>
+<ol>
+<li><strong>WMS integracija sa RPA botovima</strong> — automatizacija prijema, skladištenja i otpreme</li>
+<li><strong>AI za optimizaciju putanja</strong> — najkraće rute za pickere u skladištu</li>
+<li><strong>Automatska verifikacija</strong> — skeniranje i provjera svake pošiljke</li>
+</ol>
+<h2>Rezultati</h2>
+<ul>
+<li>Greške u otpremi: sa 8% na 0.3%</li>
+<li>Vrijeme popunjavanja narudžbe: sa 45 min na 12 min</li>
+<li>Kapacitet skladišta: povećan za 30% bez dodatnog prostora</li>
+<li>Operativni troškovi: smanjeni za 35%</li>
+</ul>
+<h2>ROI</h2>
+<p>Investicija se vratila za 5 mjeseci. Firma sada planira proširenje na još 10.000 m² skladišnog prostora.</p>`,
+  },
+  'case-study-osiguravajuca-kuca-obrada-steta': {
+    slug: 'case-study-osiguravajuca-kuca-obrada-steta',
+    title: 'Case Study: Osiguravajuća kuća ubrzala obradu šteta za 80%',
+    excerpt: 'Kako je osiguravajuća kuća iz BiH implementirala AI za automatsku obradu šteta i smanjila vrijeme isplate sa 14 na 2 dan',
+    category: 'Case Study',
+    date: '2026-07-03',
+    readTime: '3 min',
+    content: `
+<p># Case Study: Osiguravajuća kuća ubrzala obradu šteta za 80%</p>
+<p>Kako je osiguravajuća kuća iz BiH implementirala AI za automatsku obradu šteta i smanjila vrijeme isplate sa 14 na 2 dana.</p>
+<h2>O klijentu</h2>
+<p>Jedna od vodećih osiguravajućih kuća u BiH sa preko 100.000 polisa. Godišnje obrađuju 15.000+ prijava šteta. Proces je bio spor, papirni i skup.</p>
+<h2>Izazov</h2>
+<ul>
+<li>Svaka prijava štete prolazila kroz 5-7 ručnih koraka</li>
+<li>Prosječno vrijeme obrade: 14 dana</li>
+<li>Visoki troškovi adminstracije (20% premije)</li>
+<li>Nezadovoljni korisnici — česte reklamacije</li>
+<li>Gubitak tržišnog udjela zbog sporog servisa</li>
+</ul>
+<h2>Rješenje</h2>
+<ol>
+<li><strong>AI agent za inicijalnu obradu</strong> — skeniranje i klasifikacija prijava šteta</li>
+<li><strong>AI za procjenu štete</strong> — analiza fotografija i dokumenata</li>
+<li><strong>RPA za isplate</strong> — automatsko generisanje i odobravanje isplata</li>
+</ol>
+<h2>Rezultati</h2>
+<ul>
+<li>Vrijeme obrade štete: sa 14 dana na 2 dana</li>
+<li>Automatizovano: 65% šteta bez ljudske intervencije</li>
+<li>Troškovi administracije: smanjeni za 45%</li>
+<li>NPS (zadovoljstvo): sa 35 na 72</li>
+</ul>
+<h2>BIXIE doprinos</h2>
+<p>BIXIE je implementirao rješenje u roku 8 sedmica, uz integraciju sa postojećim IT sistemima osiguravajuće kuće.</p>`,
+  },
+  'case-study-proizvodna-firma-smanjila-troskove': {
+    slug: 'case-study-proizvodna-firma-smanjila-troskove',
+    title: 'Case Study: Proizvodna firma iz BiH smanjila troškove za 50%',
+    excerpt: 'Kako je proizvodna firma iz BiH implementirala AI automatizaciju i smanjila operativne troškove za 50% uz pomoć BIXIE-a.',
+    category: 'Case Study',
+    date: '2026-07-15',
+    readTime: '3 min',
+    content: `
+<p># Case Study: Proizvodna firma iz BiH smanjila troškove za 50%</p>
+<p>Kako je proizvodna firma iz BiH implementirala AI automatizaciju i smanjila operativne troškove za 50% uz pomoć BIXIE-a.</p>
+<h2>O klijentu</h2>
+<p>Proizvodna firma iz srednje Bosne sa 120 zaposlenih, specijalizirana za proizvodnju namještaja. Suočavali su se sa rastućim troškovima proizvodnje, gubicima u materijalu i neefikasnom logistikom.</p>
+<h2>Izazov</h2>
+<ul>
+<li>Visok procenat otpada (15%) u proizvodnji</li>
+<li>Ručno vođenje zaliha sa čestim greškama</li>
+<li>Kašnjenja u isporuci (30% narudžbi kasni)</li>
+<li>Nemogućnost praćenja profitabilnosti po proizvodu</li>
+</ul>
+<h2>Rješenje</h2>
+<p>BIXIE je implementirao:</p>
+<ol>
+<li><strong>AI agent za optimizaciju proizvodnje</strong> — analiza parametara i smanjenje otpada</li>
+<li><strong>RPA bot za upravljanje zalihama</strong> — automatsko praćenje i naručivanje</li>
+<li><strong>AI za predikciju potražnje</strong> — optimizacija planiranja proizvodnje</li>
+</ol>
+<h2>Rezultati</h2>
+<p>| Metrika | Prije | Poslije |</p>
+<p>|</p>`,
+  },
+  'crm-automatizacija-ustedite-20-sati': {
+    slug: 'crm-automatizacija-ustedite-20-sati',
+    title: 'CRM automatizacija: Kako uštedjeti 20 sati rada sedmično',
+    excerpt: 'Automatizacija CRM procesa koja štedi vrijeme vašem timu. Automatski follow-up, dodjela leadova, notifikacije i izvješta',
+    category: 'CRM',
+    date: '2026-06-10',
+    readTime: '3 min',
+    content: `
+<p># CRM automatizacija: Kako uštedjeti 20 sati rada sedmično</p>
+<p>Automatizacija CRM procesa koja štedi vrijeme vašem timu. Automatski follow-up, dodjela leadova, notifikacije i izvještaji.</p>
+<h2>Ručni rad koči vašu prodaju</h2>
+<p>Prodajni timovi u BiH provode u prosjeku 65% vremena na administrativne zadatke — unos podataka, slanje emailova, zakazivanje sastanaka. Samo 35% vremena ostaje za stvarnu prodaju. CRM automatizacija može preokrenuti ovaj omjer.</p>
+<h2>Šta možete automatizirati?</h2>
+<h3>Automatska dodjela leadova</h3>
+<p>Kada novi lead ude u sistem, CRM automatski dodjeljuje najboljem prodavaču na osnovu opterećenja, teritorije ili iskustva.</p>
+<h3>Follow-up sekvence</h3>
+<p>Automatizirani email follow-up nakon sastanka, ponude ili demonstracije — bez ručnog slanja.</p>
+<h3>Podsjetnici i zadaci</h3>
+<p>CRM automatski kreira zadatke: "Nazovi za 3 dana", "Pošalji ponudu", "Zakaži sastanak".</p>
+<h3>Izvještaji i dashboardi</h3>
+<p>Sedmični izvještaji o prodaji, pipeline analiza, forecast — generišu se automatski.</p>
+<h2>Rezultati</h2>
+<p>Firme koje implementiraju CRM automatizaciju bilježe: 30% više sklopljenih poslova, 50% manje vremena na unos podataka i 40% brži odgovor na upite.</p>`,
+  },
+  'digitalizacija-javne-uprave-bih': {
+    slug: 'digitalizacija-javne-uprave-bih',
+    title: 'Digitalizacija javne uprave u BiH: Izazovi i napredak',
+    excerpt: 'Analiza digitalizacije javne uprave u Bosni i Hercegovini — trenutno stanje, izazovi i preporuke za ubrzanje procesa.',
+    category: 'AI Tehnologija',
+    date: '2026-07-24',
+    readTime: '3 min',
+    content: `
+<p># Digitalizacija javne uprave u BiH: Izazovi i napredak</p>
+<p>Analiza digitalizacije javne uprave u Bosni i Hercegovini — trenutno stanje, izazovi i preporuke za ubrzanje procesa.</p>
+<h2>Javna uprava u BiH</h2>
+<p>Digitalizacija javne uprave u Bosni i Hercegovini je jedan od najvažnijih, ali i najizazovnijih projekata. Složena administrativna struktura (državni, entitetski, kantonalni i lokalni nivo) čini je jedinstveno kompleksnom.</p>
+<h2>Trenutno stanje</h2>
+<p>Dok su pojedini segmenti (porezi, carine) digitalizovani na visokom nivou, većina administrativnih procesa se i dalje obavlja papirno. Građani i firme troše milione sati godišnje na odlaske u institucije.</p>
+<h2>Izazovi</h2>
+<ul>
+<li><strong>Složena struktura</strong> — 14 vlada i stotine institucija</li>
+<li><strong>Naslijeđeni sistemi</strong> — stari softveri koji se ne integrišu lako</li>
+<li><strong>Nedostatak standarda</strong> — svaka institucija vodi podatke na svoj način</li>
+<li><strong>Budžetska ograničenja</strong> — digitalizacija zahtijeva investicije</li>
+<li><strong>Otpor promjeni</strong> — kulturološki i politički izazovi</li>
+</ul>
+<h2>Mogućnosti</h2>
+<ul>
+<li><strong>e-Zakazivanje</strong> u upravnim službama</li>
+<li><strong>Digitalni potpis i pečat</strong> za sve administrativne procedure</li>
+<li><strong>e-Predmeti</strong> — centralna elektronska arhiva predmeta</li>
+<li><strong>AI servisi za građane</strong> — chatbotovi koji odgovaraju na pitanja</li>
+</ul>
+<h2>BIXIE preporuka</h2>
+<p>BIXIE preporučuje postepenu digitalizaciju, sa fokusom na procese koji donose najveće uštede vremena građanima i privredi.</p>`,
+  },
+  'digitalna-transformacija-bih-gdje-smo-sada': {
+    slug: 'digitalna-transformacija-bih-gdje-smo-sada',
+    title: 'Digitalna transformacija BiH firmi: Gdje smo sada i kuda idemo',
+    excerpt: 'Analiza stanja digitalne transformacije u Bosni i Hercegovini — izazovi, napredak i prilike za bh. firme.',
+    category: 'Trendovi',
+    date: '2026-07-22',
+    readTime: '3 min',
+    content: `
+<p># Digitalna transformacija BiH firmi: Gdje smo sada i kuda idemo</p>
+<p>Analiza stanja digitalne transformacije u Bosni i Hercegovini — izazovi, napredak i prilike za bh. firme.</p>
+<h2>Stanje digitalne transformacije u BiH</h2>
+<p>Bosna i Hercegovina se, kao i većina zemalja regiona, nalazi u ranoj fazi digitalne transformacije. Dok neki sektori (bankarstvo, telekomunikacije) napreduju, drugi (javna uprava, proizvodnja) zaostaju.</p>
+<h2>Izazovi</h2>
+<ul>
+<li><strong>Nedostatak svijesti</strong> — mnoge firme još uvijek ne razumiju šta digitalna transformacija donosi</li>
+<li><strong>Nedostatak kadra</strong> — stručnjaci za digitalnu transformaciju su rijetki i skupi</li>
+<li><strong>Infrastruktura</strong> — internet pokrivenost i brzina variraju po regijama</li>
+<li><strong>Regulativa</strong> — složeni zakonski okviri na entitetskim nivoima</li>
+<li><strong>Investicije</strong> — firme su oprezne sa ulaganjima u nove tehnologije</li>
+</ul>
+<h2>Napredak</h2>
+<ul>
+<li>Bankarski sektor vodi digitalnu transformaciju u BiH</li>
+<li>Sve više firmi koristi cloud rješenja (Google Workspace, Microsoft 365)</li>
+<li>E-trgovina raste 15-20% godišnje</li>
+<li>Prvi AI projekti u proizvodnji i zdravstvu</li>
+</ul>
+<h2>Prilike</h2>
+<ul>
+<li>Veliki prostor za napredak u odnosu na EU</li>
+<li>Rastuća potražnja za digitalnim uslugama</li>
+<li>Povoljniji troškovi implementacije u odnosu na Zapad</li>
+</ul>
+<h2>Uloga BIXIE-a</h2>
+<p>BIXIE je jedan od lidera digitalne transformacije u BiH, sa fokusom na praktična, mjerljiva rješenja za domaće firme.</p>`,
+  },
+  'email-marketing-automatizacija-ai': {
+    slug: 'email-marketing-automatizacija-ai',
+    title: 'Email marketing automatizacija pomoću AI: Vodič za 2026',
+    excerpt: 'Kako automatizirati email marketing kampanje uz pomoć AI agenata — personalizacija, segmentacija, A/B testiranje i anali',
+    category: 'Marketing',
+    date: '2026-07-10',
+    readTime: '3 min',
+    content: `
+<p># Email marketing automatizacija pomoću AI: Vodič za 2026</p>
+<p>Kako automatizirati email marketing kampanje uz pomoć AI agenata — personalizacija, segmentacija, A/B testiranje i analiza.</p>
+<h2>Email marketing se mijenja</h2>
+<p>Email marketing ostaje jedan od najefikasnijih kanala komunikacije sa klijentima, sa prosječnim ROI od 42 KM na svaku uloženu KM. Međutim, tradicionalni email marketing više nije dovoljan — kupci očekuju personalizirane, relevantne poruke u pravo vrijeme.</p>
+<h2>AI personalizacija</h2>
+<p>AI agent analizira ponašanje svakog pretplatnika — koje emailove otvara, na šta klikće, šta kupuje — i prilagođava sadržaj poruke svakom pojedinačno.</p>
+<h2>Pametna segmentacija</h2>
+<p>Umjesto ručne segmentacije (po lokaciji, polu, godinama), AI prepoznaje skrivene obrasce i grupiše pretplatnike po stvarnim interesovanjima.</p>
+<h2>A/B testiranje</h2>
+<p>AI agent automatski testira naslove, sadržaj, vrijeme slanja i pozive na akciju, te optimizira kampanju u realnom vremenu.</p>
+<h2>Automatske sekvence</h2>
+<p>Dobrodošlica za nove pretplatnike, kampanje za napuštene korpe, re-engagement za neaktivne — sve automatski.</p>
+<h2>BIXIE preporuka</h2>
+<p>Kombinacija Zoho CRM + AI agenta za email marketing daje najbolje rezultate za BiH firme.</p>`,
+  },
+  'hubspot-crm-implementacija-bih': {
+    slug: 'hubspot-crm-implementacija-bih',
+    title: 'HubSpot CRM: Vodič za implementaciju u BiH firmama',
+    excerpt: 'HubSpot CRM implementacija za bosanskohercegovačke firme. Cijene, prednosti, integracije i lokalizacija za BiH tržište.',
+    category: 'CRM',
+    date: '2026-06-15',
+    readTime: '3 min',
+    content: `
+<p># HubSpot CRM: Vodič za implementaciju u BiH firmama</p>
+<p>HubSpot CRM implementacija za bosanskohercegovačke firme. Cijene, prednosti, integracije i lokalizacija za BiH tržište.</p>
+<h2>HubSpot na BiH tržištu</h2>
+<p>HubSpot je globalno jedan od najpopularnijih CRM sistema, ali u BiH još uvijek nedovoljno zastupljen. Razlog je najčešće nedostatak lokalne podrške i prilagođenosti našem tržištu. Ipak, HubSpot nudi moćne alate za marketing, prodaju i customer support u jednom integriranom sistemu.</p>
+<h2>HubSpot Planovi i Cijene za BiH</h2>
+<p>HubSpot nudi besplatni plan (Free CRM) sa osnovnim funkcionalnostima. Plaćeni planovi: Starter (od 180 KM/mj), Professional (od 900 KM/mj), Enterprise (od 3600 KM/mj). Cijene su u dolarima, ali BIXIE može pomoći sa lokalnim plaćanjem i fakturisanjem u KM.</p>
+<h2>Zašto odabrati HubSpot?</h2>
+<ul>
+<li><strong>Intuitivan interfejs</strong> — najlakši CRM za učenje na tržištu</li>
+<li><strong>Content Hub</strong> — ugrađeni alati za content marketing</li>
+<li><strong>AI alati</strong> — Breeze AI za pametniji rad</li>
+<li><strong>Sales Hub</strong> — napredni alati za prodaju</li>
+<li><strong>Service Hub</strong> — customer support na jednom mjestu</li>
+</ul>
+<h2>Implementacija</h2>
+<p>BIXIE nudi kompletnu HubSpot implementaciju prilagođenu BiH firmama — od postavljanja, integracije sa lokalnim alatima (porezi, fiskalne kase) do obuke tima.</p>`,
+  },
+  'intelligent-document-processing-automatizacija-obrade-dokumenata': {
+    slug: 'intelligent-document-processing-automatizacija-obrade-dokumenata',
+    title: 'Intelligent Document Processing: Automatizacija obrade dokumenata',
+    excerpt: 'IDP (Intelligent Document Processing) — kako AI prepoznaje, obrađuje i klasificira dokumente. Primjena u ugovorima, fakt',
+    category: 'Automatizacija',
+    date: '2026-06-16',
+    readTime: '3 min',
+    content: `
+<p># Intelligent Document Processing: Automatizacija obrade dokumenata</p>
+<p>IDP (Intelligent Document Processing) — kako AI prepoznaje, obrađuje i klasificira dokumente. Primjena u ugovorima, fakturama i obrascima.</p>
+<h2>Šta je IDP?</h2>
+<p>Intelligent Document Processing (IDP) je tehnologija koja koristi AI za automatsko prepoznavanje, obradu i klasifikaciju dokumenata. Za razliku od klasičnog OCR-a, IDP razumije kontekst i strukturu dokumenta.</p>
+<h2>Kako IDP radi?</h2>
+<ol>
+<li><strong>Skeniranje</strong> — dokument se digitalizira (PDF, slika, email)</li>
+<li><strong>Prepoznavanje</strong> — AI prepoznaje tip dokumenta (faktura, ugovor, obrazac)</li>
+<li><strong>Ekstrakcija</strong> — izvlačenje ključnih podataka (iznos, datum, strane)</li>
+<li><strong>Validacija</strong> — provjera ispravnosti i konzistentnosti podataka</li>
+<li><strong>Integracija</strong> — unos podataka u ERP/CRM sistem</li>
+</ol>
+<h2>Primjena u BiH</h2>
+<ul>
+<li><strong>Fakture</strong> — automatsko knjiženje ulaznih faktura</li>
+<li><strong>Ugovori</strong> — ekstrakcija ključnih klauzula i rokova</li>
+<li><strong>Obrasci</strong> — obrada zahtjeva, prijava, molbi</li>
+<li><strong>Identifikacioni dokumenti</strong> — verifikacija ličnih dokumenata</li>
+</ul>
+<h2>BIXIE IDP rješenje</h2>
+<p>BIXIE nudi IDP rješenje sa podrškom za bosanski/hrvatski/srpski jezik i prepoznavanje domaćih formata dokumenata.</p>`,
+  },
+  'kako-ai-mijenja-obrazovanje-u-bih': {
+    slug: 'kako-ai-mijenja-obrazovanje-u-bih',
+    title: 'Kako AI mijenja obrazovanje u Bosni i Hercegovini',
+    excerpt: 'Uticaj AI na obrazovni sistem BiH — personalizirano učenje, automatizacija administracije i priprema studenata za budućn',
+    category: 'Trendovi',
+    date: '2026-07-16',
+    readTime: '3 min',
+    content: `
+<p># Kako AI mijenja obrazovanje u Bosni i Hercegovini</p>
+<p>Uticaj AI na obrazovni sistem BiH — personalizirano učenje, automatizacija administracije i priprema studenata za budućnost.</p>
+<h2>AI u obrazovanju</h2>
+<p>Obrazovni sistem u Bosni i Hercegovini prolazi kroz tišu revoluciju. Iako škole i univerziteti tradicionalno sporo usvajaju nove tehnologije, AI prodire kroz sve pore obrazovanja.</p>
+<h2>Personalizirano učenje</h2>
+<p>AI agenti mogu prilagoditi nastavni materijal svakom učeniku pojedinačno — tempom koji mu odgovara, na način koji najbolje razumije. Ovo je posebno vrijedno u školama sa mješovitim nivoima predznanja.</p>
+<h2>Automatizacija administracije</h2>
+<p>Škole i fakulteti u BiH troše ogromne količine vremena na administrativne poslove — prijave ispita, vođenje evidencija, izdavanje uvjerenja. AI i RPA mogu automatizirati većinu ovih procesa.</p>
+<h2>AI u nastavi</h2>
+<ul>
+<li><strong>AI asistent za nastavnike</strong> — pomoć u pripremi nastavnih materijala</li>
+<li><strong>AI tutor za učenike</strong> — dodatna objašnjenja i vježbe</li>
+<li><strong>Automatsko ocjenjivanje</strong> — brže i objektivnije</li>
+</ul>
+<h2>Priprema za budućnost</h2>
+<p>Škole moraju pripremiti učenike za svijet u kome je AI svakodnevnica. Digitalna pismenost i AI pismenost treba da postanu obavezni predmeti.</p>
+<h2>BIXIE doprinos</h2>
+<p>BIXIE je pomogao nekoliko univerziteta u BiH u implementaciji AI alata za administraciju i nastavu.</p>`,
+  },
+  'kako-mjeriti-roi-digitalne-transformacije': {
+    slug: 'kako-mjeriti-roi-digitalne-transformacije',
+    title: 'Kako mjeriti ROI digitalne transformacije: Metrike i KPI',
+    excerpt: 'Kako izmjeriti povrat investicije u digitalnu transformaciju — ključne metrike, KPI i primjeri za BiH firme.',
+    category: 'Vodiči',
+    date: '2026-07-08',
+    readTime: '3 min',
+    content: `
+<p># Kako mjeriti ROI digitalne transformacije: Metrike i KPI</p>
+<p>Kako izmjeriti povrat investicije u digitalnu transformaciju — ključne metrike, KPI i primjeri za BiH firme.</p>
+<h2>ROI digitalne transformacije</h2>
+<p>Jedno od najčešćih pitanja koje čujemo u BIXIE-u je: "Koliko ćemo zaraditi od digitalne transformacije?" Mjerenje ROI-ja digitalne transformacije je izazovno jer koristi nisu uvijek direktno finansijske.</p>
+<h2>Direktne uštede</h2>
+<p>Ovo je najlakše izmjeriti:</p>
+<ul>
+<li><strong>Smanjenje troškova rada</strong> — koliko sati je eliminirano automatizacijom?</li>
+<li><strong>Smanjenje grešaka</strong> — koliko je smanjena stopa grešaka?</li>
+<li><strong>Smanjenje materijalnih troškova</strong> — papir, štampa, skladištenje?</li>
+</ul>
+<h2>Povećanje prihoda</h2>
+<ul>
+<li><strong>Brži odgovor kupcima</strong> → više konverzija</li>
+<li><strong>Bolja analiza podataka</strong> → bolje odluke → više prihoda</li>
+<li><strong>Personalizacija</strong> → veća prosječna vrijednost narudžbe</li>
+</ul>
+<h2>Kvalitativne koristi</h2>
+<ul>
+<li><strong>Zadovoljstvo zaposlenih</strong> — manje dosadnih zadataka</li>
+<li><strong>Zadovoljstvo kupaca</strong> — brži i bolji servis</li>
+<li><strong>Konkurentska prednost</strong> — brže prilagođavanje tržištu</li>
+</ul>
+<h2>Primjer izračuna</h2>
+<p>Firma uloži 20.000 KM u automatizaciju. Uštede: 3.000 KM/mjesečno na radnoj snazi + 1.000 KM/mjesečno na greškama. ROI = (4.000 × 12) / 20.000 = 240% godišnje.</p>`,
+  },
+  'kako-napisati-ai-policy-firma': {
+    slug: 'kako-napisati-ai-policy-firma',
+    title: 'Kako napisati AI policy za vašu firmu: Korak po korak vodič',
+    excerpt: 'Vodič za izradu interne politike korištenja AI alata u firmi — sigurnost, etika, privatnost i produktivnost.',
+    category: 'Vodiči',
+    date: '2026-07-20',
+    readTime: '3 min',
+    content: `
+<p># Kako napisati AI policy za vašu firmu: Korak po korak vodič</p>
+<p>Vodič za izradu interne politike korištenja AI alata u firmi — sigurnost, etika, privatnost i produktivnost.</p>
+<h2>Zašto vam treba AI policy?</h2>
+<p>Sve više zaposlenih u BiH firmama koristi AI alate — ChatGPT, Claude, Copilot, Midjourney — ali bez jasnih pravila, to može dovesti do sigurnosnih rizika, curenja podataka i etičkih problema.</p>
+<h2>Šta treba da sadrži AI policy?</h2>
+<h3>1. Dozvoljeni alati</h3>
+<p>Lista odobrenih AI alata koje zaposleni smiju koristiti za posao. Bez ovoga, zaposleni koriste šta god nađu, često besplatne verzije koje ne štite podatke firme.</p>
+<h3>2. Zabranjeni podaci</h3>
+<p>Jasna pravila o tome koji se podaci ne smiju unositi u AI alate — povjerljive informacije, lični podaci klijenata, poslovne tajne.</p>
+<h3>3. Obavezna provjera</h3>
+<p>AI generisan sadržaj (tekst, kod, slike) mora se provjeriti prije upotrebe. AI nije savršen i može generisati netačne informacije.</p>
+<h3>4. Transparentnost</h3>
+<p>Kada se AI koristi za komunikaciju sa klijentima (chatbot, email), to mora biti označeno.</p>
+<h3>5. Obuka</h3>
+<p>Svi zaposleni treba da prođu osnovnu obuku o bezbjednom korištenju AI alata.</p>
+<h2>BIXIE pomoć</h2>
+<p>BIXIE pomaže firmama u BiH da izrade AI policy prilagođen domaćim zakonima i praksi. Kontaktirajte nas za predložak.</p>`,
+  },
+  'kako-odabrati-ai-platformu-za-biznis': {
+    slug: 'kako-odabrati-ai-platformu-za-biznis',
+    title: 'Kako odabrati AI platformu za vaš biznis: Poređenje i vodič',
+    excerpt: 'Poređenje vodećih AI platformi — OpenAI, Anthropic, Google, Meta — i vodič za odabir prave platforme za BiH firme.',
+    category: 'Vodiči',
+    date: '2026-07-31',
+    readTime: '3 min',
+    content: `
+<p># Kako odabrati AI platformu za vaš biznis: Poređenje i vodič</p>
+<p>Poređenje vodećih AI platformi — OpenAI, Anthropic, Google, Meta — i vodič za odabir prave platforme za BiH firme.</p>
+<h2>Pregled AI platformi</h2>
+<p>Jedno od najčešćih pitanja koje čujemo u BIXIE-u je: "Koji AI da koristim?" Odgovor zavisi od vaših potreba, budžeta i tehničkih zahtjeva. Evo pregleda vodećih platformi.</p>
+<h2>OpenAI (ChatGPT, GPT-4o, o3)</h2>
+<p><strong>Cijena:</strong> ChatGPT Team 70 KM/mj, API po upotrebi</p>
+<p><strong>Najbolje za:</strong> Opštu upotrebu, content creation, programiranje, analizu podataka</p>
+<p><strong>Prednosti:</strong> Najpoznatiji, najveći ekosistem, odličan za širok spektar zadataka</p>
+<p><strong>Nedostaci:</strong> Skuplji za veći obim, ograničenja u privatnosti podataka</p>
+<p><strong>Dostupnost u BiH:</strong> Dostupan, plaćanje putem BIXIE-a</p>
+<h2>Anthropic (Claude Sonnet, Opus)</h2>
+<p><strong>Cijena:</strong> Claude Pro 70 KM/mj, Team 80 KM/mj po korisniku</p>
+<p><strong>Najbolje za:</strong> Analizu dokumenata, pisanje, kodiranje, customer support</p>
+<p><strong>Prednosti:</strong> Najbolji za duži kontekst (200K tokena), sigurniji, odličan za analizu</p>
+<p><strong>Nedostaci:</strong> Manje integracija od OpenAI</p>
+<h2>Google (Gemini 2.5 Pro)</h2>
+<p><strong>Cijena:</strong> Gemini Business 70 KM/mj (uključen u Google Workspace)</p>
+<p><strong>Najbolje za:</strong> Integraciju sa Google alatima, analizu podataka, multimodalne zadatke</p>
+<p><strong>Prednosti:</strong> Ugrađen u Gmail, Docs, Sheets; najbolja integracija sa Google ekosistemom</p>
+<p><strong>Nedostaci:</strong> Manje popularan za programiranje</p>
+<h2>Meta (Llama 4)</h2>
+<p><strong>Cijena:</strong> Besplatan (open source)</p>
+<p><strong>Najbolje za:</strong> Custom rješenja, lokalni hosting, offline upotrebu</p>
+<p><strong>Prednosti:</strong> Besplatan, može se hostirati lokalno, potpuna kontrola podataka</p>
+<p><strong>Nedostaci:</strong> Zahtijeva tehničko znanje za postavljanje i održavanje</p>
+<h2>Kako odabrati?</h2>
+<p>| Ako trebate | Odaberite |</p>
+<p>|</p>`,
+  },
+  'kako-pripremiti-firmu-digitalna-transformacija': {
+    slug: 'kako-pripremiti-firmu-digitalna-transformacija',
+    title: 'Kako pripremiti firmu za digitalnu transformaciju',
+    excerpt: 'Praktični vodič za pripremu firme za digitalnu transformaciju — liderstvo, kultura, procesi i tehnologija.',
+    category: 'Vodiči',
+    date: '2026-07-14',
+    readTime: '3 min',
+    content: `
+<p># Kako pripremiti firmu za digitalnu transformaciju</p>
+<p>Praktični vodič za pripremu firme za digitalnu transformaciju — liderstvo, kultura, procesi i tehnologija.</p>
+<h2>Digitalna transformacija nije samo tehnologija</h2>
+<p>Digitalna transformacija je često pogrešno shvaćena kao instaliranje novog softvera. U stvarnosti, to je promjena načina razmišljanja, kulture i procesa u firmi. Tehnologija je samo alat.</p>
+<h2>1. Liderstvo</h2>
+<p>Digitalna transformacija počinje od top menadžmenta. Ako direktor ne vjeruje u promjenu, ni tim neće. Potreban je visionar koji razumije zašto se transformacija radi.</p>
+<h2>2. Kultura</h2>
+<p>Firma mora razviti kulturu eksperimentisanja i kontinuiranog učenja. Greške su dozvoljene — bitno je iz njih učiti.</p>
+<h2>3. Procesi</h2>
+<p>Prije automatizacije lošeg procesa, optimizujte ga. Automatizacija lošeg procesa samo ubrzava stvaranje loših rezultata.</p>
+<h2>4. Tehnologija</h2>
+<p>Odaberite tehnologiju koja odgovara vašim potrebama, ne ono što je popularno. BIXIE preporučuje postepenu implementaciju — krenite sa jednim odjelom, pa širite.</p>
+<h2>5. Ljudi</h2>
+<p>Najvažniji faktor. Obuka, podrška i motivacija zaposlenih su ključni za uspjeh digitalne transformacije.</p>
+<h2>BIXIE kao partner</h2>
+<p>BIXIE vodi firme kroz proces digitalne transformacije korak po korak, sa fokusom na mjerljive rezultate.</p>`,
+  },
+  'linkedin-outreach-automatizacija': {
+    slug: 'linkedin-outreach-automatizacija',
+    title: 'LinkedIn outreach automatizacija: Više sastanaka, manje truda',
+    excerpt: 'Kako automatizirati LinkedIn outreach za B2B prodaju — pronalaženje idealnih klijenata, personalizovane poruke i praćenj',
+    category: 'Prodaja',
+    date: '2026-06-25',
+    readTime: '3 min',
+    content: `
+<p># LinkedIn outreach automatizacija: Više sastanaka, manje truda</p>
+<p>Kako automatizirati LinkedIn outreach za B2B prodaju — pronalaženje idealnih klijenata, personalizovane poruke i praćenje rezultata.</p>
+<h2>LinkedIn za B2B</h2>
+<p>LinkedIn je najmoćniji alat za B2B prodaju u 2026. Sa preko 1 milijardu korisnika, nudi neograničene mogućnosti za pronalaženje i angažovanje potencijalnih klijenata.</p>
+<h2>Automatsko pronalaženje leadova</h2>
+<p>AI agent pretražuje LinkedIn na osnovu vašeg idealnog profila klijenta — industrija, pozicija, lokacija, veličina firme — i kreira listu potencijalnih klijenata.</p>
+<h2>Personalizovane poruke</h2>
+<p>Umjesto generičkih šablona, AI agent kreira personalizovane poruke na osnovu profila, objava i aktivnosti svakog potencijalnog klijenta.</p>
+<h2>Višestepene kampanje</h2>
+<p>Prva poruka → povezivanje → zahvalnica → dijeljenje relevantnog sadržaja → poziv na sastanak. Sve automatizovano.</p>
+<h2>Praćenje i optimizacija</h2>
+<p>Agent prati koje poruke i sekvence daju najbolje rezultate i kontinuirano optimizira kampanju.</p>`,
+  },
+  'migracija-bitrix24-zoho-crm': {
+    slug: 'migracija-bitrix24-zoho-crm',
+    title: 'Kako migrirati sa Bitrix24 na Zoho CRM: Kompletan vodič',
+    excerpt: 'Korak po korak vodič za migraciju podataka sa Bitrix24 na Zoho CRM. Kontakti, poslovi, fakture i istorija komunikacije.',
+    category: 'CRM',
+    date: '2026-06-18',
+    readTime: '3 min',
+    content: `
+<p># Kako migrirati sa Bitrix24 na Zoho CRM: Kompletan vodič</p>
+<p>Korak po korak vodič za migraciju podataka sa Bitrix24 na Zoho CRM. Kontakti, poslovi, fakture i istorija komunikacije.</p>
+<h2>Zašto migrirati?</h2>
+<p>Sve više firmi u BiH prelazi sa Bitrix24 na Zoho CRM zbog bolje AI integracije, jednostavnijeg interfejsa i nižih troškova za veći broj korisnika. Bilo da imate 50 ili 500 korisnika, Zoho nudi fleksibilnije cjenovne modele.</p>
+<h2>Priprema za migraciju</h2>
+<p>Prije početka migracije, napravite inventuru podataka: kontakti (10.000+), poslovi, fakture, email komunikacija, prilagođena polja i automatizacije. Identifikujte šta je bitno, a šta se može arhivirati.</p>
+<h2>Proces migracije</h2>
+<ol>
+<li><strong>Eksport podataka iz Bitrix24</strong> — CSV eksport kontakata, kompanija i poslova</li>
+<li><strong>Mapiranje polja</strong> — Bitrix24 polja → Zoho CRM polja</li>
+<li><strong>Import u Zoho CRM</strong> — korištenjem Zoho DataPrep alata</li>
+<li><strong>Email integracija</strong> — povezivanje mail naloga sa Zoho-om</li>
+<li><strong>Testiranje</strong> — provjera da li su svi podaci preneseni tačno</li>
+</ol>
+<h2>Izazovi</h2>
+<p>Bitrix24 koristi specifična prilagođena polja koja nemaju direktan ekvivalent u Zoho-u. Takođe, istorija komunikacije se ne eksportuje lako. BIXIE nudi profesionalnu uslugu migracije sa garancijom integriteta podataka.</p>`,
+  },
+  'najbolji-crm-nekretnine-bih': {
+    slug: 'najbolji-crm-nekretnine-bih',
+    title: 'Najbolji CRM za nekretnine u Bosni i Hercegovini',
+    excerpt: 'Pregled najboljih CRM sistema za agencije za nekretnine u BiH. Upravljanje nekretninama, klijentima i prodajnim procesom',
+    category: 'CRM',
+    date: '2026-06-07',
+    readTime: '3 min',
+    content: `
+<p># Najbolji CRM za nekretnine u Bosni i Hercegovini</p>
+<p>Pregled najboljih CRM sistema za agencije za nekretnine u BiH. Upravljanje nekretninama, klijentima i prodajnim procesom.</p>
+<h2>Specifičnosti CRM-a za nekretnine</h2>
+<p>Agencije za nekretnine u BiH imaju specifične potrebe: upravljanje listinzima, automatsko objavljivanje na oglasnicima, praćenje pregleda nekretnina i komunikacija sa klijentima. Običan CRM često ne pokriva sve ove potrebe.</p>
+<h2>Najbolji CRM za nekretnine u BiH</h2>
+<h3>1. Zoho CRM + Zoho Creator</h3>
+<p>Zoho CRM sa prilagođenom aplikacijom za nekretnine (kreiranom u Zoho Creator-u) nudi najfleksibilnije rješenje — upravljanje nekretninama, automatsko objavljivanje na OLX i Pik.ba, praćenje interakcija.</p>
+<h3>2. Bitrix24</h3>
+<p>Bitrix24 CRM sa ugrađenim upravljanjem projektima i komunikacijom — idealan za manje agencije koje žele sve na jednom mjestu.</p>
+<h3>3. Salesforce Real Estate Cloud</h3>
+<p>Za velike agencije — napredne funkcionalnosti za upravljanje nekretninama i klijentima.</p>
+<h2>BIXIE rješenje</h2>
+<p>BIXIE nudi prilagođeni CRM za agencije za nekretnine, sa integracijom na domaće oglasnike (OLX, Pik.ba, Nekretnine.ba), automatskim generisanjem ugovora i A/B testiranjem cijena najma.</p>`,
+  },
+  'najbolji-crm-ugostiteljstvo-bih': {
+    slug: 'najbolji-crm-ugostiteljstvo-bih',
+    title: 'Najbolji CRM za ugostiteljstvo u Bosni i Hercegovini',
+    excerpt: 'CRM rješenja za hotele, restorane i kafiće u BiH. Upravljanje rezervacijama, gostima i marketinškim kampanjama.',
+    category: 'CRM',
+    date: '2026-06-05',
+    readTime: '3 min',
+    content: `
+<p># Najbolji CRM za ugostiteljstvo u Bosni i Hercegovini</p>
+<p>CRM rješenja za hotele, restorane i kafiće u BiH. Upravljanje rezervacijama, gostima i marketinškim kampanjama.</p>
+<h2>Ugostiteljstvo i CRM</h2>
+<p>Iako se CRM tradicionalno veže za prodaju, ugostiteljski objekti u BiH sve više prepoznaju vrijednost sistema za upravljanje odnosima sa gostima. Od hotela u Sarajevu do restorana u Mostaru — CRM donosi konkurentsku prednost.</p>
+<h2>Šta CRM može za ugostiteljstvo?</h2>
+<ul>
+<li><strong>Upravljanje rezervacijama</strong> — praćenje istorije rezervacija i preferencija gostiju</li>
+<li><strong>Email marketing</strong> — automatske kampanje za rođendane, praznike, sezonske ponude</li>
+<li><strong>Loyalty program</strong> — praćenje bodova, nagrada i posjeta</li>
+<li><strong>Povratne informacije</strong> — automatsko prikupljanje recenzija i anketa zadovoljstva</li>
+</ul>
+<h2>Preporučena rješenja</h2>
+<p>Za hotele → <strong>Zoho CRM</strong> sa integracijom na PMS sisteme. Za restorane → <strong>HubSpot</strong> sa prilagođenim pipeline-om za rezervacije. Za manje objekte → <strong>Pipedrive</strong> kao jednostavan sistem za praćenje gostiju.</p>`,
+  },
+  'open-source-crm-suitecrm-espo-bih': {
+    slug: 'open-source-crm-suitecrm-espo-bih',
+    title: 'Open source CRM rješenja: SuiteCRM i EspoCRM u BiH',
+    excerpt: 'SuiteCRM i EspoCRM — besplatni open source sistemi za BiH firme. Poređenje, hosting i troškovi implementacije.',
+    category: 'CRM',
+    date: '2026-06-02',
+    readTime: '3 min',
+    content: `
+<p># Open source CRM rješenja: SuiteCRM i EspoCRM u BiH</p>
+<p>SuiteCRM i EspoCRM — besplatni open source sistemi za BiH firme. Poređenje, hosting i troškovi implementacije.</p>
+<h2>Zašto open source CRM?</h2>
+<p>Open source CRM rješenja su sve popularnija u BiH, posebno za firme koje žele potpunu kontrolu nad podacima i izbjeći visoke mjesečne pretplate. Dva najzastupljenija open source CRM sistema su SuiteCRM i EspoCRM.</p>
+<h2>SuiteCRM</h2>
+<p>SuiteCRM je nasljednik SugarCRM-a i najnapredniji open source CRM na tržištu. Nudi: upravljanje kontaktima, prodajni pipeline, marketing automation, customer support, fakturisanje i izvještaje.</p>
+<h2>EspoCRM</h2>
+<p>EspoCRM je lakši, moderniji i intuitivniji. Odlikuje ga čist interfejs, jednostavna prilagođavanja i dobra dokumentacija. Idealno rješenje za manje firme.</p>
+<h2>Troškovi</h2>
+<p>Iako je softver besplatan, hosting i održavanje iznose 50-200 KM/mjesečno zavisno od broja korisnika i hosting opcija. BIXIE nudi hosting i održavanje open source CRM rješenja za BiH firme.</p>`,
+  },
+  'pipedrive-crm-male-firme-bih': {
+    slug: 'pipedrive-crm-male-firme-bih',
+    title: 'Pipedrive CRM za male firme u BiH: Da li je pravi izbor?',
+    excerpt: 'Pipedrive CRM za male biznise u Bosni i Hercegovini. Pregled funkcionalnosti, cijena i zašto je Pipedrive odličan za sta',
+    category: 'CRM',
+    date: '2026-06-13',
+    readTime: '3 min',
+    content: `
+<p># Pipedrive CRM za male firme u BiH: Da li je pravi izbor?</p>
+<p>Pipedrive CRM za male biznise u Bosni i Hercegovini. Pregled funkcionalnosti, cijena i zašto je Pipedrive odličan za startupe.</p>
+<h2>Pipedrive za male firme</h2>
+<p>Pipedrive je CRM dizajniran prvenstveno za male i srednje firme koje žele jednostavan, vizualan i efikasan način upravljanja prodajnim procesom. Sa svojim pipeline fokusom, idealan je za firme koje prodaju kroz jasne faze.</p>
+<h2>Cijene</h2>
+<p>Pipedrive nudi pet planova: Essential (54 KM/mj), Advanced (72 KM/mj), Professional (108 KM/mj), Power (126 KM/mj) i Enterprise (po dogovoru). Sve cijene su po korisniku i plaćaju se mjesečno.</p>
+<h2>Ključne karakteristike</h2>
+<ul>
+<li><strong>Vizuelni pipeline</strong> — najbolji u klasi za upravljanje prodajnim procesom</li>
+<li><strong>Email integracija</strong> — automatsko povezivanje sa Gmailom i Outlookom</li>
+<li><strong>AI Sales Assistant</strong> — predviđanje zatvaranja poslova</li>
+<li><strong>Automatizacije</strong> — bez kodiranja, jednostavno podešavanje</li>
+<li><strong>Izvještaji</strong> — ugrađeni dashboardi i prilagođeni izvještaji</li>
+</ul>
+<h2>Nedostaci</h2>
+<p>Pipedrive je fokusiran na prodaju — nema ugrađeni marketing automation ili customer support. Za kompletno rješenje, Zoho CRM ili HubSpot su bolji izbor.</p>`,
+  },
+  'rpa-logistika-automatizacija-narudzbi': {
+    slug: 'rpa-logistika-automatizacija-narudzbi',
+    title: 'RPA u logistici: Automatizacija narudžbi i otpreme',
+    excerpt: 'Automatizacija logističkih procesa pomoću RPA — obrada narudžbi, otpremnica, praćenje pošiljki i upravljanje zalihama.',
+    category: 'Automatizacija',
+    date: '2026-06-28',
+    readTime: '3 min',
+    content: `
+<p># RPA u logistici: Automatizacija narudžbi i otpreme</p>
+<p>Automatizacija logističkih procesa pomoću RPA — obrada narudžbi, otpremnica, praćenje pošiljki i upravljanje zalihama.</p>
+<h2>Logistika u BiH</h2>
+<p>Logističke kompanije u BiH suočavaju se sa rastućim obimom posla i potrebom za bržom obradom narudžbi. RPA botovi donose rješenje za automatizaciju ključnih procesa.</p>
+<h2>Obrada narudžbi</h2>
+<p>Bot automatski preuzima narudžbe iz emaila, web shopa ili EDI sistema, provjerava dostupnost na zalihama i kreira otpremnice u ERP sistemu.</p>
+<h2>Automatsko etiketiranje</h2>
+<p>Na osnovu podataka o pošiljci, bot generiše transportne etikete i carinsku dokumentaciju za pošiljke ka EU i zemljama regiona.</p>
+<h2>Praćenje pošiljki</h2>
+<p>Bot svakodnevno provjerava status pošiljke, ažurira sistem i obavještava kupce o promjenama statusa.</p>
+<h2>Upravljanje zalihama</h2>
+<p>Automatsko ažuriranje zaliha, generisanje naloga za nabavku kada nivo padne ispod minimuma.</p>
+<h2>ROI</h2>
+<p>Implementacijom RPA u logistici, firme mogu očekivati povrat investicije za 3-4 mjeseca.</p>`,
+  },
+  'rpa-racunovodstvo-automatizacija-knjizenja': {
+    slug: 'rpa-racunovodstvo-automatizacija-knjizenja',
+    title: 'RPA u računovodstvu: Automatizacija knjiženja i obračuna',
+    excerpt: 'Kako RPA botovi automatiziraju knjiženje, obračun plata, PDV prijave i zatvaranje perioda za BiH firme.',
+    category: 'Automatizacija',
+    date: '2026-07-01',
+    readTime: '3 min',
+    content: `
+<p># RPA u računovodstvu: Automatizacija knjiženja i obračuna</p>
+<p>Kako RPA botovi automatiziraju knjiženje, obračun plata, PDV prijave i zatvaranje perioda za BiH firme.</p>
+<h2>RPA u finansijama</h2>
+<p>Računovodstveni odjeli u BiH provode veliki dio vremena na ponavljajuće zadatke — ručno knjiženje, usaglašavanje, obračun. RPA botovi mogu automatizirati većinu ovih procesa.</p>
+<h2>Šta RPA može u računovodstvu?</h2>
+<h3>Automatsko knjiženje</h3>
+<p>Bot preuzima podatke iz bankovnih izvoda, ulaznih i izlaznih faktura, te ih automatski knjiži u knjigovodstveni sistem.</p>
+<h3>Obračun plata</h3>
+<p>Prikupljanje podataka o prisutnosti, prekovremenom radu, bolovanjima i automatski obračun plata sa svim zakonskim olakšicama.</p>
+<h3>PDV prijava</h3>
+<p>Automatsko generisanje PDV prijave na osnovu knjiženih podataka, sa provjerom usklađenosti.</p>
+<h3>Zatvaranje perioda</h3>
+<p>Bot priprema sve potrebne izvještaje, provjerava usaglašenost i zatvara knjigovodstveni period za nekoliko sati umjesto dana.</p>
+<h2>Uštede</h2>
+<p>Firme koje su implementirale RPA u računovodstvu uz pomoć BIXIE-a bilježe uštedu od 40-60 sati mjesečno.</p>`,
+  },
+  'rpa-zdravstvo-bih': {
+    slug: 'rpa-zdravstvo-bih',
+    title: 'RPA u zdravstvu BiH: Automatizacija administrativnih procesa',
+    excerpt: 'Kako RPA botovi pomažu bolnicama i domovima zdravlja u BiH da smanje administrativno opterećenje i poboljšaju brigu o pa',
+    category: 'Automatizacija',
+    date: '2026-06-22',
+    readTime: '3 min',
+    content: `
+<p># RPA u zdravstvu BiH: Automatizacija administrativnih procesa</p>
+<p>Kako RPA botovi pomažu bolnicama i domovima zdravlja u BiH da smanje administrativno opterećenje i poboljšaju brigu o pacijentima.</p>
+<h2>Zdravstvo u BiH</h2>
+<p>Zdravstveni sistem u Bosni i Hercegovini je složen, sa entitetskim podjelama i velikim administrativnim opterećenjem. RPA botovi mogu značajno olakšati rad medicinskom osoblju.</p>
+<h2>Automatizacija zakazivanja</h2>
+<p>Bot automatski zakazuje termine na osnovu dostupnosti doktora i preferencija pacijenata, šalje podsjetnike i upravlja otkazivanjima.</p>
+<h2>Obrada zdravstvenih kartona</h2>
+<p>Digitalizacija i organizacija medicinske dokumentacije — bot skenira, indeksira i pohranjuje zdravstvene kartone u elektronski sistem.</p>
+<h2>Izvještavanje</h2>
+<p>Automatsko generisanje izvještaja za Zavod zdravstvenog osiguranja i druge regulatorne organe.</p>
+<h2>Nabavka</h2>
+<p>Bot prati potrošnju lijekova i medicinskog materijala, automatski generiše narudžbe kada zalihe padnu ispod minimalnog nivoa.</p>
+<h2>Rezultati</h2>
+<p>Bolnice koje su implementirale RPA bilježe 30% manje administrativnog opterećenja medicinskog osoblja.</p>`,
+  },
+  'social-media-automatizacija-ai': {
+    slug: 'social-media-automatizacija-ai',
+    title: 'Social media automatizacija uz AI: Upravljajte mrežama pametnije',
+    excerpt: 'Automatizacija objavljivanja, analize i angažmana na društvenim mrežama uz pomoć AI agenata za BiH firme.',
+    category: 'Marketing',
+    date: '2026-06-28',
+    readTime: '3 min',
+    content: `
+<p># Social media automatizacija uz AI: Upravljajte mrežama pametnije</p>
+<p>Automatizacija objavljivanja, analize i angažmana na društvenim mrežama uz pomoć AI agenata za BiH firme.</p>
+<h2>Društvene mreže u BiH</h2>
+<p>Bosanskohercegovačke firme su sve aktivnije na društvenim mrežama — Facebook, Instagram, LinkedIn, TikTok. Međutim, održavanje konstantnog prisustva na svim platformama zahtijeva puno vremena i truda.</p>
+<h2>Automatsko objavljivanje</h2>
+<p>AI agent kreira i objavljuje sadržaj na svim platformama u optimalno vrijeme za vašu publiku. Prilagođava format i ton svakoj mreži posebno.</p>
+<h2>Analiza angažmana</h2>
+<p>Agent prati koje objave najbolje prolaze, u koje vrijeme publika najviše reaguje i koji tip sadržaja donosi najviše konverzija.</p>
+<h2>Automatski odgovori</h2>
+<p>AI agent odgovara na najčešća pitanja u komentarima i direktnim porukama, dok ozbiljnije upite prosljeđuje ljudskom timu.</p>
+<h2>Izvještaji</h2>
+<p>Sedmični i mjesečni izvještaji o performansama na svim mrežama, sa preporukama za optimizaciju.</p>`,
+  },
+  'vodic-implementacija-ai-proizvodnja': {
+    slug: 'vodic-implementacija-ai-proizvodnja',
+    title: 'Vodič za implementaciju AI u proizvodnji u BiH',
+    excerpt: 'Korak po korak vodič za uvođenje AI tehnologija u proizvodne procese — senzori, prediktivno održavanje i optimizacija.',
+    category: 'Vodiči',
+    date: '2026-07-05',
+    readTime: '3 min',
+    content: `
+<p># Vodič za implementaciju AI u proizvodnji u BiH</p>
+<p>Korak po korak vodič za uvođenje AI tehnologija u proizvodne procese — senzori, prediktivno održavanje i optimizacija.</p>
+<h2>AI u proizvodnji</h2>
+<p>Proizvodni sektor u BiH ima ogroman potencijal za primjenu AI i automatizacije. Međutim, implementacija zahtijeva pažljivo planiranje i prilagođavanje specifičnim uslovima domaćih fabrika.</p>
+<h2>Korak 1: Procjena trenutnog stanja</h2>
+<p>Prije bilo kakve investicije, napravite audit postojećih procesa i opreme. Koji su najveći izvori gubitaka? Gdje su uski grla? Koji procesi su najponavljajući?</p>
+<h2>Korak 2: Identifikacija prilika</h2>
+<p>Najčešće prilike u proizvodnji: prediktivno održavanje opreme (smanjenje zastoja 30-50%), optimizacija parametara proizvodnje (smanjenje otpada 10-25%), automatska kontrola kvaliteta (smanjenje reklamacija 50-80%).</p>
+<h2>Korak 3: Pilot projekat</h2>
+<p>Krenite sa malim pilot projektom na jednoj proizvodnoj liniji. Mjerite rezultate prije i poslije. Prikupite podatke za ROI izračun.</p>
+<h2>Korak 4: Skaliranje</h2>
+<p>Nakon uspješnog pilot projekta, proširite na ostale linije i pogone. BIXIE preporučuje postepeno skaliranje, uz konstantno mjerenje rezultata.</p>
+<h2>Korak 5: Obuka tima</h2>
+<p>Tehnologija je samo pola posla. Obuka zaposlenih za rad sa novim sistemima je ključna za uspjeh.</p>`,
+  },
+  'vodic-kroz-ai-alate-mali-biznisi-bih': {
+    slug: 'vodic-kroz-ai-alate-mali-biznisi-bih',
+    title: 'Vodič kroz AI alate za male biznise u BiH',
+    excerpt: 'Pregled najkorisnijih AI alata za male firme u BiH — besplatni i plaćeni alati koji štede vrijeme i novac.',
+    category: 'Vodiči',
+    date: '2026-07-11',
+    readTime: '3 min',
+    content: `
+<p># Vodič kroz AI alate za male biznise u BiH</p>
+<p>Pregled najkorisnijih AI alata za male firme u BiH — besplatni i plaćeni alati koji štede vrijeme i novac.</p>
+<h2>AI za male biznise</h2>
+<p>Mnogi vlasnici malih firmi u BiH misle da je AI rezervisan za velike kompanije sa ogromnim budžetima. Istina je suprotna — AI alati su često besplatni ili jeftini, a mogu donijeti ogromne uštede malim firmama.</p>
+<h2>Besplatni AI alati</h2>
+<h3>ChatGPT (besplatna verzija)</h3>
+<p>Idealan za: pisanje emailova, objava na društvenim mrežama, istraživanje, brainstorming. Dovoljan za većinu potreba malih firmi.</p>
+<h3>Google Gemini</h3>
+<p>Ugrađen u Google Workspace. Pomaže u pisanju, organizaciji i analizi podataka direktno u Gmailu i dokumentima.</p>
+<h3>Canva AI</h3>
+<p>Grafički dizajn za ne-dizajnere. Kreirajte profesionalne objave, reklame i materijale za sekundu.</p>
+<h2>Plaćeni AI alati (jeftini)</h2>
+<h3>Claude Pro (70 KM/mj)</h3>
+<p>Bolji za duže tekstove, analizu i programiranje. Odličan za content marketing.</p>
+<h3>Perplexity Pro (80 KM/mj)</h3>
+<p>AI pretraživač sa izvorima. Idealan za istraživanje i analizu konkurencije.</p>
+<h3>Otter.ai (40 KM/mj)</h3>
+<p>Automatska transkripcija sastanaka i intervjua.</p>
+<h2>BIXIE preporuka</h2>
+<p>Za male firme u BiH, BIXIE preporučuje početak sa besplatnim AI alatima i postepeno uvođenje plaćenih kako se potrebe povećavaju.</p>`,
+  },
+  'vodic-odabir-crm-sistema-2026': {
+    slug: 'vodic-odabir-crm-sistema-2026',
+    title: 'Vodič za odabir CRM sistema u 2026. godini',
+    excerpt: 'Kako odabrati pravi CRM za vašu firmu — kriteriji, poređenje, cijene i savjeti za BiH firme.',
+    category: 'Vodiči',
+    date: '2026-07-17',
+    readTime: '3 min',
+    content: `
+<p># Vodič za odabir CRM sistema u 2026. godini</p>
+<p>Kako odabrati pravi CRM za vašu firmu — kriteriji, poređenje, cijene i savjeti za BiH firme.</p>
+<h2>Odabir CRM-a je važna odluka</h2>
+<p>CRM sistem je dugoročna investicija koja utiče na efikasnost prodaje, marketinga i customer supporta. Pogrešan izbor može koštati vrijeme, novac i propuštene prilike. Evo kako donijeti pravu odluku.</p>
+<h2>Korak 1: Definišite potrebe</h2>
+<p>Prije nego što pogledate bilo koji CRM, napravite listu zahtjeva:</p>
+<ul>
+<li>Koliko korisnika će koristiti CRM?</li>
+<li>Koji procesi treba da se automatiziraju?</li>
+<li>Sa kojim alatima treba da se integriše (mail, ERP, telefonska centrala)?</li>
+<li>Koji je budžet (po korisniku mjesečno)?</li>
+</ul>
+<h2>Korak 2: Uporedite opcije</h2>
+<p>| Kriterij | Bitrix24 | Zoho CRM | HubSpot | Pipedrive |</p>
+<p>|</p>`,
+  },
+  'voice-ai-agenti-automatizacija-telefonskih-poziva': {
+    slug: 'voice-ai-agenti-automatizacija-telefonskih-poziva',
+    title: 'Voice AI agenti: Automatizacija telefonskih poziva za BiH firme',
+    excerpt: 'Kako voice AI agenti mogu automatizirati telefonske pozive — zakazivanje, podrška, prodaja. Primjeri za BiH tržište.',
+    category: 'AI Agenti',
+    date: '2026-06-17',
+    readTime: '3 min',
+    content: `
+<p># Voice AI agenti: Automatizacija telefonskih poziva za BiH firme</p>
+<p>Kako voice AI agenti mogu automatizirati telefonske pozive — zakazivanje, podrška, prodaja. Primjeri za BiH tržište.</p>
+<h2>Voice AI revolucionira komunikaciju</h2>
+<p>Voice AI agenti su jedna od najbrže rastućih AI tehnologija u 2026. Oni mogu razumjeti i odgovarati na govor u realnom vremenu, zvučeći potpuno prirodno. Za BiH firme, ovo otvara potpuno nove mogućnosti.</p>
+<h2>Primjene u BiH</h2>
+<h3>Automatsko zakazivanje termina</h3>
+<p>"Zdravo, zovem iz BIXIE-a da zakažemo termin za demonstraciju. Koji vam dan odgovara?" — Voice AI agent obavlja 100 poziva dnevno bez umora.</p>
+<h3>Customer support putem telefona</h3>
+<p>"Hvala što ste pozvali. Kako vam mogu pomoći?" — Agent rješava do 80% poziva bez potrebe za ljudskim operaterom.</p>
+<h3>Prodajni pozivi</h3>
+<p>Kvalifikacija leadova putem telefona — agent postavlja pitanja, bilježi odgovore i određuje nivo zainteresiranosti.</p>
+<h2>Prednosti</h2>
+<ul>
+<li><strong>24/7 dostupnost</strong> — agent radi 0-24</li>
+<li><strong>10 puta jeftinije</strong> od ljudskog operatera</li>
+<li><strong>Dosljedan kvalitet</strong> — svaki poziv savršen</li>
+<li><strong>Podrška za BiH dijalekte</strong> — agent razumije bosanski, hrvatski i srpski</li>
+</ul>
+<h2>BIXIE rješenje</h2>
+<p>BIXIE nudi voice AI agente sa podrškom za bosanski jezik, integrisane sa vašim CRM-om.</p>`,
+  },
+  'zeleni-it-kako-ai-pomaze-odrzivosti': {
+    slug: 'zeleni-it-kako-ai-pomaze-odrzivosti',
+    title: 'Zeleni IT: Kako AI pomaže održivosti i zaštiti okoliša',
+    excerpt: 'Kako AI i digitalna transformacija mogu pomoći u smanjenju potrošnje energije, optimizaciji resursa i zaštiti okoliša u ',
+    category: 'Trendovi',
+    date: '2026-07-13',
+    readTime: '3 min',
+    content: `
+<p># Zeleni IT: Kako AI pomaže održivosti i zaštiti okoliša</p>
+<p>Kako AI i digitalna transformacija mogu pomoći u smanjenju potrošnje energije, optimizaciji resursa i zaštiti okoliša u BiH.</p>
+<h2>IT i održivost</h2>
+<p>IT sektor je odgovoran za 2-3% globalnih emisija CO2, ali istovremeno ima ogroman potencijal da pomogne u smanjenju emisija u drugim sektorima. Ovaj paradoks čini Green IT jednim od najvažnijih trendova.</p>
+<h2>AI za energetsku efikasnost</h2>
+<p>AI agenti mogu optimizirati potrošnju energije u zgradama, fabrikama i data centrima. Pametni termostati, optimizacija rasvjete, predviđanje potrošnje — sve to smanjuje račune i emisije.</p>
+<h2>Optimizacija resursa</h2>
+<p>AI analizira lance snabdijevanja i predlaže optimizacije koje smanjuju otpad, transportne rute i skladištenje. Manje goriva, manje materijala, manje otpada.</p>
+<h2>Zelene firme u BiH</h2>
+<p>BIH firme sve više prepoznaju važnost održivosti. Digitalna transformacija može pomoći u:</p>
+<ul>
+<li>Smanjenju potrošnje papira (digitalni dokumenti)</li>
+<li>Optimizaciji transporta (AI planiranje ruta)</li>
+<li>Pametnom upravljanju energijom (IoT + AI)</li>
+</ul>
+<h2>BIXIE preporuka</h2>
+<p>BIXIE preporučuje firmama da prilikom digitalne transformacije uključe i ciljeve održivosti — to nije samo etički, već i finansijski isplativo.</p>`,
+  },
 };
 
 export function getBlogPost(slug: string): BlogPost | undefined {
