@@ -2,34 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================
+   BIXIE Design Tokens — CSS Custom Properties
+   ============================================ */
 :root {
+  /* Akcent (Teal) */
+  --color-accent: #00736a;
+  --color-accent-hover: #008a7f;
+  --color-accent-dark: #005c54;
+  --color-accent-glow: rgba(0, 115, 106, 0.15);
+
+  /* Pozadine */
   --bg-root: #0a0f1c;
   --bg-surface: #0f1629;
   --bg-card: #1a1f2e;
   --bg-elevated: #1e293b;
+  --bg-nav: rgba(10, 15, 28, 0.9);
+
+  /* Borderi */
   --border-default: #1e293b;
   --border-light: #2a3a60;
+  --border-accent: rgba(0, 115, 106, 0.3);
+
+  /* Tekst */
   --text-primary: #e8edf5;
   --text-secondary: #94a3c8;
   --text-muted: #5b6f99;
-  --accent: #00736a;
-  --accent-hover: #008a7f;
-  --accent-glow: rgba(0,115,106,0.15);
+
+  /* Dugmad */
+  --color-btn-primary-bg: #00736a;
+  --color-btn-primary-hover: #005c54;
+  --color-btn-secondary-bg: rgba(255, 255, 255, 0.05);
+  --color-btn-secondary-hover: rgba(255, 255, 255, 0.1);
+
+  /* Badge */
+  --color-badge-bg: rgba(0, 115, 106, 0.1);
+  --color-badge-text: #00736a;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* Radius */
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 14px;
+
+  /* Shadow */
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 20px rgba(0, 115, 106, 0.15);
+
+  /* Transition */
+  --transition-default: all 0.2s ease;
+
+  /* Z-index */
+  --z-nav: 50;
+  --z-modal: 100;
 }
 
 body {
   background: var(--bg-root);
   color: var(--text-secondary);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background: var(--accent-glow);
+  background: var(--color-accent-glow);
   color: #fff;
 }
 
@@ -55,24 +99,24 @@ body {
 .delay-4 { animation-delay: 0.4s; }
 
 /* Old site content — migrated pages styling */
-.old-site-content h1 { font-size: 2.25rem; font-weight: 700; color: #e8edf5; margin-bottom: 1rem; }
-.old-site-content h2 { font-size: 1.5rem; font-weight: 600; color: #e8edf5; margin-top: 2.5rem; margin-bottom: 1rem; }
-.old-site-content h3 { font-size: 1.25rem; font-weight: 500; color: #e8edf5; margin-top: 1.5rem; margin-bottom: 0.75rem; }
-.old-site-content p { color: #94a3c8; margin-bottom: 1rem; line-height: 1.7; }
-.old-site-content ul, .old-site-content ol { color: #94a3c8; margin-bottom: 1.5rem; padding-left: 1.5rem; }
+.old-site-content h1 { font-size: 2.25rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1rem; }
+.old-site-content h2 { font-size: 1.5rem; font-weight: 600; color: var(--text-primary); margin-top: 2.5rem; margin-bottom: 1rem; }
+.old-site-content h3 { font-size: 1.25rem; font-weight: 500; color: var(--text-primary); margin-top: 1.5rem; margin-bottom: 0.75rem; }
+.old-site-content p { color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7; }
+.old-site-content ul, .old-site-content ol { color: var(--text-secondary); margin-bottom: 1.5rem; padding-left: 1.5rem; }
 .old-site-content ul { list-style-type: disc; }
 .old-site-content ol { list-style-type: decimal; }
 .old-site-content li { margin-bottom: 0.5rem; line-height: 1.6; }
-.old-site-content a { color: #00736a; }
+.old-site-content a { color: var(--color-accent); }
 .old-site-content a:hover { text-decoration: underline; }
-.old-site-content strong { color: #e8edf5; }
-.old-site-content .card { background: #0f1629; border: 1px solid #1e293b; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1.5rem; }
-.old-site-content .tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #00736a; background: rgba(0,115,106,0.1); padding: 0.25rem 0.5rem; border-radius: 0.25rem; display: inline-block; margin-bottom: 1rem; }
-.old-site-content .tag-teal { color: #00736a; background: rgba(0,115,106,0.1); }
+.old-site-content strong { color: var(--text-primary); }
+.old-site-content .card { background: var(--bg-surface); border: 1px solid var(--border-default); border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1.5rem; }
+.old-site-content .tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-accent); background: var(--color-badge-bg); padding: 0.25rem 0.5rem; border-radius: 0.25rem; display: inline-block; margin-bottom: 1rem; }
+.old-site-content .tag-teal { color: var(--color-accent); background: var(--color-badge-bg); }
 .old-site-content .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
 .old-site-content .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-.old-site-content .btn-primary { display: inline-block; background: #00736a; color: #fff; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 500; transition: all 0.2s; }
-.old-site-content .btn-primary:hover { background: #005c54; }
+.old-site-content .btn-primary { display: inline-block; background: var(--color-accent); color: #fff; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 500; transition: var(--transition-default); }
+.old-site-content .btn-primary:hover { background: var(--color-accent-dark); }
 .old-site-content table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
-.old-site-content th, .old-site-content td { padding: 0.75rem; text-align: left; border-bottom: 1px solid #1e293b; color: #94a3c8; }
-.old-site-content th { color: #e8edf5; font-weight: 600; }
+.old-site-content th, .old-site-content td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--border-default); color: var(--text-secondary); }
+.old-site-content th { color: var(--text-primary); font-weight: 600; }

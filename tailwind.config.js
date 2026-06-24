@@ -13,8 +13,10 @@ export default {
         surface: '#0f1629',
         card: '#1a1f2e',
         elevated: '#1e293b',
-        border: '#1e293b',
-        'border-light': '#2a3a60',
+        border: {
+          DEFAULT: '#1e293b',
+          light: '#2a3a60',
+        },
         muted: '#5b6f99',
         'text-secondary': '#94a3c8',
         'text-primary': '#e8edf5',
@@ -22,7 +24,15 @@ export default {
       fontFamily: {
         sans: ['Inter', 'Geist', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
       },
+      boxShadow: {
+        card: '0 4px 20px rgba(0, 0, 0, 0.3)',
+        glow: '0 0 20px rgba(0, 115, 106, 0.15)',
+      },
+      zIndex: {
+        nav: '50',
+        modal: '100',
+      },
     },
   },
   plugins: [],
-}
+};
