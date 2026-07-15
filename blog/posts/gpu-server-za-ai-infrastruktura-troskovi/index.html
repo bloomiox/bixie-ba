@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>GPU Server za AI — Koliko Košta Infrastruktura za Open Source Modele? — BIXIE</title>
+<meta property="og:title" content="GPU Server za AI — Koliko Košta Infrastruktura za Open Source Modele? — BIXIE">
+<meta property="og:description" content="Detaljna analiza troškova GPU servera za AI. Od single-GPU rješenja do produkcijskih klastera. Poređenje sa pretplatnim modelima.">
+<meta property="og:url" content="https://bixie.ba/blog/posts/gpu-server-za-ai-infrastruktura-troskovi">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BIXIE">
+<meta property="og:image" content="https://bixie.ba/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GPU Server za AI — Koliko Košta Infrastruktura za Open Source Modele? — BIXIE">
+<meta name="twitter:description" content="Detaljna analiza troškova GPU servera za AI. Od single-GPU rješenja do produkcijskih klastera. Poređenje sa pretplatnim modelima.">
+<meta name="twitter:image" content="https://bixie.ba/og-image.png">
+<meta name="description" content="Detaljna analiza troškova GPU servera za AI. Od single-GPU rješenja do produkcijskih klastera. Poređenje sa pretplatnim modelima.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="canonical" href="https://bixie.ba/blog/posts/gpu-server-za-ai-infrastruktura-troskovi">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"GPU Server za AI — Koliko Košta Infrastruktura za Open Source Modele?","description":"Detaljna analiza troškova GPU servera za AI. Od single-GPU rješenja do produkcijskih klastera. Poređenje sa pretplatnim modelima.","author":{"@type":"Organization","name":"BIXIE"},"publisher":{"@type":"Organization","name":"BIXIE","url":"https://bixie.ba"}}</script>
+</head>
+<body>
+<nav>
+<div class="nav-inner">
+<a href="/" class="logo"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:36px"></a>
+<div class="nav-links">
+<div class="dropdown"><a href="/services/crm">CRM</a><div class="dropdown-menu"><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a></div></div>
+<div class="dropdown"><a href="/services/ai-agents">AI</a><div class="dropdown-menu"><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a><a href="/open-source-infra">Open Source Infrastruktura</a></div></div>
+<div class="dropdown"><a href="/services/digital-transformation">Digitalna Transformacija</a><div class="dropdown-menu"><a href="/services/digital-transformation">Pregled</a><a href="/services/rpa">RPA i Automatizacija</a></div></div>
+<a href="/about">O nama</a>
+<a href="/ai-providers">AI Licence</a>
+<a href="/open-source-infra">Open Source</a>
+<a href="/blog">Blog</a>
+<a href="/contact" class="nav-cta">Zatražite ponudu</a>
+</div>
+<button class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+</div>
+<div id="mobileMenu" class="mobile-menu">
+<div class="mobile-label">CRM</div>
+<a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a>
+<div class="mobile-label">AI</div>
+<a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a><a href="/open-source-infra">Open Source Infrastruktura</a>
+<a href="/services/digital-transformation">Digitalna Transformacija</a><a href="/services/rpa">RPA i Automatizacija</a>
+<a href="/about">O nama</a>
+<a href="/ai-providers">AI Licence</a><a href="/open-source-infra">Open Source</a><a href="/blog">Blog</a>
+<a href="/contact" style="display:block;margin-top:10px;background:#00736a;color:#fff;padding:10px 16px;border-radius:6px;text-align:center;font-weight:450;font-size:0.9rem">Zatražite ponudu</a>
+</div>
+</nav>
+<section style="padding:80px 24px">
+<div style="max-width:800px;margin:0 auto">
+<a href="/blog" style="color:#62666d;font-size:14px;text-decoration:none;display:inline-block;margin-bottom:16px">&larr; Nazad na blog</a>
+<span class="tag tag-teal">Troškovi</span>
+<h1 style="font-size:32px;font-weight:510;line-height:1.2;letter-spacing:-0.7px;color:#f3f4f6;margin-bottom:8px">GPU Server za AI — Koliko Košta Infrastruktura za Open Source Modele?</h1>
+<div style="font-size:13px;color:#62666d;margin-bottom:32px">7. Juli 2026 · BIXIE Team · 10 min citanja</div>
+<div class="tags"><span class="tag">Troškovi</span></div>
+<article style="max-width:700px">
+<p>Jedno od najčešćih pitanja koje dobijamo je: "Koliko košta on-premise AI infrastruktura?" Odgovor varira u zavisnosti od veličine modela, broja korisnika i zahtjeva za performansama.</p>
+<h2>Razine infrastrukture</h2>
+<p><strong>1. Entry level (do 5.000 KM)</strong> — Dovoljno za Phi-4 (14B) i Qwen 3-7B. Preporuka: NVIDIA RTX 4090 (24GB) ili 2× RTX 3090. Idealno za male firme i testiranje.</p>
+<p><strong>2. Business level (25.000–50.000 KM)</strong> — Dovoljno za Llama 4 Scout (109B) i Mistral Large 2 (123B) uz kvantizaciju. Preporuka: 2× NVIDIA A100 80GB ili 4× RTX 6000 Ada.</p>
+<p><strong>3. Enterprise level (100.000–300.000 KM)</strong> — Dovoljno za Llama 4 Maverick (400B+) i DeepSeek R1 (671B). Preporuka: 4–8× NVIDIA H100 80GB ili AMD MI300X sa Infinity Fabric.</p>
+<p><strong>4. Data Center (500.000+ KM)</strong> — Multi-node klaster za najveće modele. Preporuka: 16+ GPU-ova sa high-speed networkingom (NVLink, InfiniBand).</p>
+<h2>Poređenje sa pretplatom</h2>
+<p>Firma sa 50 korisnika koja koristi ChatGPT Enterprise plaća $120.000/godišnje. Za isti iznos može kupiti business level GPU server koji će trajati 3–5 godina i hostati open source modele bez ikakvih dodatnih troškova po korisniku. Ušteda: 60–80% tokom 3 godine.</p>
+<h2>Dugoročna isplativost</h2>
+<p>Iako je početna investicija značajna, on-premise AI infrastruktura je dugoročno znatno isplativija — posebno za organizacije sa 20+ korisnika. BIXIE nema besplatnu konsultaciju za izračun tačnih troškova prema vašim potrebama.</p>
+</article>
+<div style="margin-top:48px;padding:32px;background:rgba(0,115,106,0.05);border:1px solid rgba(0,115,106,0.2);border-radius:12px;text-align:center">
+<h3 style="font-size:20px;font-weight:510;color:#f0f2f4;margin-bottom:8px">Zainteresovani za open source AI?</h3>
+<p style="font-size:15px;color:#6b7280;margin-bottom:20px">BIXIE projektuje i implementira on-premise AI infrastrukturu. Kontaktirajte nas za besplatne konsultacije.</p>
+<a href="/contact" class="btn-primary" style="font-size:16px;padding:12px 28px">Zakažite konsultacije</a>
+</div>
+</div>
+</section>
+<footer>
+<div class="footer-inner">
+<div><a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:16px;font-weight:510;color:#f0f2f4;margin-bottom:12px"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#00736a"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>BIXIE</a><p style="font-size:14px;color:#6b7280;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
+<div><h4>Usluge</h4><a href="/services/crm">CRM Rjesenja</a><br><a href="/services/ai-agents">AI Agenti</a><br><a href="/services/digital-transformation">Digitalna Transformacija</a><br><a href="/services/rpa">RPA i Automatizacija</a><br><a href="/ai-providers">AI Provajderi i Licence</a><br><a href="/open-source-infra">Open Source Infrastruktura</a></div>
+<div><h4>Kompanija</h4><a href="/blog">Blog</a><br><a href="/about">O nama</a><br><a href="/contact">Kontakt</a><br><a href="/privacy">Privacy Policy</a></div>
+<div><h4>Kontakt</h4><p>hello@bixie.ba</p><p>033 922 622</p><p>Maglajska 1, 71000 Sarajevo</p></div>
+</div>
+<div class="footer-bottom">2026 BIXIE. All rights reserved.</div>
+</footer>
+<script>
+function toggleMobile() {
+  var m = document.getElementById("mobileMenu");
+  m.classList.toggle("open");
+}
+</script>
+</body>
+</html>

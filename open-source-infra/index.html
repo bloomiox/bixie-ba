@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Open Source AI Infrastruktura — BIXIE | Samostalno hostani AI modeli</title>
+<meta property="og:title" content="Open Source AI Infrastruktura — BIXIE">
+<meta property="og:description" content="Dizajn i implementacija on-premise AI infrastrukture za open source modele. Llama, DeepSeek R1, Mistral, Qwen i drugi — potpuna kontrola nad podacima.">
+<meta property="og:url" content="https://bixie.ba/open-source-infra">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BIXIE">
+<meta property="og:image" content="https://bixie.ba/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Open Source AI Infrastruktura — BIXIE">
+<meta name="twitter:description" content="On-premise AI hosting i infrastruktura za open source modele. Potpuna kontrola, privatnost i nezavisnost od provajdera.">
+<meta name="twitter:image" content="https://bixie.ba/og-image.png">
+<meta name="description" content="On-premise AI hosting za open source modele. BIXIE projektuje i implementira infrastrukturu za Llama, DeepSeek, Mistral, Qwen i druge modele na vašem hardveru.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="canonical" href="https://bixie.ba/open-source-infra">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Open Source AI Infrastructure","provider":{"@type":"Organization","name":"BIXIE","url":"https://bixie.ba"},"description":"Design and implementation of on-premise AI infrastructure for open source models. Llama, DeepSeek R1, Mistral, Qwen and more."}
+</script>
+</head>
+<body>
+<nav>
+<div class="nav-inner">
+<a href="/" class="logo"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:36px"></a>
+<div class="nav-links">
+<div class="dropdown"><a href="/services/crm">CRM</a><div class="dropdown-menu"><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a></div></div>
+<div class="dropdown"><a href="/services/ai-agents">AI</a><div class="dropdown-menu"><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a><a href="/open-source-infra">Open Source Infrastruktura</a></div></div>
+<div class="dropdown"><a href="/services/digital-transformation">Digitalna Transformacija</a><div class="dropdown-menu"><a href="/services/digital-transformation">Pregled</a><a href="/services/rpa">RPA i Automatizacija</a></div></div>
+<a href="/about">O nama</a>
+<a href="/ai-providers">AI Licence</a>
+<a href="/open-source-infra" style="color:#00736a">Open Source</a>
+<a href="/blog">Blog</a>
+<a href="/contact" class="nav-cta">Zatražite ponudu</a>
+</div>
+<button class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+</div>
+<div id="mobileMenu" class="mobile-menu">
+<div class="mobile-label">CRM</div>
+<a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a>
+<div class="mobile-label">AI</div>
+<a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a><a href="/open-source-infra">Open Source Infrastruktura</a>
+<a href="/services/digital-transformation">Digitalna Transformacija</a><a href="/services/rpa">RPA i Automatizacija</a>
+<a href="/about">O nama</a>
+<a href="/ai-providers">AI Licence</a><a href="/open-source-infra">Open Source</a><a href="/blog">Blog</a>
+<a href="/contact" style="display:block;margin-top:10px;background:#00736a;color:#fff;padding:10px 16px;border-radius:6px;text-align:center;font-weight:450;font-size:0.9rem">Zatražite ponudu</a>
+</div>
+</nav>
+
+<section style="padding:80px 24px">
+<div style="max-width:1200px;margin:0 auto">
+<span class="tag tag-teal">Open Source AI</span>
+<h1 style="font-size:48px;font-weight:510;line-height:1;letter-spacing:-1.056px;color:#f0f2f4;margin-bottom:16px">Open Source AI Infrastruktura</h1>
+<p style="font-size:18px;line-height:1.6;color:#6b7280;max-width:650px;margin-bottom:48px">Dizajn, implementacija i održavanje on-premise AI infrastrukture za open source modele. Potpuna kontrola nad podacima, bez mjesečnih naknada i bez zavisnosti od stranih provajdera.</p>
+
+<div class="grid-3" style="margin-bottom:48px">
+<div class="card"><h3>Potpuna privatnost podataka</h3><p>Vaši podaci nikada ne napuštaju vašu infrastrukturu. Idealno za finansijski sektor, zdravstvo, pravne firme i javne institucije koje rade sa osjetljivim informacijama.</p></div>
+<div class="card"><h3>Nema mjesečnih naknada</h3><p>Jednokratna investicija u infrastrukturu. Bez pretplata po korisniku, bez troškova po tokenu. Samo trošak struje i održavanja.</p></div>
+<div class="card"><h3>Potpuna sloboda izbora</h3><p>Koristite bilo koji open source model — Llama, DeepSeek, Mistral, Qwen, Phi, Gemma. Mijenjate model kad god želite, bez ugovornih ograničenja.</p></div>
+</div>
+
+<h2 style="font-size:24px;font-weight:510;color:#f0f2f4;letter-spacing:-0.288px;margin-bottom:24px">Open Source modeli koje podržavamo</h2>
+<div class="grid-3" style="margin-bottom:48px">
+<div class="card" style="border-left:3px solid #00736a">
+<h3>Meta — Llama 4</h3>
+<p style="line-height:1.7;margin-bottom:8px">Najpopularnija open source porodica modela. Llama 4 Scout, Maverick i Behemoth pokrivaju raspon od laganih do najsnažnijih modela. Odlični za fine-tuning na specifične domene.</p>
+<p style="line-height:1.7;margin-bottom:8px"><strong>Najbolje za:</strong> Generalne AI zadatke, fine-tuning, asistenta za zaposlene, obradu dokumenata</p>
+<p style="font-size:13px;color:#5b6f99">Parametri: 8B – 2T | Kontekst: 128K – 1M tokena | Licence: Llama 4 Community</p>
+</div>
+<div class="card" style="border-left:3px solid #00736a">
+<h3>DeepSeek — R1 / V3</h3>
+<p style="line-height:1.7;margin-bottom:8px">Kineski modeli koji su revolucionirali AI industriju. DeepSeek R1 nudi napredno rezonovanje korak-po-korak uporedivo sa o3, dok V3 pruža odlične generalne performanse po izuzetno niskoj cijeni.</p>
+<p style="line-height:1.7;margin-bottom:8px"><strong>Najbolje za:</strong> Logičko rezonovanje, matematiku, programiranje, cost-efikasne operacije</p>
+<p style="font-size:13px;color:#5b6f99">Parametri: 7B – 671B | Kontekst: 128K | Licence: MIT</p>
+</div>
+<div class="card" style="border-left:3px solid #00736a">
+<h3>Mistral AI — Large / Small</h3>
+<p style="line-height:1.7;margin-bottom:8px">Vodeći evropski open source modeli sa sjedištem u Francuskoj. Mistral Large konkurira GPT-4, dok je Mistral Small optimizovan za brzinu. Potpuna GDPR usklađenost.</p>
+<p style="line-height:1.7;margin-bottom:8px"><strong>Najbolje za:</strong> GDPR-osjetljive primjene, višejezične aplikacije, EU kompanije</p>
+<p style="font-size:13px;color:#5b6f99">Parametri: 7B – 123B | Kontekst: 32K – 128K | Licence: Apache 2.0 / Mistral Research</p>
+</div>
+<div class="card" style="border-left:3px solid #00736a">
+<h3>Alibaba — Qwen 3</h3>
+<p style="line-height:1.7;margin-bottom:8px">Qwen 3 je porodica modela koja se ističe u razumijevanju dugih konteksta, višejezičnosti i tool-use sposobnostima. Neki modeli imaju kontekst do 1M tokena.</p>
+<p style="line-height:1.7;margin-bottom:8px"><strong>Najbolje za:</strong> Obradu dugih dokumenata, tool-use agente, višejezične zadatke</p>
+<p style="font-size:13px;color:#5b6f99">Parametri: 0.5B – 235B | Kontekst: 32K – 1M | Licence: Apache 2.0 / Qwen</p>
+</div>
+<div class="card" style="border-left:3px solid #00736a">
+<h3>Microsoft — Phi-4</h3>
+<p style="line-height:1.7;margin-bottom:8px">Microsoftova porodica malih ali moćnih modela. Phi-4 i Phi-4-mini nude impresivne performanse za svoju veličinu, idealni za edge uređaje i lokalno hostanje.</p>
+<p style="line-height:1.7;margin-bottom:8px"><strong>Najbolje za:</strong> Edge deployment, mobilne uređaje, lokalno hostanje na skromnom hardveru</p>
+<p style="font-size:13px;color:#5b6f99">Parametri: 3.8B – 14B | Kontekst: 128K | Licence: MIT</p>
+</div>
+<div class="card" style="border-left:3px solid #00736a">
+<h3>Google — Gemma 3</h3>
+<p style="line-height:1.7;margin-bottom:8px">Googleova open source porodica modela bazirana na Gemini tehnologiji. Gemma 3 nudi odličan balans veličine i performansi sa podrškom za višejezičnost.</p>
+<p style="line-height:1.7;margin-bottom:8px"><strong>Najbolje za:</strong> Multilingualne aplikacije, fine-tuning, istraživanje i razvoj</p>
+<p style="font-size:13px;color:#5b6f99">Parametri: 2B – 27B | Kontekst: 8K – 128K | Licence: Gemma</p>
+</div>
+</div>
+
+<h2 style="font-size:24px;font-weight:510;color:#f0f2f4;letter-spacing:-0.288px;margin-bottom:24px">Naše usluge</h2>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-bottom:48px">
+<div class="card">
+<h3>🖥️ Dizajn infrastrukture</h3>
+<p style="line-height:1.7">Projektovanje hardverske konfiguracije (GPU serveri, RAM, storage) prema vašim potrebama. Od single-GPU rješenja do multi-node klastera sa NVIDIA A100/H100, AMD MI300X ili Apple Silicon.</p>
+</div>
+<div class="card">
+<h3>🔧 Implementacija i deployment</h3>
+<p style="line-height:1.7">Instalacija i konfiguracija inference enginea (vLLM, llama.cpp, Ollama, TensorRT-LLM). Postavljanje API gatewaya, load balancinga i monitoringa.</p>
+</div>
+<div class="card">
+<h3>🎯 Fine-tuning i customizacija</h3>
+<p style="line-height:1.7">Podešavanje modela na vašim podacima korištenjem LoRA, QLoRA ili full fine-tuninga. Prilagođavanje modela specifičnim domenima i terminologiji.</p>
+</div>
+<div class="card">
+<h3>🔌 Integracija sa postojećim sistemima</h3>
+<p style="line-height:1.7">Povezivanje AI modela sa vašim CRM-om, ERP-om, internim alatima i bazama podataka putem standardizovanih API-ja i webhookova.</p>
+</div>
+<div class="card">
+<h3>📊 Monitoring i optimizacija</h3>
+<p style="line-height:1.7">Nadzor performansi modela, potrošnje resursa i kvaliteta odgovora. Kontinuirana optimizacija za maksimalne performanse uz minimalne troškove.</p>
+</div>
+<div class="card">
+<h3>🔐 Sigurnost i compliance</h3>
+<p style="line-height:1.7">Implementacija sigurnosnih mjera — enkripcija podataka, authentication, audit logging. Prilagođavanje za GDPR, PCI DSS i specifične industrijske regulative.</p>
+</div>
+</div>
+
+<h2 style="font-size:24px;font-weight:510;color:#f0f2f4;letter-spacing:-0.288px;margin-bottom:24px">Zašto open source umjesto pretplate?</h2>
+<div class="card" style="border-left:3px solid #00736a;margin-bottom:48px">
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead>
+<tr style="border-bottom:1px solid #1e293b">
+<th style="text-align:left;padding:12px 8px;color:#f0f2f4;font-weight:500"></th>
+<th style="text-align:left;padding:12px 8px;color:#f0f2f4;font-weight:500">Pretplatni model (ChatGPT/Claude)</th>
+<th style="text-align:left;padding:12px 8px;color:#00736a;font-weight:500">Open Source On-Prem</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #1e293b"><td style="padding:12px 8px">Mjesečni trošak po korisniku</td><td style="padding:12px 8px">$20 – $200</td><td style="padding:12px 8px;color:#10b981">$0</td></tr>
+<tr style="border-bottom:1px solid #1e293b"><td style="padding:12px 8px">Privatnost podataka</td><td style="padding:12px 8px">Zavisi od provajdera</td><td style="padding:12px 8px;color:#10b981">Potpuna kontrola</td></tr>
+<tr style="border-bottom:1px solid #1e293b"><td style="padding:12px 8px">Vlasništvo nad modelom</td><td style="padding:12px 8px">Nema</td><td style="padding:12px 8px;color:#10b981">Potpuno vlasništvo</td></tr>
+<tr style="border-bottom:1px solid #1e293b"><td style="padding:12px 8px">Prilagođavanje</td><td style="padding:12px 8px">Ograničeno</td><td style="padding:12px 8px;color:#10b981">Potpuni fine-tuning</td></tr>
+<tr style="border-bottom:1px solid #1e293b"><td style="padding:12px 8px">Zavisnost od provajdera</td><td style="padding:12px 8px">Potpuna</td><td style="padding:12px 8px;color:#10b981">Nezavisnost</td></tr>
+<tr><td style="padding:12px 8px">Dostupnost</td><td style="padding:12px 8px">Zavisi od servera provajdera</td><td style="padding:12px 8px;color:#10b981">100% (lokalno)</td></tr>
+</tbody>
+</table>
+</div>
+
+<div style="text-align:center;padding:48px 32px;background:rgba(0,115,106,0.05);border:1px solid rgba(0,115,106,0.2);border-radius:12px">
+<h3 style="font-size:20px;font-weight:510;color:#f0f2f4;margin-bottom:8px">Želite nezavisnost od AI provajdera?</h3>
+<p style="font-size:15px;color:#6b7280;margin-bottom:20px;max-width:500px;margin-left:auto;margin-right:auto">Projektujemo i implementiramo vašu on-premise AI infrastrukturu. Jednokratna investicija, potpuna kontrola.</p>
+<a href="/contact" class="btn-primary" style="font-size:16px;padding:12px 28px">Zakažite konsultacije</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="footer-inner">
+<div><a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:16px;font-weight:510;color:#f0f2f4;margin-bottom:12px"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#00736a"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>BIXIE</a><p style="font-size:14px;color:#6b7280;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
+<div><h4>Usluge</h4><a href="/services/crm">CRM Rjesenja</a><br><a href="/services/ai-agents">AI Agenti</a><br><a href="/services/digital-transformation">Digitalna Transformacija</a><br><a href="/services/rpa">RPA i Automatizacija</a><br><a href="/ai-providers">AI Provajderi i Licence</a><br><a href="/open-source-infra">Open Source Infrastruktura</a></div>
+<div><h4>Kompanija</h4><a href="/blog">Blog</a><br><a href="/about">O nama</a><br><a href="/contact">Kontakt</a><br><a href="/privacy">Privacy Policy</a></div>
+<div><h4>Kontakt</h4><p>hello@bixie.ba</p><p>033 922 622</p><p>Maglajska 1, 71000 Sarajevo</p></div>
+</div>
+<div class="footer-bottom">2026 BIXIE. All rights reserved.</div>
+</footer>
+<script>
+function toggleMobile() {
+  var m = document.getElementById("mobileMenu");
+  m.classList.toggle("open");
+}
+</script>
+</body>
+</html>
