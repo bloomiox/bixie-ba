@@ -1,5 +1,5 @@
 # Cloudflare Pages headers
 /sitemap.xml
   Content-Type: application/xml
-*.xml
+/*.xml
   Content-Type: application/xml
