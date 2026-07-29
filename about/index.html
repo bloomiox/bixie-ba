@@ -2,137 +2,296 @@
 <html lang="bs">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>O nama — BIXIE | CRM, AI i Digitalna Transformacija</title>
+<meta name="description" content="BIXIE je agencija specijalizovana za CRM, AI agente, RPA automatizaciju i digitalnu transformaciju. Registered partner Bitrix24, Zoho, Salesforce, HubSpot i Pipedrive.">
 <meta property="og:title" content="O nama — BIXIE | više od decenije digitalne transformacije">
-<meta property="og:description" content="BIXIE je agencija specijalizovana za CRM, AI agente, RPA automatizaciju i digitalnu transformaciju. Registered partner Bitrix24, Zoho, Salesforce.">
+<meta property="og:description" content="BIXIE — CRM, AI agenti, RPA i digitalna transformacija. 15+ godina iskustva, 100+ projekata, registered partner vodećih platformi.">
 <meta property="og:url" content="https://bixie.ba/about">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BIXIE">
 <meta property="og:image" content="https://bixie.ba/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CRM Rjesenja — BIXIE | Bitrix24, Salesforce, Zoho, HubSpot">
-<meta name="twitter:description" content="Bitrix24, Zoho CRM, Salesforce, HubSpot, Pipedrive, Twenty CRM i SugarCRM. Implementacija, migracija i optimizacija CRM sistema.">
+<meta name="twitter:title" content="O nama — BIXIE | CRM, AI i Digitalna Transformacija">
+<meta name="twitter:description" content="BIXIE — CRM, AI agenti, RPA i digitalna transformacija. 15+ godina iskustva, 100+ projekata.">
 <meta name="twitter:image" content="https://bixie.ba/og-image.png">
-
-<meta name="description" content="BIXIE je digitalna transformacija agencija sa 15+ godina iskustva. CRM, AI, RPA i cloud rješenja za firme u BiH i svijetu.">
-  <script type="application/ld+json">
-"@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "BIXIE",
-  "url": "https://bixie.ba",
-  "logo": "https://bixie.ba/og-image.png",
-  "description": "CRM, AI Agenti i Digitalna Transformacija za firme u Bosni i Hercegovini.",
-  "address": { "@type": "PostalAddress", "streetAddress": "Maglajska 1", "addressLocality": "Sarajevo", "addressCountry": "BA" },
-  "contactPoint": { "@type": "ContactPoint", "telephone": "+387-33-922-622", "email": "hello@bixie.ba", "contactType": "sales" },
-  "sameAs": ["https://www.linkedin.com/company/bixie"]
-}
-</script>
+<link rel="canonical" href="https://bixie.ba/about">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate" hreflang="bs" href="https://bixie.ba/about">
 <link rel="alternate" hreflang="en" href="https://bixie.ba/en/about">
 <link rel="alternate" hreflang="de" href="https://bixie.ba/de/about">
-<link rel="alternate" hreflang="bs" href="https://bixie.ba/about">
-<link rel="alternate" hreflang="x-default" href="https://bixie.ba/about"><!-- Clarity -->
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "jhp3l0sl3y");
-</script>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRGFE5K9G4"></script>
+<link rel="alternate" hreflang="x-default" href="https://bixie.ba/about">
+<script src="https://cdn.tailwindcss.com"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-WRGFE5K9G4");
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { accent: '#00736a', 'accent-dark': '#005c54', surface: '#0f172a', card: '#1a1f2e', border: '#1e293b', muted: '#64748b', teal: { 400: '#00a396', 500: '#008a7f', 600: '#00736a', 700: '#005c54' } },
+      fontFamily: { sans: ['Inter', 'sans-serif'] }
+    }
+  }
+}
 </script>
-<link rel="stylesheet" href="/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
 .hamburger span{display:block;width:22px;height:2px;background:#5b6f99;border-radius:1px;transition:all .2s}
 .mobile-menu{display:none;border-top:1px solid rgba(30,41,59,0.4);padding:16px 24px 24px;background:var(--bg-root)}
 @media(max-width:768px){.hamburger{display:flex}.nav-links{display:none}.mobile-menu.open{display:block}}
-
+.stat-card { background: linear-gradient(135deg, #1a1f2e, #0f172a); border: 1px solid #1e293b; border-radius: 16px; padding: 32px 24px; text-align: center; transition: all 0.3s; }
+.stat-card:hover { border-color: #00736a; transform: translateY(-2px); }
+.value-card { background: #1a1f2e; border: 1px solid #1e293b; border-radius: 12px; padding: 24px; transition: all 0.2s; }
+.value-card:hover { border-color: #00736a; }
+.process-step { display: flex; gap: 20px; padding: 24px; background: #1a1f2e; border: 1px solid #1e293b; border-radius: 12px; margin-bottom: 16px; transition: all 0.2s; }
+.process-step:hover { border-color: #00736a; }
+.process-number { flex-shrink: 0; width: 48px; height: 48px; border-radius: 50%; background: #00736a; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: #fff; }
+.mobile-label { font-size: 13px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
 </style>
-
-<link rel="canonical" href="https://bixie.ba/about">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRGFE5K9G4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-WRGFE5K9G4");</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","jhp3l0sl3y");</script>
 </head>
 <body>
-<nav>
-<div class="nav-inner">
-<a href="/" class="logo"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:36px"></a>
-<div class="nav-links">
-<div class="dropdown"><a href="/services/crm">CRM</a><div class="dropdown-menu"><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a></div></div>
-<div class="dropdown"><a href="/services/ai-agents">AI</a><div class="dropdown-menu"><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a></div></div>
-<div class="dropdown"><a href="/services/digital-transformation">Digitalna Transformacija</a><div class="dropdown-menu"><a href="/services/digital-transformation">Pregled</a><a href="/services/rpa">RPA i Automatizacija</a></div></div>
-<a href="/about">O nama</a>
-<a href="/ai-providers">AI Licence</a>
-<a href="/blog">Blog</a>
-<a href="/contact" class="nav-cta">Zatražite ponudu</a>
-</div>
-<button class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 border-b border-gray-800/50 bg-[#0a0f1c]/95 backdrop-blur-xl">
+<div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+  <a href="/" class="flex items-center gap-3">
+    <img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:32px">
+  </a>
+  <div class="hidden md:flex items-center gap-6">
+    <div class="relative group">
+      <a href="/services/crm" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">CRM ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pregled</a>
+        <a href="/services/crm#bitrix24" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Bitrix24</a>
+        <a href="/services/crm#zoho" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Zoho CRM</a>
+        <a href="/services/crm#pipedrive" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pipedrive</a>
+        <a href="/services/crm#hubspot" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">HubSpot</a>
+        <a href="/services/crm#salesforce" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Salesforce</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <a href="/services/ai-agents" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">AI ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Agenti & Automatizacija</a>
+        <a href="/services/ai-agents#licence" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Licence</a>
+        <a href="/open-source-infra" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Open Source Infrastruktura</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <a href="/services" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Usluge ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pregled svih usluga</a>
+        <a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">CRM Rješenja</a>
+        <a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Agenti</a>
+        <a href="/services/rpa" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">RPA Automatizacija</a>
+        <a href="/open-source-infra" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Open Source Infrastruktura</a>
+        <a href="/ai-providers" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Licence</a>
+        <a href="/services/digital-transformation" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Digitalna Transformacija</a>
+      </div>
+    </div>
+    <a href="/ai-providers" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Licence</a>
+    <a href="/about" class="text-white text-sm font-medium transition-colors">O nama</a>
+    <a href="/blog" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Blog</a>
+    <a href="/contact" class="bg-[#00736a] hover:bg-[#008a7f] text-white px-5 py-2 rounded-lg text-sm font-medium transition-all hover:scale-95">Zatražite ponudu</a>
+  </div>
+  <button class="hamburger md:hidden" onclick="toggleMobile()"><span></span><span></span><span></span></button>
 </div>
 <div id="mobileMenu" class="mobile-menu">
 <div class="mobile-label">CRM</div>
-<a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a>
-<div class="mobile-label">AI</div>
-<a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a>
-<a href="/services/digital-transformation">Digitalna Transformacija</a><a href="/services/rpa">RPA i Automatizacija</a>
-<a href="/about">O nama</a>
-<a href="/ai-providers">AI Licence</a><a href="/blog">Blog</a>
-<a href="/contact" style="display:block;margin-top:10px;background:#00736a;color:#fff;padding:10px 16px;border-radius:6px;text-align:center;font-weight:450;font-size:0.9rem">Zatražite ponudu</a>
+<a href="/services/crm" class="block py-2 text-sm text-gray-400 hover:text-white">Pregled CRM usluga</a>
+<a href="/services/crm#bitrix24" class="block py-2 text-sm text-gray-400 hover:text-white">Bitrix24</a>
+<a href="/services/crm#zoho" class="block py-2 text-sm text-gray-400 hover:text-white">Zoho CRM</a>
+<a href="/services/crm#pipedrive" class="block py-2 text-sm text-gray-400 hover:text-white">Pipedrive</a>
+<a href="/services/crm#hubspot" class="block py-2 text-sm text-gray-400 hover:text-white">HubSpot</a>
+<a href="/services/crm#salesforce" class="block py-2 text-sm text-gray-400 hover:text-white">Salesforce</a>
+<div class="mobile-label mt-3">AI</div>
+<a href="/services/ai-agents" class="block py-2 text-sm text-gray-400 hover:text-white">AI Agenti i Automatizacija</a>
+<a href="/services/ai-agents#licence" class="block py-2 text-sm text-gray-400 hover:text-white">AI Licence</a>
+<a href="/open-source-infra" class="block py-2 text-sm text-gray-400 hover:text-white">Open Source Infrastruktura</a>
+<a href="/services" class="block py-2 mt-2 text-sm text-gray-400 hover:text-white">Sve usluge</a>
+<a href="/about" class="block py-2 text-sm text-white font-medium">O nama</a>
+<a href="/blog" class="block py-2 text-sm text-gray-400 hover:text-white">Blog</a>
+<a href="/contact" class="block mt-3 bg-[#00736a] text-white px-5 py-3 rounded-lg text-sm font-medium text-center">Zatražite ponudu</a>
 </div>
 </nav>
-<section style="padding:80px 24px">
-<div style="max-width:1200px;margin:0 auto">
-<span class="tag tag-teal">O nama</span>
-<h1>Više od decenije<br>digitalne transformacije</h1>
-<p style="font-size:18px;line-height:1.6;color:#6b7280;max-width:600px;margin-bottom:48px">BIXIE je full-service digitalna agencija specijalizovana za CRM, AI agente, RPA automatizaciju i digitalno radno mjesto. Osnovani 2011. godine.</p>
 
-<div class="grid-3" style="margin-bottom:48px">
-<div class="card"><h3>15+ Godina Iskustva</h3><p>Od 2011. uspješno implementiramo digitalna rješenja za firme u BiH, Švicarskoj, Njemačkoj i regiji.</p></div>
-<div class="card"><h3>25+ Certifikacija</h3><p>Registered partner za Bitrix24, Zoho, Salesforce, Pipedrive i HubSpot. Licencirani za Microsoft i Google Cloud.</p></div>
-<div class="card"><h3>100+ Realizovanih Projekata</h3><p>CRM implementacije, AI integracije, RPA automatizacije i cloud migracije za različite industrije.</p></div>
+<!-- Hero -->
+<section class="px-4 py-20 md:py-28" style="background: linear-gradient(135deg, #0a0f1c 0%, #0f172a 50%, #0a0f1c 100%)">
+<div class="max-w-6xl mx-auto">
+  <div class="flex flex-col md:flex-row gap-12 items-center">
+    <div class="flex-1">
+      <span class="inline-block text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full border" style="border-color:rgba(0,115,106,0.3);color:#00736a;background:rgba(0,115,106,0.08)">O nama</span>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mt-4 mb-6" style="color:#f0f2f4;letter-spacing:-1.5px">Više od decenije <span style="color:#00736a">digitalne transformacije</span></h1>
+      <p class="text-lg md:text-xl leading-relaxed mb-8" style="color:#6b7280;max-width:540px">BIXIE je full-service digitalna agencija specijalizovana za CRM, AI agente, RPA automatizaciju i digitalno radno mjesto. Osnovani 2011. godine — pomažemo firmama da rastu kroz tehnologiju.</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="/contact" class="bg-[#00736a] hover:bg-[#008a7f] text-white px-6 py-3 rounded-lg font-medium transition-all hover:scale-95">Zatražite ponudu</a>
+        <a href="/services" class="border border-gray-700 hover:border-gray-500 text-gray-300 px-6 py-3 rounded-lg font-medium transition-all">Pogledajte usluge</a>
+      </div>
+    </div>
+    <div class="flex-1 flex justify-center">
+      <div class="grid grid-cols-2 gap-4 w-full max-w-md">
+        <div class="stat-card"><div class="text-4xl font-bold" style="color:#00736a">15+</div><div class="text-sm mt-2" style="color:#6b7280">Godina iskustva</div></div>
+        <div class="stat-card"><div class="text-4xl font-bold" style="color:#00736a">25+</div><div class="text-sm mt-2" style="color:#6b7280">Certifikacija</div></div>
+        <div class="stat-card"><div class="text-4xl font-bold" style="color:#00736a">100+</div><div class="text-sm mt-2" style="color:#6b7280">Realizovanih projekata</div></div>
+        <div class="stat-card"><div class="text-4xl font-bold" style="color:#00736a">7</div><div class="text-sm mt-2" style="color:#6b7280">CRM platformi</div></div>
+      </div>
+    </div>
+  </div>
 </div>
-<h2 style="font-size:24px;font-weight:510;color:#f0f2f4;letter-spacing:-0.288px;margin-bottom:24px">Šta radimo</h2>
-<div class="grid-2" style="margin-bottom:48px">
-<div class="card" style="border-left:3px solid #00736a"><h3>CRM Implementacija</h3><p>Bitrix24, Zoho, Salesforce, HubSpot, Pipedrive. Migracija i integracija sa postojećim sistemima.</p></div>
-<div class="card" style="border-left:3px solid #00736a"><h3>AI Agenti i Automatizacija</h3><p>Custom AI agenti, RPA, nabavka AI licenci (ChatGPT, Gemini, Claude). Kompletna AI podrška.</p></div>
-<div class="card" style="border-left:3px solid #00736a"><h3>Digitalno Radno Mjesto</h3><p>Digital Office sa kolaboracijom, task menadžmentom i dokumentima na jednom mjestu.</p></div>
-<div class="card" style="border-left:3px solid #00736a"><h3>Private & Hybrid Cloud</h3><p>Cloud infrastruktura sa sigurnosnim slojevima. Hibridni model za maksimalnu zaštitu.</p></div>
-</div>
-<div style="background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:32px;text-align:center">
-<h2 style="font-size:24px;font-weight:510;color:#f0f2f4;margin-bottom:8px">Zašto BIXIE?</h2>
-<p style="font-size:16px;color:#6b7280;max-width:600px;margin:0 auto 24px">Ne prodajemo softver — rješavamo poslovne probleme. Svaki projekat počinjemo analizom procesa.</p>
-<div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
-<span class="badge" style="padding:8px 20px;font-size:14px;border-color:rgba(94,106,210,0.3);color:#00736a;background:rgba(94,106,210,0.08)">Lokalna podrška</span>
-<span class="badge" style="padding:8px 20px;font-size:14px;border-color:rgba(255,255,255,0.1)">BHS jezik</span>
-<span class="badge" style="padding:8px 20px;font-size:14px;border-color:rgba(255,255,255,0.1)">24h SLA</span>
-<span class="badge" style="padding:8px 20px;font-size:14px;border-color:rgba(255,255,255,0.1)">GDPR</span>
-</div>
+</section>
+
+<!-- Partner logotipi -->
+<section class="px-4 py-12 border-y border-gray-800/50">
+<div class="max-w-6xl mx-auto text-center">
+<p class="text-xs font-semibold tracking-widest uppercase mb-8" style="color:#4b5563">Povjerenje vodećih platformi — registered partner</p>
+<div class="flex flex-wrap items-center justify-center gap-8 opacity-50">
+<img src="/images/logos/bitrix24.jpg" alt="Bitrix24" style="height:32px;border-radius:4px">
+<img src="/images/logos/pipedrive.jpg" alt="Pipedrive" style="height:28px;border-radius:4px">
+<img src="/images/logos/hubspot.png" alt="HubSpot" style="height:28px;border-radius:4px">
+<img src="/images/logos/salesforce.png" alt="Salesforce" style="height:28px;border-radius:4px">
+<img src="/images/logos/zoho.png" alt="Zoho CRM" style="height:24px;border-radius:4px">
+<img src="/images/logos/microsoft-dynamics.png" alt="Microsoft Dynamics" style="height:28px;border-radius:4px">
+<img src="/images/logos/sugarcrm.png" alt="SugarCRM" style="height:28px;border-radius:4px">
 </div>
 </div>
 </section>
-<footer>
-<div class="footer-inner">
-<div><a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;font-size:16px;font-weight:600;color:#f0f2f4;margin-bottom:14px"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:28px"></a><p style="font-size:14px;color:#6b7280;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
-<div><h4>Usluge</h4><a href="/services/crm">CRM Rjesenja</a><br><a href="/services/ai-agents">AI Agenti</a><br><a href="/services/digital-transformation">Digitalna Transformacija</a><br><a href="/services/rpa">RPA i Automatizacija</a><br><a href="/ai-providers">AI Provajderi i Licence</a><br><a href="/services/rpa">RPA i Automatizacija</a><br><a href="/ai-providers">AI Provajderi i Licence</a></div>
-<div><h4>Kompanija</h4><a href="/blog">Blog</a><br><a href="/about">O nama</a><br><a href="/blog">Blog</a><br><a href="/about">O nama</a><br><a href="/blog">Blog</a><br><a href="/contact">Kontakt</a><br><a href="/privacy">Privacy Policy</a><br><a href="/privacy">Privacy Policy</a></div>
-<div><h4>Kontakt</h4><p>hello@bixie.ba</p><p>033 922 622</p><p>Maglajska 1, 71000 Sarajevo</p></div>
-</div>
-<div class="footer-bottom">2026 BIXIE. All rights reserved.</div>
-</footer>
-<script>
 
-function toggleMobile() {
-  var m = document.getElementById("mobileMenu");
-  m.classList.toggle("open");
-}
+<!-- Naš tim i pristup -->
+<section class="px-4 py-16 md:py-24">
+<div class="max-w-6xl mx-auto">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Kako radimo</h2>
+    <p class="text-lg max-w-2xl mx-auto" style="color:#6b7280">Ne prodajemo softver — rješavamo poslovne probleme. Svaki projekat počinjemo analizom vaših procesa, a tek onda biramo alate.</p>
+  </div>
+
+  <div class="max-w-3xl mx-auto">
+    <div class="process-step">
+      <div class="process-number">1</div>
+      <div><h3 class="text-lg font-semibold mb-1" style="color:#f0f2f4">Analiza i audit</h3><p class="text-sm" style="color:#6b7280">Razgovaramo s vama, analiziramo trenutne procese i identifikujemo prilike za optimizaciju. Mjesečno uštede i ROI su jasni od početka.</p></div>
+    </div>
+    <div class="process-step">
+      <div class="process-number">2</div>
+      <div><h3 class="text-lg font-semibold mb-1" style="color:#f0f2f4">Dizajn rješenja</h3><p class="text-sm" style="color:#6b7280">Na osnovu audita, predlažemo optimalno rješenje — CRM, AI agent ili RPA. Prilagođeno vašoj veličini, budžetu i ciljevima.</p></div>
+    </div>
+    <div class="process-step">
+      <div class="process-number">3</div>
+      <div><h3 class="text-lg font-semibold mb-1" style="color:#f0f2f4">Implementacija</h3><p class="text-sm" style="color:#6b7280">Implementiramo rješenje u roku 2-4 sedmice. Obuka tima, migracija podataka i integracija sa postojećim sistemima.</p></div>
+    </div>
+    <div class="process-step">
+      <div class="process-number">4</div>
+      <div><h3 class="text-lg font-semibold mb-1" style="color:#f0f2f4">Podrška i optimizacija</h3><p class="text-sm" style="color:#6b7280">Nakon implementacije, pratimo performanse i kontinuirano optimiziramo. SLA podrška na BHS jeziku.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Šta nas izdvaja -->
+<section class="px-4 py-16 md:py-24" style="background: linear-gradient(180deg, #0a0f1c 0%, #0f172a 100%)">
+<div class="max-w-6xl mx-auto">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Zašto BIXIE?</h2>
+    <p class="text-lg max-w-2xl mx-auto" style="color:#6b7280">Kombiniramo globalnu ekspertizu sa razumijevanjem lokalnog tržišta.</p>
+  </div>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="value-card">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background:rgba(0,115,106,0.15)"><svg class="w-6 h-6" fill="none" stroke="#00736a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">Bitrix24 Official Partner</h3>
+      <p class="text-sm" style="color:#6b7280">Certificirani partner sa iskustvom u implementaciji Bitrix24 rješenja za firme svih veličina. Od malih timova do enterprise sistema.</p>
+    </div>
+    <div class="value-card">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background:rgba(0,115,106,0.15)"><svg class="w-6 h-6" fill="none" stroke="#00736a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">AI Integracije</h3>
+      <p class="text-sm" style="color:#6b7280">Razvoj custom AI agenata koji se integriraju sa postojećim sistemima — CRM, ERP, DMS, web. ChatGPT, Gemini, Claude, open source modeli.</p>
+    </div>
+    <div class="value-card">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background:rgba(0,115,106,0.15)"><svg class="w-6 h-6" fill="none" stroke="#00736a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">Lokalna podrška</h3>
+      <p class="text-sm" style="color:#6b7280">Podrška na BHS jeziku, razumijevanje specifičnih poslovnih procesa i regulative u BiH, Hrvatskoj i regionu.</p>
+    </div>
+    <div class="value-card">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background:rgba(0,115,106,0.15)"><svg class="w-6 h-6" fill="none" stroke="#00736a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">Licence i Nabavka</h3>
+      <p class="text-sm" style="color:#6b7280">Nabavka i upravljanje licencama za ChatGPT, Gemini, Claude, GitHub Copilot, Canva i Microsoft 365. Povoljniji uslovi za BiH firme.</p>
+    </div>
+    <div class="value-card">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background:rgba(0,115,106,0.15)"><svg class="w-6 h-6" fill="none" stroke="#00736a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg></div>
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">Sigurnost i GDPR</h3>
+      <p class="text-sm" style="color:#6b7280">Privatni cloud hosting u EU, GDPR usklađenost, enkripcija podataka i enterprise sigurnosni standardi.</p>
+    </div>
+    <div class="value-card">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background:rgba(0,115,106,0.15)"><svg class="w-6 h-6" fill="none" stroke="#00736a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg></div>
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">Mjerljivi Rezultati</h3>
+      <p class="text-sm" style="color:#6b7280">Ne garantujemo samo implementaciju — garantujemo rezultate. Prosječna ušteda: 40% operativnih troškova, 50% brži procesi.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Testimonial / FAQ -->
+<section class="px-4 py-16 md:py-24">
+<div class="max-w-6xl mx-auto">
+  <div class="grid md:grid-cols-2 gap-12 items-start">
+    <div>
+      <h2 class="text-2xl md:text-3xl font-semibold mb-6" style="color:#f0f2f4">Šta kažu klijenti</h2>
+      <div class="p-6 rounded-xl" style="background:#1a1f2e;border:1px solid #1e293b">
+        <p class="italic mb-4" style="color:#9ca3af">"Profesionalan pristup i odlično poznavanje Bitrix24 platforme. Implementacija je protekla glatko, a podrška je uvijek dostupna."</p>
+        <p class="text-sm font-semibold" style="color:#f0f2f4">— Direktor IT sektora, transportna kompanija</p>
+      </div>
+      <div class="p-6 rounded-xl mt-4" style="background:#1a1f2e;border:1px solid #1e293b">
+        <p class="italic mb-4" style="color:#9ca3af">"AI agent kojeg su nam razvili potpuno je transformirao naš customer support. Automatski odgovara na 80% upita."</p>
+        <p class="text-sm font-semibold" style="color:#f0f2f4">— CEO, e-commerce firma</p>
+      </div>
+    </div>
+    <div>
+      <h2 class="text-2xl md:text-3xl font-semibold mb-6" style="color:#f0f2f4">Česta pitanja</h2>
+      <div class="space-y-3">
+        <details class="p-4 rounded-lg" style="background:#1a1f2e;border:1px solid #1e293b">
+          <summary class="font-medium cursor-pointer" style="color:#f0f2f4">Koje industrije pokrivate?</summary>
+          <p class="mt-3 text-sm" style="color:#6b7280">Radimo sa firmama iz svih industrija — proizvodnja, logistika, zdravstvo, turizam, maloprodaja, finansije, obrazovanje. Svaki projekat prilagođavamo specifičnostima sektora.</p>
+        </details>
+        <details class="p-4 rounded-lg" style="background:#1a1f2e;border:1px solid #1e293b">
+          <summary class="font-medium cursor-pointer" style="color:#f0f2f4">Koliko traje implementacija?</summary>
+          <p class="mt-3 text-sm" style="color:#6b7280">CRM implementacija 2-4 sedmice. AI agent 2-3 sedmice. RPA automatizacija 1-3 sedmice po procesu. Tačan rok definišemo nakon audita.</p>
+        </details>
+        <details class="p-4 rounded-lg" style="background:#1a1f2e;border:1px solid #1e293b">
+          <summary class="font-medium cursor-pointer" style="color:#f0f2f4">Radite li sa malim firmama?</summary>
+          <p class="mt-3 text-sm" style="color:#6b7280">Da, prilagođavamo rješenja firmama svih veličina — od 5 do 500+ korisnika. Za manje firme nudimo pakete sa fiksnim cijenama.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="px-4 py-16" style="background: linear-gradient(135deg, #00736a, #005c54)">
+<div class="max-w-3xl mx-auto text-center">
+  <h2 class="text-3xl font-semibold mb-4 text-white">Spremni za digitalnu transformaciju?</h2>
+  <p class="text-lg mb-8" style="color:rgba(255,255,255,0.8)">Zakažite besplatne konsultacije. Odgovaramo u roku 24h.</p>
+  <div class="flex flex-wrap justify-center gap-4">
+    <a href="/contact" class="bg-white text-[#00736a] px-8 py-3 rounded-lg font-semibold transition-all hover:scale-95">Zakažite sastanak</a>
+    <a href="tel:+38733922622" class="border border-white/30 text-white px-8 py-3 rounded-lg font-medium transition-all hover:bg-white/10">033 922 622</a>
+  </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<div class="footer-inner max-w-6xl mx-auto" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;padding:48px 24px">
+<div><a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;font-size:16px;font-weight:600;color:#f0f2f4;margin-bottom:14px"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:28px"></a><p style="font-size:14px;color:#6b7280;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Usluge</h4><a href="/services/crm" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">CRM Rjesenja</a><a href="/services/ai-agents" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Agenti</a><a href="/services/digital-transformation" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Digitalna Transformacija</a><a href="/services/rpa" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">RPA i Automatizacija</a><a href="/ai-providers" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Licence</a></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Kompanija</h4><a href="/about" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">O nama</a><a href="/blog" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Blog</a><a href="/contact" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Kontakt</a><a href="/privacy" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Privacy Policy</a></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Kontakt</h4><p style="font-size:14px;color:#6b7280;margin-bottom:8px">hello@bixie.ba</p><p style="font-size:14px;color:#6b7280;margin-bottom:8px">033 922 622</p><p style="font-size:14px;color:#6b7280;line-height:1.6">Maglajska 1, 71000 Sarajevo</p></div>
+</div>
+<div style="border-top:1px solid #1e293b;padding:24px;text-align:center;font-size:14px;color:#4b5563">2026 BIXIE. All rights reserved.</div>
+</footer>
+
+<script>
+function toggleMobile() { document.getElementById("mobileMenu").classList.toggle("open"); }
 </script>
 </body>
 </html>

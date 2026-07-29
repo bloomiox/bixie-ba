@@ -2,120 +2,308 @@
 <html lang="bs">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Digitalna transformacija — BIXIE</title>
-<meta property="og:title" content="Digitalna transformacija — BIXIE">
-<meta property="og:description" content="optimizacija poslovnih procesa, AI integracije u ERP/DMS sisteme, automatizacija radnih tokova. IT konsalting i strategija.">
+<title>Digitalna transformacija — BIXIE | Optimizacija, AI, RPA</title>
+<meta name="description" content="Optimizacija poslovnih procesa, AI integracije u ERP/DMS sisteme, RPA automatizacija radnih tokova i IT konsalting. Transformišite poslovanje uz BIXIE.">
+<meta property="og:title" content="Digitalna transformacija — BIXIE | Optimizacija procesa, AI i RPA">
+<meta property="og:description" content="Optimizacija poslovnih procesa, AI integracije u ERP/DMS sisteme, automatizacija radnih tokova. IT konsalting i strategija.">
 <meta property="og:url" content="https://bixie.ba/services/digital-transformation">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BIXIE">
 <meta property="og:image" content="https://bixie.ba/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Digitalna Transformacija — BIXIE">
-<meta name="twitter:description" content="Optimizacija poslovnih procesa, AI integracije u ERP/DMS sisteme, automatizacija radnih tokova. IT konsalting i strategija.">
+<meta name="twitter:description" content="Optimizacija poslovnih procesa, AI integracije u ERP/DMS sisteme, automatizacija radnih tokova.">
 <meta name="twitter:image" content="https://bixie.ba/og-image.png">
-
-<meta name="description" content="digitalna transformacija za firme u BiH. Optimizacija procesa, AI integracija u ERP/DMS, automatizacija radnih tokova.">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css">
-  <link rel="canonical" href="https://bixie.ba/services/digital-transformation">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "BIXIE",
-  "url": "https://bixie.ba",
-  "logo": "https://bixie.ba/og-image.png",
-  "description": "CRM, AI Agenti i Digitalna Transformacija za firme u Bosni i Hercegovini.",
-  "address": { "@type": "PostalAddress", "streetAddress": "Maglajska 1", "addressLocality": "Sarajevo", "addressCountry": "BA" },
-  "contactPoint": { "@type": "ContactPoint", "telephone": "+387-33-922-622", "email": "hello@bixie.ba", "contactType": "sales" },
-  "sameAs": ["https://www.linkedin.com/company/bixie"]
-}
-</script>
+<link rel="canonical" href="https://bixie.ba/services/digital-transformation">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate" hreflang="bs" href="https://bixie.ba/services/digital-transformation">
 <link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/digital-transformation">
 <link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/digital-transformation">
-<link rel="alternate" hreflang="bs" href="https://bixie.ba/services/digital-transformation">
-<link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/digital-transformation"><!-- Clarity -->
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "jhp3l0sl3y");
-</script>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRGFE5K9G4"></script>
+<link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/digital-transformation">
+<script src="https://cdn.tailwindcss.com"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-WRGFE5K9G4");
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { accent: '#00736a', 'accent-dark': '#005c54', surface: '#0f172a', card: '#1a1f2e', border: '#1e293b', muted: '#64748b', teal: { 400: '#00a396', 500: '#008a7f', 600: '#00736a', 700: '#005c54' } },
+      fontFamily: { sans: ['Inter', 'sans-serif'] }
+    }
+  }
+}
 </script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{display:block;width:22px;height:2px;background:#5b6f99;border-radius:1px;transition:all .2s}
+.mobile-menu{display:none;border-top:1px solid rgba(30,41,59,0.4);padding:16px 24px 24px;background:var(--bg-root)}
+@media(max-width:768px){.hamburger{display:flex}.nav-links{display:none}.mobile-menu.open{display:block}}
+.service-card { background: #1a1f2e; border: 1px solid #1e293b; border-radius: 12px; padding: 28px; transition: all 0.2s; }
+.service-card:hover { border-color: #00736a; transform: translateY(-2px); }
+.industry-card { background: linear-gradient(135deg, #1a1f2e, #0f172a); border: 1px solid #1e293b; border-radius: 12px; padding: 24px; text-align: center; transition: all 0.3s; }
+.industry-card:hover { border-color: #00736a; transform: translateY(-2px); }
+.process-step { display: flex; gap: 20px; padding: 24px; background: #1a1f2e; border: 1px solid #1e293b; border-radius: 12px; margin-bottom: 16px; }
+.process-number { flex-shrink: 0; width: 48px; height: 48px; border-radius: 50%; background: #00736a; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: #fff; }
+.mobile-label { font-size: 13px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRGFE5K9G4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-WRGFE5K9G4");</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","jhp3l0sl3y");</script>
 </head>
 <body>
-<nav>
-<div class="nav-inner">
-<a href="/" class="logo"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:36px"></a>
-<div class="nav-links">
-<div class="dropdown"><a href="/services/crm">CRM</a><div class="dropdown-menu"><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a></div></div>
-<div class="dropdown"><a href="/services/ai-agents">AI</a><div class="dropdown-menu"><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a></div></div>
-<div class="dropdown"><a href="/services/digital-transformation">Digitalna Transformacija</a><div class="dropdown-menu"><a href="/services/digital-transformation">Pregled</a><a href="/services/rpa">RPA i Automatizacija</a></div></div>
-<a href="/about">O nama</a>
-<a href="/ai-providers">AI Licence</a>
-<a href="/blog">Blog</a>
-<a href="/contact" class="nav-cta">Zatražite ponudu</a>
-</div>
-<button class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+<nav class="sticky top-0 z-50 border-b border-gray-800/50 bg-[#0a0f1c]/95 backdrop-blur-xl">
+<div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+  <a href="/" class="flex items-center gap-3"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:32px"></a>
+  <div class="hidden md:flex items-center gap-6">
+    <div class="relative group">
+      <a href="/services/crm" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">CRM ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pregled</a>
+        <a href="/services/crm#bitrix24" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Bitrix24</a>
+        <a href="/services/crm#zoho" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Zoho CRM</a>
+        <a href="/services/crm#pipedrive" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pipedrive</a>
+        <a href="/services/crm#hubspot" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">HubSpot</a>
+        <a href="/services/crm#salesforce" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Salesforce</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <a href="/services/ai-agents" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">AI ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Agenti & Automatizacija</a>
+        <a href="/services/ai-agents#licence" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Licence</a>
+        <a href="/open-source-infra" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Open Source Infrastruktura</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <a href="/services" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Usluge ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pregled svih usluga</a>
+        <a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">CRM Rješenja</a>
+        <a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Agenti</a>
+        <a href="/services/rpa" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">RPA Automatizacija</a>
+        <a href="/open-source-infra" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Open Source Infrastruktura</a>
+        <a href="/ai-providers" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Licence</a>
+        <a href="/services/digital-transformation" class="text-white text-sm font-medium transition-colors">Digitalna Transformacija</a>
+      </div>
+    </div>
+    <a href="/ai-providers" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Licence</a>
+    <a href="/about" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">O nama</a>
+    <a href="/blog" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Blog</a>
+    <a href="/contact" class="bg-[#00736a] hover:bg-[#008a7f] text-white px-5 py-2 rounded-lg text-sm font-medium transition-all hover:scale-95">Zatražite ponudu</a>
+  </div>
+  <button class="hamburger md:hidden" onclick="toggleMobile()"><span></span><span></span><span></span></button>
 </div>
 <div id="mobileMenu" class="mobile-menu">
 <div class="mobile-label">CRM</div>
-<a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a>
-<div class="mobile-label">AI</div>
-<a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a>
-<a href="/services/digital-transformation">Digitalna Transformacija</a><a href="/services/rpa">RPA i Automatizacija</a>
-<a href="/about">O nama</a>
-<a href="/ai-providers">AI Licence</a><a href="/blog">Blog</a>
-<a href="/contact" style="display:block;margin-top:10px;background:#00736a;color:#fff;padding:10px 16px;border-radius:6px;text-align:center;font-weight:450;font-size:0.9rem">Zatražite ponudu</a>
+<a href="/services/crm" class="block py-2 text-sm text-gray-400 hover:text-white">Pregled CRM usluga</a>
+<a href="/services/crm#bitrix24" class="block py-2 text-sm text-gray-400 hover:text-white">Bitrix24</a>
+<a href="/services/crm#zoho" class="block py-2 text-sm text-gray-400 hover:text-white">Zoho CRM</a>
+<a href="/services/crm#pipedrive" class="block py-2 text-sm text-gray-400 hover:text-white">Pipedrive</a>
+<a href="/services/crm#hubspot" class="block py-2 text-sm text-gray-400 hover:text-white">HubSpot</a>
+<a href="/services/crm#salesforce" class="block py-2 text-sm text-gray-400 hover:text-white">Salesforce</a>
+<div class="mobile-label mt-3">AI</div>
+<a href="/services/ai-agents" class="block py-2 text-sm text-gray-400 hover:text-white">AI Agenti i Automatizacija</a>
+<a href="/services/ai-agents#licence" class="block py-2 text-sm text-gray-400 hover:text-white">AI Licence</a>
+<a href="/open-source-infra" class="block py-2 text-sm text-gray-400 hover:text-white">Open Source Infrastruktura</a>
+<a href="/services" class="block py-2 mt-2 text-sm text-gray-400 hover:text-white">Sve usluge</a>
+<a href="/about" class="block py-2 text-sm text-gray-400 hover:text-white">O nama</a>
+<a href="/blog" class="block py-2 text-sm text-gray-400 hover:text-white">Blog</a>
+<a href="/contact" class="block mt-3 bg-[#00736a] text-white px-5 py-3 rounded-lg text-sm font-medium text-center">Zatražite ponudu</a>
 </div>
 </nav>
 
-<section style="padding:80px 24px">
-<div style="max-width:1200px;margin:0 auto">
-<span class="badge" style="border-color:rgba(94,106,210,0.3);color:#00736a">Digitalna Transformacija</span>
-<h1>Digitalna <span style="color:#00736a">transformacija</span></h1>
-<p style="font-size:18px;line-height:1.6;color:#6b7280;max-width:600px;margin-bottom:48px">Optimizacija poslovnih procesa, AI integracije u ERP/DMS sisteme, automatizacija radnih tokova.</p>
-
-<div class="grid-2" style="margin-bottom:48px">
-<div class="card" style="padding:32px;border-left:3px solid #00736a"><h3>Optimizacija Procesa</h3><p>Analiza i redizajn poslovnih procesa sa ciljem smanjenja operativnih troskova i povecanja efikasnosti. Implementacija digitalnih tokova rada.</p></div>
-<div class="card" style="padding:32px;border-left:3px solid #00736a"><h3>AI Integracija u ERP/DMS</h3><p>Integracija AI agenata u postojece ERP i DMS sisteme. Automatizacija unosa podataka, generisanje izvjestaja i prediktivna analitika.</p></div>
-<div class="card" style="padding:32px;border-left:3px solid #00736a"><h3>Automatizacija Radnih Tokova</h3><p>RPA automatizacija repetitivnih zadataka. Sync podataka izmedju sistema, automatsko fakturisanje, upravljanje dokumentima.</p></div>
-<div class="card" style="padding:32px;border-left:3px solid #00736a"><h3>IT Konsalting i Strategija</h3><p>Izrada digitalne strategije, tehnoloski audit, izbor optimalnih alata i platformi za vase poslovanje.</p></div>
+<!-- Hero -->
+<section class="px-4 py-20 md:py-28" style="background: linear-gradient(135deg, #0a0f1c 0%, #0f172a 50%, #0a0f1c 100%)">
+<div class="max-w-6xl mx-auto">
+  <div class="flex flex-col md:flex-row gap-12 items-center">
+    <div class="flex-1">
+      <span class="inline-block text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full border" style="border-color:rgba(0,115,106,0.3);color:#00736a;background:rgba(0,115,106,0.08)">Digitalna transformacija</span>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mt-4 mb-6" style="color:#f0f2f4;letter-spacing:-1.5px">Digitalna <span style="color:#00736a">transformacija</span></h1>
+      <p class="text-lg md:text-xl leading-relaxed mb-8" style="color:#6b7280;max-width:540px">Optimizacija poslovnih procesa, AI integracije u ERP/DMS sisteme, RPA automatizacija radnih tokova i IT konsalting. Transformišite poslovanje korak po korak.</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="/contact" class="bg-[#00736a] hover:bg-[#008a7f] text-white px-6 py-3 rounded-lg font-medium transition-all hover:scale-95">Zakažite konsultacije</a>
+        <a href="#proces" class="border border-gray-700 hover:border-gray-500 text-gray-300 px-6 py-3 rounded-lg font-medium transition-all">Kako transformišemo</a>
+      </div>
+    </div>
+    <div class="flex-1">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="p-6 rounded-xl text-center" style="background:linear-gradient(135deg, #1a1f2e, #0f172a);border:1px solid #1e293b">
+          <div class="text-3xl font-bold" style="color:#00736a">40%</div>
+          <div class="text-sm mt-1" style="color:#6b7280">Niži operativni troškovi</div>
+        </div>
+        <div class="p-6 rounded-xl text-center" style="background:linear-gradient(135deg, #1a1f2e, #0f172a);border:1px solid #1e293b">
+          <div class="text-3xl font-bold" style="color:#00736a">50%</div>
+          <div class="text-sm mt-1" style="color:#6b7280">Brži poslovni procesi</div>
+        </div>
+        <div class="p-6 rounded-xl text-center" style="background:linear-gradient(135deg, #1a1f2e, #0f172a);border:1px solid #1e293b">
+          <div class="text-3xl font-bold" style="color:#00736a">85%</div>
+          <div class="text-sm mt-1" style="color:#6b7280">Manje grešaka u obradi</div>
+        </div>
+        <div class="p-6 rounded-xl text-center" style="background:linear-gradient(135deg, #1a1f2e, #0f172a);border:1px solid #1e293b">
+          <div class="text-3xl font-bold" style="color:#00736a">3-6</div>
+          <div class="text-sm mt-1" style="color:#6b7280">Mjeseci povrat investicije</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+</section>
 
-<div style="text-align:center;margin-top:48px">
-<p style="font-size:16px;color:#6b7280;margin-bottom:16px">Zelite unaprijediti vase poslovanje kroz digitalnu transformaciju?</p>
-<a href="/contact" class="btn-primary">Zakazite sastanak</a>
+<!-- Usluge digitalne transformacije -->
+<section class="px-4 py-16 md:py-24">
+<div class="max-w-6xl mx-auto">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Šta nudimo</h2>
+    <p class="text-lg max-w-2xl mx-auto" style="color:#6b7280">Kompletna digitalna transformacija — od strategije do implementacije.</p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="service-card" style="border-left:3px solid #00736a">
+      <h3 class="text-lg font-semibold mb-2" style="color:#f0f2f4">Optimizacija procesa</h3>
+      <p class="text-sm mb-4" style="color:#6b7280">Analiza i redizajn poslovnih procesa sa ciljem smanjenja operativnih troškova i povećanja efikasnosti. Implementacija digitalnih tokova rada.</p>
+      <ul class="text-sm space-y-1" style="color:#9ca3af">
+        <li>✓ Lean analiza i mapiranje procesa</li>
+        <li>✓ Identifikacija uskih grla i duplih poslova</li>
+        <li>✓ Implementacija digitalnih tokova rada</li>
+        <li>✓ Mjerenje i optimizacija performansi</li>
+      </ul>
+    </div>
+    <div class="service-card" style="border-left:3px solid #00736a">
+      <h3 class="text-lg font-semibold mb-2" style="color:#f0f2f4">AI integracija u ERP/DMS</h3>
+      <p class="text-sm mb-4" style="color:#6b7280">Integracija AI agenata u postojeće ERP i DMS sisteme. Automatizacija unosa podataka, generisanje izvještaja i prediktivna analitika.</p>
+      <ul class="text-sm space-y-1" style="color:#9ca3af">
+        <li>✓ AI agenti za automatski unos podataka</li>
+        <li>✓ Generisanje izvještaja na prirodnom jeziku</li>
+        <li>✓ Prediktivna analitika i forecasting</li>
+        <li>✓ Integracija sa postojećim sistemima</li>
+      </ul>
+    </div>
+    <div class="service-card" style="border-left:3px solid #00736a">
+      <h3 class="text-lg font-semibold mb-2" style="color:#f0f2f4">Automatizacija radnih tokova</h3>
+      <p class="text-sm mb-4" style="color:#6b7280">RPA automatizacija repetitivnih zadataka. Sinhronizacija podataka između sistema, automatsko fakturisanje, upravljanje dokumentima.</p>
+      <ul class="text-sm space-y-1" style="color:#9ca3af">
+        <li>✓ RPA za ponavljajuće administrativne zadatke</li>
+        <li>✓ Automatsko fakturisanje i naplata</li>
+        <li>✓ Sinhronizacija između CRM, ERP i DMS</li>
+        <li>✓ Obrada i klasifikacija dokumenata</li>
+      </ul>
+    </div>
+    <div class="service-card" style="border-left:3px solid #00736a">
+      <h3 class="text-lg font-semibold mb-2" style="color:#f0f2f4">IT konsalting i strategija</h3>
+      <p class="text-sm mb-4" style="color:#6b7280">Izrada digitalne strategije, tehnološki audit, izbor optimalnih alata i platformi za vaše poslovanje. Planiranje i roadmap.</p>
+      <ul class="text-sm space-y-1" style="color:#9ca3af">
+        <li>✓ Digitalna strategija i roadmap</li>
+        <li>✓ Tehnološki audit i preporuke</li>
+        <li>✓ Izbor alata i platformi</li>
+        <li>✓ Obuka i change management</li>
+      </ul>
+    </div>
+  </div>
 </div>
+</section>
+
+<!-- Proces -->
+<section class="px-4 py-16 md:py-24" id="proces" style="background: linear-gradient(180deg, #0a0f1c 0%, #0f172a 100%)">
+<div class="max-w-6xl mx-auto">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Kako transformišemo poslovanje</h2>
+    <p class="text-lg max-w-2xl mx-auto" style="color:#6b7280">Projektni pristup sa jasnim fazama i mjerljivim rezultatima.</p>
+  </div>
+
+  <div class="max-w-3xl mx-auto">
+    <div class="process-step">
+      <div class="process-number">1</div>
+      <div><h3 class="font-semibold mb-1" style="color:#f0f2f4">Digitalni audit</h3><p class="text-sm" style="color:#6b7280">Detaljna analiza trenutnog stanja — tehnologije, procesi, ljudi i podaci. Identifikacija prilika za optimizaciju i brze pobjede (quick wins).</p></div>
+    </div>
+    <div class="process-step">
+      <div class="process-number">2</div>
+      <div><h3 class="font-semibold mb-1" style="color:#f0f2f4">Izrada strategije</h3><p class="text-sm" style="color:#6b7280">Na osnovu audita, kreiramo digitalnu strategiju sa prioritetima, budžetom, rokovima i očekivanim ROI-jem. Planiramo u fazama.</p></div>
+    </div>
+    <div class="process-step">
+      <div class="process-number">3</div>
+      <div><h3 class="font-semibold mb-1" style="color:#f0f2f4">Implementacija</h3><p class="text-sm" style="color:#6b7280">Implementiramo rješenje po fazama — od najvećeg uticaja ka manjem. Svaka faza donosi mjerljive rezultate prije nego što krenemo dalje.</p></div>
+    </div>
+    <div class="process-step">
+      <div class="process-number">4</div>
+      <div><h3 class="font-semibold mb-1" style="color:#f0f2f4">Optimizacija i skaliranje</h3><p class="text-sm" style="color:#6b7280">Nakon implementacije, pratimo rezultate i optimiziramo. Skaliramo uspješna rješenja na druge dijelove organizacije.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Zašto digitalna transformacija -->
+<section class="px-4 py-16 md:py-24">
+<div class="max-w-6xl mx-auto">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Zašto digitalna transformacija?</h2>
+    <p class="text-lg max-w-2xl mx-auto" style="color:#6b7280">Firme koje su prošle digitalnu transformaciju uz BIXIE bilježe značajne rezultate.</p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="p-8 rounded-xl text-center" style="background:#1a1f2e;border:1px solid #1e293b">
+      <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background:rgba(0,115,106,0.15)"><svg class="w-8 h-8" fill="none" stroke="#00736a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+      <h3 class="text-xl font-semibold mb-3" style="color:#f0f2f4">Smanjenje troškova</h3>
+      <p class="text-sm" style="color:#6b7280">Automatizacijom repetitivnih zadataka i optimizacijom procesa, firme smanjuju operativne troškove za 30-50%. Manje ručnog rada, manje grešaka.</p>
+    </div>
+    <div class="p-8 rounded-xl text-center" style="background:#1a1f2e;border:1px solid #1e293b">
+      <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background:rgba(0,115,106,0.15)"><svg class="w-8 h-8" fill="none" stroke="#00736a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+      <h3 class="text-xl font-semibold mb-3" style="color:#f0f2f4">Povećanje efikasnosti</h3>
+      <p class="text-sm" style="color:#6b7280">Digitalni tokovi rada i AI agenti ubrzavaju procese 2-3 puta. Vrijeme odobravanja, obrade dokumenata i odgovora klijentima se dramatično smanjuje.</p>
+    </div>
+    <div class="p-8 rounded-xl text-center" style="background:#1a1f2e;border:1px solid #1e293b">
+      <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background:rgba(0,115,106,0.15)"><svg class="w-8 h-8" fill="none" stroke="#00736a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+      <h3 class="text-xl font-semibold mb-3" style="color:#f0f2f4">Bolje odluke</h3>
+      <p class="text-sm" style="color:#6b7280">Real-time izvještaji i prediktivna analitika omogućavaju menadžmentu da donosi odluke na osnovu podataka, a ne osjećaja. Brže i preciznije.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Industrije -->
+<section class="px-4 py-16 md:py-24" style="background: linear-gradient(180deg, #0a0f1c 0%, #0f172a 100%)">
+<div class="max-w-6xl mx-auto">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Industrije koje transformišemo</h2>
+    <p class="text-lg max-w-2xl mx-auto" style="color:#6b7280">Prilagođena rješenja za specifične potrebe vašeg sektora.</p>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+    <div class="industry-card"><div class="text-3xl mb-2">🏭</div><h3 class="text-sm font-semibold" style="color:#f0f2f4">Proizvodnja</h3></div>
+    <div class="industry-card"><div class="text-3xl mb-2">🚚</div><h3 class="text-sm font-semibold" style="color:#f0f2f4">Logistika</h3></div>
+    <div class="industry-card"><div class="text-3xl mb-2">🏥</div><h3 class="text-sm font-semibold" style="color:#f0f2f4">Zdravstvo</h3></div>
+    <div class="industry-card"><div class="text-3xl mb-2">🏨</div><h3 class="text-sm font-semibold" style="color:#f0f2f4">Turizam</h3></div>
+    <div class="industry-card"><div class="text-3xl mb-2">🛒</div><h3 class="text-sm font-semibold" style="color:#f0f2f4">Maloprodaja</h3></div>
+    <div class="industry-card"><div class="text-3xl mb-2">💰</div><h3 class="text-sm font-semibold" style="color:#f0f2f4">Finansije</h3></div>
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="px-4 py-16" style="background: linear-gradient(135deg, #00736a, #005c54)">
+<div class="max-w-3xl mx-auto text-center">
+  <h2 class="text-3xl font-semibold mb-4 text-white">Spremni za digitalnu transformaciju?</h2>
+  <p class="text-lg mb-8" style="color:rgba(255,255,255,0.8)">Zakažite besplatne konsultacije. Analiziramo vaše poslovanje i predlažemo plan sa jasnim ROI-jem.</p>
+  <div class="flex flex-wrap justify-center gap-4">
+    <a href="/contact" class="bg-white text-[#00736a] px-8 py-3 rounded-lg font-semibold transition-all hover:scale-95">Zakažite sastanak</a>
+    <a href="tel:+38733922622" class="border border-white/30 text-white px-8 py-3 rounded-lg font-medium transition-all hover:bg-white/10">033 922 622</a>
+  </div>
 </div>
 </section>
 
 <footer>
-<div class="footer-inner">
+<div class="footer-inner max-w-6xl mx-auto" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;padding:48px 24px">
 <div><a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;font-size:16px;font-weight:600;color:#f0f2f4;margin-bottom:14px"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:28px"></a><p style="font-size:14px;color:#6b7280;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
-<div><h4>Usluge</h4><a href="/services/crm">CRM Rjesenja</a><br><a href="/services/ai-agents">AI Agenti</a><br><a href="/services/digital-transformation">Digitalna Transformacija</a><br><a href="/services/rpa">RPA i Automatizacija</a><br><a href="/ai-providers">AI Provajderi i Licence</a><br><a href="/services/rpa">RPA i Automatizacija</a><br><a href="/ai-providers">AI Provajderi i Licence</a></div>
-<div><h4>Kompanija</h4><a href="/blog">Blog</a><br><a href="/about">O nama</a><br><a href="/blog">Blog</a><br><a href="/about">O nama</a><br><a href="/blog">Blog</a><br><a href="/contact">Kontakt</a><br><a href="/privacy">Privacy Policy</a><br><a href="/privacy">Privacy Policy</a></div>
-<div><h4>Kontakt</h4><p>hello@bixie.ba</p><p>033 922 622</p><p>Maglajska 1, 71000 Sarajevo</p></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Usluge</h4><a href="/services/crm" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">CRM Rjesenja</a><a href="/services/ai-agents" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Agenti</a><a href="/services/digital-transformation" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Digitalna Transformacija</a><a href="/services/rpa" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">RPA i Automatizacija</a><a href="/ai-providers" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Licence</a></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Kompanija</h4><a href="/about" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">O nama</a><a href="/blog" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Blog</a><a href="/contact" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Kontakt</a><a href="/privacy" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Privacy Policy</a></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Kontakt</h4><p style="font-size:14px;color:#6b7280;margin-bottom:8px">hello@bixie.ba</p><p style="font-size:14px;color:#6b7280;margin-bottom:8px">033 922 622</p><p style="font-size:14px;color:#6b7280;line-height:1.6">Maglajska 1, 71000 Sarajevo</p></div>
 </div>
-<div class="footer-bottom">2026 BIXIE. All rights reserved.</div>
+<div style="border-top:1px solid #1e293b;padding:24px;text-align:center;font-size:14px;color:#4b5563">2026 BIXIE. All rights reserved.</div>
 </footer>
-<script>
 
-function toggleMobile() {
-  var m = document.getElementById("mobileMenu");
-  m.classList.toggle("open");
-}
+<script>
+function toggleMobile() { document.getElementById("mobileMenu").classList.toggle("open"); }
 </script>
 </body>
 </html>
