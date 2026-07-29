@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Kako smo lancu benzinskih pumpi automatizirali nabavku i prodaju — BIXIE</title>
+<meta property="og:title" content="Case Study: Kako smo lancu benzinskih pumpi automatizirali nabavku i prodaju — BIXIE">
+<meta property="og:description" content="Kako je BIXIE implementirao AI agente i RPA za lanac benzinskih pumpi u BiH — automatizacija nabavke, skladišta i izvještavanja.">
+<meta property="og:url" content="https://bixie.ba/blog/posts/case-study-benzinske-pumpe-ai-automatizacija">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BIXIE">
+<meta property="og:image" content="https://bixie.ba/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Case Study: Kako smo lancu benzinskih pumpi automatizirali nabavku i prodaju — BIXIE">
+<meta name="twitter:description" content="Kako je BIXIE implementirao AI agente i RPA za lanac benzinskih pumpi u BiH — automatizacija nabavke, skladišta i izvještavanja.">
+<meta name="twitter:image" content="https://bixie.ba/og-image.png">
+    <meta name="description" content="Kako je BIXIE implementirao AI agente i RPA za lanac benzinskih pumpi u BiH — automatizacija nabavke, skladišta i izvještavanja." />
+  <link rel="canonical" href="https://bixie.ba/blog/posts/case-study-benzinske-pumpe-ai-automatizacija">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BIXIE",
+  "url": "https://bixie.ba",
+  "logo": "https://bixie.ba/og-image.png",
+  "description": "CRM, AI Agenti i Digitalna Transformacija za firme u Bosni i Hercegovini.",
+  "address": { "@type": "PostalAddress", "streetAddress": "Maglajska 1", "addressLocality": "Sarajevo", "addressCountry": "BA" },
+  "contactPoint": { "@type": "ContactPoint", "telephone": "+387-33-922-622", "email": "hello@bixie.ba", "contactType": "sales" },
+  "sameAs": ["https://www.linkedin.com/company/bixie"]
+}
+</script>
+<link rel="alternate" hreflang="en" href="https://bixie.ba/en/blog/posts/case-study-benzinske-pumpe-ai-automatizacija">
+<link rel="alternate" hreflang="de" href="https://bixie.ba/de/blog/posts/case-study-benzinske-pumpe-ai-automatizacija">
+<link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/case-study-benzinske-pumpe-ai-automatizacija">
+<link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/case-study-benzinske-pumpe-ai-automatizacija"><!-- Clarity -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "jhp3l0sl3y");
+</script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRGFE5K9G4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-WRGFE5K9G4");
+</script>
+<link rel="stylesheet" href="/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{display:block;width:22px;height:2px;background:#5b6f99;border-radius:1px;transition:all .2s}
+.mobile-menu{display:none;border-top:1px solid rgba(30,41,59,0.4);padding:16px 24px 24px;background:var(--bg-root)}
+@media(max-width:768px){.hamburger{display:flex}.nav-links{display:none}.mobile-menu.open{display:block}}
+</style>
+</head>
+<body><nav>
+<div class="nav-inner">
+<a href="/" class="logo"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:36px"></a>
+<div class="nav-links">
+<div class="dropdown"><a href="/services/crm">CRM</a><div class="dropdown-menu"><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a></div></div>
+<div class="dropdown"><a href="/services/ai-agents">AI</a><div class="dropdown-menu"><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a></div></div>
+<div class="dropdown"><a href="/services/digital-transformation">Digitalna Transformacija</a><div class="dropdown-menu"><a href="/services/digital-transformation">Pregled</a><a href="/services/rpa">RPA i Automatizacija</a></div></div>
+<a href="/about">O nama</a>
+<a href="/ai-providers">AI Licence</a>
+<a href="/blog">Blog</a>
+<a href="/contact" class="nav-cta">Zatražite ponudu</a>
+</div>
+<button class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+</div>
+<div id="mobileMenu" class="mobile-menu">
+<div class="mobile-label">CRM</div>
+<a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a>
+<div class="mobile-label">AI</div>
+<a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a>
+<a href="/services/digital-transformation">Digitalna Transformacija</a><a href="/services/rpa">RPA i Automatizacija</a>
+<a href="/about">O nama</a>
+<a href="/ai-providers">AI Licence</a><a href="/blog">Blog</a>
+<a href="/contact" style="display:block;margin-top:10px;background:#00736a;color:#fff;padding:10px 16px;border-radius:6px;text-align:center;font-weight:450;font-size:0.9rem">Zatražite ponudu</a>
+</div>
+</nav>
+<section class="max-w-3xl mx-auto px-4 py-12">
+<a href="/blog" class="text-gray-500 hover:text-white text-sm mb-6 inline-block">← Nazad na blog</a>
+<span class="badge bg-green-600/20 text-green-400 mb-4 inline-block">Case Study</span>
+<h1>Case Study: Kako smo lancu benzinskih pumpi automatizirali nabavku i prodaju</h1>
+<div class="text-sm text-gray-500 mb-8">23. Juli 2026 · BIXIE Team · 5 min čitanja</div>
+<h2 class="text-3xl font-bold text-white mt-10 mb-4">Case Study: Kako smo lancu benzinskih pumpi automatizirali nabavku i prodaju</h2>
+<p class="text-gray-300 mb-4">Kako je BIXIE implementirao AI agente i RPA za lanac benzinskih pumpi u BiH — automatizacija nabavke, skladišta i izvještavanja.</p>
+<h3 class="text-2xl font-bold text-white mt-10 mb-4">Klijent</h3>
+<p class="text-gray-300 mb-4">Lanac od 15 benzinskih pumpi u Federaciji BiH sa sjedištem u Zenici. Firma zapošljava 120 radnika i pokriva područje od Bihaća do Tuzle. Osim goriva, prodaju i prateću robu — motorna ulja, auto-dijelove, pića i snackove.</p>
+<h3 class="text-2xl font-bold text-white mt-10 mb-4">Izazov</h3>
+<p class="text-gray-300 mb-4">Klijent se suočavao sa nekoliko ključnih problema koji su kočili rast:</p>
+<ul class="list-disc list-inside text-gray-300 mb-6 space-y-2">
+<li><strong>Nabavka goriva se radila "na osjećaj"</strong> — menadžer je svakog jutra zvao pumpe da provjeri stanje rezervoara, pa naručivao od dobavljača. Gubio je 2-3 sata dnevno na telefonske pozive.</li>
+<li><strong>Zalihe prateće robe su bile haotične</strong> — na jednoj pumpi je nestalo motornog ulja, dok je druga imala višak koji je stajao mjesecima.</li>
+<li><strong>Izvještaji su kasnili 7-10 dana</strong> — menadžment je dobijao podatke o prodaji sa sedmičnim zakašnjenjem, što je onemogućavalo brze odluke.</li>
+<li><strong>Otprema i prijem robe su bili papirni</strong> — svaka pumpa je vodila svoju evidenciju, a na kraju mjeseca se sve ručno unosilo u centralni sistem.</li>
+</ul>
+<h3 class="text-2xl font-bold text-white mt-10 mb-4">Rješenje</h3>
+<p class="text-gray-300 mb-4">BIXIE je implementirao integrisano rješenje koje se sastoji od tri AI agenta i RPA bota:</p>
+<h4 class="text-2xl font-bold text-white mt-10 mb-4">1. AI Agent za nabavku goriva</h4>
+<p class="text-gray-300 mb-4">Agent se povezao sa senzorima nivoa goriva na svakoj pumpi (već postojeća IoT infrastruktura). Svakih 15 minuta provjerava stanje i predviđa kada će koja pumpa ostati bez goriva na osnovu istorijskih podataka o prodaji, dana u sedmici i vremenske prognoze.</p>
+<p class="text-gray-300 mb-4"><strong>Rezultat:</strong> Automatsko generisanje naloga za nabavku. Agent sam bira dobavljača na osnovu trenutnih cijena i rokova isporuke. Menadžer samo potvrđuje jednim klikom.</p>
+<p class="text-gray-300 mb-4">> "Prije sam trošio prva 2 sata radnog vremena na telefonske pozive pumpama. Sada otvorim aplikaciju, vidim da agent predlaže narudžbu za 3 pumpe, potvrdim i imam slobodno vrijeme za strateške stvari." — Menadžer nabavke</p>
+<h4 class="text-2xl font-bold text-white mt-10 mb-4">2. AI Agent za upravljanje skladištem prateće robe</h4>
+<p class="text-gray-300 mb-4">Agent prati prodaju na svakoj pumpi i automatski predlaže premještanje robe sa pumpi koje imaju višak na one koje imaju manjak. Kada nivo robe padne ispod minimalnog, agent generiše nalog za nabavku dobavljaču.</p>
+<p class="text-gray-300 mb-4"><strong>Rezultat:</strong> Smanjenje zaliha prateće robe za 35% uz istovremeno povećanje dostupnosti proizvoda na pumpama sa 82% na 97%.</p>
+<h4 class="text-2xl font-bold text-white mt-10 mb-4">3. AI Agent za izvještavanje</h4>
+<p class="text-gray-300 mb-4">Agent prikuplja podatke sa svih 15 pumpi u realnom vremenu i generiše dnevne, sedmične i mjesečne izvještaje:</p>
+<ul class="list-disc list-inside text-gray-300 mb-6 space-y-2">
+<li>Prodaja po pumpi, po proizvodu, po smjeni</li>
+<li>Marže po kategorijama (gorivo vs prateća roba)</li>
+<li>Upoređenje sa istim periodom prošle godine</li>
+<li>Detekcija anomalija (pad prodaje, neobične smjene)</li>
+</ul>
+<p class="text-gray-300 mb-4"><strong>Rezultat:</strong> Izvještaji su dostupni u realnom vremenu umjesto sa 7-10 dana zakašnjenja.</p>
+<h4 class="text-2xl font-bold text-white mt-10 mb-4">4. RPA Bot za otpremu i prijem</h4>
+<p class="text-gray-300 mb-4">Bot automatizira kompletan proces: kada kamion stigne na pumpu, vozač skenira QR kod na otpremnici. Bot provjerava da li se količine podudaraju sa narudžbom, knjiži u sistem i generiše prijemnicu. Bez papira, bez ručnog unosa.</p>
+<p class="text-gray-300 mb-4"><strong>Rezultat:</strong> Proces prijema robe sa 20 minuta smanjen na 3 minute.</p>
+<h3 class="text-2xl font-bold text-white mt-10 mb-4">Rezultati</h3>
+<div class="card mb-6"><table class="w-full text-sm text-gray-300">
+<tr class="text-left text-white border-b border-gray-700"><th class="pb-3 pr-4">Metrika</th><th class="pb-3 pr-4">Prije</th><th class="pb-3 pr-4">Poslije</th><th class="pb-3 pr-4">Promjena</th></tr>
+<tr class="border-b border-gray-800"><td class="py-3 pr-4">Vrijeme nabavke goriva</td><td class="py-3 pr-4">2-3 sata/dan</td><td class="py-3 pr-4">5 minuta/dan</td><td class="py-3 pr-4">-97%</td></tr>
+<tr class="border-b border-gray-800"><td class="py-3 pr-4">Zalihe prateće robe</td><td class="py-3 pr-4">45 dana</td><td class="py-3 pr-4">29 dana</td><td class="py-3 pr-4">-35%</td></tr>
+<tr class="border-b border-gray-800"><td class="py-3 pr-4">Dostupnost proizvoda</td><td class="py-3 pr-4">82%</td><td class="py-3 pr-4">97%</td><td class="py-3 pr-4">+15%</td></tr>
+<tr class="border-b border-gray-800"><td class="py-3 pr-4">Isporuka izvještaja</td><td class="py-3 pr-4">7-10 dana</td><td class="py-3 pr-4">Real-time</td><td class="py-3 pr-4">✅</td></tr>
+<tr class="border-b border-gray-800"><td class="py-3 pr-4">Greške u inventuri</td><td class="py-3 pr-4">8-12%</td><td class="py-3 pr-4"><1%</td><td class="py-3 pr-4">-92%</td></tr>
+<tr class="border-b border-gray-800"><td class="py-3 pr-4">Vrijeme prijema robe</td><td class="py-3 pr-4">20 min</td><td class="py-3 pr-4">3 min</td><td class="py-3 pr-4">-85%</td></tr>
+<tr class="border-b border-gray-800"><td class="py-3 pr-4">Troškovi administracije</td><td class="py-3 pr-4">3 radnika FT</td><td class="py-3 pr-4">0.5 radnika FT</td><td class="py-3 pr-4">-83%</td></tr>
+</tbody></table></div>
+<h3 class="text-2xl font-bold text-white mt-10 mb-4">Šta kaže klijent?</h3>
+<p class="text-gray-300 mb-4">> "Implementacija je trajala 4 sedmice. Prve sedmice smo imali pitanja i prilagođavanja, ali već druge sedmice su rezultati bili vidljivi. Treće sedmice smo smanjili zalihe za 20%. Četvrte sedmice su izvještaji bili u realnom vremenu. Investicija se vratila za manje od 3 mjeseca."</p>
+<p class="text-gray-300 mb-4">></p>
+<p class="text-gray-300 mb-4">> — Direktor lanca benzinskih pumpi</p>
+<h3 class="text-2xl font-bold text-white mt-10 mb-4">BIXIE za vašu firmu</h3>
+<p class="text-gray-300 mb-4">Svaka firma ima jedinstvene izazove, ali princip je isti — AI agenti i RPA mogu automatizirati ponavljajuće procese, smanjiti troškove i osloboditi vrijeme vašeg tima za stvari koje zaista donose vrijednost.</p>
+<p class="text-gray-300 mb-4">BIXIE nudi besplatne konsultacije na kojima analiziramo vaše procese i predlažemo rješenje sa jasnim ROI-om.</p>
+<p class="text-gray-300 mb-4"><strong>Želite slične rezultate u vašoj firmi?</strong> [Kontaktirajte BIXIE](https://bixie.ba/kontakt) za besplatne konsultacije.</p>
+</section>
+<footer>
+<div class="footer-inner">
+<div><a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;font-size:16px;font-weight:600;color:#f3f4f6;margin-bottom:14px"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:28px"></a><p style="font-size:14px;color:#6b7280;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
+<div><h4>Usluge</h4><a href="/services/crm">CRM Rjesenja</a><br><a href="/services/ai-agents">AI Agenti</a><br><a href="/services/digital-transformation">Digitalna Transformacija</a><br><a href="/services/rpa">RPA i Automatizacija</a><br><a href="/ai-providers">AI Provajderi i Licence</a></div>
+<div><h4>Kompanija</h4><a href="/blog">Blog</a><br><a href="/about">O nama</a><br><a href="/contact">Kontakt</a><br><a href="/privacy">Privacy Policy</a></div>
+<div><h4>Kontakt</h4><p>hello@bixie.ba</p><p>033 922 622</p><p>Maglajska 1, 71000 Sarajevo</p></div>
+</div>
+<div class="footer-bottom">2026 BIXIE. All rights reserved.</div>
+</footer>
+<script>
+function toggleMobile() {
+  var m = document.getElementById("mobileMenu");
+  m.classList.toggle("open");
+}
+</script>
+</body>
+</html>
