@@ -2,31 +2,74 @@
 <html lang="bs">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Blog — BIXIE</title>
+<meta name="description" content="Savjeti, vodiči i analize o CRM sistemima, AI agentima, RPA automatizaciji i digitalnoj transformaciji za firme u BiH.">
 <meta property="og:title" content="Blog — BIXIE | CRM, AI, RPA i Digitalna Transformacija">
-<meta property="og:description" content="Savjeti, vodici i analize o CRM sistemima, AI agentima, RPA automatizaciji i digitalnoj transformaciji za firme u BiH.">
+<meta property="og:description" content="Savjeti, vodiči i analize o CRM sistemima, AI agentima, RPA automatizaciji i digitalnoj transformaciji za firme u BiH.">
 <meta property="og:url" content="https://bixie.ba/blog">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BIXIE">
 <meta property="og:image" content="https://bixie.ba/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Blog — BIXIE | CRM, AI, RPA i Digitalna Transformacija">
-<meta name="twitter:description" content="Savjeti, vodici i analize o CRM sistemima, AI agentima, RPA automatizaciji i digitalnoj transformaciji za firme u BiH.">
+<meta name="twitter:description" content="Savjeti, vodiči i analize o CRM sistemima, AI agentima, RPA automatizaciji i digitalnoj transformaciji za firme u BiH.">
 <meta name="twitter:image" content="https://bixie.ba/og-image.png">
-
-<meta name="description" content="Blog o CRM implementaciji, AI agentima, RPA automatizaciji i digitalnoj transformaciji za firme u BiH.">
+<link rel="canonical" href="https://bixie.ba/blog">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate" hreflang="bs" href="https://bixie.ba/blog">
+<link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { accent: '#00736a', 'accent-dark': '#005c54', surface: '#0f172a', card: '#1a1f2e', border: '#1e293b', muted: '#64748b', teal: { 400: '#00a396', 500: '#008a7f', 600: '#00736a', 700: '#005c54' } },
+      fontFamily: { sans: ['Inter', 'sans-serif'] }
+    }
+  }
+}
+</script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{display:block;width:22px;height:2px;background:#5b6f99;border-radius:1px;transition:all .2s}
+.mobile-menu{display:none;border-top:1px solid rgba(30,41,59,0.4);padding:16px 24px 24px;background:var(--bg-root)}
+@media(max-width:768px){.hamburger{display:flex}.nav-links{display:none}.mobile-menu.open{display:block}}
+/* Blog card grid */
+.blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px; }
+.blog-card { display: flex; flex-direction: column; gap: 12px; padding: 24px; background: #1a1f2e; border: 1px solid #1e293b; border-radius: 12px; text-decoration: none; transition: all 0.2s; }
+.blog-card:hover { border-color: #00736a; background: #1e2436; }
+.blog-card h2 { font-size: 18px; font-weight: 600; color: #f0f2f4; line-height: 1.3; margin: 0; }
+.blog-card p { font-size: 14px; color: #6b7280; line-height: 1.6; margin: 0; }
+.blog-card .meta { font-size: 13px; color: #4b5563; }
+.tag { display: inline-block; font-size: 12px; font-weight: 500; padding: 4px 10px; border-radius: 999px; border: 1px solid; width: fit-content; }
+.filter-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; }
+.filter-btn { padding: 8px 20px; border-radius: 999px; border: 1px solid #1e293b; background: #0a0f1c; color: #6b7280; font-size: 14px; cursor: pointer; transition: all 0.2s; }
+.filter-btn:hover { border-color: #00736a; color: #fff; }
+.filter-btn.active { background: #00736a; border-color: #00736a; color: #fff; }
+.blog-card.hidden { display: none; }
+/* Newsletter */
+.newsletter { max-width: 640px; margin: 0 auto 64px; padding: 48px 32px; background: linear-gradient(135deg, #0f172a, #1a1f2e); border: 1px solid #1e293b; border-radius: 16px; text-align: center; }
+.newsletter h3 { font-size: 24px; font-weight: 600; color: #f0f2f4; margin-bottom: 12px; }
+.newsletter p { color: #6b7280; font-size: 15px; line-height: 1.6; margin-bottom: 24px; }
+.newsletter-form { display: flex; gap: 12px; max-width: 440px; margin: 0 auto; }
+.newsletter-form input { flex: 1; padding: 12px 16px; border-radius: 8px; border: 1px solid #1e293b; background: #0a0f1c; color: #e2e8f0; font-size: 14px; outline: none; }
+.newsletter-form input:focus { border-color: #00736a; }
+.newsletter-form button { padding: 12px 24px; border-radius: 8px; border: none; background: #00736a; color: #fff; font-size: 14px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+.newsletter-form button:hover { background: #008a7f; }
+</style>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRGFE5K9G4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-WRGFE5K9G4");</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","jhp3l0sl3y");</script>
 <script defer>
 const CATEGORY_MAP = {
   'CRM': ['CRM','Bitrix24','Zoho','Salesforce','Monday','Pipedrive','HubSpot','Twenty'],
-  'AI': ['AI','AI Agenti','AI Licence','ChatGPT','Gemini','Agentic AI'],
-  'RPA': ['RPA'],
+  'AI': ['AI','AI Agenti','AI Licence','ChatGPT','Gemini','Agentic AI','AI Tehnologija','Vodiči','Marketing','Prodaja','Customer Support','Trendovi'],
+  'RPA': ['RPA','Automatizacija'],
   'Case Studies': ['Case Study'],
-  'Agentic AI': ['Agentic AI'],
 };
 let activeTag = null;
 function filterBlog(tag) {
@@ -44,69 +87,71 @@ function filterBlog(tag) {
     card.classList.toggle('hidden', !match);
   });
 }
-</script>
-  <link rel="canonical" href="https://bixie.ba/blog">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "BIXIE",
-  "url": "https://bixie.ba",
-  "logo": "https://bixie.ba/og-image.png",
-  "description": "CRM, AI Agenti i Digitalna Transformacija za firme u Bosni i Hercegovini.",
-  "address": { "@type": "PostalAddress", "streetAddress": "Maglajska 1", "addressLocality": "Sarajevo", "addressCountry": "BA" },
-  "contactPoint": { "@type": "ContactPoint", "telephone": "+387-33-922-622", "email": "hello@bixie.ba", "contactType": "sales" },
-  "sameAs": ["https://www.linkedin.com/company/bixie"]
-}
-</script>
-<link rel="alternate" hreflang="en" href="https://bixie.ba/en/blog">
-<link rel="alternate" hreflang="de" href="https://bixie.ba/de/blog">
-<link rel="alternate" hreflang="bs" href="https://bixie.ba/blog">
-<link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog"><!-- Clarity -->
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "jhp3l0sl3y");
-</script>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRGFE5K9G4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-WRGFE5K9G4");
+function toggleMobile() { document.getElementById("mobileMenu").classList.toggle("open"); }
 </script>
 </head>
 <body>
-<nav>
-<div class="nav-inner">
-<a href="/" class="logo"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:36px"></a>
-<div class="nav-links">
-<div class="dropdown"><a href="/services/crm">CRM</a><div class="dropdown-menu"><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a></div></div>
-<div class="dropdown"><a href="/services/ai-agents">AI</a><div class="dropdown-menu"><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a></div></div>
-<div class="dropdown"><a href="/services/digital-transformation">Digitalna Transformacija</a><div class="dropdown-menu"><a href="/services/digital-transformation">Pregled</a><a href="/services/rpa">RPA i Automatizacija</a></div></div>
-<a href="/about">O nama</a>
-<a href="/ai-providers">AI Licence</a>
-<a href="/case-studies">Reference</a>
-<a href="/faq">FAQ</a>
-<a href="/blog">Blog</a>
-<a href="/contact" class="nav-cta">Zatražite ponudu</a>
-</div>
-<button class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 border-b border-gray-800/50 bg-[#0a0f1c]/95 backdrop-blur-xl">
+<div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+  <a href="/" class="flex items-center gap-3">
+    <img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:32px">
+  </a>
+  <div class="hidden md:flex items-center gap-6">
+    <div class="relative group">
+      <a href="/services/crm" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">CRM ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pregled</a>
+        <a href="/services/crm#bitrix24" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Bitrix24</a>
+        <a href="/services/crm#zoho" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Zoho CRM</a>
+        <a href="/services/crm#pipedrive" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pipedrive</a>
+        <a href="/services/crm#hubspot" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">HubSpot</a>
+        <a href="/services/crm#salesforce" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Salesforce</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <a href="/services/ai-agents" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">AI ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Agenti & Automatizacija</a>
+        <a href="/services/ai-agents#licence" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Licence</a>
+        <a href="/open-source-infra" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Open Source Infrastruktura</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <a href="/services" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Usluge ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pregled svih usluga</a>
+        <a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">CRM Rješenja</a>
+        <a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Agenti</a>
+        <a href="/services/rpa" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">RPA Automatizacija</a>
+        <a href="/open-source-infra" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Open Source Infrastruktura</a>
+        <a href="/ai-providers" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Licence</a>
+        <a href="/services/digital-transformation" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Digitalna Transformacija</a>
+      </div>
+    </div>
+    <a href="/ai-providers" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Licence</a>
+    <a href="/about" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">O nama</a>
+    <a href="/blog" class="text-white text-sm font-medium transition-colors">Blog</a>
+    <a href="/contact" class="bg-[#00736a] hover:bg-[#008a7f] text-white px-5 py-2 rounded-lg text-sm font-medium transition-all hover:scale-95">Zatražite ponudu</a>
+  </div>
+  <button class="hamburger md:hidden" onclick="toggleMobile()"><span></span><span></span><span></span></button>
 </div>
 <div id="mobileMenu" class="mobile-menu">
-<div class="mobile-label">CRM</div>
-<a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a>
-<div class="mobile-label">AI</div>
-<a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a>
-<a href="/services/digital-transformation">Digitalna Transformacija</a><a href="/services/rpa">RPA i Automatizacija</a>
-<a href="/about">O nama</a>
-<a href="/ai-providers">AI Licence</a><a href="/case-studies">Reference</a>
-<a href="/faq">FAQ</a>
-<a href="/blog">Blog</a>
-<a href="/contact" style="display:block;margin-top:10px;background:#00736a;color:#fff;padding:10px 16px;border-radius:6px;text-align:center;font-weight:450;font-size:0.9rem">Zatražite ponudu</a>
+<div class="mobile-label text-gray-400 text-sm font-medium mt-2">CRM</div>
+<a href="/services/crm" class="block py-2 text-sm text-gray-400 hover:text-white">Pregled CRM usluga</a>
+<a href="/services/crm#bitrix24" class="block py-2 text-sm text-gray-400 hover:text-white">Bitrix24</a>
+<a href="/services/crm#zoho" class="block py-2 text-sm text-gray-400 hover:text-white">Zoho CRM</a>
+<a href="/services/crm#pipedrive" class="block py-2 text-sm text-gray-400 hover:text-white">Pipedrive</a>
+<a href="/services/crm#hubspot" class="block py-2 text-sm text-gray-400 hover:text-white">HubSpot</a>
+<a href="/services/crm#salesforce" class="block py-2 text-sm text-gray-400 hover:text-white">Salesforce</a>
+<div class="mobile-label text-gray-400 text-sm font-medium mt-3">AI</div>
+<a href="/services/ai-agents" class="block py-2 text-sm text-gray-400 hover:text-white">AI Agenti i Automatizacija</a>
+<a href="/services/ai-agents#licence" class="block py-2 text-sm text-gray-400 hover:text-white">AI Licence</a>
+<a href="/open-source-infra" class="block py-2 text-sm text-gray-400 hover:text-white">Open Source Infrastruktura</a>
+<a href="/services" class="block py-2 text-sm text-gray-400 hover:text-white">Sve usluge</a>
+<a href="/about" class="block py-2 text-sm text-gray-400 hover:text-white">O nama</a>
+<a href="/blog" class="block py-2 text-sm text-white font-medium">Blog</a>
+<a href="/contact" class="block mt-3 bg-[#00736a] text-white px-5 py-3 rounded-lg text-sm font-medium text-center">Zatražite ponudu</a>
 </div>
 </nav>
 
@@ -120,10 +165,8 @@ function filterBlog(tag) {
 <button class="filter-btn active" onclick="filterBlog(null)">Svi</button>
 <button class="filter-btn" data-tag="CRM" onclick="filterBlog('CRM')">CRM</button>
 <button class="filter-btn" data-tag="AI" onclick="filterBlog('AI')">AI</button>
-<button class="filter-btn" data-tag="Agentic AI" onclick="filterBlog('Agentic AI')">Agentic AI</button>
 <button class="filter-btn" data-tag="RPA" onclick="filterBlog('RPA')">RPA</button>
 <button class="filter-btn" data-tag="Case Studies" onclick="filterBlog('Case Studies')">Case Studies</button>
-<button class="filter-btn" data-tag="Open Source AI" onclick="filterBlog('Open Source AI')">Open Source AI</button>
 </div>
 
 <div class="blog-grid">
@@ -194,20 +237,13 @@ function filterBlog(tag) {
 </div>
 
 <footer>
-<div class="footer-inner">
+<div class="footer-inner max-w-6xl mx-auto" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;padding:48px 24px">
 <div><a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;font-size:16px;font-weight:600;color:#f0f2f4;margin-bottom:14px"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:28px"></a><p style="font-size:14px;color:#6b7280;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
-<div><h4>Usluge</h4><a href="/services/crm">CRM Rjesenja</a><br><a href="/services/ai-agents">AI Agenti</a><br><a href="/services/digital-transformation">Digitalna Transformacija</a><br><a href="/services/rpa">RPA i Automatizacija</a><br><a href="/ai-providers">AI Provajderi i Licence</a><br><a href="/services/rpa">RPA i Automatizacija</a><br><a href="/ai-providers">AI Provajderi i Licence</a></div>
-<div><h4>Kompanija</h4><a href="/blog">Blog</a><br><a href="/about">O nama</a><br><a href="/faq">FAQ</a><br><a href="/case-studies">Reference</a><br><a href="/contact">Kontakt</a><br><a href="/privacy">Privacy Policy</a></div>
-<div><h4>Kontakt</h4><p>hello@bixie.ba</p><p>033 922 622</p><p>Maglajska 1, 71000 Sarajevo</p></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Usluge</h4><a href="/services/crm" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">CRM Rjesenja</a><a href="/services/ai-agents" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Agenti</a><a href="/services/digital-transformation" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Digitalna Transformacija</a><a href="/services/rpa" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">RPA i Automatizacija</a><a href="/ai-providers" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Provajderi i Licence</a></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Kompanija</h4><a href="/blog" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Blog</a><a href="/about" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">O nama</a><a href="/contact" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Kontakt</a><a href="/privacy" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Privacy Policy</a></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Kontakt</h4><p style="font-size:14px;color:#6b7280;margin-bottom:8px">hello@bixie.ba</p><p style="font-size:14px;color:#6b7280;margin-bottom:8px">033 922 622</p><p style="font-size:14px;color:#6b7280;line-height:1.6">Maglajska 1, 71000 Sarajevo</p></div>
 </div>
-<div class="footer-bottom">2026 BIXIE. All rights reserved.</div>
+<div style="border-top:1px solid #1e293b;padding:24px;text-align:center;font-size:14px;color:#4b5563">2026 BIXIE. All rights reserved.</div>
 </footer>
-<script>
-
-function toggleMobile() {
-  var m = document.getElementById("mobileMenu");
-  m.classList.toggle("open");
-}
-</script>
 </body>
 </html>
