@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI za Firme u BiH — BIXIE | Implementacija AI Agenata za Bosanske Kompanije</title>
+<meta name="description" content="AI agenti za bosanske firme — customer support, automatizacija prodaje, obrada dokumenata. Implementacija u 2-4 sedmice. Cijene prilagođene BiH tržištu.">
+<meta property="og:title" content="AI za Firme u BiH — BIXIE">
+<meta property="og:description" content="Implementacija AI agenata za bosanske kompanije. Uštedite do 60% na operativnim troškovima.">
+<meta property="og:url" content="https://bixie.ba/ai-za-firme">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BIXIE">
+<meta property="og:image" content="https://bixie.ba/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://bixie.ba/ai-za-firme">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { accent: '#00736a', 'accent-dark': '#005c54', surface: '#0f172a', card: '#1a1f2e', border: '#1e293b', muted: '#64748b', teal: { 400: '#00a396', 500: '#008a7f', 600: '#00736a', 700: '#005c54' } },
+      fontFamily: { sans: ['Inter', 'sans-serif'] }
+    }
+  }
+}
+</script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+.gradient-text { background: linear-gradient(135deg, #00736a, #00a396); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.gradient-bg { background: linear-gradient(135deg, #00736a, #00a396); }
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{display:block;width:22px;height:2px;background:#5b6f99;border-radius:1px;transition:all .2s}
+.mobile-menu{display:none;border-top:1px solid rgba(30,41,59,0.4);padding:16px 24px 24px;background:#0a0f1c}
+@media(max-width:768px){.hamburger{display:flex}.nav-links{display:none}.mobile-menu.open{display:block}}
+.package-card { background: linear-gradient(135deg, #1a1f2e, #0f172a); border: 1px solid #1e293b; border-radius: 16px; padding: 32px; transition: all 0.3s; }
+.package-card:hover { border-color: #00736a; transform: translateY(-4px); }
+.package-card.featured { border-color: #00736a; position: relative; }
+.package-card.featured::before { content: 'Preporučujemo'; position: absolute; top: -12px; right: 24px; background: #00736a; color: #fff; font-size: 12px; font-weight: 600; padding: 4px 14px; border-radius: 20px; }
+.check-item { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; }
+.check-item svg { flex-shrink: 0; margin-top: 3px; }
+.testimonial-card { background: #1a1f2e; border: 1px solid #1e293b; border-radius: 12px; padding: 24px; }
+.floating-cta { position: fixed; bottom: 24px; right: 24px; z-index: 50; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.animate-in { animation: fadeInUp 0.6s ease-out both; }
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRGFE5K9G4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-WRGFE5K9G4");</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","jhp3l0sl3y");</script>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 border-b border-gray-800/50 bg-[#0a0f1c]/95 backdrop-blur-xl">
+<div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+  <a href="/" class="flex items-center gap-3">
+    <img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:32px">
+  </a>
+  <div class="hidden md:flex items-center gap-6">
+    <a href="/services/ai-agents" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">AI Agenti</a>
+    <a href="/use-cases" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Use Cases</a>
+    <a href="/ai-providers" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Licence</a>
+    <a href="/about" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">O nama</a>
+    <a href="/blog" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Blog</a>
+    <a href="/contact" class="bg-[#00736a] hover:bg-[#008a7f] text-white px-5 py-2 rounded-lg text-sm font-medium transition-all hover:scale-95">Zatražite ponudu</a>
+  </div>
+  <button class="hamburger md:hidden" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+</div>
+<div id="mobileMenu" class="mobile-menu">
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <a href="/services/ai-agents" class="text-gray-400 text-sm">AI Agenti</a>
+    <a href="/use-cases" class="text-gray-400 text-sm">Use Cases</a>
+    <a href="/ai-providers" class="text-gray-400 text-sm">Licence</a>
+    <a href="/about" class="text-gray-400 text-sm">O nama</a>
+    <a href="/blog" class="text-gray-400 text-sm">Blog</a>
+    <a href="/contact" class="text-white bg-[#00736a] text-center py-2 rounded-lg text-sm mt-2">Zatražite ponudu</a>
+  </div>
+</div>
+</nav>
+
+<!-- Hero -->
+<section class="relative overflow-hidden" style="padding:100px 24px 80px">
+  <div class="absolute inset-0 opacity-5" style="background:radial-gradient(ellipse at 50% 0%, #00736a 0%, transparent 70%)"></div>
+  <div class="max-w-4xl mx-auto text-center relative z-10">
+    <span class="inline-block text-xs font-semibold tracking-widest uppercase text-[#00736a] bg-[#00736a]/10 px-4 py-1.5 rounded-full mb-6 animate-in">Za Bosanske Firme</span>
+    <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6 animate-in delay-1">
+      AI Agenti za <span class="gradient-text">Vašu Firmu</span>
+    </h1>
+    <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8 animate-in delay-2">
+      Automatizirajte customer support, prodaju i obradu dokumenata. 
+      <span class="text-white font-semibold">Implementacija u 2-4 sedmice.</span> Cijene prilagođene BiH tržištu.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center animate-in delay-3">
+      <a href="#paketi" class="bg-[#00736a] hover:bg-[#008a7f] text-white px-8 py-3.5 rounded-xl text-base font-semibold transition-all hover:scale-95 shadow-lg shadow-[#00736a]/20">
+        Pogledajte pakete
+      </a>
+      <a href="/contact" class="border border-gray-700 hover:border-[#00736a] text-gray-300 hover:text-white px-8 py-3.5 rounded-xl text-base font-semibold transition-all">
+        Zakažite konsultacije
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<section class="border-y border-gray-800/50 bg-[#0a0f1c]/50">
+  <div class="max-w-6xl mx-auto px-4 py-8">
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+      <div><div class="text-2xl font-bold text-white">25+</div><div class="text-xs text-gray-500 mt-1">Godina iskustva</div></div>
+      <div><div class="text-2xl font-bold text-white">100+</div><div class="text-xs text-gray-500 mt-1">Izvedenih projekata</div></div>
+      <div><div class="text-2xl font-bold text-white">4</div><div class="text-xs text-gray-500 mt-1">Sedmice do prvog agenta</div></div>
+      <div><div class="text-2xl font-bold text-white">60%</div><div class="text-xs text-gray-500 mt-1">Uštede na podršci</div></div>
+      <div><div class="text-2xl font-bold text-white">BiH</div><div class="text-xs text-gray-500 mt-1">Lokalna podrška</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Problem Section -->
+<section class="section" style="padding:80px 24px">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Zvuči li ovo poznato?</h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">Većina bosanskih firmi gubi resurse na ručne, ponavljajuće zadatke.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-[#1a1f2e] border border-[#1e293b] rounded-xl p-6">
+        <div class="text-3xl mb-4">😤</div>
+        <h3 class="text-white font-semibold mb-2">Customer support jede vaše vrijeme</h3>
+        <p class="text-gray-400 text-sm">Isti upiti, isti odgovori — svaki dan. Vaš tim odgovara na ista pitanja umjesto da prodaje.</p>
+      </div>
+      <div class="bg-[#1a1f2e] border border-[#1e293b] rounded-xl p-6">
+        <div class="text-3xl mb-4">📋</div>
+        <h3 class="text-white font-semibold mb-2">Ručna obrada dokumenata</h3>
+        <p class="text-gray-400 text-sm">Fakture, ugovori, izvještaji — sati utrošeni na kopiranje podataka iz jednog alata u drugi.</p>
+      </div>
+      <div class="bg-[#1a1f2e] border border-[#1e293b] rounded-xl p-6">
+        <div class="text-3xl mb-4">📉</div>
+        <h3 class="text-white font-semibold mb-2">Propusteni prodajni follow-up</h3>
+        <p class="text-gray-400 text-sm">Leadovi se hlade jer nema kapaciteta za pravovremeni kontakt i praćenje.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Packages -->
+<section id="paketi" style="padding:60px 24px 100px">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Paketi za Bosanske Firme</h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">Odaberite paket prema vašim potrebama. Sve cijene su u KM i prilagođene su BiH tržištu.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <!-- Starter -->
+      <div class="package-card animate-in delay-1">
+        <h3 class="text-xl font-bold text-white mb-2">Starter</h3>
+        <p class="text-sm text-gray-400 mb-6">Za male firme koje žele probati AI</p>
+        <div class="text-3xl font-bold text-white mb-1">2.900 KM</div>
+        <p class="text-xs text-gray-500 mb-6">Jednokratno + 190 KM/mjesečno</p>
+        <div style="border-top:1px solid #1e293b;padding-top:20px">
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.2"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">1 AI agent (izbor jednog use case-a)</span></div>
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.2"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">Integracija sa 1 kanalom (web, WhatsApp ili email)</span></div>
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.2"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">Osnovni trening za tim (2h)</span></div>
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.2"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">1 mjesec besplatne podrške</span></div>
+        </div>
+        <a href="/contact" class="block text-center mt-8 border border-gray-700 hover:border-[#00736a] text-gray-300 hover:text-white py-3 rounded-xl text-sm font-semibold transition-all">Odaberite Starter</a>
+      </div>
+
+      <!-- Business (Featured) -->
+      <div class="package-card featured animate-in delay-2">
+        <h3 class="text-xl font-bold text-white mb-2">Business</h3>
+        <p class="text-sm text-gray-400 mb-6">Za firme spremne za ozbiljnu AI transformaciju</p>
+        <div class="text-3xl font-bold text-white mb-1">5.900 KM</div>
+        <p class="text-xs text-gray-500 mb-6">Jednokratno + 390 KM/mjesečno</p>
+        <div style="border-top:1px solid #00736a;padding-top:20px">
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.3"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">2-3 AI agenta (support + prodaja + dokumenti)</span></div>
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.3"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">Integracija sa CRM-om (Bitrix24, Zoho, Salesforce)</span></div>
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.3"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">Multi-channel (web + WhatsApp + email + Instagram)</span></div>
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.3"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">Knowledge base postavljanje (dokumenti, FAQ, cjenovnici)</span></div>
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.3"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">Trening za tim (4h) + dokumentacija</span></div>
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.3"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">3 mjeseca podrške i optimizacije</span></div>
+        </div>
+        <a href="/contact" class="block text-center mt-8 bg-[#00736a] hover:bg-[#008a7f] text-white py-3 rounded-xl text-sm font-semibold transition-all hover:scale-95 shadow-lg shadow-[#00736a]/20">Odaberite Business</a>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="package-card animate-in delay-3">
+        <h3 class="text-xl font-bold text-white mb-2">Enterprise</h3>
+        <p class="text-sm text-gray-400 mb-6">Za kompanije koje žele potpunu AI infrastrukturu</p>
+        <div class="text-3xl font-bold text-white mb-1">Po dogovoru</div>
+        <p class="text-xs text-gray-500 mb-6">Prilagođeno vašim potrebama</p>
+        <div style="border-top:1px solid #1e293b;padding-top:20px">
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.2"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">Neograničeno AI agenata</span></div>
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.2"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">On-premise AI hosting (vaš server)</span></div>
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.2"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">Integracija sa ERP/DMS/postojecim sistemima</span></div>
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.2"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">Custom RPA automatizacija</span></div>
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.2"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">Namjenski trening + onboarding</span></div>
+          <div class="check-item"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#00736a" fill-opacity="0.2"/><path d="M6 10l3 3 5-5" stroke="#00a396" stroke-width="1.5" stroke-linecap="round"/></svg><span class="text-sm text-gray-300">Dedicated support + SLA</span></div>
+        </div>
+        <a href="/contact" class="block text-center mt-8 border border-gray-700 hover:border-[#00736a] text-gray-300 hover:text-white py-3 rounded-xl text-sm font-semibold transition-all">Kontaktirajte nas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Client Logo Bar -->
+<section class="border-y border-gray-800/50 py-10">
+  <div class="max-w-5xl mx-auto px-4 text-center">
+    <p class="text-xs text-gray-500 uppercase tracking-widest mb-8">Povjerenje vodećih platformi</p>
+    <div class="flex flex-wrap justify-center items-center gap-8 opacity-50 grayscale">
+      <img src="/images/logos/bitrix24.jpg" alt="Bitrix24" style="height:28px">
+      <img src="/images/logos/pipedrive.jpg" alt="Pipedrive" style="height:28px">
+      <img src="/images/logos/microsoft-dynamics.png" alt="Microsoft Dynamics" style="height:28px">
+      <img src="/images/logos/zoho.png" alt="Zoho" style="height:28px">
+      <img src="/images/logos/salesforce.png" alt="Salesforce" style="height:28px">
+      <img src="/images/logos/hubspot.png" alt="HubSpot" style="height:28px">
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section style="padding:100px 24px">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Kako radimo</h2>
+      <p class="text-gray-400 text-lg">Od razgovora do prvog AI agenta za manje od mjesec dana.</p>
+    </div>
+    <div class="space-y-6">
+      <div class="flex gap-5 p-6 bg-[#1a1f2e] border border-[#1e293b] rounded-xl items-start">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#00736a] flex items-center justify-center text-white font-bold text-lg">1</div>
+        <div>
+          <h3 class="text-white font-semibold mb-1">Besplatne konsultacije</h3>
+          <p class="text-gray-400 text-sm">Analiziramo vaše poslovanje, identificiramo gdje AI može donijeti najveću vrijednost.</p>
+        </div>
+      </div>
+      <div class="flex gap-5 p-6 bg-[#1a1f2e] border border-[#1e293b] rounded-xl items-start">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#00736a] flex items-center justify-center text-white font-bold text-lg">2</div>
+        <div>
+          <h3 class="text-white font-semibold mb-1">Implementacija (2-4 sedmice)</h3>
+          <p class="text-gray-400 text-sm">Postavljamo AI agente, integrišemo sa vašim sistemima i treniramo na vašim podacima.</p>
+        </div>
+      </div>
+      <div class="flex gap-5 p-6 bg-[#1a1f2e] border border-[#1e293b] rounded-xl items-start">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#00736a] flex items-center justify-center text-white font-bold text-lg">3</div>
+        <div>
+          <h3 class="text-white font-semibold mb-1">Trening i onboarding</h3>
+          <p class="text-gray-400 text-sm">Obuka vašeg tima za korištenje i upravljanje AI agentima.</p>
+        </div>
+      </div>
+      <div class="flex gap-5 p-6 bg-[#1a1f2e] border border-[#1e293b] rounded-xl items-start">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#00736a] flex items-center justify-center text-white font-bold text-lg">4</div>
+        <div>
+          <h3 class="text-white font-semibold mb-1">Optimizacija i podrška</h3>
+          <p class="text-gray-400 text-sm">Pratimo performanse, optimiziramo agente i pružamo kontinuiranu podršku.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section style="padding:0 24px 100px">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Šta kažu klijenti</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="testimonial-card">
+        <div class="flex gap-1 mb-4">⭐⭐⭐⭐⭐</div>
+        <p class="text-sm text-gray-400 mb-4">"AI agent kojeg su nam razvili potpuno je transformirao naš customer support. Automatski odgovara na 80% upita."</p>
+        <div class="text-sm font-semibold text-white">Amela H.</div>
+        <div class="text-xs text-gray-500">Direktorica prodaje</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="flex gap-1 mb-4">⭐⭐⭐⭐⭐</div>
+        <p class="text-sm text-gray-400 mb-4">"Implementacija je trajala 3 sedmice. Već u prvom mjesecu smo uštedjeli preko 40 sati na administrativnim poslovima."</p>
+        <div class="text-sm font-semibold text-white">Edin D.</div>
+        <div class="text-xs text-gray-500">Operativni menadžer</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="flex gap-1 mb-4">⭐⭐⭐⭐⭐</div>
+        <p class="text-sm text-gray-400 mb-4">"Kombinacija AI agenata i RPA nam je smanjila troškove podrške za 60%. Profesionalan pristup i odlična podrška."</p>
+        <div class="text-sm font-semibold text-white">Mirsad K.</div>
+        <div class="text-xs text-gray-500">CEO, transportna kompanija</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding:0 24px 100px">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Često postavljana pitanja</h2>
+    </div>
+    <div class="space-y-4">
+      <details class="bg-[#1a1f2e] border border-[#1e293b] rounded-xl p-5 group cursor-pointer">
+        <summary class="text-white font-medium flex justify-between items-center list-none cursor-pointer">
+          <span>Koliko brzo možemo početi?</span>
+          <span class="text-gray-500 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="text-gray-400 text-sm mt-4 leading-relaxed">Prve konsultacije možemo zakazati u roku 24h. Implementacija traje 2-4 sedmice u zavisnosti od složenosti. Starter paket može biti živ za 2 sedmice.</p>
+      </details>
+      <details class="bg-[#1a1f2e] border border-[#1e293b] rounded-xl p-5 group cursor-pointer">
+        <summary class="text-white font-medium flex justify-between items-center list-none cursor-pointer">
+          <span>Da li trebamo imati svoj server?</span>
+          <span class="text-gray-500 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="text-gray-400 text-sm mt-4 leading-relaxed">Ne. Mi hostujemo AI agente u našem privatnom cloudu. Za Enterprise paket nudimo i on-premise hosting na vašem hardveru uz potpunu privatnost podataka.</p>
+      </details>
+      <details class="bg-[#1a1f2e] border border-[#1e293b] rounded-xl p-5 group cursor-pointer">
+        <summary class="text-white font-medium flex justify-between items-center list-none cursor-pointer">
+          <span>Koje modele koristite?</span>
+          <span class="text-gray-500 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="text-gray-400 text-sm mt-4 leading-relaxed">Koristimo vodeće AI modele — ChatGPT, Claude, Gemini, DeepSeek i open source modele (Llama, Qwen, Mistral) koji su najbolji za vaš specifičan slučaj. Nemamo lock-in, uvijek biramo najbolji model za zadatak.</p>
+      </details>
+      <details class="bg-[#1a1f2e] border border-[#1e293b] rounded-xl p-5 group cursor-pointer">
+        <summary class="text-white font-medium flex justify-between items-center list-none cursor-pointer">
+          <span>Šta ako nismo zadovoljni?</span>
+          <span class="text-gray-500 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="text-gray-400 text-sm mt-4 leading-relaxed">Nudimo garanciju zadovoljstva. Ako u prvih 30 dana niste zadovoljni rezultatima, vraćamo vam novac. Naš cilj je dugoročno partnerstvo.</p>
+      </details>
+      <details class="bg-[#1a1f2e] border border-[#1e293b] rounded-xl p-5 group cursor-pointer">
+        <summary class="text-white font-medium flex justify-between items-center list-none cursor-pointer">
+          <span>Da li radite i sa firmama izvan BiH?</span>
+          <span class="text-gray-500 group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="text-gray-400 text-sm mt-4 leading-relaxed">Da. Naši klijenti dolaze iz Švicarske, Njemačke, Austrije, SAD i regiona. Radimo remote-first sa redovnom komunikacijom.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section style="padding:0 24px 100px">
+  <div class="max-w-4xl mx-auto bg-gradient-to-br from-[#00736a]/10 to-transparent border border-[#00736a]/20 rounded-2xl p-12 md:p-16 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Spremni za AI transformaciju?</h2>
+    <p class="text-gray-400 text-lg mb-8 max-w-xl mx-auto">Zakažite besplatne konsultacije. Otkrijte gdje AI može unaprijediti vaše poslovanje.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/contact" class="bg-[#00736a] hover:bg-[#008a7f] text-white px-8 py-3.5 rounded-xl text-base font-semibold transition-all hover:scale-95 shadow-lg shadow-[#00736a]/20">
+        Zatražite ponudu
+      </a>
+      <a href="mailto:hello@bixie.ba" class="border border-gray-700 hover:border-[#00736a] text-gray-300 hover:text-white px-8 py-3.5 rounded-xl text-base font-semibold transition-all">
+        hello@bixie.ba
+      </a>
+    </div>
+    <p class="text-xs text-gray-500 mt-6">Odgovaramo u roku 24h. Ili nas pozovite na 033 922 622</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="border-t border-gray-800/50" style="padding:40px 24px">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="flex items-center gap-2 text-sm text-gray-500">
+      <svg width="20" height="20" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#00736a"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>
+      <span>© 2026 BIXIE. Sva prava zadržana.</span>
+    </div>
+    <div class="flex gap-6 text-sm text-gray-500">
+      <a href="/privacy" class="hover:text-white transition-colors">Privatnost</a>
+      <a href="/contact" class="hover:text-white transition-colors">Kontakt</a>
+      <a href="mailto:hello@bixie.ba" class="hover:text-white transition-colors">hello@bixie.ba</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMobile(){var m=document.getElementById("mobileMenu");m.classList.toggle("open");}
+</script>
+
+<!-- Facebook Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1170855963792707');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1170855963792707&ev=PageView&noscript=1"/></noscript>
+
+</body>
+</html>
