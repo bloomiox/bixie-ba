@@ -146,7 +146,7 @@ body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -w
     <div class="rounded-2xl p-8" style="background:#1a1f2e;border:1px solid #1e293b">
       <h2 class="text-2xl font-semibold mb-1" style="color:#f0f2f4">Zakažite procjenu</h2>
       <p class="text-sm mb-6" style="color:#6b7280">Popunite formu — kontaktiramo vas u roku 24h.</p>
-      <form id="aiAuditForm" action="/api/ai-audit" method="POST">
+      <form id="aiAuditForm">
         <div class="space-y-4">
           <div>
             <label class="block text-xs font-semibold uppercase tracking-wider mb-1.5" style="color:#64748b">Ime i prezime *</label>
@@ -187,10 +187,42 @@ body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -w
             <label class="block text-xs font-semibold uppercase tracking-wider mb-1.5" style="color:#64748b">Poruka (opcionalno)</label>
             <textarea name="message" rows="3" class="w-full px-4 py-3 rounded-lg text-sm" style="background:#0f172a;border:1px solid #1e293b;color:#e2e8f0" placeholder="Ukratko opišite izazov..."></textarea>
           </div>
-          <button type="submit" class="w-full bg-[#00736a] hover:bg-[#008a7f] text-white py-3.5 rounded-lg font-semibold transition-all hover:scale-[0.98]">Zakažite besplatnu procjenu →</button>
+          <button type="submit" id="auditSubmitBtn" class="w-full bg-[#00736a] hover:bg-[#008a7f] text-white py-3.5 rounded-lg font-semibold transition-all hover:scale-[0.98]">Zakažite besplatnu procjenu →</button>
           <p class="text-xs text-center" style="color:#64748b">Bez spamovanja. Vaši podaci se koriste isključivo za kontakt.</p>
+          <div id="auditError" class="text-sm text-center" style="color:#f87171;display:none">Došlo je do greške pri slanju. Molimo pokušajte ponovo ili nam pišite na hello@bixie.ba.</div>
         </div>
       </form>
+      <script>
+      document.getElementById("aiAuditForm").addEventListener("submit", async function(e) {
+        e.preventDefault();
+        var btn = document.getElementById("auditSubmitBtn");
+        var err = document.getElementById("auditError");
+        btn.disabled = true; btn.textContent = "Šaljemo...";
+        err.style.display = "none";
+        var fd = new FormData(this);
+        var payload = {
+          name: fd.get("name") || "",
+          email: fd.get("email") || "",
+          company: fd.get("company") || "",
+          size: fd.get("size") || "",
+          focus: fd.get("focus") || "",
+          message: fd.get("message") || "",
+          source: "bixie.ba/ai-audit"
+        };
+        try {
+          var resp = await fetch("https://api.bloom.ba/api/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+          });
+          if (!resp.ok) throw new Error("HTTP " + resp.status);
+          window.location.href = "/ai-audit/hvala";
+        } catch (ex) {
+          btn.disabled = false; btn.textContent = "Zakažite besplatnu procjenu →";
+          err.style.display = "block";
+        }
+      });
+      </script>
     </div>
   </div>
 </div>

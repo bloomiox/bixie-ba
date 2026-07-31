@@ -230,10 +230,36 @@ function toggleMobile() { document.getElementById("mobileMenu").classList.toggle
 <div class="newsletter">
 <h3>Pratite najnovije trendove</h3>
 <p>Prijavite se na BIXIE newsletter i dobijajte najnovije vijesti o AI agentima, CRM implementacijama i digitalnoj transformaciji.</p>
-<form class="newsletter-form" action="/api/newsletter" method="POST">
+<form class="newsletter-form" id="newsletterForm">
 <input type="email" name="email" placeholder="Vasa email adresa" required>
-<button type="submit">Prijavi se</button>
+<button type="submit" id="newsletterBtn">Prijavi se</button>
 </form>
+<p id="newsletterMsg" style="display:none;margin-top:12px;font-size:14px;color:#00a396;font-weight:500">✅ Uspješno ste prijavljeni! Uskoro ćete primati najnovije vijesti.</p>
+<script>
+document.getElementById("newsletterForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+  var btn = document.getElementById("newsletterBtn");
+  var msg = document.getElementById("newsletterMsg");
+  var email = this.querySelector("input[name=email]").value;
+  btn.disabled = true; btn.textContent = "Šaljemo...";
+  msg.style.display = "none";
+  try {
+    var resp = await fetch("https://api.bloom.ba/api/newsletter", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: email, source: "bixie.ba/blog" })
+    });
+    if (!resp.ok) throw new Error("HTTP " + resp.status);
+    msg.style.display = "block";
+    this.reset();
+  } catch (ex) {
+    msg.textContent = "Došlo je do greške. Molimo pokušajte ponovo.";
+    msg.style.color = "#f87171";
+    msg.style.display = "block";
+  }
+  btn.disabled = false; btn.textContent = "Prijavi se";
+});
+</script>
 </div>
 
 <footer>
