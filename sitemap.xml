@@ -13,8 +13,8 @@
     <loc>https://bixie.ba/about</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.baen/about"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.bade/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/about"/>
     <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/about"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/about"/>
   </url>
@@ -56,8 +56,8 @@
     <loc>https://bixie.ba/services/crm</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.baen/services/crm"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.bade/services/crm"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/crm"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/crm"/>
     <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/crm"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/crm"/>
   </url>
@@ -92,8 +92,8 @@
     <loc>https://bixie.ba/services/ai-agents</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.baen/services/ai-agents"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.bade/services/ai-agents"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/ai-agents"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/ai-agents"/>
     <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/ai-agents"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/ai-agents"/>
   </url>
@@ -101,8 +101,8 @@
     <loc>https://bixie.ba/services/digital-transformation</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.baen/services/digital-transformation"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.bade/services/digital-transformation"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/digital-transformation"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/digital-transformation"/>
     <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/digital-transformation"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/digital-transformation"/>
   </url>
@@ -110,8 +110,8 @@
     <loc>https://bixie.ba/services/rpa</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.baen/services/rpa"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.bade/services/rpa"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/rpa"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/rpa"/>
     <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/rpa"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/rpa"/>
   </url>
@@ -119,8 +119,8 @@
     <loc>https://bixie.ba/ai-providers</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.baen/ai-providers"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.bade/ai-providers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/ai-providers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/ai-providers"/>
     <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/ai-providers"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/ai-providers"/>
   </url>
@@ -128,8 +128,8 @@
     <loc>https://bixie.ba/blog</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.baen/blog"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.bade/blog"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/blog"/>
     <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog"/>
   </url>
@@ -137,8 +137,8 @@
     <loc>https://bixie.ba/case-studies</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.baen/case-studies"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.bade/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/case-studies"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/case-studies"/>
     <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/case-studies"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/case-studies"/>
   </url>
@@ -146,8 +146,8 @@
     <loc>https://bixie.ba/faq</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.baen/faq"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.bade/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/faq"/>
     <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/faq"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/faq"/>
   </url>
@@ -155,8 +155,8 @@
     <loc>https://bixie.ba/contact</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.baen/contact"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.bade/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/contact"/>
     <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/contact"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/contact"/>
   </url>
@@ -164,8 +164,8 @@
     <loc>https://bixie.ba/privacy</loc>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.baen/privacy"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.bade/privacy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/privacy"/>
     <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/privacy"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/privacy"/>
   </url>

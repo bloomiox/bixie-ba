@@ -1,0 +1,36 @@
+# BIXIE
+
+> BIXIE (bixie.ba) je agencija za digitalnu transformaciju iz Sarajeva, Bosna i Hercegovina, specijalizovana za CRM implementaciju, custom AI agente, RPA automatizaciju, AI licence i digitalnu transformaciju. Registered partner: Bitrix24, Zoho, Salesforce, HubSpot, Pipedrive. Osnovani 2011. Radimo s klijentima u BiH, regionu, Švicarskoj, Njemačkoj, Austriji i SAD.
+
+- Kontakt: hello@bixie.ba | +387 33 922 622 | Maglajska 1, 71000 Sarajevo
+- Jezik: bosanski/hrvatski/srpski, engleski (bixie.ba/en), njemački (bixie.ba/de)
+
+## Ključne usluge
+- **CRM implementacija**: Bitrix24, Zoho, Salesforce, HubSpot, Pipedrive, Twenty — implementacija, migracija, optimizacija
+- **AI agenti i automatizacija**: custom AI agenti za customer support, prodaju i interne procese; RPA automatizacija
+- **AI servisi (kompletna implementacija)**: AI audit i strategija, forward deployment (embedded AI inženjer), data readiness, RAG/Knowledge AI, managed AI (AI Care), AI governance i EU AI Act
+- **AI licence**: ChatGPT Team/Enterprise, Google Gemini, Microsoft Copilot, Claude, DeepSeek — domaća faktura sa PDV-om
+- **Open Source AI infrastruktura**: on-premise hosting open source modela (Llama 4, DeepSeek R1, Mistral, Qwen 3, Phi-4)
+- **Trening i edukacija**: AI obuka za zaposlenike, prompt engineering, AI policy, CRM trening
+- **Digitalna transformacija**: digitalni ured, privatni/hibridni cloud
+
+## Ključne stranice
+- Početna: https://bixie.ba
+- AI servisi (kompletna implementacija): https://bixie.ba/services/ai-servisi
+- AI agenti: https://bixie.ba/services/ai-agents
+- CRM: https://bixie.ba/services/crm
+- AI licence: https://bixie.ba/ai-providers
+- Karijera (otvorene pozicije): https://bixie.ba/karijera
+- Besplatna AI procjena: https://bixie.ba/ai-audit
+- Blog: https://bixie.ba/blog
+
+## Otvorene pozicije (Karijera)
+BIXIE traži AI-native stručnjake: Sales Development Representative (SDR), Account Executive, AI Automation Engineer (x2), AI Consultant (x3). Sve pozicije zahtijevaju svakodnevnu upotrebu AI alata. Prijave: hello@bixie.ba.
+
+## FAQ (sažetak)
+- **Koje industrije pokrivate?** Proizvodnja, logistika, zdravstvo, turizam, maloprodaja, finansije, obrazovanje — projekti se prilagođavaju sektoru.
+- **Koliko traje implementacija?** CRM 2–4 sedmice, AI agent 2–3 sedmice, RPA 1–3 sedmice po procesu.
+- **Radite li sa malim firmama?** Da, od 5 do 500+ korisnika; za manje firme postoje paketi sa fiksnim cijenama.
+- **Razvijate li custom AI agente?** Da, integracija sa CRM, ERP, DMS, web. Koristimo OpenClaw platformu, podržavamo ChatGPT, Claude, Gemini i open source modele.
+- **Radite li sa klijentima iz inostranstva?** Da — Švicarska, Njemačka, Austrija, SAD i region; remote-first pristup.
+- **Nabavljate li AI licence?** Da — ChatGPT Team/Enterprise, Google Workspace, Microsoft 365, GitHub Copilot, Canva Pro; akademski popusti za obrazovne institucije.
