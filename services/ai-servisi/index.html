@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI Servisi — BIXIE | Kompletna AI implementacija za firme</title>
+<meta name="description" content="Kompletna AI implementacija za firme: AI audit i strategija, forward deployment (embedded AI inženjer), data readiness, RAG knowledge AI, managed AI i AI governance (EU AI Act). Isti model koji koriste vodeći svjetski implementatori.">
+<meta property="og:title" content="AI Servisi — BIXIE | Kompletna AI implementacija">
+<meta property="og:description" content="Od AI audita do forward deploymenta — pokrivamo cijeli životni ciklus AI rješenja: strategija, podaci, implementacija, embedded inženjeri i tekuća podrška.">
+<meta property="og:url" content="https://bixie.ba/services/ai-servisi">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BIXIE">
+<meta property="og:image" content="https://bixie.ba/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Servisi — BIXIE | Kompletna AI implementacija">
+<meta name="twitter:description" content="AI audit, forward deployment, data readiness, RAG, managed AI i governance za firme.">
+<meta name="twitter:image" content="https://bixie.ba/og-image.png">
+<link rel="canonical" href="https://bixie.ba/services/ai-servisi">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/ai-servisi">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { accent: '#00736a', 'accent-dark': '#005c54', surface: '#0f172a', card: '#1a1f2e', border: '#1e293b', muted: '#64748b', teal: { 400: '#00a396', 500: '#008a7f', 600: '#00736a', 700: '#005c54' } },
+      fontFamily: { sans: ['Inter', 'sans-serif'] }
+    }
+  }
+}
+</script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{display:block;width:22px;height:2px;background:#5b6f99;border-radius:1px;transition:all .2s}
+.mobile-menu{display:none;border-top:1px solid rgba(30,41,59,0.4);padding:16px 24px 24px;background:var(--bg-root)}
+@media(max-width:768px){.hamburger{display:flex}.nav-links{display:none}.mobile-menu.open{display:block}}
+.stat-card { background: linear-gradient(135deg, #1a1f2e, #0f172a); border: 1px solid #1e293b; border-radius: 16px; padding: 32px 24px; text-align: center; transition: all 0.3s; }
+.stat-card:hover { border-color: #00736a; transform: translateY(-2px); }
+.service-card { background: #1a1f2e; border: 1px solid #1e293b; border-radius: 16px; padding: 32px; transition: all 0.2s; }
+.service-card:hover { border-color: #00736a; transform: translateY(-2px); }
+.process-step { display: flex; gap: 20px; padding: 24px; background: #1a1f2e; border: 1px solid #1e293b; border-radius: 12px; margin-bottom: 16px; transition: all 0.2s; }
+.process-step:hover { border-color: #00736a; }
+.process-number { flex-shrink: 0; width: 48px; height: 48px; border-radius: 50%; background: #00736a; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: #fff; }
+.pricing-card { background: #1a1f2e; border: 1px solid #1e293b; border-radius: 16px; padding: 32px; transition: all 0.2s; display: flex; flex-direction: column; }
+.pricing-card:hover { border-color: #00736a; }
+.pricing-card.featured { border-color: #00736a; background: linear-gradient(180deg, #14231f 0%, #1a1f2e 60%); }
+.mobile-label { font-size: 13px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRGFE5K9G4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-WRGFE5K9G4");</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","jhp3l0sl3y");</script>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 border-b border-gray-800/50 bg-[#0a0f1c]/95 backdrop-blur-xl">
+<div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+  <a href="/" class="flex items-center gap-3">
+    <img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:32px">
+  </a>
+  <div class="hidden md:flex items-center gap-6">
+    <div class="relative group">
+      <a href="/services/crm" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">CRM ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pregled</a>
+        <a href="/services/crm#bitrix24" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Bitrix24</a>
+        <a href="/services/crm#zoho" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Zoho CRM</a>
+        <a href="/services/crm#pipedrive" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pipedrive</a>
+        <a href="/services/crm#hubspot" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">HubSpot</a>
+        <a href="/services/crm#salesforce" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Salesforce</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <a href="/services/ai-agents" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">AI ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Agenti & Automatizacija</a>
+        <a href="/services/ai-servisi" class="block px-4 py-2 text-sm text-white hover:bg-[#00736a]/10 transition-colors">AI Servisi — kompletna implementacija</a>
+        <a href="/services/ai-agents#licence" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Licence</a>
+        <a href="/open-source-infra" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Open Source Infrastruktura</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <a href="/services" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Usluge ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pregled svih usluga</a>
+        <a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">CRM Rješenja</a>
+        <a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Agenti</a>
+        <a href="/services/ai-servisi" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Servisi</a>
+        <a href="/services/rpa" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">RPA Automatizacija</a>
+        <a href="/open-source-infra" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Open Source Infrastruktura</a>
+        <a href="/ai-providers" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Licence</a>
+        <a href="/services/digital-transformation" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Digitalna Transformacija</a>
+      </div>
+    </div>
+    <a href="/ai-providers" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Licence</a>
+    <a href="/about" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">O nama</a>
+    <a href="/karijera" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Karijera</a>
+    <a href="/blog" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Blog</a>
+    <a href="/contact" class="bg-[#00736a] hover:bg-[#008a7f] text-white px-5 py-2 rounded-lg text-sm font-medium transition-all hover:scale-95">Zatražite ponudu</a>
+  </div>
+  <button class="hamburger md:hidden" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+</div>
+<div id="mobileMenu" class="mobile-menu">
+<div class="mobile-label">CRM</div>
+<a href="/services/crm" class="block py-2 text-sm text-gray-400 hover:text-white">Pregled CRM usluga</a>
+<a href="/services/crm#bitrix24" class="block py-2 text-sm text-gray-400 hover:text-white">Bitrix24</a>
+<a href="/services/crm#zoho" class="block py-2 text-sm text-gray-400 hover:text-white">Zoho CRM</a>
+<a href="/services/crm#pipedrive" class="block py-2 text-sm text-gray-400 hover:text-white">Pipedrive</a>
+<a href="/services/crm#hubspot" class="block py-2 text-sm text-gray-400 hover:text-white">HubSpot</a>
+<a href="/services/crm#salesforce" class="block py-2 text-sm text-gray-400 hover:text-white">Salesforce</a>
+<div class="mobile-label mt-3">AI</div>
+<a href="/services/ai-agents" class="block py-2 text-sm text-gray-400 hover:text-white">AI Agenti i Automatizacija</a>
+<a href="/services/ai-servisi" class="block py-2 text-sm text-white font-medium">AI Servisi — kompletna implementacija</a>
+<a href="/services/ai-agents#licence" class="block py-2 text-sm text-gray-400 hover:text-white">AI Licence</a>
+<a href="/open-source-infra" class="block py-2 text-sm text-gray-400 hover:text-white">Open Source Infrastruktura</a>
+<a href="/services" class="block py-2 mt-2 text-sm text-gray-400 hover:text-white">Sve usluge</a>
+<a href="/about" class="block py-2 text-sm text-gray-400 hover:text-white">O nama</a>
+<a href="/karijera" class="block py-2 text-sm text-gray-400 hover:text-white">Karijera</a>
+<a href="/blog" class="block py-2 text-sm text-gray-400 hover:text-white">Blog</a>
+<a href="/contact" class="block mt-3 bg-[#00736a] text-white px-5 py-3 rounded-lg text-sm font-medium text-center">Zatražite ponudu</a>
+</div>
+</nav>
+
+<!-- Hero -->
+<section class="px-4 py-20 md:py-28" style="background: linear-gradient(135deg, #0a0f1c 0%, #0f172a 50%, #0a0f1c 100%)">
+<div class="max-w-6xl mx-auto">
+  <div class="flex flex-col md:flex-row gap-12 items-center">
+    <div class="flex-1">
+      <span class="inline-block text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full border" style="border-color:rgba(0,115,106,0.3);color:#00736a;background:rgba(0,115,106,0.08)">AI Servisi</span>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mt-4 mb-6" style="color:#f0f2f4;letter-spacing:-1.5px">Kompletna AI implementacija — <span style="color:#00736a">od audita do produkcije</span></h1>
+      <p class="text-lg md:text-xl leading-relaxed mb-8" style="color:#6b7280;max-width:560px">Ne prodajemo AI kao magiju. Pokrivamo cijeli životni ciklus AI rješenja — strategiju, podatke, implementaciju, embedded inženjere i tekuću podršku. Isti model koji koriste vodeći svjetski implementatori (Accenture, BCG X, Palantir), prilagođen firmama u BiH i regionu.</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="/contact" class="bg-[#00736a] hover:bg-[#008a7f] text-white px-6 py-3 rounded-lg font-medium transition-all hover:scale-95">Zakažite AI audit</a>
+        <a href="#servisi" class="border border-gray-700 hover:border-gray-500 text-gray-300 px-6 py-3 rounded-lg font-medium transition-all">Pogledajte servise</a>
+      </div>
+    </div>
+    <div class="flex-1 flex justify-center">
+      <div class="grid grid-cols-2 gap-4 w-full max-w-md">
+        <div class="stat-card"><div class="text-4xl font-bold" style="color:#00736a">2-4</div><div class="text-sm mt-2" style="color:#6b7280">Sedmice do prvog agenta</div></div>
+        <div class="stat-card"><div class="text-4xl font-bold" style="color:#00736a">70%</div><div class="text-sm mt-2" style="color:#6b7280">Automatski riješenih upita</div></div>
+        <div class="stat-card"><div class="text-4xl font-bold" style="color:#00736a">40%</div><div class="text-sm mt-2" style="color:#6b7280">Niži operativni troškovi</div></div>
+        <div class="stat-card"><div class="text-4xl font-bold" style="color:#00736a">100%</div><div class="text-sm mt-2" style="color:#6b7280">AI-native tim</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Servisi -->
+<section id="servisi" class="px-4 py-16 md:py-24">
+<div class="max-w-6xl mx-auto">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Šest servisa, jedan cilj — AI koji stvarno radi</h2>
+    <p class="text-lg max-w-2xl mx-auto" style="color:#6b7280">Svaki servis možete kupiti zasebno ili kao dio kompletnog programa. Preporučujemo početak s AI auditom — bez obzira gdje ste u procesu.</p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <!-- AI Audit -->
+    <div class="service-card">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background:rgba(0,115,106,0.15)"><svg class="w-6 h-6" fill="none" stroke="#00736a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+      <span class="tag-chip inline-block text-xs font-semibold px-3 py-1 rounded-full mb-3" style="background:rgba(0,115,106,0.15);color:#00a396;border:1px solid rgba(0,115,106,0.3)">Ulazna usluga</span>
+      <h3 class="text-xl font-semibold mb-2" style="color:#f0f2f4">AI Audit & Strategija</h3>
+      <p class="text-sm mb-5" style="color:#6b7280">"Odakle početi?" — pitanje koje postavljaju sve firme. Analiziramo vaše procese, podatke i tim te dajemo jasan plan s prioritetima i ROI kalkulacijom. Isti pristup kao AI Strategy praksa velikih konsultantskih kuća — po lokalnoj cijeni.</p>
+      <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color:#64748b">Šta dobijate</p>
+      <ul class="space-y-1.5 text-sm mb-5" style="color:#9ca3af">
+        <li>✓ AI readiness izvještaj (procesi, podaci, vještine tima)</li>
+        <li>✓ Prioritetizirani use-case-ovi s potencijalnim ROI</li>
+        <li>✓ 12-mjesečni AI roadmap po fazama</li>
+        <li>✓ Business case i preporuka modela implementacije</li>
+      </ul>
+      <p class="text-sm mb-6" style="color:#64748b">Trajanje: 1–2 sedmice · Fiksna cijena</p>
+      <a href="/contact" class="inline-block bg-[#00736a] hover:bg-[#008a7f] text-white px-6 py-3 rounded-lg font-medium transition-all hover:scale-95">Zatražite audit</a>
+    </div>
+
+    <!-- Forward Deployment -->
+    <div class="service-card">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background:rgba(0,115,106,0.15)"><svg class="w-6 h-6" fill="none" stroke="#00736a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg></div>
+      <span class="tag-chip inline-block text-xs font-semibold px-3 py-1 rounded-full mb-3" style="background:rgba(0,115,106,0.15);color:#00a396;border:1px solid rgba(0,115,106,0.3)">Naš diferencijator</span>
+      <h3 class="text-xl font-semibold mb-2" style="color:#f0f2f4">Forward Deployment — Embedded AI inženjer</h3>
+      <p class="text-sm mb-5" style="color:#6b7280">Model koji je Palantir izmislio 2005., a danas ga kopiraju OpenAI i Anthropic: naš AI inženjer se ugrađuje u vaš tim na 1–3 mjeseca. Radi na vašim podacima i sistemima, gradi agente u produkciji i prenosi znanje vašim ljudima. Ne isporučujemo projekat — gradimo vaš unutrašnji AI kapacitet.</p>
+      <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color:#64748b">Šta dobijate</p>
+      <ul class="space-y-1.5 text-sm mb-5" style="color:#9ca3af">
+        <li>✓ AI inženjer koji radi s vašim timom (lokalno ili remote)</li>
+        <li>✓ Produkcijski agenti izgrađeni na vašim podacima</li>
+        <li>✓ Transfer znanja — vaš tim uči održavati i širiti rješenja</li>
+        <li>✓ Povratna informacija direktno u vaše procese</li>
+      </ul>
+      <p class="text-sm mb-6" style="color:#64748b">Format: 1–3 mjeseca · puno ili pola radnog vremena</p>
+      <a href="/contact" class="inline-block bg-[#00736a] hover:bg-[#008a7f] text-white px-6 py-3 rounded-lg font-medium transition-all hover:scale-95">Zatražite ponudu</a>
+    </div>
+
+    <!-- Data Readiness -->
+    <div class="service-card">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background:rgba(0,115,106,0.15)"><svg class="w-6 h-6" fill="none" stroke="#00736a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 1.657 3.582 3 8 3s8-1.343 8-3V7M4 7c0 1.657 3.582 3 8 3s8-1.343 8-3M4 7c0-1.657 3.582-3 8-3s8 1.343 8 3m-8 5v6"/></svg></div>
+      <h3 class="text-xl font-semibold mb-2" style="color:#f0f2f4">Data Readiness — priprema podataka za AI</h3>
+      <p class="text-sm mb-5" style="color:#6b7280">47% direktora kaže da je data-readiness glavni izazov za uvođenje AI-ja. Čistimo, strukturiramo i integrišemo vaše podatke, postavljamo vektorske baze i pipeline-e — da AI agenti rade na kvalitetnim podacima, a ne na haosu iz Excela i papira.</p>
+      <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color:#64748b">Šta dobijate</p>
+      <ul class="space-y-1.5 text-sm mb-5" style="color:#9ca3af">
+        <li>✓ Očišćeni i strukturirani podaci iz svih izvora</li>
+        <li>✓ Vektorske baze i data pipeline-i za AI</li>
+        <li>✓ Integracija s postojećim sistemima (CRM, ERP, DMS)</li>
+        <li>✓ Dokumentacija i standardi za dalji rast</li>
+      </ul>
+      <p class="text-sm mb-6" style="color:#64748b">Najčešći preduvjet za dobre AI rezultate</p>
+      <a href="/contact" class="inline-block bg-[#00736a] hover:bg-[#008a7f] text-white px-6 py-3 rounded-lg font-medium transition-all hover:scale-95">Zatražite ponudu</a>
+    </div>
+
+    <!-- RAG / Knowledge AI -->
+    <div class="service-card">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background:rgba(0,115,106,0.15)"><svg class="w-6 h-6" fill="none" stroke="#00736a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div>
+      <h3 class="text-xl font-semibold mb-2" style="color:#f0f2f4">RAG / Knowledge AI — asistent koji zna vaše dokumente</h3>
+      <p class="text-sm mb-5" style="color:#6b7280">AI asistent koji odgovara na pitanja isključivo na osnovu vaših dokumenata, uputstava, procedura i baze znanja — s citatima i provjerljivim izvorima. Najčešća "prva kupovina" AI-ja za firme: odmah rješava onboarding, podršku i interne upite.</p>
+      <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color:#64748b">Šta dobijate</p>
+      <ul class="space-y-1.5 text-sm mb-5" style="color:#9ca3af">
+        <li>✓ Knowledge AI asistent na BHS, EN, DE</li>
+        <li>✓ Odgovori s citatima iz vaših dokumenata</li>
+        <li>✓ Integracija s internim alatima, CRM-om i webom</li>
+        <li>✓ Obuka tima i održavanje baze znanja</li>
+      </ul>
+      <p class="text-sm mb-6" style="color:#64748b">Implementacija: 2–3 sedmice</p>
+      <a href="/contact" class="inline-block bg-[#00736a] hover:bg-[#008a7f] text-white px-6 py-3 rounded-lg font-medium transition-all hover:scale-95">Zatražite ponudu</a>
+    </div>
+
+    <!-- Managed AI -->
+    <div class="service-card">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background:rgba(0,115,106,0.15)"><svg class="w-6 h-6" fill="none" stroke="#00736a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+      <h3 class="text-xl font-semibold mb-2" style="color:#f0f2f4">Managed AI — AI Care (mjesečni retainer)</h3>
+      <p class="text-sm mb-5" style="color:#6b7280">AI agenti nisu "instaliraj i zaboravi" — oni se održavaju, prate i poboljšavaju. Preuzimamo tekuću brigu o vašim agentima: monitoring, evaluacija kvaliteta, optimizacija modela i prioritetna podrška po SLA ugovoru.</p>
+      <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color:#64748b">Šta dobijate</p>
+      <ul class="space-y-1.5 text-sm mb-5" style="color:#9ca3af">
+        <li>✓ Monitoring dashboard i mjesečni izvještaj performansi</li>
+        <li>✓ Kontinuirana optimizacija agenata i modela</li>
+        <li>✓ Prioritetna podrška s definisanim SLA</li>
+        <li>✓ Redovne nadogradnje i nove mogućnosti</li>
+      </ul>
+      <p class="text-sm mb-6" style="color:#64748b">Mjesečna naknada · bez dugoročne obaveze</p>
+      <a href="/contact" class="inline-block bg-[#00736a] hover:bg-[#008a7f] text-white px-6 py-3 rounded-lg font-medium transition-all hover:scale-95">Zatražite ponudu</a>
+    </div>
+
+    <!-- Governance -->
+    <div class="service-card">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background:rgba(0,115,106,0.15)"><svg class="w-6 h-6" fill="none" stroke="#00736a" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <h3 class="text-xl font-semibold mb-2" style="color:#f0f2f4">AI Governance & EU AI Act</h3>
+      <p class="text-sm mb-5" style="color:#6b7280">AI bez governance-a je rizik. EU AI Act je u primjeni od 2026. — pripremamo firme za usklađenost: interne AI politike, GDPR, sigurnosni pregled agenata (prompt injection, data boundaries, audit logovi). Accenture ima cijelu praksu za ovo — mi to radimo lokalno, na BHS.</p>
+      <p class="text-xs font-semibold uppercase tracking-wider mb-2" style="color:#64748b">Šta dobijate</p>
+      <ul class="space-y-1.5 text-sm mb-5" style="color:#9ca3af">
+        <li>✓ AI policy dokument prilagođen vašoj firmi</li>
+        <li>✓ EU AI Act i GDPR compliance izvještaj</li>
+        <li>✓ Sigurnosni pregled AI agenata i integracija</li>
+        <li>✓ Obuka menadžmenta i zaposlenika</li>
+      </ul>
+      <p class="text-sm mb-6" style="color:#64748b">EU AI Act u primjeni 2026. — pripremite se na vrijeme</p>
+      <a href="/contact" class="inline-block bg-[#00736a] hover:bg-[#008a7f] text-white px-6 py-3 rounded-lg font-medium transition-all hover:scale-95">Zatražite ponudu</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Kako počinjemo -->
+<section class="px-4 py-16 md:py-24" style="background: linear-gradient(180deg, #0a0f1c 0%, #0f172a 100%)">
+<div class="max-w-6xl mx-auto">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Kako počinjemo?</h2>
+    <p class="text-lg max-w-2xl mx-auto" style="color:#6b7280">Bez obzira na veličinu firme, preporučujemo isti put — uz jasne odluke na svakom koraku.</p>
+  </div>
+  <div class="max-w-3xl mx-auto">
+    <div class="process-step">
+      <div class="process-number">1</div>
+      <div><h3 class="text-lg font-semibold mb-1" style="color:#f0f2f4">AI Audit</h3><p class="text-sm" style="color:#6b7280">Analiza procesa, podataka i tima. Izlaz: prioritizirani use-case-ovi, ROI i roadmap. 1–2 sedmice, fiksna cijena.</p></div>
+    </div>
+    <div class="process-step">
+      <div class="process-number">2</div>
+      <div><h3 class="text-lg font-semibold mb-1" style="color:#f0f2f4">Proof of Concept (PoC)</h3><p class="text-sm" style="color:#6b7280">Prototip agenta za jedan proces u roku 2 sedmice, po fiksnoj cijeni. Testirate u realnom okruženju prije veće investicije — jasna odluka DA/NE.</p></div>
+    </div>
+    <div class="process-step">
+      <div class="process-number">3</div>
+      <div><h3 class="text-lg font-semibold mb-1" style="color:#f0f2f4">Implementacija</h3><p class="text-sm" style="color:#6b7280">Integracija s vašim sistemima, obuka tima i pokretanje u produkciji. Standardno 2–4 sedmice po rješenju.</p></div>
+    </div>
+    <div class="process-step">
+      <div class="process-number">4</div>
+      <div><h3 class="text-lg font-semibold mb-1" style="color:#f0f2f4">Managed AI</h3><p class="text-sm" style="color:#6b7280">Tekuća podrška, monitoring i optimizacija po SLA ugovoru. Vaši agenti rade optimalno — uvijek.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Paketi -->
+<section class="px-4 py-16 md:py-24">
+<div class="max-w-6xl mx-auto">
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Paketi za svaku fazu</h2>
+    <p class="text-lg max-w-2xl mx-auto" style="color:#6b7280">Od prvog koraka do potpune AI transformacije. Cijene po dogovoru — zatražite ponudu i dobijate je u roku 24h.</p>
+  </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="pricing-card">
+      <h3 class="text-lg font-semibold mb-1" style="color:#f0f2f4">AI PoC</h3>
+      <p class="text-sm mb-4" style="color:#00736a">2 sedmice · fiksna cijena</p>
+      <p class="text-sm mb-6" style="color:#6b7280">Prototip AI agenta za jedan proces, test u realnom okruženju, jasna odluka da li AI vrijedi za vašu firmu.</p>
+      <ul class="space-y-2 text-sm mb-8" style="color:#9ca3af">
+        <li>✓ 1 AI agent (prototip)</li>
+        <li>✓ Test na vašim podacima</li>
+        <li>✓ Prezentacija rezultata + preporuka</li>
+      </ul>
+      <a href="/contact" class="mt-auto inline-block border border-gray-700 hover:border-gray-500 text-gray-300 px-5 py-2.5 rounded-lg text-sm font-medium transition-all text-center">Zatražite ponudu</a>
+    </div>
+    <div class="pricing-card">
+      <h3 class="text-lg font-semibold mb-1" style="color:#f0f2f4">Startup</h3>
+      <p class="text-sm mb-4" style="color:#00736a">Do 10 zaposlenih</p>
+      <p class="text-sm mb-6" style="color:#6b7280">Brzi ulazak u AI: jedan agent, trening tima i licence — sve što mala firma treba za prvi AI korak.</p>
+      <ul class="space-y-2 text-sm mb-8" style="color:#9ca3af">
+        <li>✓ AI audit + 1 agent</li>
+        <li>✓ Trening tima (4h)</li>
+        <li>✓ Licence i provajderi</li>
+        <li>✓ 30 dana podrške</li>
+      </ul>
+      <a href="/contact" class="mt-auto inline-block border border-gray-700 hover:border-gray-500 text-gray-300 px-5 py-2.5 rounded-lg text-sm font-medium transition-all text-center">Zatražite ponudu</a>
+    </div>
+    <div class="pricing-card featured">
+      <h3 class="text-lg font-semibold mb-1" style="color:#f0f2f4">SME · Najtraženiji</h3>
+      <p class="text-sm mb-4" style="color:#00736a">10–100 zaposlenih</p>
+      <p class="text-sm mb-6" style="color:#6b7280">Kompletna AI implementacija: audit, 2–3 agenta, integracija s CRM/ERP, trening i tekuća podrška.</p>
+      <ul class="space-y-2 text-sm mb-8" style="color:#9ca3af">
+        <li>✓ AI audit + roadmap</li>
+        <li>✓ 2–3 AI agenta (support, prodaja, procesi)</li>
+        <li>✓ Integracija s CRM/ERP/DMS</li>
+        <li>✓ Trening zaposlenika</li>
+        <li>✓ AI Care (managed AI) uključen</li>
+      </ul>
+      <a href="/contact" class="mt-auto inline-block bg-[#00736a] hover:bg-[#008a7f] text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-all text-center">Zatražite ponudu</a>
+    </div>
+    <div class="pricing-card">
+      <h3 class="text-lg font-semibold mb-1" style="color:#f0f2f4">Enterprise / Forward Deployment</h3>
+      <p class="text-sm mb-4" style="color:#00736a">100+ zaposlenih</p>
+      <p class="text-sm mb-6" style="color:#6b7280">Embedded AI inženjer u vašem timu, više rješenja u produkciji, governance i SLA podrška.</p>
+      <ul class="space-y-2 text-sm mb-8" style="color:#9ca3af">
+        <li>✓ Forward deployment (1–3 mjeseca)</li>
+        <li>✓ Više AI rješenja + data readiness</li>
+        <li>✓ AI governance i EU AI Act</li>
+        <li>✓ Managed AI po SLA ugovoru</li>
+        <li>✓ Dedicated podrška na BHS/EN/DE</li>
+      </ul>
+      <a href="/contact" class="mt-auto inline-block border border-gray-700 hover:border-gray-500 text-gray-300 px-5 py-2.5 rounded-lg text-sm font-medium transition-all text-center">Zatražite ponudu</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="px-4 py-16" style="background: linear-gradient(135deg, #00736a, #005c54)">
+<div class="max-w-3xl mx-auto text-center">
+  <h2 class="text-3xl font-semibold mb-4 text-white">Spremni za prvi korak?</h2>
+  <p class="text-lg mb-8" style="color:rgba(255,255,255,0.8)">Zakažite besplatne konsultacije — u 30 minuta procjenjujemo gdje AI može donijeti najveću vrijednost vašoj firmi. Odgovaramo u roku 24h.</p>
+  <div class="flex flex-wrap justify-center gap-4">
+    <a href="/contact" class="bg-white text-[#00736a] px-8 py-3 rounded-lg font-semibold transition-all hover:scale-95">Zakažite AI audit</a>
+    <a href="tel:+38733922622" class="border border-white/30 text-white px-8 py-3 rounded-lg font-medium transition-all hover:bg-white/10">033 922 622</a>
+  </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer>
+<div class="footer-inner max-w-6xl mx-auto" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;padding:48px 24px">
+<div><a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;font-size:16px;font-weight:600;color:#f0f2f4;margin-bottom:14px"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:28px"></a><p style="font-size:14px;color:#6b7280;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Usluge</h4><a href="/services/crm" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">CRM Rjesenja</a><a href="/services/ai-agents" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Agenti</a><a href="/services/ai-servisi" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Servisi</a><a href="/services/digital-transformation" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Digitalna Transformacija</a><a href="/services/rpa" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">RPA i Automatizacija</a><a href="/ai-providers" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Licence</a></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Kompanija</h4><a href="/about" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">O nama</a><a href="/karijera" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Karijera</a><a href="/blog" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Blog</a><a href="/contact" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Kontakt</a><a href="/privacy" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Privacy Policy</a></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Kontakt</h4><p style="font-size:14px;color:#6b7280;margin-bottom:8px">hello@bixie.ba</p><p style="font-size:14px;color:#6b7280;margin-bottom:8px">033 922 622</p><p style="font-size:14px;color:#6b7280;line-height:1.6">Maglajska 1, 71000 Sarajevo</p></div>
+</div>
+<div style="border-top:1px solid #1e293b;padding:24px;text-align:center;font-size:14px;color:#4b5563">2026 BIXIE. All rights reserved.</div>
+</footer>
+
+<script>
+function toggleMobile() { document.getElementById("mobileMenu").classList.toggle("open"); }
+</script>
+</body>
+</html>
