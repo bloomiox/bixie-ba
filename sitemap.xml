@@ -23,7 +23,34 @@
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
     <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/karijera"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/careers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/karriere"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/karijera"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/en/careers</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/karijera"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/careers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/karriere"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/karijera"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/de/karriere</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/karijera"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/careers"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/karriere"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/karijera"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/ai-audit</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/ai-audit"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/ai-audit"/>
   </url>
   <url>
     <loc>https://bixie.ba/services/crm</loc>
@@ -39,6 +66,26 @@
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
     <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/ai-servisi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/ai-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/ki-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/ai-servisi"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/en/services/ai-services</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/ai-servisi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/ai-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/ki-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/ai-servisi"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/de/services/ki-services</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/services/ai-servisi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bixie.ba/en/services/ai-services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bixie.ba/de/services/ki-services"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/services/ai-servisi"/>
   </url>
   <url>
