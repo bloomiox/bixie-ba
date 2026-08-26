@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI Bootcamp za firme — BIXIE | Od ideje do pilota za 21 dan</title>
+<meta name="description" content="Jednodnevni AI workshop s vašim timom + pilot sprint na vašim stvarnim procesima. Identificiramo use case-ove s najvećim ROI, gradimo živi pilot i mjerimo rezultat — za 21 dan. BIXIE, Sarajevo.">
+<meta property="og:title" content="AI Bootcamp — od ideje do pilota za 21 dan">
+<meta property="og:description" content="Workshop + pilot na vašim stvarnim procesima. Use case-ovi s ROI, živi agent, mjerljiv rezultat za 21 dan.">
+<meta property="og:url" content="https://bixie.ba/ai-bootcamp">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BIXIE">
+<meta property="og:image" content="https://bixie.ba/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Bootcamp — od ideje do pilota za 21 dan">
+<meta name="twitter:description" content="Workshop + pilot na vašim stvarnim procesima. Za 21 dan.">
+<meta name="twitter:image" content="https://bixie.ba/og-image.png">
+<link rel="canonical" href="https://bixie.ba/ai-bootcamp">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate" hreflang="x-default" href="https://bixie.ba/ai-bootcamp">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { accent: '#00736a', 'accent-dark': '#005c54', surface: '#0f172a', card: '#1a1f2e', border: '#1e293b', muted: '#64748b', teal: { 400: '#00a396', 500: '#008a7f', 600: '#00736a', 700: '#005c54' } },
+      fontFamily: { sans: ['Inter', 'sans-serif'] }
+    }
+  }
+}
+</script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{display:block;width:22px;height:2px;background:#5b6f99;border-radius:1px;transition:all .2s}
+.mobile-menu{display:none;border-top:1px solid rgba(30,41,59,0.4);padding:16px 24px 24px;background:var(--bg-root)}
+@media(max-width:768px){.hamburger{display:flex}.nav-links{display:none}.mobile-menu.open{display:block}}
+.value-card { background: #1a1f2e; border: 1px solid #1e293b; border-radius: 12px; padding: 24px; transition: all 0.2s; }
+.value-card:hover { border-color: #00736a; }
+.mobile-label { font-size: 13px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+.step-num { font-size: 13px; font-weight: 700; color: #00a396; letter-spacing: 0.08em; }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRGFE5K9G4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-WRGFE5K9G4");</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","jhp3l0sl3y");</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "AI Bootcamp za firme",
+  "serviceType": "AI workshop i pilot implementacija",
+  "description": "Jednodnevni AI workshop s vašim timom i dvosedmični pilot sprint na vašim stvarnim procesima. Identifikacija use case-ova, izgradnja pilota i mjerenje rezultata za 21 dan.",
+  "provider": { "@type": "Organization", "name": "BIXIE", "url": "https://bixie.ba" },
+  "areaServed": "BA"
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 border-b border-gray-800/50 bg-[#0a0f1c]/95 backdrop-blur-xl">
+<div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+  <a href="/" class="flex items-center gap-3">
+    <img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:32px">
+  </a>
+  <div class="hidden md:flex items-center gap-6">
+    <div class="relative group">
+      <a href="/services/crm" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">CRM ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pregled</a>
+        <a href="/services/crm#bitrix24" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Bitrix24</a>
+        <a href="/services/crm#zoho" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Zoho CRM</a>
+        <a href="/services/crm#pipedrive" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pipedrive</a>
+        <a href="/services/crm#hubspot" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">HubSpot</a>
+        <a href="/services/crm#salesforce" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Salesforce</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <a href="/services/ai-agents" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">AI ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Agenti & Automatizacija</a>
+        <a href="/services/ai-servisi" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Servisi — kompletna implementacija</a>
+        <a href="/ai-bootcamp" class="block px-4 py-2 text-sm text-white hover:bg-[#00736a]/10 transition-colors">AI Bootcamp za firme</a>
+        <a href="/ai-audit" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Besplatna AI procjena</a>
+        <a href="/services/ai-agents#licence" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Licence</a>
+        <a href="/open-source-infra" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Open Source Infrastruktura</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <a href="/services" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Usluge ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pregled svih usluga</a>
+        <a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">CRM Rješenja</a>
+        <a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Agenti</a>
+        <a href="/services/ai-servisi" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Servisi</a>
+        <a href="/services/rpa" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">RPA Automatizacija</a>
+        <a href="/open-source-infra" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Open Source Infrastruktura</a>
+        <a href="/ai-providers" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Licence</a>
+        <a href="/services/digital-transformation" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Digitalna Transformacija</a>
+      </div>
+    </div>
+    <a href="/ai-providers" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Licence</a>
+    <a href="/about" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">O nama</a>
+    <a href="/karijera" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Karijera</a>
+    <a href="/blog" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Blog</a>
+    <a href="/contact" class="bg-[#00736a] hover:bg-[#008a7f] text-white px-5 py-2 rounded-lg text-sm font-medium transition-all hover:scale-95">Zatražite ponudu</a>
+  </div>
+  <button class="hamburger md:hidden" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+</div>
+<div id="mobileMenu" class="mobile-menu">
+<div class="mobile-label">CRM</div>
+<a href="/services/crm" class="block py-2 text-sm text-gray-400 hover:text-white">Pregled CRM usluga</a>
+<a href="/services/crm#bitrix24" class="block py-2 text-sm text-gray-400 hover:text-white">Bitrix24</a>
+<a href="/services/crm#zoho" class="block py-2 text-sm text-gray-400 hover:text-white">Zoho CRM</a>
+<a href="/services/crm#pipedrive" class="block py-2 text-sm text-gray-400 hover:text-white">Pipedrive</a>
+<a href="/services/crm#hubspot" class="block py-2 text-sm text-gray-400 hover:text-white">HubSpot</a>
+<a href="/services/crm#salesforce" class="block py-2 text-sm text-gray-400 hover:text-white">Salesforce</a>
+<div class="mobile-label mt-3">AI</div>
+<a href="/services/ai-agents" class="block py-2 text-sm text-gray-400 hover:text-white">AI Agenti i Automatizacija</a>
+<a href="/services/ai-servisi" class="block py-2 text-sm text-gray-400 hover:text-white">AI Servisi — kompletna implementacija</a>
+<a href="/ai-bootcamp" class="block py-2 text-sm text-white font-medium">AI Bootcamp za firme</a>
+<a href="/ai-audit" class="block py-2 text-sm text-gray-400 hover:text-white">Besplatna AI procjena</a>
+<a href="/services/ai-agents#licence" class="block py-2 text-sm text-gray-400 hover:text-white">AI Licence</a>
+<a href="/open-source-infra" class="block py-2 text-sm text-gray-400 hover:text-white">Open Source Infrastruktura</a>
+<a href="/services" class="block py-2 mt-2 text-sm text-gray-400 hover:text-white">Sve usluge</a>
+<a href="/about" class="block py-2 text-sm text-gray-400 hover:text-white">O nama</a>
+<a href="/karijera" class="block py-2 text-sm text-gray-400 hover:text-white">Karijera</a>
+<a href="/blog" class="block py-2 text-sm text-gray-400 hover:text-white">Blog</a>
+<a href="/contact" class="block mt-3 bg-[#00736a] text-white px-5 py-3 rounded-lg text-sm font-medium text-center">Zatražite ponudu</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="px-4 py-20 md:py-28" style="background: linear-gradient(160deg, #0a0f1c 0%, #0f172a 55%, #0a0f1c 100%)">
+<div class="max-w-5xl mx-auto text-center">
+  <span class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold mb-6" style="background:rgba(0,115,106,0.15);color:#00a396;border:1px solid rgba(0,163,150,0.3)">Workshop + Pilot · 21 dan · Mjerljiv rezultat</span>
+  <h1 class="text-4xl md:text-6xl font-semibold mb-6" style="color:#f0f2f4;letter-spacing:-1px;line-height:1.1">AI Bootcamp za firme —<br><span style="color:#00a396">od ideje do živog pilota</span> za 21 dan</h1>
+  <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10" style="color:#8b98b3;line-height:1.7">Jednodnevni workshop s vašim timom, pa pilot sprint na <strong style="color:#e2e8f0">vašim stvarnim procesima i podacima</strong>. Ne Powerpoint i generičke fraze — na kraju imate agenta koji radi i brojeve koji pokazuju šta je dobio.</p>
+  <div class="flex flex-wrap justify-center gap-4">
+    <a href="#prijava" class="bg-[#00736a] hover:bg-[#008a7f] text-white px-8 py-3 rounded-lg font-semibold transition-all hover:scale-95">Zatražite termin</a>
+    <a href="#kako-radi" class="border border-gray-700 text-gray-300 hover:border-[#00736a] hover:text-white px-8 py-3 rounded-lg font-medium transition-all">Kako radi</a>
+  </div>
+  <div class="flex flex-wrap justify-center gap-6 mt-10 text-sm" style="color:#64748b">
+    <span>1 dan workshop</span><span style="color:#1e293b">•</span>
+    <span>2 sedmice pilot sprint</span><span style="color:#1e293b">•</span>
+    <span>1 fokusirani proces</span><span style="color:#1e293b">•</span>
+    <span>KPI prije/poslije</span>
+  </div>
+</div>
+</section>
+
+<!-- PROBLEM -->
+<section class="px-4 py-16 md:py-20 border-t border-gray-800/50">
+<div class="max-w-6xl mx-auto">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Zašto većina AI projekata nikad ne počne</h2>
+    <p class="text-lg max-w-2xl mx-auto" style="color:#8b98b3">Vidjeli smo iste tri blokade u skoro svakoj firmi. Bootcamp ih rješava redom.</p>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="value-card">
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">🤔 Ne znamo odakle početi</h3>
+      <p class="text-sm" style="color:#8b98b3">AI se spominje svuda, ali niko ne kaže <em>šta konkretno</em> za vašu firmu. Na workshopu mapiramo vaše procese i biramo prvi potez s najvećim utjecajem — ne onaj najmoderniji.</p>
+    </div>
+    <div class="value-card">
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">💸 Bojimo se velikih ulaganja</h3>
+      <p class="text-sm" style="color:#8b98b3">Ponude od 50.000 KM za "AI transformaciju" su zastrašujuće. Bootcamp ima fiksnu cijenu, kratak rok i mjerljiv ishod — pilot koji možete vidjeti, testirati i odbaciti ako ne radi.</p>
+    </div>
+    <div class="value-card">
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">📄 Konsultanti ostave PDF i odu</h3>
+      <p class="text-sm" style="color:#8b98b3">"Studija izvodljivosti" koja završi u ladici. Mi umjesto toga <strong style="color:#e2e8f0">izgradimo živi pilot na vašem procesu</strong> — da rezultat vidite, a ne da vam ga neko opiše.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- KAKO RADI -->
+<section id="kako-radi" class="px-4 py-16 md:py-20" style="background: linear-gradient(180deg, #0f172a 0%, #0a0f1c 100%)">
+<div class="max-w-4xl mx-auto">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Kako izgleda vaših 21 dan</h2>
+    <p class="text-lg" style="color:#8b98b3">Četiri faze. Tri nedjelje. Jedan mjerljiv rezultat.</p>
+  </div>
+  <div class="space-y-6">
+    <div class="value-card">
+      <div class="step-num mb-2">Faza 1 · Sedmica 0 — Priprema</div>
+      <h3 class="text-xl font-semibold mb-2" style="color:#f0f2f4">Mini-audit prije nego što dođemo</h3>
+      <p class="text-sm" style="color:#8b98b3">45-minutni razgovor + kratka anketa za vaš tim. Mi prije bootcampa identifikujemo kandidate za automatizaciju — tako da se workshop ne troši na "upoznavanje", nego na odluke.</p>
+    </div>
+    <div class="value-card">
+      <div class="step-num mb-2">Faza 2 · Dan 1 — Workshop s vašim timom</div>
+      <h3 class="text-xl font-semibold mb-2" style="color:#f0f2f4">Mapiranje procesa → AI matrica → izbor use case-a</h3>
+      <p class="text-sm" style="color:#8b98b3">Jutro: crtamo vaše ključne procese i nalazimo gubitke (vrijeme, ponavljanje, greške). Poslijepodne: ocjenjujemo svaki kandidat po <em>utjecaju × naporu</em> i biramo 1-2 use case-a. Definišemo KPI i kako izgleda uspjeh pilota.</p>
+    </div>
+    <div class="value-card">
+      <div class="step-num mb-2">Faza 3 · Sedmice 1–2 — Pilot sprint</div>
+      <h3 class="text-xl font-semibold mb-2" style="color:#f0f2f4">Gradimo agenta na vašim podacima</h3>
+      <p class="text-sm" style="color:#8b98b3">Mi gradimo pilot na stvarnom procesu i podacima — agent za obradu dokumenata, odgovore na upite, kvalifikaciju leadova ili šta god smo zajedno odabrali. Nedjeljni check-in, iteracija po vašim komentarima. Vaš tim je uključen cijelo vrijeme.</p>
+    </div>
+    <div class="value-card">
+      <div class="step-num mb-2">Faza 4 · Kraj sedmice 2 — Demo dan</div>
+      <h3 class="text-xl font-semibold mb-2" style="color:#f0f2f4">Rezultati + preporuka za skaliranje</h3>
+      <p class="text-sm" style="color:#8b98b3">Mjerimo "prije/poslije" protiv dogovorenog KPI-ja. Dobijate izvještaj, demonstraciju uživo i preporuku: koje sljedeće procese automatizirati i koliko to košta. Pilot i sva dokumentacija ostaju vama — bez obzira na odluku.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- DELIVERABLES -->
+<section class="px-4 py-16 md:py-20 border-t border-gray-800/50">
+<div class="max-w-6xl mx-auto">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Šta tačno dobijete</h2>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="value-card"><h3 class="font-semibold mb-2" style="color:#f0f2f4">🗺️ Mapa procesa i AI matrica</h3><p class="text-sm" style="color:#8b98b3">Kompletan pregled vaših procesa s ocjenom svakog kandidata po utjecaju i naporu — dokument koji kasnije koristite za sve odluke o automatizaciji.</p></div>
+    <div class="value-card"><h3 class="font-semibold mb-2" style="color:#f0f2f4">🤖 Živi pilot agent</h3><p class="text-sm" style="color:#8b98b3">Radni prototip na vašim podacima — ne demo u sandboxu. Spajan na vaše stvarne alate koliko god je izvodljivo u 2 sedmice.</p></div>
+    <div class="value-card"><h3 class="font-semibold mb-2" style="color:#f0f2f4">📊 KPI izvještaj prije/poslije</h3><p class="text-sm" style="color:#8b98b3">Brojevi, ne dojmovi: koliko vremena je ušteđeno, koliko je posla prošlo kroz pilota, gdje su granice. Iskrena procjena ROI-ja.</p></div>
+    <div class="value-card"><h3 class="font-semibold mb-2" style="color:#f0f2f4">📈 Preporuka za skaliranje</h3><p class="text-sm" style="color:#8b98b3">Sljedeći koraci s cijenama: koji procesi idu u punu implementaciju, koje licence trebate, koliko to košta.</p></div>
+    <div class="value-card"><h3 class="font-semibold mb-2" style="color:#f0f2f4">🎓 Obuka vašeg tima</h3><p class="text-sm" style="color:#8b98b3">Vaši ljudi nauče kako pilot radi, kako ga koristiti i kako sami predlagati nove use case-ove nakon bootcampa.</p></div>
+    <div class="value-card"><h3 class="font-semibold mb-2" style="color:#f0f2f4">🔒 Vlasništvo nad rezultatom</h3><p class="text-sm" style="color:#8b98b3">Pilot, dokumentacija i znanje ostaju kod vas — čak i ako odlučite da ne nastavite s nama. Nema vendor lock-a.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- USE CASES -->
+<section class="px-4 py-16 md:py-20" style="background: linear-gradient(180deg, #0a0f1c 0%, #0f172a 100%)">
+<div class="max-w-6xl mx-auto">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Primjeri onoga što gradimo</h2>
+    <p class="text-lg max-w-2xl mx-auto" style="color:#8b98b3">Ovo su najčešći piloti — ali izbor uvijek polazi od vaših procesa, ne od našeg kataloga.</p>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="value-card"><h3 class="font-semibold mb-2" style="color:#f0f2f4">📄 Obrada dokumenata i faktura</h3><p class="text-sm" style="color:#8b98b3">Agent čita fakture, ugovore, prijave — izvlači podatke, provjerava greške, unosi u sistem. Kraj ručnog prekucavanja.</p></div>
+    <div class="value-card"><h3 class="font-semibold mb-2" style="color:#f0f2f4">💬 Odgovori na upite klijenata</h3><p class="text-sm" style="color:#8b98b3">AI odgovara na email i chat na osnovu vaše baze znanja — uz ljudski nadzor. Odgovor za sekunde, ne za dane.</p></div>
+    <div class="value-card"><h3 class="font-semibold mb-2" style="color:#f0f2f4">🎯 Kvalifikacija leadova</h3><p class="text-sm" style="color:#8b98b3">Agent istražuje potencijalne klijente, ocjenjuje ih po vašim kriterijima i priprema personalizovan prvi kontakt. Prodaja dobija top-10, ne listu od 500.</p></div>
+    <div class="value-card"><h3 class="font-semibold mb-2" style="color:#f0f2f4">📝 Sastanci → zadaci</h3><p class="text-sm" style="color:#8b98b3">Snimak sastanka postaje sažetak, zadaci s vlasnicima i rokovima, upisano u vaš CRM ili project tool.</p></div>
+    <div class="value-card"><h3 class="font-semibold mb-2" style="color:#f0f2f4">📚 Baza znanja koja odgovara</h3><p class="text-sm" style="color:#8b98b3">"Pitaj svoje dokumente" — zaposleni postavljaju pitanje, a AI odgovara s tačnom referencom iz vaših procedura, priručnika i politika.</p></div>
+    <div class="value-card"><h3 class="font-semibold mb-2" style="color:#f0f2f4">⚙️ Back-office automatizacija</h3><p class="text-sm" style="color:#8b98b3">Ponavljajući admin poslovi — prijava, unos podataka, generisanje izvještaja — koje danas radi čovjek u Excelu.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ZA KOGA -->
+<section class="px-4 py-16 md:py-20 border-t border-gray-800/50">
+<div class="max-w-6xl mx-auto">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Ovo je za vas ako...</h2>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="value-card">
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">✅ Imate ponavljajuće procese</h3>
+      <p class="text-sm" style="color:#8b98b3">Dokumenti, upiti, unosi, izvještaji, pozivi — posao koji se ponavlja i troši vaše ljude. To je gorivo za pilot.</p>
+    </div>
+    <div class="value-card">
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">✅ Želite dokaz prije ulaganja</h3>
+      <p class="text-sm" style="color:#8b98b3">Ne kupujete "transformaciju" na slijepo — vidite rezultat na svom procesu, pa onda odlučujete o širenju.</p>
+    </div>
+    <div class="value-card">
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">✅ Spremni ste uključiti svoj tim</h3>
+      <p class="text-sm" style="color:#8b98b3">Workshop traži 3–8 ljudi iz operativnog dijela. Oni koji proces znaju iznutra su pola uspjeha pilota.</p>
+    </div>
+  </div>
+  <div class="mt-10 max-w-3xl mx-auto text-center">
+    <p class="text-sm" style="color:#64748b">Nije za vas ako tražite samo teorijsku "AI strategiju" ili prezentaciju za upravu — to pokrivamo kroz <a href="/services/ai-servisi" class="text-[#00a396] hover:underline">AI Servise</a> i <a href="/ai-audit" class="text-[#00a396] hover:underline">besplatnu AI procjenu</a>.</p>
+  </div>
+</div>
+</section>
+
+<!-- CIJENA -->
+<section class="px-4 py-16 md:py-20" style="background: linear-gradient(180deg, #0f172a 0%, #0a0f1c 100%)">
+<div class="max-w-4xl mx-auto">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Fiksna cijena. Bez iznenađenja.</h2>
+  </div>
+  <div class="grid md:grid-cols-2 gap-6 items-stretch">
+    <div class="value-card flex flex-col">
+      <div class="text-sm font-semibold mb-1" style="color:#00a396">WORKSHOP SAM</div>
+      <h3 class="text-2xl font-semibold mb-3" style="color:#f0f2f4">od 1.500 KM</h3>
+      <ul class="text-sm space-y-2 mb-6 flex-1" style="color:#8b98b3">
+        <li>• Mini-audit + 1 dan workshopa (3–8 učesnika)</li>
+        <li>• Mapa procesa i AI matrica prioriteta</li>
+        <li>• Izbor 1–2 use case-a s KPI-jevima</li>
+        <li>• Preporuka za implementaciju</li>
+      </ul>
+      <a href="#prijava" class="text-center border border-[#00736a] text-[#00a396] hover:bg-[#00736a]/10 px-6 py-3 rounded-lg font-semibold transition-all">Zatražite termin</a>
+    </div>
+    <div class="rounded-xl p-6 flex flex-col" style="background:linear-gradient(135deg, #00736a, #005c54);box-shadow:0 20px 60px rgba(0,115,106,0.25)">
+      <div class="text-sm font-semibold mb-1" style="color:rgba(255,255,255,0.8)">BOOTCAMP + PILOT · PREPORUČENO</div>
+      <h3 class="text-2xl font-semibold mb-3 text-white">4.900 KM</h3>
+      <ul class="text-sm space-y-2 mb-6 flex-1" style="color:rgba(255,255,255,0.9)">
+        <li>✓ Sve iz workshopa</li>
+        <li>✓ Pilot sprint — 2 sedmice, agent na vašim podacima</li>
+        <li>✓ Nedjeljni check-in i iteracije</li>
+        <li>✓ KPI izvještaj prije/poslije + demo dan</li>
+        <li>✓ Obuka vašeg tima</li>
+        <li>✓ Vlasništvo nad pilotom i dokumentacijom</li>
+      </ul>
+      <a href="#prijava" class="text-center bg-white text-[#00736a] hover:scale-95 px-6 py-3 rounded-lg font-bold transition-all">Zatražite termin</a>
+    </div>
+  </div>
+  <div class="mt-8 rounded-xl p-6 text-center border border-[#00736a]/30" style="background:rgba(0,115,106,0.08)">
+    <h3 class="font-semibold mb-2" style="color:#f0f2f4">🛡️ Klauzula povjerenja</h3>
+    <p class="text-sm max-w-2xl mx-auto" style="color:#8b98b3">Ako nakon pilota uđete u punu implementaciju s nama — <strong style="color:#e2e8f0">iznos bootcampa uračunavamo u ponudu</strong>. Pilot tako postaje prvi korak projekta, ne trošak. I uvijek: NDA prije početka, vaši podaci ostaju vaši.</p>
+  </div>
+  <p class="text-center text-xs mt-6" style="color:#64748b">Cijene bez PDV-a. Troškovi infrastrukture (API ključevi, licence) se dogovaraju zasebno i iskazuju transparentno u ponudi.</p>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="px-4 py-16 md:py-20 border-t border-gray-800/50">
+<div class="max-w-3xl mx-auto">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4;letter-spacing:-0.5px">Česta pitanja</h2>
+  </div>
+  <div class="space-y-4">
+    <div class="value-card">
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">Koliko ljudi treba biti na workshopu?</h3>
+      <p class="text-sm" style="color:#8b98b3">3–8. Idealno: vlasnik ili direktor, osoba zadužena za operativu, i 1–2 ljudi koji svakodnevno rade proces koji želimo automatizirati. Ljudi koji proces znaju iz ruke su pola uspjeha.</p>
+    </div>
+    <div class="value-card">
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">Šta ako nemamo jasno definisane procese?</h3>
+      <p class="text-sm" style="color:#8b98b3">To je normalno — zato prva faza i postoji. Mi zajedno crtamo procese i nalazimo gdje je gubitak. Bootcamp je često prvi put da firma vidi vlastite procese na jednom papiru.</p>
+    </div>
+    <div class="value-card">
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">Kako se rješava povjerenje i podaci?</h3>
+      <p class="text-sm" style="color:#8b98b3">NDA prije početka. Po želji radimo s lokalno postavljenim modelima (on-premise) — naročito za povjerljive podatke. Poštujemo GDPR i vaše interne politike.</p>
+    </div>
+    <div class="value-card">
+      <h3 class="font-semibold mb-2" style="color:#f0f2f4">Šta ako pilot pokaže da nema ROI?</h3>
+      <p class="text-sm" style="color:#8b98b3">Onda ste saznali to za 21 dan i 4.900 KM — umjesto za godinu dana i 50.000 KM. To je i poenta: pilot je jeftin način da se kaže "ne" bez grižnje savjesti. Iskreno ćemo vam to i reći.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- PRIJAVA / FORMA -->
+<section id="prijava" class="px-4 py-16 md:py-20" style="background: linear-gradient(135deg, #00736a, #005c54)">
+<div class="max-w-2xl mx-auto">
+  <div class="text-center mb-10">
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-white">Zatražite termin za AI Bootcamp</h2>
+    <p class="text-lg" style="color:rgba(255,255,255,0.85)">Popunite formu — javljamo se u roku 24h i dogovaramo 45-minutni razgovor prije svega.</p>
+  </div>
+  <div class="rounded-2xl p-6 md:p-8" style="background:#0f172a;box-shadow:0 20px 60px rgba(0,0,0,0.4)">
+    <form id="bootcampForm">
+      <div class="grid md:grid-cols-2 gap-4 mb-4">
+        <div>
+          <label class="block text-xs font-semibold mb-1" style="color:#64748b">Ime i prezime *</label>
+          <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg text-sm" style="background:#1a1f2e;border:1px solid #1e293b;color:#f0f2f4;outline:none">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold mb-1" style="color:#64748b">Službeni email *</label>
+          <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg text-sm" style="background:#1a1f2e;border:1px solid #1e293b;color:#f0f2f4;outline:none">
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4 mb-4">
+        <div>
+          <label class="block text-xs font-semibold mb-1" style="color:#64748b">Firma *</label>
+          <input type="text" name="company" required class="w-full px-4 py-3 rounded-lg text-sm" style="background:#1a1f2e;border:1px solid #1e293b;color:#f0f2f4;outline:none">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold mb-1" style="color:#64748b">Broj zaposlenih</label>
+          <select name="size" class="w-full px-4 py-3 rounded-lg text-sm" style="background:#1a1f2e;border:1px solid #1e293b;color:#f0f2f4;outline:none">
+            <option value="">Odaberite...</option>
+            <option>1–10</option>
+            <option>11–50</option>
+            <option>51–200</option>
+            <option>200+</option>
+          </select>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label class="block text-xs font-semibold mb-1" style="color:#64748b">Koji vas proces najviše košta vremena?</label>
+        <textarea name="message" rows="3" placeholder="Npr. ručni unos faktura, odgovaranje na upite kupaca emailom, istraživanje potencijalnih klijenata..." class="w-full px-4 py-3 rounded-lg text-sm" style="background:#1a1f2e;border:1px solid #1e293b;color:#f0f2f4;outline:none;resize:vertical"></textarea>
+      </div>
+      <button id="bootcampSubmitBtn" type="submit" class="w-full bg-[#00736a] hover:bg-[#008a7f] text-white px-6 py-3.5 rounded-lg font-semibold transition-all">Zatražite termin →</button>
+      <p id="bootcampError" class="text-sm text-center mt-3" style="color:#f87171;display:none">Došlo je do greške pri slanju. Pokušajte ponovo ili nam pišite na hello@bixie.ba.</p>
+      <p class="text-xs text-center mt-4" style="color:#64748b">Bez spamovanja. Vaši podaci se koriste isključivo za kontakt.</p>
+    </form>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="footer-inner max-w-6xl mx-auto" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;padding:48px 24px">
+<div><a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;font-size:16px;font-weight:600;color:#f0f2f4;margin-bottom:14px"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:28px"></a><p style="font-size:14px;color:#6b7280;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Usluge</h4><a href="/services/crm" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">CRM Rjesenja</a><a href="/services/ai-agents" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Agenti</a><a href="/services/ai-servisi" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Servisi</a><a href="/ai-bootcamp" style="display:block;font-size:14px;color:#00a396;margin-bottom:8px;text-decoration:none">AI Bootcamp za firme</a><a href="/services/digital-transformation" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Digitalna Transformacija</a><a href="/services/rpa" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">RPA i Automatizacija</a><a href="/ai-providers" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Licence</a></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Kompanija</h4><a href="/about" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">O nama</a><a href="/blog" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Blog</a><a href="/karijera" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Karijera</a><a href="/contact" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Kontakt</a><a href="/ai-politika" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Politika</a><a href="/privacy" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Privatnost</a></div>
+</div>
+<div style="border-top:1px solid rgba(30,41,59,0.6);padding:20px 24px;text-align:center;font-size:13px;color:#64748b">© 2026 BIXIE d.o.o. Sarajevo · Sve usluge izvršavamo uz ljudski nadzor i uz primjenu AI politike kompanije.</div>
+</footer>
+
+<script>
+function toggleMobile(){document.getElementById("mobileMenu").classList.toggle("open");}
+document.getElementById("bootcampForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+  var btn = document.getElementById("bootcampSubmitBtn");
+  var err = document.getElementById("bootcampError");
+  btn.disabled = true; btn.textContent = "Šaljemo...";
+  err.style.display = "none";
+  var fd = new FormData(this);
+  var payload = {
+    name: fd.get("name") || "",
+    email: fd.get("email") || "",
+    company: fd.get("company") || "",
+    size: fd.get("size") || "",
+    message: fd.get("message") || "",
+    source: "bixie.ba/ai-bootcamp"
+  };
+  try {
+    var resp = await fetch("https://api.bloom.ba/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+    if (!resp.ok) throw new Error("HTTP " + resp.status);
+    window.location.href = "/ai-bootcamp/hvala";
+  } catch (ex) {
+    btn.disabled = false; btn.textContent = "Zatražite termin →";
+    err.style.display = "block";
+  }
+});
+</script>
+</body>
+</html>

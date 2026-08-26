@@ -95,6 +95,7 @@ body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -w
         <a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Agenti & Automatizacija</a>
         <a href="/services/ai-servisi" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Servisi — kompletna implementacija</a>
         <a href="/ai-audit" class="block px-4 py-2 text-sm text-white hover:bg-[#00736a]/10 transition-colors">Besplatna AI procjena</a>
+        <a href="/ai-bootcamp" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Bootcamp za firme</a>
         <a href="/services/ai-agents#licence" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Licence</a>
         <a href="/open-source-infra" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Open Source Infrastruktura</a>
       </div>
@@ -132,6 +133,7 @@ body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -w
 <a href="/services/ai-agents" class="block py-2 text-sm text-gray-400 hover:text-white">AI Agenti i Automatizacija</a>
 <a href="/services/ai-servisi" class="block py-2 text-sm text-gray-400 hover:text-white">AI Servisi — kompletna implementacija</a>
 <a href="/ai-audit" class="block py-2 text-sm text-white font-medium">Besplatna AI procjena</a>
+<a href="/ai-bootcamp" class="block py-2 text-sm text-gray-400 hover:text-white">AI Bootcamp za firme</a>
 <a href="/services/ai-agents#licence" class="block py-2 text-sm text-gray-400 hover:text-white">AI Licence</a>
 <a href="/open-source-infra" class="block py-2 text-sm text-gray-400 hover:text-white">Open Source Infrastruktura</a>
 <a href="/services" class="block py-2 mt-2 text-sm text-gray-400 hover:text-white">Sve usluge</a>
@@ -241,7 +243,7 @@ body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -w
             body: JSON.stringify(payload)
           });
           if (!resp.ok) throw new Error("HTTP " + resp.status);
-          window.location.href = "/ai-audit/hvala";
+          window.location.href = "/hvala";
         } catch (ex) {
           btn.disabled = false; btn.textContent = "Zakažite besplatnu procjenu →";
           err.style.display = "block";
