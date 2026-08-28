@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Enterprise AI: stvarni rizik nisu agenti, nego kompleksnost između njih — BIXIE</title>
+<meta property="og:title" content="Enterprise AI: stvarni rizik nisu agenti, nego kompleksnost između njih — BIXIE">
+<meta property="og:description" content="Kako hostati DeepSeek R1 na vlastitom hardveru. Benchmarkovi, kvantizacija, hardverski zahtjevi i optimizacija za produkcijsku upotrebu.">
+<meta property="og:url" content="https://bixie.ba/blog/posts/deepseek-r1-lokalni-hardver-performanse">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BIXIE">
+<meta property="og:image" content="https://bixie.ba/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Enterprise AI: stvarni rizik nisu agenti, nego kompleksnost između njih — BIXIE">
+<meta name="twitter:description" content="Kako hostati DeepSeek R1 na vlastitom hardveru. Benchmarkovi, kvantizacija, hardverski zahtjevi i optimizacija za produkcijsku upotrebu.">
+<meta name="twitter:image" content="https://bixie.ba/og-image.png">
+<meta name="description" content="Kako hostati DeepSeek R1 na vlastitom hardveru. Benchmarkovi, kvantizacija, hardverski zahtjevi i optimizacija za produkcijsku upotrebu.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="canonical" href="https://bixie.ba/blog/posts/deepseek-r1-lokalni-hardver-performanse">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"DeepSeek R1 na Lokalnom Hardveru — Performanse i Optimizacija","description":"Kako hostati DeepSeek R1 na vlastitom hardveru. Benchmarkovi, kvantizacija, hardverski zahtjevi i optimizacija za produkcijsku upotrebu.","author":{"@type":"Organization","name":"BIXIE"},"publisher":{"@type":"Organization","name":"BIXIE","url":"https://bixie.ba"}}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "DeepSeek R1 na Lokalnom Hardveru — Performanse i Optimizacija — BIXIE",
+  "description": "Kako hostati DeepSeek R1 na vlastitom hardveru. Benchmarkovi, kvantizacija, hardverski zahtjevi i optimizacija za produkcijsku upotrebu.",
+  "url": "https://bixie.ba/blog/posts/deepseek-r1-lokalni-hardver-performanse",
+  "image": "https://bixie.ba/og-image.png",
+  "author": {
+    "@type": "Organization",
+    "name": "BIXIE",
+    "url": "https://bixie.ba"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BIXIE",
+    "url": "https://bixie.ba",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bixie.ba/og-image.png"
+    }
+  },
+  "inLanguage": "bs"
+}
+</script>
+</head>
+<body>
+<nav>
+<div class="nav-inner">
+<a href="/" class="logo"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:36px"></a>
+<div class="nav-links">
+<div class="dropdown"><a href="/services/crm">CRM</a><div class="dropdown-menu"><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a></div></div>
+<div class="dropdown"><a href="/services/ai-agents">AI</a><div class="dropdown-menu"><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-servisi">AI Servisi</a><a href="/ai-audit">Besplatna AI procjena</a><a href="/ai-bootcamp">AI Bootcamp za firme</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a><a href="/open-source-infra">Open Source Infrastruktura</a></div></div>
+<div class="dropdown"><a href="/services/digital-transformation">Digitalna Transformacija</a><div class="dropdown-menu"><a href="/services/digital-transformation">Pregled</a><a href="/services/rpa">RPA i Automatizacija</a></div></div>
+<a href="/about">O nama</a><a href="/karijera">Karijera</a>
+<a href="/ai-providers">AI Licence</a>
+<a href="/open-source-infra">Open Source</a>
+<a href="/blog">Blog</a>
+<a href="/contact" class="nav-cta">Zatražite ponudu</a>
+</div>
+<button class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+</div>
+<div id="mobileMenu" class="mobile-menu">
+<div class="mobile-label">CRM</div>
+<a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a>
+<div class="mobile-label">AI</div>
+<a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-servisi">AI Servisi</a><a href="/ai-audit">Besplatna AI procjena</a><a href="/ai-bootcamp">AI Bootcamp za firme</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a><a href="/open-source-infra">Open Source Infrastruktura</a>
+<a href="/services/digital-transformation">Digitalna Transformacija</a><a href="/services/rpa">RPA i Automatizacija</a>
+<a href="/about">O nama</a><a href="/karijera">Karijera</a>
+<a href="/ai-providers">AI Licence</a><a href="/open-source-infra">Open Source</a><a href="/blog">Blog</a>
+<a href="/contact" style="display:block;margin-top:10px;background:#00736a;color:#fff;padding:10px 16px;border-radius:6px;text-align:center;font-weight:450;font-size:0.9rem">Zatražite ponudu</a>
+</div>
+</nav>
+<section style="padding:80px 24px">
+<div style="max-width:800px;margin:0 auto">
+<a href="/blog" style="color:#62666d;font-size:14px;text-decoration:none;display:inline-block;margin-bottom:16px">&larr; Nazad na blog</a>
+<span class="tag">Digitalna Transformacija</span>
+<h1>Enterprise AI: stvarni rizik nisu agenti, nego kompleksnost između njih</h1>
+<div style="font-size:13px;color:#62666d;margin-bottom:32px">12. Juli 2026 · BIXIE Team · 9 min citanja</div>
+<div class="tags"><span class="tag">Tehnički</span></div>
+<article style="max-width:700px;margin:0 auto"><p>Većina rasprava o rizicima AI-ja u kompanijama fokusirana je na "odbjegle" agente — ali pravi problem je tiši i podmukliji: <strong>kompleksnost između agenata</strong>. Enterprise ne pokreće jedan agent, nego čitave flote agenata koji međusobno pozivaju API-je, jedan drugoga i sisteme koji nikada nisu bili građeni za mašinske odluke.</p>
+
+<h2>Kompleksnost se množi, ne sabira</h2>
+
+<p>Dodajte drugog agenta u sistem — dobili ste jednu novu vezu. Dodajte desetog — niste dobili deset veza, nego potencijalno desetine, jer svaki agent može pozvati bilo kojeg drugog, a svaki poziv može pokrenuti lanac novih poziva. Podrška koja je nekada prolazila kroz jedan sistem, danas može proći kroz četiri agenta prije nego što je čovjek uopće vidi — i svaki od tih prijenosa je odluka koju niko nije odobrio.</p>
+
+<p>Postavite sigurnosnom timu jednostavno pitanje: koji agenti mogu doći do kojih sistema? Slijedi tišina. Pitajte koji je agent prije tri koraka pokrenuo određenu radnju — opet tišina.</p>
+
+<h2>Dvije klasične greške: permisije i vlasništvo</h2>
+
+<p>Problem se najčešće gradi na dva načina. Prvi je <strong>"permisije creep"</strong> — neko napravi agenta za sažimanje tiketa, da mu širok API pristup jer bi precizno ograničavanje trajalo još jedan sprint, i zaboravi na njega. Šest mjeseci kasnije, isti agent ima put do platnog sistema. Niko se ne sjeća da je to odobrio. I nije.</p>
+
+<p>Drugi je <strong>razvodnjeno vlasništvo</strong> — pet agenata dodiruje jedan proces, nešto pukne u koraku četiri, i niko ne odgovara, jer se organizaciona šema zaustavila na "deploy-uj agenta", a nikada nije stigla do "imenuj čovjeka koji za njega odgovara".</p>
+
+<h2>Checklista nije rješenje</h2>
+
+<p>Instinkt je da se ovome pristupi kao checklisti: odobri agenta, evidentiraj agenta, idemo dalje. To je pogrešan pristup. <strong>Checklista provjerava jedan trenutak u vremenu</strong>, a kompleksnost se proteže kroz cijeli lanac — ne možete upravljati lancem hrpom jednokratnih odobrenja.</p>
+
+<p>Ono što je nužno, a ne dovoljno, jeste <strong>identitet agenta</strong>: svaki agent treba postojati kao zaseban entitet sa svojim imenom u registru, ograničenim ovlastima i imenovanim ljudskim sponzorom koji odgovara za njegovo djelovanje. Bez toga dobijate arhivu savršeno dokumentovanih agenata unutar sistema koji niko ne može objasniti.</p>
+
+<h2>Prava razlika: nadzor naspram provođenja</h2>
+
+<p>Nadzor vam govori šta se već dogodilo. <strong>Provođenje pravila</strong> je ono što većina programa preskače — sposobnost da se zaustavi poziv koji krši politiku <em>prije</em> nego što se izvrši, a ne da se evidentira za reviziju tri sedmice kasnije. Dashboard koji vam kaže da je agent prije pet minuta prešao svoje granice jeste alat za praćenje. Sistem koji spriječi da se prelazak uopće desi jeste upravljanje.</p>
+
+<h2>Šta to znači za firme u regiji</h2>
+
+<p>Za IT odjele u BiH i regionu, koji su često mali i preopterećeni, poruka je jasna: <strong>disciplinu izgradite na početku, ne poslije</strong>. Kada je u sistemu jedan agent, sve izgleda jednostavno. Kada ih bude deset, svaki bez jasnog vlasnika i ograničenja, vraćanje na početak košta mnogo više nego što je koštalo pravilno postavljanje.</p>
+
+<ul>
+<li>Vodite registar agenata — ko je vlasnik, čemu služi, čemu smije pristupiti;</li>
+<li>Ograničite pristup na najmanju moguću mjeru od prvog dana;</li>
+<li>Zaustavljajte kršenja pravila u realnom vremenu, ne samo evidentirajte;</li>
+<li>Ne ulazite u produkciju s agentom kome niko ne može odgovoriti "šta ti je trenutno zadatak i ko si vlasnik".</li>
+</ul>
+
+<p>Kompleksnost nije razlog da usporite — ali je razlog da skalirate odgovorno. Firme koje ovo urade kako treba ne usporavaju; one grade sistem u kojem odgovornost raste zajedno s brojem agenata.</p>
+
+<p><em>Izvor: VentureBeat, 27. august 2026.</em></p>
+</article>
+<div style="margin-top:48px;padding:32px;background:rgba(0,115,106,0.05);border:1px solid rgba(0,115,106,0.2);border-radius:12px;text-align:center">
+<h3 style="font-size:20px;font-weight:510;color:#f0f2f4;margin-bottom:8px">Zainteresovani za open source AI?</h3>
+<p style="font-size:15px;color:#6b7280;margin-bottom:20px">BIXIE projektuje i implementira on-premise AI infrastrukturu. Kontaktirajte nas za besplatne konsultacije.</p>
+<a href="/contact" class="btn-primary" style="font-size:16px;padding:12px 28px">Zakažite konsultacije</a>
+</div>
+</div>
+<div class="ai-disclosure" style="margin-top:32px;padding:14px 18px;border:1px solid #263244;border-radius:8px;background:#0f1626;font-size:13px;color:#7d8aa5;line-height:1.7">
+🤖 Ovaj tekst pripremljen je uz pomoć AI alata, a pregledan je i odobren od strane BIXIE tima prije objave. <a href="/ai-politika" style="color:#0d9488;text-decoration:none">Pročitajte kako koristimo AI</a>.
+</div>
+</section>
+<footer>
+<div class="footer-inner">
+<div><a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:16px;font-weight:510;color:#f0f2f4;margin-bottom:12px"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#00736a"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>BIXIE</a><p style="font-size:14px;color:#6b7280;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
+<div><h4>Usluge</h4><a href="/services/crm">CRM Rjesenja</a><br><a href="/services/ai-agents">AI Agenti</a><a href="/services/ai-servisi">AI Servisi</a><br><a href="/services/digital-transformation">Digitalna Transformacija</a><br><a href="/services/rpa">RPA i Automatizacija</a><br><a href="/ai-providers">AI Provajderi i Licence</a><br><a href="/open-source-infra">Open Source Infrastruktura</a></div>
+<div><h4>Kompanija</h4><a href="/blog">Blog</a><br><a href="/about">O nama</a><a href="/karijera">Karijera</a><br><a href="/contact">Kontakt</a><br><a href="/privacy">Privacy Policy</a><a href="/ai-politika">AI Politika</a></div>
+<div><h4>Kontakt</h4><p>hello@bixie.ba</p><p>033 922 622</p><p>Maglajska 1, 71000 Sarajevo</p></div>
+</div>
+<div class="footer-bottom">2026 BIXIE. All rights reserved.</div>
+</footer>
+<script>
+function toggleMobile() {
+  var m = document.getElementById("mobileMenu");
+  m.classList.toggle("open");
+}
+</script>
+</body>
+</html>
