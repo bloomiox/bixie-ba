@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Arga Labs: platforma za trening enterprise AI agenata primila 10M USD seed investiciju — BIXIE</title>
+<meta property="og:title" content="Arga Labs: platforma za trening enterprise AI agenata primila 10M USD seed investiciju — BIXIE">
+<meta property="og:description" content="Kako hostati DeepSeek R1 na vlastitom hardveru. Benchmarkovi, kvantizacija, hardverski zahtjevi i optimizacija za produkcijsku upotrebu.">
+<meta property="og:url" content="https://bixie.ba/blog/posts/deepseek-r1-lokalni-hardver-performanse">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BIXIE">
+<meta property="og:image" content="https://bixie.ba/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Arga Labs: platforma za trening enterprise AI agenata primila 10M USD seed investiciju — BIXIE">
+<meta name="twitter:description" content="Kako hostati DeepSeek R1 na vlastitom hardveru. Benchmarkovi, kvantizacija, hardverski zahtjevi i optimizacija za produkcijsku upotrebu.">
+<meta name="twitter:image" content="https://bixie.ba/og-image.png">
+<meta name="description" content="Kako hostati DeepSeek R1 na vlastitom hardveru. Benchmarkovi, kvantizacija, hardverski zahtjevi i optimizacija za produkcijsku upotrebu.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="canonical" href="https://bixie.ba/blog/posts/deepseek-r1-lokalni-hardver-performanse">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"DeepSeek R1 na Lokalnom Hardveru — Performanse i Optimizacija","description":"Kako hostati DeepSeek R1 na vlastitom hardveru. Benchmarkovi, kvantizacija, hardverski zahtjevi i optimizacija za produkcijsku upotrebu.","author":{"@type":"Organization","name":"BIXIE"},"publisher":{"@type":"Organization","name":"BIXIE","url":"https://bixie.ba"}}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "DeepSeek R1 na Lokalnom Hardveru — Performanse i Optimizacija — BIXIE",
+  "description": "Kako hostati DeepSeek R1 na vlastitom hardveru. Benchmarkovi, kvantizacija, hardverski zahtjevi i optimizacija za produkcijsku upotrebu.",
+  "url": "https://bixie.ba/blog/posts/deepseek-r1-lokalni-hardver-performanse",
+  "image": "https://bixie.ba/og-image.png",
+  "author": {
+    "@type": "Organization",
+    "name": "BIXIE",
+    "url": "https://bixie.ba"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BIXIE",
+    "url": "https://bixie.ba",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bixie.ba/og-image.png"
+    }
+  },
+  "inLanguage": "bs"
+}
+</script>
+</head>
+<body>
+<nav>
+<div class="nav-inner">
+<a href="/" class="logo"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:36px"></a>
+<div class="nav-links">
+<div class="dropdown"><a href="/services/crm">CRM</a><div class="dropdown-menu"><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a></div></div>
+<div class="dropdown"><a href="/services/ai-agents">AI</a><div class="dropdown-menu"><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-servisi">AI Servisi</a><a href="/ai-audit">Besplatna AI procjena</a><a href="/ai-bootcamp">AI Bootcamp za firme</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a><a href="/open-source-infra">Open Source Infrastruktura</a></div></div>
+<div class="dropdown"><a href="/services/digital-transformation">Digitalna Transformacija</a><div class="dropdown-menu"><a href="/services/digital-transformation">Pregled</a><a href="/services/rpa">RPA i Automatizacija</a></div></div>
+<a href="/about">O nama</a><a href="/karijera">Karijera</a>
+<a href="/ai-providers">AI Licence</a>
+<a href="/open-source-infra">Open Source</a>
+<a href="/blog">Blog</a>
+<a href="/contact" class="nav-cta">Zatražite ponudu</a>
+</div>
+<button class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+</div>
+<div id="mobileMenu" class="mobile-menu">
+<div class="mobile-label">CRM</div>
+<a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a>
+<div class="mobile-label">AI</div>
+<a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-servisi">AI Servisi</a><a href="/ai-audit">Besplatna AI procjena</a><a href="/ai-bootcamp">AI Bootcamp za firme</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a><a href="/open-source-infra">Open Source Infrastruktura</a>
+<a href="/services/digital-transformation">Digitalna Transformacija</a><a href="/services/rpa">RPA i Automatizacija</a>
+<a href="/about">O nama</a><a href="/karijera">Karijera</a>
+<a href="/ai-providers">AI Licence</a><a href="/open-source-infra">Open Source</a><a href="/blog">Blog</a>
+<a href="/contact" style="display:block;margin-top:10px;background:#00736a;color:#fff;padding:10px 16px;border-radius:6px;text-align:center;font-weight:450;font-size:0.9rem">Zatražite ponudu</a>
+</div>
+</nav>
+<section style="padding:80px 24px">
+<div style="max-width:800px;margin:0 auto">
+<a href="/blog" style="color:#62666d;font-size:14px;text-decoration:none;display:inline-block;margin-bottom:16px">&larr; Nazad na blog</a>
+<span class="tag">Automatizacija</span>
+<h1>Arga Labs: platforma za trening enterprise AI agenata primila 10M USD seed investiciju</h1>
+<div style="font-size:13px;color:#62666d;margin-bottom:32px">12. Juli 2026 · BIXIE Team · 9 min citanja</div>
+<div class="tags"><span class="tag">Tehnički</span></div>
+<article style="max-width:700px;margin:0 auto"><h2>Arga Labs: platforma za trening enterprise AI agenata primila 10M USD seed investiciju</h2>
+
+<p>Startup Arga Labs, koji razvija platformu za trening i evaluaciju enterprise AI agenata, zatvorio je seed rundu od 10 milijuna dolara pod vodstvom General Catalysta, s učešćem Box Group, Emergence, Gradient i SV Angel. Ovo je jedan od najjasnijih signala da tržište prepoznaje: budućnost enterprise AI nije u modelima, već u agentima koji rade pouzdano u produkciji.</p>
+
+<h3>Zašto enterprise agenti nisu isto što i chatbotovi</h3>
+
+<p>Većina tvrtki danas eksperimentira s LLM-ovima kroz chat sučelja. Ali kada razgovor pređe u "izvršavaj ovu zadatak u našem ERP-u, zatim pošalji e-mail klijentu, pa ažuriraj CRM" — ulazimo u područje AI agenata. I tu se pojavljuju problemi:</p>
+
+<ul>
+<li><strong>Reliability:</strong> Agent koji u 95% slučajeva radi savršeno, u 5% uništava podatke — neprihvatljivo u enterprise.</li>
+<li><strong>Evals:</strong> Nema standardiziranog načina da se testira "radi li ovaj agent dobro?" prije deploya.</li>
+<li><strong>Orchestration:</strong> Više agenata koji moraju surađivati, dijeliti kontekst, ne preklapati se.</li>
+<li><strong>Security/Identity:</strong> Tko je odgovoran kada agent napravi grešku? Kako kontrolirati pristup?</li>
+</ul>
+
+<p>Arga Labs точно ovdje ulazi — ne grade još jedan model, već infrastrukturu za <strong>trening, evaluaciju i deployment agenata</strong> koji zadovoljavaju enterprise standarde.</p>
+
+<h3>Šta nudi Arga platforma</h3>
+
+<p>Prema dostupnim informacijama, platforma se fokusira na tri stupca:</p>
+
+<ol>
+<li><strong>Sintetička generacija test scenarija.</strong> Umjesto ručnog pisanja testova, platforma generira hiljade realističnih edge-case situacija na osnovu vaših poslovnih pravila i povijesnih podataka.</li>
+<li><strong>Kontinuirana evaluacija (evals).</strong> Metrike koje idu osim "točnost" — latencija, trošak po zadatku, sigurnosni incidenti, drift u ponašanju u vremenu.</li>
+<li><strong>Simulirana produkcijska okruženja.</strong> Sandbox gdje agenti uče iz grešaka bez rizika za prave sustave.</li>
+</ol>
+
+<h3>Zašto je to relevantno za naše tržište</h3>
+
+<p>Firme u BiH, Hrvatskoj i Srbiji koje žele uvesti AI agente (za automatizaciju podrške, obradu dokumenata, financijsku analitiku) suočavaju se s istim problemom: "Radi u demo-u, ali ne smijem pustiti u produkciju." Postojanje platforme kao Arga znači da se problem <strong>standardizira i produktivizira</strong> — ne mora svaka tvrtka izgradivati vlastite eval pipeline-e.</p>
+
+<p>General Catalyst, Emergence i Gradient ne ulažu u "zanimljivu tehnologiju" — ulažu u rješenje bolja koja blokira enterprise adopciju. To je signal za CTO-eve i voditelje AI inicijativa: pripremite se za fazu kada agenti postanu deployable artefacts s SLA-ovima, ne eksperimenti.</p>
+
+<h3>BIXIE perspektiva</h3>
+
+<p>Mi u BIXIE već sada pomažemo klijente da definišu <strong>agent specs</strong> — ne samo "šta agent radi" nego "kako testiramo da radi dobro", "kaj je acceptable failure rate", "kako rollback-amo". Arga Labs validira da je to pravac. Očekujemo da će se u sljedećih 12-18 mjeseci pojavljivati gotova rješenja za: eval frameworki, agent observability, policy enforcement — sve ono što nedostaje za produkciju.</p>
+
+<p>Preporuka: Pratite ovaj prostor. Ako planirate enterprise agente u 2026./2027., započnite s definiranjem eval kriterija <strong>prije</strong> nego pođete u razvoj. To je najjeftiniji i najvažniji korak.</p>
+
+<p><strong>Izvor:</strong> <a href="https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents/" target="_blank">TechCrunch, 26. avgust 2026</a></p></article>
+<div style="margin-top:48px;padding:32px;background:rgba(0,115,106,0.05);border:1px solid rgba(0,115,106,0.2);border-radius:12px;text-align:center">
+<h3 style="font-size:20px;font-weight:510;color:#f0f2f4;margin-bottom:8px">Zainteresovani za open source AI?</h3>
+<p style="font-size:15px;color:#6b7280;margin-bottom:20px">BIXIE projektuje i implementira on-premise AI infrastrukturu. Kontaktirajte nas za besplatne konsultacije.</p>
+<a href="/contact" class="btn-primary" style="font-size:16px;padding:12px 28px">Zakažite konsultacije</a>
+</div>
+</div>
+<div class="ai-disclosure" style="margin-top:32px;padding:14px 18px;border:1px solid #263244;border-radius:8px;background:#0f1626;font-size:13px;color:#7d8aa5;line-height:1.7">
+🤖 Ovaj tekst pripremljen je uz pomoć AI alata, a pregledan je i odobren od strane BIXIE tima prije objave. <a href="/ai-politika" style="color:#0d9488;text-decoration:none">Pročitajte kako koristimo AI</a>.
+</div>
+</section>
+<footer>
+<div class="footer-inner">
+<div><a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:16px;font-weight:510;color:#f0f2f4;margin-bottom:12px"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#00736a"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>BIXIE</a><p style="font-size:14px;color:#6b7280;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
+<div><h4>Usluge</h4><a href="/services/crm">CRM Rjesenja</a><br><a href="/services/ai-agents">AI Agenti</a><a href="/services/ai-servisi">AI Servisi</a><br><a href="/services/digital-transformation">Digitalna Transformacija</a><br><a href="/services/rpa">RPA i Automatizacija</a><br><a href="/ai-providers">AI Provajderi i Licence</a><br><a href="/open-source-infra">Open Source Infrastruktura</a></div>
+<div><h4>Kompanija</h4><a href="/blog">Blog</a><br><a href="/about">O nama</a><a href="/karijera">Karijera</a><br><a href="/contact">Kontakt</a><br><a href="/privacy">Privacy Policy</a><a href="/ai-politika">AI Politika</a></div>
+<div><h4>Kontakt</h4><p>hello@bixie.ba</p><p>033 922 622</p><p>Maglajska 1, 71000 Sarajevo</p></div>
+</div>
+<div class="footer-bottom">2026 BIXIE. All rights reserved.</div>
+</footer>
+<script>
+function toggleMobile() {
+  var m = document.getElementById("mobileMenu");
+  m.classList.toggle("open");
+}
+</script>
+</body>
+</html>
