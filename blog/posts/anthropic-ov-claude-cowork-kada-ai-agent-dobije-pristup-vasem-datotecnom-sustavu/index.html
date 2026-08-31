@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Anthropic-ov Claude Cowork: kada AI agent dobije pristup vašem datotečnom sustavu — BIXIE</title>
+<meta property="og:title" content="Anthropic-ov Claude Cowork: kada AI agent dobije pristup vašem datotečnom sustavu — BIXIE">
+<meta property="og:description" content="Kako hostati DeepSeek R1 na vlastitom hardveru. Benchmarkovi, kvantizacija, hardverski zahtjevi i optimizacija za produkcijsku upotrebu.">
+<meta property="og:url" content="https://bixie.ba/blog/posts/deepseek-r1-lokalni-hardver-performanse">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BIXIE">
+<meta property="og:image" content="https://bixie.ba/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Anthropic-ov Claude Cowork: kada AI agent dobije pristup vašem datotečnom sustavu — BIXIE">
+<meta name="twitter:description" content="Kako hostati DeepSeek R1 na vlastitom hardveru. Benchmarkovi, kvantizacija, hardverski zahtjevi i optimizacija za produkcijsku upotrebu.">
+<meta name="twitter:image" content="https://bixie.ba/og-image.png">
+<meta name="description" content="Kako hostati DeepSeek R1 na vlastitom hardveru. Benchmarkovi, kvantizacija, hardverski zahtjevi i optimizacija za produkcijsku upotrebu.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+<link rel="canonical" href="https://bixie.ba/blog/posts/deepseek-r1-lokalni-hardver-performanse">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"DeepSeek R1 na Lokalnom Hardveru — Performanse i Optimizacija","description":"Kako hostati DeepSeek R1 na vlastitom hardveru. Benchmarkovi, kvantizacija, hardverski zahtjevi i optimizacija za produkcijsku upotrebu.","author":{"@type":"Organization","name":"BIXIE"},"publisher":{"@type":"Organization","name":"BIXIE","url":"https://bixie.ba"}}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "DeepSeek R1 na Lokalnom Hardveru — Performanse i Optimizacija — BIXIE",
+  "description": "Kako hostati DeepSeek R1 na vlastitom hardveru. Benchmarkovi, kvantizacija, hardverski zahtjevi i optimizacija za produkcijsku upotrebu.",
+  "url": "https://bixie.ba/blog/posts/deepseek-r1-lokalni-hardver-performanse",
+  "image": "https://bixie.ba/og-image.png",
+  "author": {
+    "@type": "Organization",
+    "name": "BIXIE",
+    "url": "https://bixie.ba"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "BIXIE",
+    "url": "https://bixie.ba",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://bixie.ba/og-image.png"
+    }
+  },
+  "inLanguage": "bs"
+}
+</script>
+</head>
+<body>
+<nav>
+<div class="nav-inner">
+<a href="/" class="logo"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:36px"></a>
+<div class="nav-links">
+<div class="dropdown"><a href="/services/crm">CRM</a><div class="dropdown-menu"><a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a></div></div>
+<div class="dropdown"><a href="/services/ai-agents">AI</a><div class="dropdown-menu"><a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-servisi">AI Servisi</a><a href="/ai-audit">Besplatna AI procjena</a><a href="/ai-bootcamp">AI Bootcamp za firme</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a><a href="/open-source-infra">Open Source Infrastruktura</a></div></div>
+<div class="dropdown"><a href="/services/digital-transformation">Digitalna Transformacija</a><div class="dropdown-menu"><a href="/services/digital-transformation">Pregled</a><a href="/services/rpa">RPA i Automatizacija</a></div></div>
+<a href="/about">O nama</a><a href="/karijera">Karijera</a>
+<a href="/ai-providers">AI Licence</a>
+<a href="/open-source-infra">Open Source</a>
+<a href="/blog">Blog</a>
+<a href="/contact" class="nav-cta">Zatražite ponudu</a>
+</div>
+<button class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+</div>
+<div id="mobileMenu" class="mobile-menu">
+<div class="mobile-label">CRM</div>
+<a href="/services/crm">Pregled CRM usluga</a><a href="/services/crm#bitrix24">Bitrix24</a><a href="/services/crm#zoho">Zoho CRM</a><a href="/services/crm#monday">Monday.com</a><a href="/services/crm#salesforce">Salesforce</a><a href="/services/crm#pipedrive">Pipedrive</a><a href="/services/crm#twenty">Twenty CRM</a><a href="/services/crm#hubspot">HubSpot</a>
+<div class="mobile-label">AI</div>
+<a href="/services/ai-agents">AI Agenti i Automatizacija</a><a href="/services/ai-servisi">AI Servisi</a><a href="/ai-audit">Besplatna AI procjena</a><a href="/ai-bootcamp">AI Bootcamp za firme</a><a href="/services/ai-agents#implementacija">AI Implementacija</a><a href="/services/ai-agents#licence">AI Licence</a><a href="/open-source-infra">Open Source Infrastruktura</a>
+<a href="/services/digital-transformation">Digitalna Transformacija</a><a href="/services/rpa">RPA i Automatizacija</a>
+<a href="/about">O nama</a><a href="/karijera">Karijera</a>
+<a href="/ai-providers">AI Licence</a><a href="/open-source-infra">Open Source</a><a href="/blog">Blog</a>
+<a href="/contact" style="display:block;margin-top:10px;background:#00736a;color:#fff;padding:10px 16px;border-radius:6px;text-align:center;font-weight:450;font-size:0.9rem">Zatražite ponudu</a>
+</div>
+</nav>
+<section style="padding:80px 24px">
+<div style="max-width:800px;margin:0 auto">
+<a href="/blog" style="color:#62666d;font-size:14px;text-decoration:none;display:inline-block;margin-bottom:16px">&larr; Nazad na blog</a>
+<span class="tag">AI</span>
+<h1>Anthropic-ov Claude Cowork: kada AI agent dobije pristup vašem datotečnom sustavu</h1>
+<div style="font-size:13px;color:#62666d;margin-bottom:32px">12. Juli 2026 · BIXIE Team · 9 min citanja</div>
+<div class="tags"><span class="tag">Tehnički</span></div>
+<article style="max-width:700px;margin:0 auto"><h2>Anthropic-ov Claude Cowork: kada AI agent dobije pristup vašem datotečnom sustavu</h2>
+
+<p>Anthropic je nedavno objavio Claude Cowork — desktop agenta koji ne samo odgovara na pitanja, već može čitati, pisati i manipulirati datotekama na vašem računalu. Ovo je značajan korak od "chat asistenata" ka autonomnom agentu koji radi unutar vašeg radnog okruženja. No s tom moći dolaze i ozbiljnija sigurnosna pitanja.</p>
+
+<h3>Šta je Cowork i kako radi</h3>
+
+<p>Cowork je research preview dostupan samo pretplatnicima Claude Max plana na macOS. Agent radi unutar određenih mapa koje korisnik eksplicitno odobri (connector model), i može: čitati kod i dokumente, pisati nove datoteke, pokretati terminal naredbe, pretraživati kodnu bazu i izvršavati refaktoring zadataka. Razlika u odnosu na obični chat: Cowork pamti kontekst između sesija, uči vaše preferencije i nastavlja tamo gdje ste stali.</p>
+
+<p>Tehnički gledano, Cowork nasljeđuje arhitekturu Claude Code — moćnog coding agenta koji je Anthropic prvo izgradio za developere, a sada proširuje na širu publiku. Ovo bottom-up pristup (prvo coding agent, pa opći desktop agent) daje Cowork-u robusnije agentičko ponašanje od retrofittanih rješenja.</p>
+
+<h3>Sigurnosne implikacije: prompt injection i autonomija</h3>
+
+<p>Anthropic je neobično transparentan o rizicima. U službenom objavu eksplicitno navode:</p>
+
+<ul>
+<li>Claude <strong>može preuzeti destruktivne akcije</strong> (brisanje lokalnih datoteka) ako to zatražite — ili ako ih pogrešno interpretira.</li>
+<li><strong>Prompt injection napadi</strong> su stvaran rizik: zlonamjerni uputstva ubačena u datoteke, e-mailove ili web stranice koje Cowork čita mogu potaknuti agenta na zaobilaženje zaštita.</li>
+<li>"Agent safety — zadatak sigurnosti realnih akcija Clauda — i dalje je aktivna područje razvoja u industriji."</li>
+</ul>
+
+<p>Ovo nije marketinška floskula. Kada agent ima pristup datotečnom sustavu i terminalu, granica između "pomoći" i "štete" postaje tanka. Jedna pogrešno interpretirana naredba ("obriši sve nepotrebne datoteke") može poslati agenta u brisanje vašeg projekta.</p>
+
+<h3>Što bi enterprise timovi trebali raditi</h3>
+
+<ul>
+<li><strong>Ne deployajte u produkciju.</strong> Cowork je research preview — koristiće ga za eksperimentiranje, ne za kritične poslovne procese.</li>
+<li><strong>Ograničite connector mapa.</strong> Davajte pristup samo specifičnim projektima, ne cijelom home direktoriju niti sistemskim partitionima.</li>
+<li><strong>Code review i za agenta.</strong> Svaka promjena koju Cowork napravi trebala bi proći kroz isti review proces kao i ljudski kod.</li>
+<li><strong>Educirajte timove.</strong> Razlika između "AI koji predlaže" i "AI koji izvršava" je fundamentalna. Ne postupajte s Cowork-om kao s chatbotom.</li>
+</ul>
+
+<h3>Kontekst za region: Microsoft Copilot vs. Anthropic pristup</h3>
+
+<p>Microsoft godinama ulaže u Copilot integraciju u Windows/Office s mešanim rezultatima. Anthropic-ov pristup je drugačiji: izoliran agent, eksplicitni conectori, bottom-up izgradnja od coding agenta. Za firme u regionu koje već koriste Microsoft ekosustav, Cowork predstavlja alternativu — ali i novi vektor rizika koji zahtijeva nove politike korištenja.</p>
+
+<p>BIXIE preporučuje: počećite s pilotom na izoliranom okruženju (poseban korisnik, ograničene mape, bez pristupa produkcijskim podacima), dokumentirajte sve use case-ove i incidentе, te tek onda donosite odluku o širem uvođenju.</p>
+
+<p><strong>Izvor:</strong> <a href="https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat/" target="_blank">TechCrunch, 25. avgust 2026</a></p></article>
+<div style="margin-top:48px;padding:32px;background:rgba(0,115,106,0.05);border:1px solid rgba(0,115,106,0.2);border-radius:12px;text-align:center">
+<h3 style="font-size:20px;font-weight:510;color:#f0f2f4;margin-bottom:8px">Zainteresovani za open source AI?</h3>
+<p style="font-size:15px;color:#6b7280;margin-bottom:20px">BIXIE projektuje i implementira on-premise AI infrastrukturu. Kontaktirajte nas za besplatne konsultacije.</p>
+<a href="/contact" class="btn-primary" style="font-size:16px;padding:12px 28px">Zakažite konsultacije</a>
+</div>
+</div>
+<div class="ai-disclosure" style="margin-top:32px;padding:14px 18px;border:1px solid #263244;border-radius:8px;background:#0f1626;font-size:13px;color:#7d8aa5;line-height:1.7">
+🤖 Ovaj tekst pripremljen je uz pomoć AI alata, a pregledan je i odobren od strane BIXIE tima prije objave. <a href="/ai-politika" style="color:#0d9488;text-decoration:none">Pročitajte kako koristimo AI</a>.
+</div>
+</section>
+<footer>
+<div class="footer-inner">
+<div><a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;font-size:16px;font-weight:510;color:#f0f2f4;margin-bottom:12px"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#00736a"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-family="Inter" font-weight="600" font-size="16">B</text></svg>BIXIE</a><p style="font-size:14px;color:#6b7280;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
+<div><h4>Usluge</h4><a href="/services/crm">CRM Rjesenja</a><br><a href="/services/ai-agents">AI Agenti</a><a href="/services/ai-servisi">AI Servisi</a><br><a href="/services/digital-transformation">Digitalna Transformacija</a><br><a href="/services/rpa">RPA i Automatizacija</a><br><a href="/ai-providers">AI Provajderi i Licence</a><br><a href="/open-source-infra">Open Source Infrastruktura</a></div>
+<div><h4>Kompanija</h4><a href="/blog">Blog</a><br><a href="/about">O nama</a><a href="/karijera">Karijera</a><br><a href="/contact">Kontakt</a><br><a href="/privacy">Privacy Policy</a><a href="/ai-politika">AI Politika</a></div>
+<div><h4>Kontakt</h4><p>hello@bixie.ba</p><p>033 922 622</p><p>Maglajska 1, 71000 Sarajevo</p></div>
+</div>
+<div class="footer-bottom">2026 BIXIE. All rights reserved.</div>
+</footer>
+<script>
+function toggleMobile() {
+  var m = document.getElementById("mobileMenu");
+  m.classList.toggle("open");
+}
+</script>
+</body>
+</html>
