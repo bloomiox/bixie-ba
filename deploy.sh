@@ -4,7 +4,7 @@
 
 set -e
 
-SITE_DIR="/root/bixie-site"
+SITE_DIR="/root/bixie-site-vite"
 echo "🚀 Deploying bixie.ba to Cloudflare Pages..."
 
 # Check if wrangler is installed
