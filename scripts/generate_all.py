@@ -103,11 +103,11 @@ def make_page(dir_name, title, og_title, og_desc, meta_desc, canonical_url, badg
 make_page('about',
     'O nama — BIXIE | CRM, AI i Digitalna Transformacija',
     'O nama — BIXIE | Više od decenije digitalne transformacije',
-    'BIXIE je agencija specijalizovana za CRM, AI agente, RPA automatizaciju i digitalnu transformaciju. Registered partner Bitrix24, Zoho, Salesforce.',
-    'BIXIE je digitalna transformacija agencija sa 15+ godina iskustva. CRM, AI, RPA i cloud rješenja za firme u BiH i svijetu.',
+    'BIXIE je partner za digitalnu transformaciju — CRM, AI agenti, RPA i AI licence. Registered partner Bitrix24, Zoho, Salesforce.',
+    'BIXIE je partner za digitalnu transformaciju sa 15+ godina iskustva. CRM, AI, RPA i cloud rješenja za firme u BiH i svijetu.',
     'about', 'O nama',
     'Vi\u0161e od decenije<br>digitalne transformacije',
-    'BIXIE je full-service digitalna agencija specijalizovana za CRM, AI agente, RPA automatizaciju i digitalno radno mjesto. Osnovani 2011. godine.',
+    'BIXIE je partner za digitalnu transformaciju — CRM, AI agenti, RPA i AI licence. Osnovani 2011. godine.',
     '''
 <div class="grid-3" style="margin-bottom:48px">
 <div class="card"><h3>15+ Godina Iskustva</h3><p>Od 2011. uspješno implementiramo digitalna rješenja za firme u BiH, Švicarskoj, Njemačkoj i regiji.</p></div>

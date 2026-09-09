@@ -7,11 +7,11 @@ SITE = 'https://bixie.ba'
 # ─── Language translations for key content ───
 PAGES = {
     '/': {
-        'en': {'title': 'BIXIE — CRM, AI Agents & Digital Transformation', 'badge': 'Registered Partner · Since 2011 · 25+ Certifications', 'h1': 'CRM, AI Agents and<br>Digital Transformation', 'lead': 'Full-service digital transformation advisory agency specialized in CRM, AI agents, RPA and Private Cloud. Registered HubSpot, Salesforce, Zoho, Pipedrive and Bitrix Consulting Partner.', 'btn1': 'Book a consultation', 'btn2': 'View services'},
+        'en': {'title': 'BIXIE — CRM, AI Agents & Digital Transformation', 'badge': 'Registered Partner · Since 2011 · 25+ Certifications', 'h1': 'CRM, AI Agents and<br>Digital Transformation', 'lead': 'Digital transformation partner specialized in CRM, AI agents, RPA, AI licensing and Private Cloud. Registered HubSpot, Salesforce, Zoho, Pipedrive and Bitrix Consulting Partner.', 'btn1': 'Book a consultation', 'btn2': 'View services'},
         'de': {'title': 'BIXIE — CRM, KI-Agenten & Digitale Transformation', 'badge': 'Registered Partner · Seit 2011 · 25+ Zertifizierungen', 'h1': 'CRM, KI-Agenten und<br>Digitale Transformation', 'lead': 'Full-service Digital Transformation Agentur spezialisiert auf CRM, KI-Agenten, RPA und Private Cloud. Registrierter HubSpot, Salesforce, Zoho, Pipedrive und Bitrix Consulting Partner.', 'btn1': 'Beratung buchen', 'btn2': 'Leistungen anzeigen'}
     },
     'about': {
-        'en': {'title': 'About — BIXIE | CRM, AI & Digital Transformation', 'badge': 'About', 'h1': 'Over a decade of<br>digital transformation', 'lead': 'BIXIE is a full-service digital agency specialized in CRM, AI agents, RPA automation and digital workplace. Founded in 2011.'},
+        'en': {'title': 'About — BIXIE | CRM, AI & Digital Transformation', 'badge': 'About', 'h1': 'Over a decade of<br>digital transformation', 'lead': 'BIXIE is a digital transformation partner specialized in CRM, AI agents, RPA automation and AI licensing. Founded in 2011.'},
         'de': {'title': 'Über uns — BIXIE | CRM, KI & Digitale Transformation', 'badge': 'Über uns', 'h1': 'Über ein Jahrzehnt<br>digitale Transformation', 'lead': 'BIXIE ist eine Full-Service-Digitalagentur spezialisiert auf CRM, KI-Agenten, RPA und digitale Arbeitsplätze. Gegründet 2011.'}
     },
     'services/crm': {

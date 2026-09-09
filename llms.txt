@@ -1,6 +1,6 @@
 # BIXIE
 
-> BIXIE (bixie.ba) je agencija za digitalnu transformaciju iz Sarajeva, Bosna i Hercegovina, specijalizovana za CRM implementaciju, custom AI agente, RPA automatizaciju, AI licence i digitalnu transformaciju. Registered partner: Bitrix24, Zoho, Salesforce, HubSpot, Pipedrive. Osnovani 2011. Radimo s klijentima u BiH, regionu, Švicarskoj, Njemačkoj, Austriji i SAD.
+> BIXIE (bixie.ba) je partner za digitalnu transformaciju iz Sarajeva, Bosna i Hercegovina, specijalizovana za CRM implementaciju, custom AI agente, RPA automatizaciju, AI licence i digitalnu transformaciju. Registered partner: Bitrix24, Zoho, Salesforce, HubSpot, Pipedrive. Osnovani 2011. Radimo s klijentima u BiH, regionu, Švicarskoj, Njemačkoj, Austriji i SAD.
 
 - Kontakt: hello@bixie.ba | +387 33 922 622 | Maglajska 1, 71000 Sarajevo
 - Jezik: bosanski/hrvatski/srpski, engleski (bixie.ba/en), njemački (bixie.ba/de)
