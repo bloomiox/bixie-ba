@@ -887,4 +887,46 @@
     <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/zeleni-it-kako-ai-pomaze-odrzivosti"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/zeleni-it-kako-ai-pomaze-odrzivosti"/>
   </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/ai-implementacija-u-firmi-korak-po-korak</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/ai-implementacija-u-firmi-korak-po-korak"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/ai-implementacija-u-firmi-korak-po-korak"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/ai-javne-nabavke-bih-analiza-2026</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/ai-javne-nabavke-bih-analiza-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/ai-javne-nabavke-bih-analiza-2026"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/ai-licence-bih-vrste-cijene-nabavka-2026</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/ai-licence-bih-vrste-cijene-nabavka-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/ai-licence-bih-vrste-cijene-nabavka-2026"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/ai-licence-javni-sektor-bih-nabavka</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/ai-licence-javni-sektor-bih-nabavka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/ai-licence-javni-sektor-bih-nabavka"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/ai-obuka-zaposlenika-program-bih</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/ai-obuka-zaposlenika-program-bih"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/ai-obuka-zaposlenika-program-bih"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/gemini-enterprise-vs-microsoft-copilot-institucije</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/gemini-enterprise-vs-microsoft-copilot-institucije"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/gemini-enterprise-vs-microsoft-copilot-institucije"/>
+  </url>
 </urlset>

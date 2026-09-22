@@ -61,23 +61,44 @@ for slug in sorted(os.listdir(POSTS_DIR)):
     idx = os.path.join(POSTS_DIR, slug, 'index.html')
     md = os.path.join('/root/bixie-blog-posts/posts', f'{slug}.md')
     
-    # Try reading from markdown source
+    # Izvor podataka: .md ako postoji, inače generisani HTML (većina postova
+    # na sajtu nema .md izvor, pa je listing ranije gubio kartice pri regeneraciji)
+    fm = None
     if os.path.exists(md):
         with open(md) as f:
             fm = parse_frontmatter(f.read())
-        
+    elif os.path.exists(idx):
+        with open(idx) as f:
+            h = f.read()
+        fm = {}
+        m = re.search(r'<title>(.*?) — BIXIE</title>', h)
+        fm['title'] = m.group(1) if m else slug.replace('-', ' ').title()
+        m = re.search(r'<meta property="og:description" content="([^"]*)"', h)
+        fm['description'] = m.group(1) if m else ''
+        m = re.search(r'<span class="tag">([^<]+)</span>', h)
+        fm['category'] = m.group(1) if m else ''
+        m = re.search(r'"datePublished":\s*"(\d{4}-\d{2}-\d{2})"', h)
+        if m:
+            fm['date'] = m.group(1)
+        else:
+            m = re.search(r'(\d{1,2})\.\s+(\w+)\s+(\d{4})', h)
+            rev = {v: k for k, v in months_bs.items()}
+            fm['date'] = (f"{m.group(3)}-{rev.get(m.group(2), 1):02d}-{int(m.group(1)):02d}"
+                          if m else '2026-01-01')
+
+    if fm is not None:
         title = fm.get('title', slug.replace('-',' ').title())
         desc = fm.get('description', '')
         cat = fm.get('category', '')
         date = fm.get('date', '2026-01-01')
         date_display = format_date_bs(date)
-        
+
         # Short description for blog card
         short_desc = desc[:100] + '...' if len(desc) > 100 else desc
-        
+
         filter_tag = CAT_TAG_MAP.get(cat, 'AI')
         display_cat = slug_to_tag_display(cat)
-        
+
         posts.append((date, slug, title, short_desc, date_display, filter_tag, display_cat))
 
 # Sort by date descending (newest first)

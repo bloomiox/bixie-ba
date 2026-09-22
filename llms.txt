@@ -34,3 +34,11 @@ BIXIE traži AI-native stručnjake: Sales Development Representative (SDR), Acco
 - **Razvijate li custom AI agente?** Da, integracija sa CRM, ERP, DMS, web. Koristimo OpenClaw platformu, podržavamo ChatGPT, Claude, Gemini i open source modele.
 - **Radite li sa klijentima iz inostranstva?** Da — Švicarska, Njemačka, Austrija, SAD i region; remote-first pristup.
 - **Nabavljate li AI licence?** Da — ChatGPT Team/Enterprise, Google Workspace, Microsoft 365, GitHub Copilot, Canva Pro; akademski popusti za obrazovne institucije.
+
+## Vodiči (blog)
+- AI licence u BiH — vrste, cijene i nabavka: https://bixie.ba/blog/posts/ai-licence-bih-vrste-cijene-nabavka-2026
+- AI licence za javni sektor — postupak i tehnička specifikacija: https://bixie.ba/blog/posts/ai-licence-javni-sektor-bih-nabavka
+- Gemini Enterprise ili Microsoft Copilot za institucije: https://bixie.ba/blog/posts/gemini-enterprise-vs-microsoft-copilot-institucije
+- AI implementacija u firmi — korak po korak: https://bixie.ba/blog/posts/ai-implementacija-u-firmi-korak-po-korak
+- AI obuka zaposlenika — šta program mora sadržavati: https://bixie.ba/blog/posts/ai-obuka-zaposlenika-program-bih
+- AI u javnim nabavkama BiH — analiza 2026: https://bixie.ba/blog/posts/ai-javne-nabavke-bih-analiza-2026
