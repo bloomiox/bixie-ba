@@ -42,3 +42,9 @@ BIXIE traži AI-native stručnjake: Sales Development Representative (SDR), Acco
 - AI implementacija u firmi — korak po korak: https://bixie.ba/blog/posts/ai-implementacija-u-firmi-korak-po-korak
 - AI obuka zaposlenika — šta program mora sadržavati: https://bixie.ba/blog/posts/ai-obuka-zaposlenika-program-bih
 - AI u javnim nabavkama BiH — analiza 2026: https://bixie.ba/blog/posts/ai-javne-nabavke-bih-analiza-2026
+- AI u policiji i sigurnosnom sektoru — šta je moguće, a šta nije: https://bixie.ba/blog/posts/ai-u-policiji-i-sigurnosnom-sektoru-bih
+- AI u pravosuđu — gdje pomaže, a gdje ne: https://bixie.ba/blog/posts/ai-u-pravosudju-bih-primjena
+- Kako napisati tehničku specifikaciju za nabavku AI alata: https://bixie.ba/blog/posts/tehnicka-specifikacija-za-nabavku-ai-alata
+- AI i zaštita podataka u javnom sektoru — DPA, EU regije, klasifikovani podaci: https://bixie.ba/blog/posts/zastita-podataka-i-ai-u-javnom-sektoru-dpa
+- Koliko košta AI obuka zaposlenika: https://bixie.ba/blog/posts/koliko-kosta-ai-obuka-zaposlenika
+- Studija slučaja — nabavka AI licenci za javnu instituciju: https://bixie.ba/blog/posts/studija-slucaja-ai-licence-javna-institucija

@@ -929,4 +929,46 @@
     <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/gemini-enterprise-vs-microsoft-copilot-institucije"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/gemini-enterprise-vs-microsoft-copilot-institucije"/>
   </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/ai-u-policiji-i-sigurnosnom-sektoru-bih</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/ai-u-policiji-i-sigurnosnom-sektoru-bih"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/ai-u-policiji-i-sigurnosnom-sektoru-bih"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/ai-u-pravosudju-bih-primjena</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/ai-u-pravosudju-bih-primjena"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/ai-u-pravosudju-bih-primjena"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/tehnicka-specifikacija-za-nabavku-ai-alata</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/tehnicka-specifikacija-za-nabavku-ai-alata"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/tehnicka-specifikacija-za-nabavku-ai-alata"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/zastita-podataka-i-ai-u-javnom-sektoru-dpa</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/zastita-podataka-i-ai-u-javnom-sektoru-dpa"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/zastita-podataka-i-ai-u-javnom-sektoru-dpa"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/koliko-kosta-ai-obuka-zaposlenika</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/koliko-kosta-ai-obuka-zaposlenika"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/koliko-kosta-ai-obuka-zaposlenika"/>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/studija-slucaja-ai-licence-javna-institucija</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <xhtml:link rel="alternate" hreflang="bs" href="https://bixie.ba/blog/posts/studija-slucaja-ai-licence-javna-institucija"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bixie.ba/blog/posts/studija-slucaja-ai-licence-javna-institucija"/>
+  </url>
 </urlset>
