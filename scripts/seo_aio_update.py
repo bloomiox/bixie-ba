@@ -62,8 +62,6 @@ if "JobPosting" not in html:
     jobs = [
         ("Sales Development Representative (SDR)", "Sarajevo, BiH (remote)", "Prodaja", "AI-native prodaja: generisanje i kvalifikacija leadova uz AI alate. Full-time."),
         ("Account Executive (AE)", "Sarajevo, BiH (remote)", "Prodaja", "AI-native prodaja: vođenje prodajnih procesa od prvog sastanka do potpisa. Full-time."),
-        ("AI Automation Engineer", "Sarajevo, BiH (remote/hybrid)", "Inženjering", "Razvoj custom AI agenata, RPA automatizacija i integracija s CRM/ERP sistemima. 2 pozicije. Full-time."),
-        ("AI Consultant", "Sarajevo, BiH (remote/hybrid)", "Konsalting", "Analiza poslovnih procesa i prijedlozi AI rješenja s ROI kalkulacijom. 3 pozicije. Full-time."),
     ]
     items = []
     for title, loc, dept, desc in jobs:
