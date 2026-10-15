@@ -1,6 +1,11 @@
 # Cloudflare Pages redirects
 # Directory-based URLs work natively — no rewrites needed
 
+# Sigurnost: repozitorij i arhive se ne smiju servirati
+/.git/* /404.html 404
+/.git /404.html 404
+/bixie-site.zip /404.html 404
+
 # Old WordPress blog URLs → new blog (301 permanent)
 /articles/* /blog/:splat 301
 /2026/* /blog/:splat 301
