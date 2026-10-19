@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Glasovni AI asistent za firme u BiH — BIXIE</title>
+<meta name="description" content="Custom AI agenti za customer support, prodaju i interne procese. RPA automatizacija. AI licence za ChatGPT, Gemini, Claude, Copilot. Implementacija u 2-4 sedmice.">
+<meta property="og:title" content="AI Agenti — BIXIE | Implementacija, RPA i Licence za BiH firme">
+<meta property="og:description" content="Custom AI agenti za customer support i prodaju. AI implementacija i licence za ChatGPT, Gemini, Copilot i Claude. RPA automatizacija.">
+<meta property="og:url" content="https://bixie.ba/glasovni-ai-asistent">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BIXIE">
+<meta property="og:image" content="https://bixie.ba/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Agenti — BIXIE | Implementacija i Licence">
+<meta name="twitter:description" content="Custom AI agenti za customer support i prodaju. AI implementacija i licence za ChatGPT, Gemini, Copilot i Claude.">
+<meta name="twitter:image" content="https://bixie.ba/og-image.png">
+<link rel="canonical" href="https://bixie.ba/glasovni-ai-asistent">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate" hreflang="bs" href="https://bixie.ba/glasovni-ai-asistent">
+<link rel="alternate" hreflang="x-default" href="https://bixie.ba/glasovni-ai-asistent">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { accent: '#00736a', 'accent-dark': '#005c54', surface: '#0f172a', card: '#1a1f2e', border: '#1e293b', muted: '#64748b', teal: { 400: '#00a396', 500: '#008a7f', 600: '#00736a', 700: '#005c54' } },
+      fontFamily: { sans: ['Inter', 'sans-serif'] }
+    }
+  }
+}
+</script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{display:block;width:22px;height:2px;background:#5b6f99;border-radius:1px;transition:all .2s}
+.mobile-menu{display:none;border-top:1px solid rgba(30,41,59,0.4);padding:16px 24px 24px;background:var(--bg-root)}
+@media(max-width:768px){.hamburger{display:flex}.nav-links{display:none}.mobile-menu.open{display:block}}
+.service-card { background: #1a1f2e; border: 1px solid #1e293b; border-radius: 12px; padding: 28px; transition: all 0.2s; }
+.service-card:hover { border-color: #00736a; transform: translateY(-2px); }
+.license-card { background: linear-gradient(135deg, #1a1f2e, #0f172a); border: 1px solid #1e293b; border-radius: 12px; padding: 28px; text-align: center; transition: all 0.3s; }
+.license-card:hover { border-color: #00736a; transform: translateY(-2px); }
+.process-step { display: flex; gap: 20px; padding: 24px; background: #1a1f2e; border: 1px solid #1e293b; border-radius: 12px; margin-bottom: 16px; }
+.process-number { flex-shrink: 0; width: 48px; height: 48px; border-radius: 50%; background: #00736a; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: #fff; }
+.mobile-label { font-size: 13px; font-weight: 600; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+#mobileMenu{position:absolute;top:100%;left:0;right:0;max-height:calc(100vh - 64px);max-height:calc(100dvh - 64px);overflow-y:auto;-webkit-overflow-scrolling:touch;background:#0a0f1c;border-bottom:1px solid rgba(30,41,59,.6);box-shadow:0 24px 48px rgba(0,0,0,.45);z-index:60}</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WRGFE5K9G4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-WRGFE5K9G4");</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","jhp3l0sl3y");</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Glasovni AI asistent (voice agent)",
+  "name": "Glasovni AI asistent za telefonske pozive",
+  "description": "AI asistent koji prima telefonske pozive 24/7 na bosanskom, hrvatskom i srpskom jeziku, integrisan sa postojećom SIP telefonijom. Zakazuje termine, zaprima narudžbe i prosljeđuje složene pozive osobi.",
+  "provider": {
+    "@type": "Organization",
+    "name": "BIXIE",
+    "url": "https://bixie.ba",
+    "email": "hello@bixie.ba",
+    "telephone": "+38733922622",
+    "address": {"@type": "PostalAddress", "streetAddress": "Maglajska 1", "addressLocality": "Sarajevo", "postalCode": "71000", "addressCountry": "BA"}
+  },
+  "areaServed": [{"@type": "Country", "name": "Bosna i Hercegovina"}, {"@type": "Country", "name": "Hrvatska"}, {"@type": "Country", "name": "Srbija"}],
+  "availableLanguage": ["bs", "hr", "sr", "en", "de"],
+  "url": "https://bixie.ba/glasovni-ai-asistent"
+}</script>
+</head>
+<body>
+<nav class="sticky top-0 z-50 border-b border-gray-800/50 bg-[#0a0f1c]/95 backdrop-blur-xl">
+<div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+  <a href="/" class="flex items-center gap-3"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:32px"></a>
+  <div class="hidden md:flex items-center gap-6">
+    <div class="relative group">
+      <a href="/services/crm" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">CRM ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pregled</a>
+        <a href="/services/crm#bitrix24" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Bitrix24</a>
+        <a href="/services/crm#zoho" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Zoho CRM</a>
+        <a href="/services/crm#pipedrive" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pipedrive</a>
+        <a href="/services/crm#hubspot" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">HubSpot</a>
+        <a href="/services/crm#salesforce" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Salesforce</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <a href="/services/ai-agents" class="text-white text-sm font-medium transition-colors">AI ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Agenti & Automatizacija</a><a href="/services/ai-servisi" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Servisi — kompletna implementacija</a><a href="/ai-audit" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Besplatna AI procjena</a>
+        <a href="/ai-bootcamp" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Bootcamp za firme</a>
+        <a href="/services/ai-agents#licence" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Licence</a>
+        <a href="/services/ai-agents#trening" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Trening i Edukacija</a>
+        <a href="/open-source-infra" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Open Source Infrastruktura</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <a href="/services" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Usluge ▾</a>
+      <div class="absolute top-full left-0 mt-2 w-56 bg-[#1a1f2e] border border-gray-800 rounded-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+        <a href="/services" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Pregled svih usluga</a>
+        <a href="/services/crm" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">CRM Rješenja</a>
+        <a href="/services/ai-agents" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Agenti</a>
+        <a href="/services/rpa" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">RPA Automatizacija</a>
+        <a href="/open-source-infra" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Open Source Infrastruktura</a>
+        <a href="/ai-providers" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">AI Licence</a>
+        <a href="/services/digital-transformation" class="block px-4 py-2 text-sm text-gray-400 hover:text-white hover:bg-[#00736a]/10 transition-colors">Digitalna Transformacija</a>
+      </div>
+    </div>
+    <a href="/ai-providers" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Licence</a>
+    <a href="/about" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">O nama</a><a href="/karijera" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Karijera</a>
+    <a href="/blog" class="text-gray-400 hover:text-white text-sm font-medium transition-colors">Blog</a>
+    <a href="/contact" class="bg-[#00736a] hover:bg-[#008a7f] text-white px-5 py-2 rounded-lg text-sm font-medium transition-all hover:scale-95">Zatražite ponudu</a>
+  </div>
+  <button class="hamburger md:hidden" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+</div>
+<div id="mobileMenu" class="mobile-menu">
+<div class="mobile-label">CRM</div>
+<a href="/services/crm" class="block py-2 text-sm text-gray-400 hover:text-white">Pregled CRM usluga</a>
+<a href="/services/crm#bitrix24" class="block py-2 text-sm text-gray-400 hover:text-white">Bitrix24</a>
+<a href="/services/crm#zoho" class="block py-2 text-sm text-gray-400 hover:text-white">Zoho CRM</a>
+<a href="/services/crm#pipedrive" class="block py-2 text-sm text-gray-400 hover:text-white">Pipedrive</a>
+<a href="/services/crm#hubspot" class="block py-2 text-sm text-gray-400 hover:text-white">HubSpot</a>
+<a href="/services/crm#salesforce" class="block py-2 text-sm text-gray-400 hover:text-white">Salesforce</a>
+<div class="mobile-label mt-3">AI</div>
+<a href="/services/ai-agents" class="block py-2 text-sm text-white font-medium">AI Agenti i Automatizacija</a>
+<a href="/services/ai-agents#licence" class="block py-2 text-sm text-gray-400 hover:text-white">AI Licence</a>
+<a href="/open-source-infra" class="block py-2 text-sm text-gray-400 hover:text-white">Open Source Infrastruktura</a>
+<a href="/services" class="block py-2 mt-2 text-sm text-gray-400 hover:text-white">Sve usluge</a>
+<a href="/blog" class="block py-2 text-sm text-gray-400 hover:text-white">Blog</a>
+<a href="/contact" class="block mt-3 bg-[#00736a] text-white px-5 py-3 rounded-lg text-sm font-medium text-center">Zatražite ponudu</a>
+</div>
+</nav>
+<main>
+<section class="max-w-6xl mx-auto px-4 pt-16 pb-10">
+  <p class="text-[#00a396] text-sm font-medium tracking-wide uppercase mb-4">Glasovni AI agenti</p>
+  <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-6" style="color:#f0f2f4;letter-spacing:-1.5px">Asistent koji odgovara na telefon umjesto vas</h1>
+  <p class="text-lg md:text-xl text-[#94a3b8] max-w-3xl leading-relaxed mb-6">Glasovni AI asistent prima pozive 24 sata, govori bosanski, hrvatski i srpski, i spaja se na vašu postojeću telefonsku centralu. Broj ostaje isti — mijenja se samo to što se javlja.</p>
+  <p class="text-[#94a3b8] max-w-3xl leading-relaxed mb-8">Radi za recepciju, zakazivanje termina, narudžbe i prvi sloj podrške. Ne izmišlja cijene, ne obećava rokove i ne odlučuje umjesto vaših ljudi — bilježi, prenosi i prosljeđuje.</p>
+  <div class="flex flex-wrap gap-3">
+    <a href="/contact" class="bg-[#00736a] hover:bg-[#008a7f] text-white px-6 py-3 rounded-lg font-medium transition-all">Zatražite ponudu</a>
+    <a href="#scenariji" class="border border-[#1e293b] hover:border-[#00736a] text-white px-6 py-3 rounded-lg font-medium transition-all">Pogledajte scenarije</a>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 py-12">
+  <div class="grid md:grid-cols-4 gap-4">
+    <div class="rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-5"><div class="text-2xl font-semibold text-[#00a396] mb-1">0,25 KM</div><div class="text-sm text-[#94a3b8]">trošak po minuti razgovora</div></div>
+    <div class="rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-5"><div class="text-2xl font-semibold text-[#00a396] mb-1">2–4 sedmice</div><div class="text-sm text-[#94a3b8]">od dogovora do prvog poziva</div></div>
+    <div class="rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-5"><div class="text-2xl font-semibold text-[#00a396] mb-1">SIP</div><div class="text-sm text-[#94a3b8]">Yeastar, Asterisk, Issabel, FreePBX</div></div>
+    <div class="rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-5"><div class="text-2xl font-semibold text-[#00a396] mb-1">BS / HR / SR</div><div class="text-sm text-[#94a3b8]">plus engleski i njemački</div></div>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 py-12">
+  <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4">Kako radi</h2>
+  <p class="text-[#94a3b8] max-w-3xl mb-8">Četiri koraka, bez zamjene telefonije i bez promjene broja.</p>
+  <div class="grid md:grid-cols-2 gap-4">
+    <div class="rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-6"><div class="text-[#00a396] font-semibold mb-2">01 — Baza znanja</div><p class="text-sm text-[#94a3b8]">Uzimamo vaše stvarne podatke: usluge, cijene, radno vrijeme, pravila, postupke. Vi pregledate i odobravate svaku stavku prije puštanja u rad.</p></div>
+    <div class="rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-6"><div class="text-[#00a396] font-semibold mb-2">02 — Spajanje na centralu</div><p class="text-sm text-[#94a3b8]">Asistent se povezuje preko SIP trunka na vašu centralu ili operatera. Može preuzimati sve pozive, samo u određenim satima ili kad se niko ne javi.</p></div>
+    <div class="rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-6"><div class="text-[#00a396] font-semibold mb-2">03 — Testni pozivi</div><p class="text-sm text-[#94a3b8]">Vi i vaš tim zovete asistenta i tražite greške. Podešavamo ton, tempo, pravila eskalacije i način na koji izgovara cijene i dimenzije.</p></div>
+    <div class="rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-6"><div class="text-[#00a396] font-semibold mb-2">04 — Rad i praćenje</div><p class="text-sm text-[#94a3b8]">Svaki poziv ostaje zabilježen: vrijeme, trajanje, tema, kontakt i ishod. Baza znanja se dopunjava iz stvarnih pitanja koja se ponavljaju.</p></div>
+  </div>
+</section>
+
+<section id="scenariji" class="max-w-6xl mx-auto px-4 py-12">
+  <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4">Osam scenarija po djelatnostima</h2>
+  <p class="text-[#94a3b8] max-w-3xl mb-3">Isti princip, različit posao. Scenariji su ilustrativni i opisuju tipične procese u navedenim djelatnostima — ne imenuju klijente.</p>
+  <div class="grid md:grid-cols-2 gap-4 mt-8">
+<div class="rounded-2xl border border-[#1e293b] bg-[#1a1f2e] p-6">
+  <h3 class="text-xl font-semibold text-white mb-3">Zdravstvo — bolnica i poliklinika</h3>
+  <p class="text-sm text-[#94a3b8] mb-4"><span class="text-[#00a396] font-medium">Situacija:</span> Telefon je prezauzet, pacijenti zovu za termin, nalaz i uputu, a recepcija ne stigne da podigne sve pozive.</p>
+  <p class="text-xs uppercase tracking-wider text-[#64748b] mb-2">Šta asistent radi</p>
+  <ul class="space-y-2 text-sm text-[#cbd5e1]">
+    <li class="flex gap-2"><span class="text-[#00a396]">—</span><span>zakazuje, pomjera i otkazuje termine u okviru pravila koje odredi ustanova</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>odgovara na ponavljajuća pitanja: radno vrijeme, potrebna dokumentacija, priprema za pregled</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>razvrstava pozive po odjelu i hitnosti, a hitne odmah prosljeđuje dežurnoj osobi</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>za klinička pitanja ne daje savjet — bilježi upit i zakazuje pregled</span></li>
+  </ul>
+</div>
+
+<div class="rounded-2xl border border-[#1e293b] bg-[#1a1f2e] p-6">
+  <h3 class="text-xl font-semibold text-white mb-3">Taxi i prijevoz putnika</h3>
+  <p class="text-sm text-[#94a3b8] mb-4"><span class="text-[#00a396] font-medium">Situacija:</span> Dispečer prima desetine poziva u isto vrijeme, adrese se pogrešno prepisuju, a vozači čekaju.</p>
+  <p class="text-xs uppercase tracking-wider text-[#64748b] mb-2">Šta asistent radi</p>
+  <ul class="space-y-2 text-sm text-[#cbd5e1]">
+    <li class="flex gap-2"><span class="text-[#00a396]">—</span><span>zaprima narudžbu: adresa polaska, odredište, vrijeme, broj putnika</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>ponavlja adresu i potvrđuje je prije nego narudžbu pošalje dispečeru</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>odgovara na pitanja o vremenu dolaska i cijeni po tarifi</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>van sezone i noću prima narudžbe bez osobe na telefonu</span></li>
+  </ul>
+</div>
+
+<div class="rounded-2xl border border-[#1e293b] bg-[#1a1f2e] p-6">
+  <h3 class="text-xl font-semibold text-white mb-3">Call centar i korisnička podrška</h3>
+  <p class="text-sm text-[#94a3b8] mb-4"><span class="text-[#00a396] font-medium">Situacija:</span> Prvi sloj podrške troši vrijeme na ista pitanja, a složeni slučajevi čekaju u redu.</p>
+  <p class="text-xs uppercase tracking-wider text-[#64748b] mb-2">Šta asistent radi</p>
+  <ul class="space-y-2 text-sm text-[#cbd5e1]">
+    <li class="flex gap-2"><span class="text-[#00a396]">—</span><span>rješava prvi sloj: status narudžbe, radno vrijeme, način reklamacije, promjena podataka</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>složene slučajeve eskalira osobi uz kratak sažetak i kontakt</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>radi i van radnog vremena i praznicima</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>vodi razgovor po skripti koju klijent odobri prije puštanja u rad</span></li>
+  </ul>
+</div>
+
+<div class="rounded-2xl border border-[#1e293b] bg-[#1a1f2e] p-6">
+  <h3 class="text-xl font-semibold text-white mb-3">Auto-servis i vulkanizer</h3>
+  <p class="text-sm text-[#94a3b8] mb-4"><span class="text-[#00a396] font-medium">Situacija:</span> Sezona guma znači stotine poziva dnevno; cijene i rokovi se objašnjavaju iznova.</p>
+  <p class="text-xs uppercase tracking-wider text-[#64748b] mb-2">Šta asistent radi</p>
+  <ul class="space-y-2 text-sm text-[#cbd5e1]">
+    <li class="flex gap-2"><span class="text-[#00a396]">—</span><span>provjerava dostupnost artikla i cijenu u webshopu ili sistemu zaliha</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>zakazuje montažu u slobodne termine i ponavlja podatke o vozilu</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>objašnjava razliku između usluga i šta je uključeno u cijenu</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>narudžbu zaprima sa potvrdom kupca, bez izmišljanja rokova</span></li>
+  </ul>
+</div>
+
+<div class="rounded-2xl border border-[#1e293b] bg-[#1a1f2e] p-6">
+  <h3 class="text-xl font-semibold text-white mb-3">Hotel, apartmani i smještaj</h3>
+  <p class="text-sm text-[#94a3b8] mb-4"><span class="text-[#00a396] font-medium">Situacija:</span> Gosti zovu u svim vremenskim zonama, a recepcija radi ograničeno.</p>
+  <p class="text-xs uppercase tracking-wider text-[#64748b] mb-2">Šta asistent radi</p>
+  <ul class="space-y-2 text-sm text-[#cbd5e1]">
+    <li class="flex gap-2"><span class="text-[#00a396]">—</span><span>odgovara na pitanja o slobodnim terminima, sadržaju i pravilima boravka</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>zaprima zahtjev za rezervaciju i prosljeđuje ga recepciji na potvrdu</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>govori bosanski, hrvatski, srpski i engleski</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>noćne i rane jutarnje pozive ne propušta</span></li>
+  </ul>
+</div>
+
+<div class="rounded-2xl border border-[#1e293b] bg-[#1a1f2e] p-6">
+  <h3 class="text-xl font-semibold text-white mb-3">Osiguranje i leasing</h3>
+  <p class="text-sm text-[#94a3b8] mb-4"><span class="text-[#00a396] font-medium">Situacija:</span> Klijenti zovu za status predmeta, dokumentaciju i rokove, a svaki poziv traži provjeru u sistemu.</p>
+  <p class="text-xs uppercase tracking-wider text-[#64748b] mb-2">Šta asistent radi</p>
+  <ul class="space-y-2 text-sm text-[#cbd5e1]">
+    <li class="flex gap-2"><span class="text-[#00a396]">—</span><span>prima prijavu štete i bilježi osnovne podatke</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>objašnjava koju dokumentaciju treba dostaviti i gdje</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>odgovara na pitanja o statusu predmeta iz podataka koje dobije iz sistema</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>ne daje procjenu ni obećanje isplate — to ostaje nadležnoj osobi</span></li>
+  </ul>
+</div>
+
+<div class="rounded-2xl border border-[#1e293b] bg-[#1a1f2e] p-6">
+  <h3 class="text-xl font-semibold text-white mb-3">Logistika i dostava</h3>
+  <p class="text-sm text-[#94a3b8] mb-4"><span class="text-[#00a396] font-medium">Situacija:</span> Kupci zovu isključivo zbog jedne stvari: gdje je pošiljka.</p>
+  <p class="text-xs uppercase tracking-wider text-[#64748b] mb-2">Šta asistent radi</p>
+  <ul class="space-y-2 text-sm text-[#cbd5e1]">
+    <li class="flex gap-2"><span class="text-[#00a396]">—</span><span>daje status pošiljke po broju narudžbe</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>bilježi zahtjev za promjenu adrese ili termina dostave</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>objašnjava postupak u slučaju oštećenja ili gubitka pošiljke</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>sve što traži odluku prosljeđuje dispečeru sa sažetkom</span></li>
+  </ul>
+</div>
+
+<div class="rounded-2xl border border-[#1e293b] bg-[#1a1f2e] p-6">
+  <h3 class="text-xl font-semibold text-white mb-3">Javna uprava i komunalne službe</h3>
+  <p class="text-sm text-[#94a3b8] mb-4"><span class="text-[#00a396] font-medium">Situacija:</span> Građani zovu za informacije, obrasce i prijave, a linije su zauzete u špicu.</p>
+  <p class="text-xs uppercase tracking-wider text-[#64748b] mb-2">Šta asistent radi</p>
+  <ul class="space-y-2 text-sm text-[#cbd5e1]">
+    <li class="flex gap-2"><span class="text-[#00a396]">—</span><span>odgovara na pitanja o procedurama, dokumentima i radnom vremenu</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>prima prijavu kvara ili komunalnog problema sa lokacijom i opisom</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>upućuje na nadležnu službu kad pitanje nije u njegovoj domeni</span></li><li class="flex gap-2"><span class="text-[#00a396]">—</span><span>radi i izvan radnog vremena, bez govornog automata koji nikoga ne rješava</span></li>
+  </ul>
+</div></div>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 py-12">
+  <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color:#f0f2f4">Šta asistent ne radi</h2>
+  <div class="rounded-2xl border border-[#1e293b] bg-[#1a1f2e] p-6 md:p-8">
+    <ul class="grid md:grid-cols-2 gap-3 text-sm text-[#cbd5e1]">
+      <li class="flex gap-2"><span class="text-[#00a396]">—</span><span>Ne daje medicinske, pravne ni finansijske savjete</span></li>
+      <li class="flex gap-2"><span class="text-[#00a396]">—</span><span>Ne izmišlja cijene, rokove ni dostupnost</span></li>
+      <li class="flex gap-2"><span class="text-[#00a396]">—</span><span>Ne naplaćuje i ne prima podatke kartice telefonom</span></li>
+      <li class="flex gap-2"><span class="text-[#00a396]">—</span><span>Ne odlučuje o reklamaciji ni povratu</span></li>
+      <li class="flex gap-2"><span class="text-[#00a396]">—</span><span>Ne obećava termin koji nije u sistemu</span></li>
+      <li class="flex gap-2"><span class="text-[#00a396]">—</span><span>Ne izlazi iz zadate uloge ni na provokaciju</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 py-12">
+  <h2 class="text-3xl md:text-4xl font-semibold mb-8" style="color:#f0f2f4">Česta pitanja</h2>
+  <div class="space-y-3 max-w-4xl">
+<details class="group rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-5">
+  <summary class="cursor-pointer list-none flex items-start justify-between gap-4 text-white font-medium">Treba li mijenjati postojeći telefonski broj?
+    <span class="text-[#00a396] group-open:rotate-45 transition-transform text-xl leading-none">+</span>
+  </summary>
+  <p class="mt-3 text-sm text-[#94a3b8] leading-relaxed">Ne. Asistent se spaja na vašu postojeću centralu ili SIP trunk, a broj ostaje isti. Može preuzimati pozive samo u određenim satima ili kad se niko ne javi u zadatom broju zvonjenja.</p>
+</details>
+
+<details class="group rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-5">
+  <summary class="cursor-pointer list-none flex items-start justify-between gap-4 text-white font-medium">Radi li sa Yeastar, Asterisk, Issabel ili FreePBX centralom?
+    <span class="text-[#00a396] group-open:rotate-45 transition-transform text-xl leading-none">+</span>
+  </summary>
+  <p class="mt-3 text-sm text-[#94a3b8] leading-relaxed">Da. Integracija je standardni SIP trunk prema centrali. Radimo sa Yeastar, Issabel i Asterisk/FreePBX platformama, kao i sa brojevima kod domaćih operatera.</p>
+</details>
+
+<details class="group rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-5">
+  <summary class="cursor-pointer list-none flex items-start justify-between gap-4 text-white font-medium">Koji jezici su podržani?
+    <span class="text-[#00a396] group-open:rotate-45 transition-transform text-xl leading-none">+</span>
+  </summary>
+  <p class="mt-3 text-sm text-[#94a3b8] leading-relaxed">Bosanski, hrvatski i srpski, uz engleski i njemački. Asistent razumije dijalekte i prepoznaje govorni jezik, a odgovara na jeziku na kojem mu se govori.</p>
+</details>
+
+<details class="group rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-5">
+  <summary class="cursor-pointer list-none flex items-start justify-between gap-4 text-white font-medium">Šta asistent radi kad ne zna odgovor?
+    <span class="text-[#00a396] group-open:rotate-45 transition-transform text-xl leading-none">+</span>
+  </summary>
+  <p class="mt-3 text-sm text-[#94a3b8] leading-relaxed">Ne izmišlja. Kaže da taj podatak trenutno nema, bilježi kontakt i prosljeđuje upit osobi koja može odgovoriti. Cijene, rokovi i uslovi dolaze isključivo iz baze znanja koju klijent odobri.</p>
+</details>
+
+<details class="group rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-5">
+  <summary class="cursor-pointer list-none flex items-start justify-between gap-4 text-white font-medium">Snima li razgovore?
+    <span class="text-[#00a396] group-open:rotate-45 transition-transform text-xl leading-none">+</span>
+  </summary>
+  <p class="mt-3 text-sm text-[#94a3b8] leading-relaxed">Snimanje je opcija, ne obaveza. Može raditi potpuno bez pohrane audio zapisa i transkripta — u tom slučaju u portalu ostaju samo osnovni podaci o pozivu.</p>
+</details>
+
+<details class="group rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-5">
+  <summary class="cursor-pointer list-none flex items-start justify-between gap-4 text-white font-medium">Koliko traje uvođenje?
+    <span class="text-[#00a396] group-open:rotate-45 transition-transform text-xl leading-none">+</span>
+  </summary>
+  <p class="mt-3 text-sm text-[#94a3b8] leading-relaxed">Za standardnu recepciju dvije do četiri sedmice, uključujući bazu znanja, testne pozive i podešavanje integracija. Složeniji slučajevi sa narudžbama i više kanala traju duže.</p>
+</details>
+
+<details class="group rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-5">
+  <summary class="cursor-pointer list-none flex items-start justify-between gap-4 text-white font-medium">Može li zakazivati termine i zaprimati narudžbe?
+    <span class="text-[#00a396] group-open:rotate-45 transition-transform text-xl leading-none">+</span>
+  </summary>
+  <p class="mt-3 text-sm text-[#94a3b8] leading-relaxed">Može, ako postoji sistem sa kojim se povezuje — kalendar, webshop ili CRM. Asistent tada kreira zapis ili narudžbu, ali potvrdu i obradu i dalje radi vaš tim.</p>
+</details>
+
+<details class="group rounded-xl border border-[#1e293b] bg-[#1a1f2e] p-5">
+  <summary class="cursor-pointer list-none flex items-start justify-between gap-4 text-white font-medium">Šta ako poziv treba čovjek?
+    <span class="text-[#00a396] group-open:rotate-45 transition-transform text-xl leading-none">+</span>
+  </summary>
+  <p class="mt-3 text-sm text-[#94a3b8] leading-relaxed">Asistent prepoznaje zahtjev za razgovor sa osobom i prosljeđuje poziv, uz kratak sažetak o čemu je kupac govorio. Ako niko nije dostupan, bilježi kontakt i obećani poziv.</p>
+</details></div>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 py-16">
+  <div class="rounded-2xl border border-[#00736a]/40 bg-gradient-to-br from-[#0f2b28] to-[#0a0f1c] p-8 md:p-12 text-center">
+    <h2 class="text-3xl md:text-4xl font-semibold text-white mb-4">Hoćete da čujete kako zvuči?</h2>
+    <p class="text-[#94a3b8] max-w-2xl mx-auto mb-6">Pozovite našeg asistenta ili nam recite koji proces želite da pokrijete. Prvi razgovor je procjena, ne prodaja.</p>
+    <a href="/contact" class="inline-block bg-[#00736a] hover:bg-[#008a7f] text-white px-8 py-3 rounded-lg font-medium transition-all">Zakažite razgovor</a>
+  </div>
+</section>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Treba li mijenjati postojeći telefonski broj?","acceptedAnswer":{"@type":"Answer","text":"Ne. Asistent se spaja na vašu postojeću centralu ili SIP trunk, a broj ostaje isti. Može preuzimati pozive samo u određenim satima ili kad se niko ne javi u zadatom broju zvonjenja."}},{"@type":"Question","name":"Radi li sa Yeastar, Asterisk, Issabel ili FreePBX centralom?","acceptedAnswer":{"@type":"Answer","text":"Da. Integracija je standardni SIP trunk prema centrali. Radimo sa Yeastar, Issabel i Asterisk/FreePBX platformama, kao i sa brojevima kod domaćih operatera."}},{"@type":"Question","name":"Koji jezici su podržani?","acceptedAnswer":{"@type":"Answer","text":"Bosanski, hrvatski i srpski, uz engleski i njemački. Asistent razumije dijalekte i prepoznaje govorni jezik, a odgovara na jeziku na kojem mu se govori."}},{"@type":"Question","name":"Šta asistent radi kad ne zna odgovor?","acceptedAnswer":{"@type":"Answer","text":"Ne izmišlja. Kaže da taj podatak trenutno nema, bilježi kontakt i prosljeđuje upit osobi koja može odgovoriti. Cijene, rokovi i uslovi dolaze isključivo iz baze znanja koju klijent odobri."}},{"@type":"Question","name":"Snima li razgovore?","acceptedAnswer":{"@type":"Answer","text":"Snimanje je opcija, ne obaveza. Može raditi potpuno bez pohrane audio zapisa i transkripta — u tom slučaju u portalu ostaju samo osnovni podaci o pozivu."}},{"@type":"Question","name":"Koliko traje uvođenje?","acceptedAnswer":{"@type":"Answer","text":"Za standardnu recepciju dvije do četiri sedmice, uključujući bazu znanja, testne pozive i podešavanje integracija. Složeniji slučajevi sa narudžbama i više kanala traju duže."}},{"@type":"Question","name":"Može li zakazivati termine i zaprimati narudžbe?","acceptedAnswer":{"@type":"Answer","text":"Može, ako postoji sistem sa kojim se povezuje — kalendar, webshop ili CRM. Asistent tada kreira zapis ili narudžbu, ali potvrdu i obradu i dalje radi vaš tim."}},{"@type":"Question","name":"Šta ako poziv treba čovjek?","acceptedAnswer":{"@type":"Answer","text":"Asistent prepoznaje zahtjev za razgovor sa osobom i prosljeđuje poziv, uz kratak sažetak o čemu je kupac govorio. Ako niko nije dostupan, bilježi kontakt i obećani poziv."}}]}</script>
+</main>
+<footer>
+<div class="footer-inner max-w-6xl mx-auto" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;padding:48px 24px">
+<div><a href="/" style="display:flex;align-items:center;gap:10px;text-decoration:none;font-size:16px;font-weight:600;color:#f0f2f4;margin-bottom:14px"><img src="/images/logo/bixie-logo.png" alt="BIXIE" style="height:28px"></a><p style="font-size:14px;color:#6b7280;line-height:1.6">CRM, AI Agenti i Digitalna Transformacija za vasu firmu.</p></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Usluge</h4><a href="/services/crm" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">CRM Rjesenja</a><a href="/services/ai-agents" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Agenti</a><a href="/services/digital-transformation" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Digitalna Transformacija</a><a href="/services/rpa" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">RPA i Automatizacija</a><a href="/ai-providers" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Licence</a></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Kompanija</h4><a href="/about" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">O nama</a><a href="/karijera" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Karijera</a><a href="/blog" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Blog</a><a href="/contact" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Kontakt</a><a href="/privacy" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">Privacy Policy</a><a href="/ai-politika" style="display:block;font-size:14px;color:#6b7280;margin-bottom:8px;text-decoration:none">AI Politika</a></div>
+<div><h4 style="color:#f0f2f4;font-size:14px;font-weight:600;margin-bottom:12px">Kontakt</h4><p style="font-size:14px;color:#6b7280;margin-bottom:8px">hello@bixie.ba</p><p style="font-size:14px;color:#6b7280;margin-bottom:8px">033 922 622</p><p style="font-size:14px;color:#6b7280;line-height:1.6">Maglajska 1, 71000 Sarajevo</p></div>
+</div>
+<div style="border-top:1px solid #1e293b;padding:24px;text-align:center;font-size:14px;color:#4b5563">2026 BIXIE. All rights reserved.</div>
+</footer>
+
+<script>
+function toggleMobile() { document.getElementById("mobileMenu").classList.toggle("open"); }
+</script>
+</body>
+</html>

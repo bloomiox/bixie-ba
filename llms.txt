@@ -7,6 +7,7 @@
 
 ## Ključne usluge
 - **CRM implementacija**: Bitrix24, Zoho, Salesforce, HubSpot, Pipedrive, Twenty — implementacija, migracija, optimizacija
+- **Glasovni AI asistenti (voice agenti)**: AI recepcija i telefonski asistent koji prima pozive 24/7 na bosanskom, hrvatskom i srpskom; integracija sa postojećom SIP telefonijom (Yeastar, Asterisk, Issabel, FreePBX); zakazivanje termina, narudžbe i prvi sloj podrške
 - **AI agenti i automatizacija**: custom AI agenti za customer support, prodaju i interne procese; RPA automatizacija
 - **AI servisi (kompletna implementacija)**: AI audit i strategija, forward deployment (embedded AI inženjer), data readiness, RAG/Knowledge AI, managed AI (AI Care), AI governance i EU AI Act
 - **AI licence**: ChatGPT Team/Enterprise, Google Gemini, Microsoft Copilot, Claude, DeepSeek — domaća faktura sa PDV-om
@@ -18,6 +19,7 @@
 - Početna: https://bixie.ba
 - AI servisi (kompletna implementacija): https://bixie.ba/services/ai-servisi
 - AI agenti: https://bixie.ba/services/ai-agents
+- Glasovni AI asistent (voice agent): https://bixie.ba/glasovni-ai-asistent
 - CRM: https://bixie.ba/services/crm
 - AI licence: https://bixie.ba/ai-providers
 - Karijera (otvorene pozicije): https://bixie.ba/karijera
