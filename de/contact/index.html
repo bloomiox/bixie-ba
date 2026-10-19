@@ -96,6 +96,9 @@ BIXIE
 <form id="contactForm" action="https://api.bloom.ba/api/contact" method="POST">
 <input type="hidden" name="source" value="bixie.ba">
 <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+<input type="hidden" name="_hp" value="">
+<input type="hidden" name="_t" id="formTime" value="">
+<script>document.getElementById("formTime").value=Date.now();</script>
 <div class="form-group">
 <label for="name">Ime i Prezime *</label>
 <input type="text" id="name" name="name" required placeholder="Vase ime i prezime">
