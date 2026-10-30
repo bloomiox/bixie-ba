@@ -157,7 +157,7 @@ body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -w
         <div class="value-card">
           <h3 class="font-semibold mb-1" style="color:#f0f2f4">📋 AI Readiness Checklist</h3>
           <p class="text-sm" style="color:#6b7280">25 pitanja za procjenu spremnosti — preuzmite odmah, ispunite za 10 minuta.</p>
-          <a href="/api/checklist" class="inline-block mt-3 bg-[#00736a] hover:bg-[#008a7f] text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-all hover:scale-95">Preuzmi PDF</a>
+          <a href="#checklist-form" class="inline-block mt-3 bg-[#00736a] hover:bg-[#008a7f] text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-all hover:scale-95">Preuzmi PDF</a>
         </div>
         <div class="value-card">
           <h3 class="font-semibold mb-1" style="color:#f0f2f4">🎯 Šta dobijate na pozivu</h3>
@@ -244,11 +244,14 @@ body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -w
           });
           if (!resp.ok) throw new Error("HTTP " + resp.status);
           try {
-            await fetch("/api/checklist", {
+            var ck = await fetch("https://api.bloom.ba/api/contact", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ name: payload.name, email: payload.email })
+              body: JSON.stringify({ name: payload.name, email: payload.email,
+                source: "bixie.ba/downloads/ai-readiness-checklist" })
             });
+            var ckd = await ck.json();
+            if (ckd && ckd.download) localStorage.setItem("ck_url", ckd.download);
           } catch (e) {}
           window.location.href = "/hvala";
         } catch (ex) {
@@ -263,12 +266,16 @@ body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -w
         var btn = this.querySelector("button"), err = document.getElementById("ckErr");
         err.style.display = "none"; btn.disabled = true; btn.textContent = "Pripremam...";
         try {
-          var r = await fetch("/api/checklist", {
+          var r = await fetch("https://api.bloom.ba/api/contact", {
             method: "POST", headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email: this.email.value, name: "" })
+            body: JSON.stringify({ email: this.email.value, name: "", message: "Preuzimanje AI Readiness Checklist",
+              source: "bixie.ba/downloads/ai-readiness-checklist" })
           });
           if (!r.ok) throw new Error("HTTP " + r.status);
-          window.location.href = "/api/checklist";
+          var d = await r.json();
+          if (!d.download) throw new Error("no link");
+          localStorage.setItem("ck_url", d.download);
+          window.location.href = d.download;
         } catch (ex) {
           err.style.display = "block"; btn.disabled = false; btn.textContent = "Preuzmi checklist (PDF)";
         }
@@ -305,10 +312,10 @@ body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -w
 <!-- CTA -->
 <section class="px-4 py-16" style="background: linear-gradient(135deg, #00736a, #005c54)">
 <div class="max-w-3xl mx-auto text-center">
-  <h2 class="text-3xl font-semibold mb-4 text-white">Prvo — preuzmite checklistu</h2>
+  <h2 id="checklist-form" class="text-3xl font-semibold mb-4 text-white" style="scroll-margin-top:96px">Prvo — preuzmite checklistu</h2>
   <p class="text-lg mb-8" style="color:rgba(255,255,255,0.8)">Ispunite je prije poziva i maksimalno ćemo iskoristiti 30 minuta. Ili jednostavno dođite na razgovor — mi ćemo postaviti prava pitanja.</p>
   <div class="flex flex-wrap justify-center gap-4">
-    <form id="ckForm" class="flex flex-col sm:flex-row gap-3 justify-center w-full max-w-xl mx-auto">
+    <form id="ckForm" class="flex flex-col sm:flex-row gap-3 justify-center w-full max-w-xl mx-auto scroll-mt-24" style="scroll-margin-top:96px">
       <input type="email" name="email" required placeholder="Vaš email" class="flex-1 px-4 py-3 rounded-lg text-sm" style="background:#fff;color:#0f172a;border:1px solid #e5e7eb">
       <button type="submit" class="bg-white text-[#00736a] px-8 py-3 rounded-lg font-semibold transition-all hover:scale-95">Preuzmi checklist (PDF)</button>
       <p id="ckErr" style="display:none;color:#fff;background:rgba(0,0,0,0.25);padding:8px 12px;border-radius:8px;font-size:13px">Nije prošlo — pokušajte ponovo.</p>
