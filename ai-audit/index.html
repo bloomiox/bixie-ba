@@ -157,7 +157,7 @@ body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -w
         <div class="value-card">
           <h3 class="font-semibold mb-1" style="color:#f0f2f4">📋 AI Readiness Checklist</h3>
           <p class="text-sm" style="color:#6b7280">25 pitanja za procjenu spremnosti — preuzmite odmah, ispunite za 10 minuta.</p>
-          <a href="/downloads/ai-readiness-checklist.pdf" class="inline-block mt-3 bg-[#00736a] hover:bg-[#008a7f] text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-all hover:scale-95">Preuzmi PDF (besplatno)</a>
+          <a href="/api/checklist" class="inline-block mt-3 bg-[#00736a] hover:bg-[#008a7f] text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-all hover:scale-95">Preuzmi PDF</a>
         </div>
         <div class="value-card">
           <h3 class="font-semibold mb-1" style="color:#f0f2f4">🎯 Šta dobijate na pozivu</h3>
@@ -170,7 +170,7 @@ body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -w
       </div>
     </div>
 
-    <div class="rounded-2xl p-8" style="background:#1a1f2e;border:1px solid #1e293b">
+    <div id="forma" class="rounded-2xl p-8" style="background:#1a1f2e;border:1px solid #1e293b">
       <h2 class="text-2xl font-semibold mb-1" style="color:#f0f2f4">Zakažite procjenu</h2>
       <p class="text-sm mb-6" style="color:#6b7280">Popunite formu — kontaktiramo vas u roku 24h.</p>
       <form id="aiAuditForm">
@@ -243,10 +243,34 @@ body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -w
             body: JSON.stringify(payload)
           });
           if (!resp.ok) throw new Error("HTTP " + resp.status);
+          try {
+            await fetch("/api/checklist", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ name: payload.name, email: payload.email })
+            });
+          } catch (e) {}
           window.location.href = "/hvala";
         } catch (ex) {
           btn.disabled = false; btn.textContent = "Zakažite besplatnu procjenu →";
           err.style.display = "block";
+        }
+      });
+      </script>
+      <script>
+      document.getElementById("ckForm").addEventListener("submit", async function(e) {
+        e.preventDefault();
+        var btn = this.querySelector("button"), err = document.getElementById("ckErr");
+        err.style.display = "none"; btn.disabled = true; btn.textContent = "Pripremam...";
+        try {
+          var r = await fetch("/api/checklist", {
+            method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email: this.email.value, name: "" })
+          });
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          window.location.href = "/api/checklist";
+        } catch (ex) {
+          err.style.display = "block"; btn.disabled = false; btn.textContent = "Preuzmi checklist (PDF)";
         }
       });
       </script>
@@ -284,7 +308,11 @@ body { background: #0a0f1c; color: #e2e8f0; font-family: 'Inter', sans-serif; -w
   <h2 class="text-3xl font-semibold mb-4 text-white">Prvo — preuzmite checklistu</h2>
   <p class="text-lg mb-8" style="color:rgba(255,255,255,0.8)">Ispunite je prije poziva i maksimalno ćemo iskoristiti 30 minuta. Ili jednostavno dođite na razgovor — mi ćemo postaviti prava pitanja.</p>
   <div class="flex flex-wrap justify-center gap-4">
-    <a href="/downloads/ai-readiness-checklist.pdf" class="bg-white text-[#00736a] px-8 py-3 rounded-lg font-semibold transition-all hover:scale-95">Preuzmi AI Readiness Checklist</a>
+    <form id="ckForm" class="flex flex-col sm:flex-row gap-3 justify-center w-full max-w-xl mx-auto">
+      <input type="email" name="email" required placeholder="Vaš email" class="flex-1 px-4 py-3 rounded-lg text-sm" style="background:#fff;color:#0f172a;border:1px solid #e5e7eb">
+      <button type="submit" class="bg-white text-[#00736a] px-8 py-3 rounded-lg font-semibold transition-all hover:scale-95">Preuzmi checklist (PDF)</button>
+      <p id="ckErr" style="display:none;color:#fff;background:rgba(0,0,0,0.25);padding:8px 12px;border-radius:8px;font-size:13px">Nije prošlo — pokušajte ponovo.</p>
+    </form>
     <a href="tel:+38733922622" class="border border-white/30 text-white px-8 py-3 rounded-lg font-medium transition-all hover:bg-white/10">033 922 622</a>
   </div>
 </div>
