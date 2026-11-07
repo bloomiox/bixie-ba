@@ -113,12 +113,19 @@ def build(slug, tpl):
     date_display = f"{d}. {MJESECI[m]} {y}"
     rt = max(2, round(len(body_md.split()) / 200))
 
+    # Šablon se mijenjao kroz vrijeme — izvuci njegove trenutne vrijednosti umjesto hardkodovanih.
+    tpl_title_full = re.search(r"<title>(.*?)</title>", tpl).group(1)
+    tpl_title = tpl_title_full.rsplit(" — ", 1)[0]
+    tpl_desc = re.search(r'<meta name="description" content="(.*?)"\s*/>', tpl).group(1)
+    tpl_tag = re.search(r'<span class="tag">(.*?)</span>', tpl).group(1)
+    tpl_meta = re.search(r'<div class="text-sm" style="color:#4b5563">(.*?)</div>', tpl).group(1)
+
     h = tpl.replace(OLD_SLUG, slug)
-    h = h.replace(OLD_TITLE_FULL, f"{title} — BIXIE")
-    h = h.replace(OLD_TITLE, title)
-    h = h.replace(OLD_DESC, desc.replace('"', "'"))
-    h = h.replace(f'<span class="tag">{OLD_TAG}</span>', f'<span class="tag">{cat}</span>')
-    h = h.replace(OLD_META, f"{date_display} · BIXIE Team · {rt} min čitanja")
+    h = h.replace(tpl_title_full, f"{title} — BIXIE")
+    h = h.replace(tpl_title, title)
+    h = h.replace(tpl_desc, desc.replace('"', "'"))
+    h = h.replace(f'<span class="tag">{tpl_tag}</span>', f'<span class="tag">{cat}</span>')
+    h = h.replace(tpl_meta, f"{date_display} · BIXIE Team · {rt} min čitanja")
     # Bez EN/DE prijevoda za novi post — ne ostavljati hreflang na nepostojeće stranice
     h = re.sub(r'<link rel="alternate" hreflang="(en|de)" href="[^"]*">\n?', "", h)
     # datePublished / dateModified u JSON-LD (AIO: datum objave je često citiran podatak)

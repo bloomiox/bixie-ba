@@ -1005,4 +1005,34 @@
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/kako-mjeriti-efekat-ai-projekta</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/komandni-centar-90-dana-plan-uvodjenja</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/ai-u-prodaji-kvalifikacija-upita-follow-up</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/reaktivna-vs-proaktivna-opstina-pet-procesa</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/ai-u-nafti-i-distribuciji-sta-se-isplati</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://bixie.ba/blog/posts/komandni-centar-opstina-proaktivno-upravljanje</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
