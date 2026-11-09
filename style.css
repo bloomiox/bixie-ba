@@ -52,6 +52,8 @@ p,li{color:var(--text-muted);line-height:1.7}
 /* ─── Links ─── */
 a{color:inherit;text-decoration:none;transition:color .2s}
 a:hover{color:var(--accent-hover)}
+/* CTA dugmad imaju teal pozadinu — hover ne smije obojiti tekst istom bojom */
+a[class*="bg-[#00736a]"]:hover{color:#fff}
 
 /* ─── Layout ─── */
 .wrap{max-width:1280px;margin:0 auto;padding:0 32px}
